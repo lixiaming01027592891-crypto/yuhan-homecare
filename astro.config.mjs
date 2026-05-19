@@ -7,4 +7,7 @@ export default defineConfig({
   trailingSlash: 'always',
   integrations: [tailwind(), sitemap()],
   output: 'static',
+  build: {
+    format: 'directory'
+  },
 });
