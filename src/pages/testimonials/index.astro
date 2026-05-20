@@ -1,7 +1,7 @@
 ---
 import MainLayout from '../../layouts/MainLayout.astro';
 
-const title = "客戶見證｜高雄居家看護推薦評價｜宇涵";
+const title = "經驗分享｜高雄居家看護｜宇涵";
 const description = "來看看宇涵居家照護的客戶真實評價與推薦，了解我們如何用專業與愛心贏得每個家庭的信任。";
 const canonicalURL = new URL("/testimonials/", Astro.site);
 
@@ -60,7 +60,7 @@ const stats = [
 const reviewSchema = {
   "@context": "https://schema.org",
   "@type": "ReviewPage",
-  "name": "宇涵客戶見證",
+  "name": "宇涵經驗分享",
   "description": "高雄居家看護推薦評價",
   "url": new URL("/testimonials/", Astro.site).toString(),
   "mainEntity": {
@@ -88,11 +88,12 @@ const reviewSchema = {
           <ol class="flex text-sm text-[#6d5d50]">
             <li><a href="/" class="hover:text-[#8b621f] transition-colors">首頁</a></li>
             <li class="mx-2">/</li>
-            <li class="text-[#2b221c] font-medium" aria-current="page">客戶見證</li>
+            <li class="text-[#2b221c] font-medium" aria-current="page">經驗分享</li>
           </ol>
         </nav>
-        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#2b221c] mb-4 leading-tight">客戶見證</h1>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#2b221c] mb-4 leading-tight">經驗分享</h1>
         <p class="text-lg sm:text-xl text-[#6d5d50] leading-relaxed">每一個好評，都是對我們用心服務的最大肯定</p>
+        <p class="text-sm text-[#6d5d50] mt-2">以下故事為情境參考，內容經整理改寫，非實際客戶資料</p>
       </div>
     </div>
   </section>
