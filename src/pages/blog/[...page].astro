@@ -1,0 +1,160 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import { blogArticles, type BlogArticle } from '../../data/blog-articles';
+import type { GetStaticPaths, Page } from 'astro';
+
+export const getStaticPaths = (async ({ paginate }) => {
+  const { blogArticles } = await import('../../data/blog-articles');
+  return paginate(blogArticles, { pageSize: 9 });
+}) satisfies GetStaticPaths;
+
+const { page } = Astro.props as { page: Page<BlogArticle> };
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Blog',
+  name: '宇涵居家照護部落格',
+  description: '高雄居家看護專欄，提供失智症照護、術後照護、長照申請、防跌改造等專業照護知識。',
+  url: new URL('/blog', Astro.site).toString(),
+  publisher: {
+    '@type': 'Organization',
+    name: '宇涵居家照護',
+    logo: { '@type': 'ImageObject', url: new URL('/images/logo.png', Astro.site).toString() },
+  },
+  blogPost: blogArticles.map((a) => ({
+    '@type': 'BlogPosting',
+    headline: a.title,
+    description: a.excerpt,
+    url: new URL(a.slug, Astro.site).toString(),
+    datePublished: a.date,
+    image: new URL(a.image, Astro.site).toString(),
+  })),
+};
+
+const pageTitle = page.currentPage === 1
+  ? '照護知識｜高雄居家看護專欄｜宇涵'
+  : `照護知識（第 ${page.currentPage} 頁）｜高雄居家看護專欄｜宇涵`;
+---
+
+<MainLayout
+  title={pageTitle}
+  description="宇涵居家照護部落格，提供失智症照護、術後照護、長照申請、防跌改造、褥瘡預防、喘息服務等專業照護知識與實用指南。"
+  keywords="居家看護知識,失智症照護,術後照護,長照申請,防跌改造,褥瘡預防,喘息服務,照顧者倦怠,外籍看護空窗期"
+  schema={schema}
+>
+  <!-- Hero Section -->
+  <section class="relative bg-[#2b221c] py-16 lg:py-24">
+    <div class="absolute inset-0 opacity-15">
+      <img src="/images/blog-hero.jpg" alt="照護知識專欄" class="w-full h-full object-cover" loading="eager" />
+    </div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav aria-label="麵包屑" class="mb-6">
+        <ol class="flex items-center space-x-2 text-sm text-[#efe5d5]/80">
+          <li><a href="/" class="hover:text-[#8b621f] transition-colors">首頁</a></li>
+          <li><span class="text-[#efe5d5]/40">/</span></li>
+          <li class="text-[#fcfaf6]">照護知識</li>
+        </ol>
+      </nav>
+      <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#fcfaf6] mb-4">照護知識專欄</h1>
+      <p class="text-lg text-[#efe5d5] max-w-2xl leading-relaxed">
+        由宇涵居家照護團隊撰寫的專業照護文章，涵蓋失智症照護、術後照護、長照申請、防跌改造等實用知識，幫助您和家人安心面對照護挑戰。
+      </p>
+    </div>
+  </section>
+
+  <!-- Category Filter (Coming Soon) -->
+  <section class="bg-[#fcfaf6] py-8 border-b border-[#efe5d5]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-wrap gap-3 justify-center items-center">
+        <span class="text-xs text-[#8b621f]/70 font-medium tracking-wider uppercase mr-2">分類過濾　即將上線</span>
+        <button type="button" disabled class="px-5 py-2 bg-[#8b621f] text-white rounded-full text-sm font-medium opacity-90 cursor-not-allowed">全部文章</button>
+        <button type="button" disabled class="px-5 py-2 bg-white text-[#6d5d50] rounded-full text-sm font-medium border border-[#efe5d5] opacity-60 cursor-not-allowed">照護知識</button>
+        <button type="button" disabled class="px-5 py-2 bg-white text-[#6d5d50] rounded-full text-sm font-medium border border-[#efe5d5] opacity-60 cursor-not-allowed">政府資源</button>
+        <button type="button" disabled class="px-5 py-2 bg-white text-[#6d5d50] rounded-full text-sm font-medium border border-[#efe5d5] opacity-60 cursor-not-allowed">照護資訊</button>
+        <button type="button" disabled class="px-5 py-2 bg-white text-[#6d5d50] rounded-full text-sm font-medium border border-[#efe5d5] opacity-60 cursor-not-allowed">居家安全</button>
+        <button type="button" disabled class="px-5 py-2 bg-white text-[#6d5d50] rounded-full text-sm font-medium border border-[#efe5d5] opacity-60 cursor-not-allowed">心理健康</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Articles Grid -->
+  <section class="bg-[#fcfaf6] py-12 lg:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {page.data.map((article, index) => (
+          <a href={article.slug} class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-[#efe5d5] hover:border-[#8b621f]/30 flex flex-col" data-aos="fade-up" data-aos-delay={index * 50}>
+            <div class="relative h-48 overflow-hidden">
+              <img src={article.image} alt={article.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+              <div class="absolute top-3 left-3">
+                <span class="bg-[#8b621f] text-white text-xs px-3 py-1 rounded-full">{article.category}</span>
+              </div>
+            </div>
+            <div class="p-6 flex-1 flex flex-col">
+              <div class="flex items-center text-xs text-[#6d5d50] mb-3 space-x-3">
+                <span class="flex items-center">
+                  <svg class="w-3.5 h-3.5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                  {article.date}
+                </span>
+                <span class="flex items-center">
+                  <svg class="w-3.5 h-3.5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  {article.readTime}
+                </span>
+              </div>
+              <h2 class="text-xl font-bold text-[#2b221c] mb-3 group-hover:text-[#8b621f] transition-colors line-clamp-2">{article.title}</h2>
+              <p class="text-[#6d5d50] text-sm leading-relaxed line-clamp-3 flex-1">{article.excerpt}</p>
+              <div class="mt-4 flex items-center text-[#8b621f] font-medium text-sm">
+                閱讀全文
+                <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+
+      {page.lastPage > 1 && (
+        <nav aria-label="分頁" class="mt-14 flex justify-center items-center gap-2 flex-wrap">
+          {page.url.prev ? (
+            <a href={page.url.prev} rel="prev" class="px-4 py-2 rounded-lg bg-white border border-[#efe5d5] text-[#2b221c] hover:border-[#8b621f] hover:text-[#8b621f] transition-colors text-sm font-medium">
+              ← 上一頁
+            </a>
+          ) : (
+            <span class="px-4 py-2 rounded-lg bg-[#efe5d5]/40 border border-[#efe5d5] text-[#6d5d50]/50 text-sm font-medium cursor-not-allowed">← 上一頁</span>
+          )}
+
+          {Array.from({ length: page.lastPage }, (_, i) => i + 1).map((n) => {
+            const href = n === 1 ? '/blog/' : `/blog/${n}/`;
+            const isCurrent = n === page.currentPage;
+            return isCurrent ? (
+              <span aria-current="page" class="min-w-[40px] px-3 py-2 rounded-lg bg-[#8b621f] text-white text-sm font-semibold text-center">{n}</span>
+            ) : (
+              <a href={href} class="min-w-[40px] px-3 py-2 rounded-lg bg-white border border-[#efe5d5] text-[#2b221c] hover:border-[#8b621f] hover:text-[#8b621f] transition-colors text-sm font-medium text-center">{n}</a>
+            );
+          })}
+
+          {page.url.next ? (
+            <a href={page.url.next} rel="next" class="px-4 py-2 rounded-lg bg-white border border-[#efe5d5] text-[#2b221c] hover:border-[#8b621f] hover:text-[#8b621f] transition-colors text-sm font-medium">
+              下一頁 →
+            </a>
+          ) : (
+            <span class="px-4 py-2 rounded-lg bg-[#efe5d5]/40 border border-[#efe5d5] text-[#6d5d50]/50 text-sm font-medium cursor-not-allowed">下一頁 →</span>
+          )}
+        </nav>
+      )}
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="bg-[#2b221c] py-12 lg:py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold text-[#fcfaf6] mb-4">需要專業居家看護服務？</h2>
+      <p class="text-[#efe5d5] mb-8">不論是失智照護、術後照護、還是長期居家照顧，宇涵都能為您提供專業支持。</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="tel:0978788886" class="inline-flex items-center justify-center px-8 py-4 bg-[#8b621f] text-white font-semibold rounded-lg hover:bg-[#8b621f]/90 transition-colors text-lg">
+          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          0978-788-886
+        </a>
+        <a href="/contact" class="inline-flex items-center justify-center px-8 py-4 border-2 border-[#efe5d5] text-[#fcfaf6] font-semibold rounded-lg hover:bg-[#fcfaf6]/10 transition-colors text-lg">免費諮詢表單</a>
+      </div>
+    </div>
+  </section>
+</MainLayout>
