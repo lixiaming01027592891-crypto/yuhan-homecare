@@ -1,0 +1,290 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+
+const articles = [
+  {
+    title: '尋找看護的過程中，我學到的幾件重要的事',
+    excerpt: '分享尋找高雄看護的過程中學到的重要經驗，從釐清需求、評估看護中心、面談技巧到建立長期照護關係，幫助家屬找到適合的照護服務。',
+    image: '/images/blog-finding-lessons-1.jpg',
+    slug: '/blog/caregiver-center-guide',
+    category: '照護知識',
+    date: '2025-01-29',
+    readTime: '12 分鐘',
+  },
+  {
+    title: '從醫院回到家的照護銜接：我們如何安排高雄居家看護',
+    excerpt: '分享從醫院返家後安排高雄居家看護的完整經驗，從出院準備、看護銜接到居家照護安排，幫助家庭順利完成醫院到居家的照護轉換。',
+    image: '/images/blog-hospital-transition-1.jpg',
+    slug: '/blog/hospital-to-home-transition',
+    category: '照護知識',
+    date: '2025-01-28',
+    readTime: '12 分鐘',
+  },
+  {
+    title: '怎麼選一間值得信任的高雄看護中心？我的實際評估經驗',
+    excerpt: '分享評估高雄看護中心的完整經驗，從電話諮詢、面談觀察、合約條款到實際服務中的持續溝通，幫助家屬找到值得信任的看護中心。',
+    image: '/images/blog-center-eval-1.jpg',
+    slug: '/blog/care-center-recommendation',
+    category: '照護知識',
+    date: '2025-01-27',
+    readTime: '12 分鐘',
+  },
+  {
+    title: '臨時看護如何協助家庭渡過照護空窗期',
+    excerpt: '分享高雄臨時看護如何協助家庭渡過照護空窗期，從需求釐清、短期交接技巧到日常運作與長期看護回來後的銜接經驗。',
+    image: '/images/blog-temp-care-1.jpg',
+    slug: '/blog/temp-home-care',
+    category: '照護知識',
+    date: '2025-01-26',
+    readTime: '12 分鐘',
+  },
+  {
+    title: '從醫院回家之後：我們如何透過看護中心安排居家照護',
+    excerpt: '分享從醫院出院後透過看護中心安排高雄醫院居家看護的完整過程，從出院準備、人員媒合到返家照護銜接與長期過渡安排。',
+    image: '/images/blog-hospital-home-1.jpg',
+    slug: '/blog/hospital-home-care-center',
+    category: '照護知識',
+    date: '2025-01-25',
+    readTime: '12 分鐘',
+  },
+  {
+    title: '當家人需要長期陪伴：我們如何找到適合的高雄看護',
+    excerpt: '分享尋找高雄看護的完整過程，從釐清需求、比較不同管道資訊、面談觀察到長期相處調整，幫助家屬找到適合長者的看護人員。',
+    image: '/images/blog-finding-caregiver-1.jpg',
+    slug: '/blog/finding-caregiver-experience',
+    category: '照護知識',
+    date: '2025-01-24',
+    readTime: '12 分鐘',
+  },
+  {
+    title: '尋找高雄看護的實務經驗：從需求釐清到人員媒合的全過程',
+    excerpt: '分享尋找高雄看護的完整實務經驗，從需求釐清、資訊評估、面談試用到建立長期照護關係，幫助家屬找到適合長者的看護人員。',
+    image: '/images/blog-caregiver-guide-1.jpg',
+    slug: '/blog/finding-caregiver-guide',
+    category: '照護知識',
+    date: '2025-01-23',
+    readTime: '12 分鐘',
+  },
+  {
+    title: '高雄居家看護的日常：一位家屬從摸索到安心的過程',
+    excerpt: '分享高雄居家看護的真實經驗，從家庭準備、看護人員到府分工、長期溝通到生活轉變，幫助家屬了解居家看護如何改善長者與家人的生活品質。',
+    image: '/images/blog-home-care-1.jpg',
+    slug: '/blog/home-care-daily',
+    category: '照護知識',
+    date: '2025-01-22',
+    readTime: '12 分鐘',
+  },
+  {
+    title: '高雄看護中心怎麼選？家屬實際走訪前該知道的幾件事',
+    excerpt: '如何選擇高雄看護中心？從需求釐清、實地走訪觀察重點到簽約前注意事項，提供家屬選擇看護中心的實用建議與評估方向，幫助您找到適合的照護服務。',
+    image: '/images/blog-choosing-center-1.jpg',
+    slug: '/blog/choosing-care-center',
+    category: '照護知識',
+    date: '2025-01-20',
+    readTime: '12 分鐘',
+  },
+  {
+    title: '從醫院返家照護的銜接經驗：臨時看護能幫上什麼忙',
+    excerpt: '從醫院返家照護的銜接經驗分享，了解臨時看護在出院過渡期如何協助長輩適應居家環境、管理藥物與日常照護，幫助家屬順利完成醫院到居家的照護轉換。',
+    image: '/images/blog-temp-care-1.jpg',
+    slug: '/blog/temp-care-hospital-home',
+    category: '照護知識',
+    date: '2025-01-21',
+    readTime: '12 分鐘',
+  },
+  {
+    title: '失智症居家照護完整指南',
+    excerpt: '失智症是許多家庭面臨的挑戰。本文深入探討失智症的定義、類型、階段，以及居家照護的實用技巧，包括日常生活照護、溝通技巧、安全管理與照護者自我照顧。',
+    image: '/images/blog-dementia.jpg',
+    slug: '/blog/dementia-care-tips',
+    category: '照護知識',
+    date: '2025-01-15',
+    readTime: '12 分鐘',
+  },
+  {
+    title: '外籍看護空窗期替代方案',
+    excerpt: '外籍看護休假、無法即時到崗時該怎麼辦？本文完整解析外籍看護空窗期的各種替代方案，包括臨時看護、居服員、喘息服務等，並比較各方案費用與申請流程。',
+    image: '/images/blog-foreign.jpg',
+    slug: '/blog/foreign-caregiver-gap',
+    category: '照護資訊',
+    date: '2025-01-10',
+    readTime: '11 分鐘',
+  },
+  {
+    title: '醫院看護與居家看護比較指南',
+    excerpt: '住院期間需要看護，還是回家照顧比較好？本文從照護內容、費用、環境、家屬負擔等面向，深入比較醫院看護與居家看護的優缺點，幫助您做出適合的選擇。',
+    image: '/images/blog-hospital.jpg',
+    slug: '/blog/hospital-vs-home',
+    category: '照護資訊',
+    date: '2025-01-05',
+    readTime: '10 分鐘',
+  },
+  {
+    title: '家屬照顧者倦怠與身心調適',
+    excerpt: '長期照顧家人容易身心俱疲。本文探討照顧者倦怠的症狀、原因與影響，並提供實用的預防方法、喘息服務介紹，以及如何尋求協助的完整指南。',
+    image: '/images/blog-burnout.jpg',
+    slug: '/blog/family-caregiver-burnout',
+    category: '心理健康',
+    date: '2025-01-01',
+    readTime: '12 分鐘',
+  },
+  {
+    title: '術後居家照護完整指南',
+    excerpt: '出院後才是恢復的關鍵期。本文針對常見手術後的居家照護，提供傷口觀察與清潔照護、飲食調理、復健運動、注意事項等完整說明，幫助患者安心休養。',
+    image: '/images/blog-postsurgery.jpg',
+    slug: '/blog/post-surgery-care',
+    category: '照護知識',
+    date: '2024-12-25',
+    readTime: '11 分鐘',
+  },
+  {
+    title: '長照四包錢補助完整說明',
+    excerpt: '長照2.0的四包錢是什麼？包含哪些給付項目？誰可以申請？本文完整說明長照四包錢的內容、申請資格、申請流程與注意事項，幫助您善用政府資源。',
+    image: '/images/blog-packages.jpg',
+    slug: '/blog/ltc-4-packages',
+    category: '政府資源',
+    date: '2024-12-20',
+    readTime: '13 分鐘',
+  },
+  {
+    title: '長者居家防跌與無障礙改造',
+    excerpt: '跌倒是長者意外傷害的主要原因。本文介紹跌倒風險因素、居家環境評估方法，以及浴室、樓梯、照明等空間的具體改造建議與輔具介紹。',
+    image: '/images/blog-fall.jpg',
+    slug: '/blog/fall-prevention',
+    category: '居家安全',
+    date: '2024-12-15',
+    readTime: '10 分鐘',
+  },
+  {
+    title: '褥瘡預防與照護完整指南',
+    excerpt: '褥瘡是臥床長者最常見的皮膚問題。本文詳細說明褥瘡的成因、分期、預防措施、翻身技巧、皮膚護理與營養支持，幫助照護者有效預防與處理褥瘡問題。',
+    image: '/images/blog-bedsore.jpg',
+    slug: '/blog/bed-sore-prevention',
+    category: '照護知識',
+    date: '2024-12-10',
+    readTime: '10 分鐘',
+  },
+  {
+    title: '喘息服務申請與補助指南',
+    excerpt: '照顧者也需要休息。本文詳細說明喘息服務的定義、類型、申請資格、申請流程與補助額度，讓照顧者能暫時放下重擔，獲得必要的休息時間。',
+    image: '/images/blog-respite.jpg',
+    slug: '/blog/respite-service',
+    category: '政府資源',
+    date: '2024-12-05',
+    readTime: '10 分鐘',
+  },
+];
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Blog',
+  name: '宇涵居家照護部落格',
+  description: '高雄居家看護專欄，提供失智症照護、術後照護、長照申請、防跌改造等專業照護知識。',
+  url: 'https://yuhanhomecare.com.tw/blog',
+  publisher: {
+    '@type': 'Organization',
+    name: '宇涵居家照護',
+    logo: { '@type': 'ImageObject', url: 'https://yuhanhomecare.com.tw/images/logo.png' },
+  },
+  blogPost: articles.map((a) => ({
+    '@type': 'BlogPosting',
+    headline: a.title,
+    description: a.excerpt,
+    url: `https://yuhanhomecare.com.tw${a.slug}`,
+    datePublished: a.date,
+    image: `https://yuhanhomecare.com.tw${a.image}`,
+  })),
+};
+---
+
+<MainLayout
+  title="照護知識｜高雄居家看護專欄｜宇涵"
+  description="宇涵居家照護部落格，提供失智症照護、術後照護、長照申請、防跌改造、褥瘡預防、喘息服務等專業照護知識與實用指南。"
+  keywords="居家看護知識,失智症照護,術後照護,長照申請,防跌改造,褥瘡預防,喘息服務,照顧者倦怠,外籍看護空窗期"
+  schema={schema}
+>
+  <!-- Hero Section -->
+  <section class="relative bg-[#2b221c] py-16 lg:py-24">
+    <div class="absolute inset-0 opacity-15">
+      <img src="/images/blog-hero.jpg" alt="照護知識專欄" class="w-full h-full object-cover" loading="eager" />
+    </div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav aria-label="麵包屑" class="mb-6">
+        <ol class="flex items-center space-x-2 text-sm text-[#efe5d5]/80">
+          <li><a href="/" class="hover:text-[#8b621f] transition-colors">首頁</a></li>
+          <li><span class="text-[#efe5d5]/40">/</span></li>
+          <li class="text-[#fcfaf6]">照護知識</li>
+        </ol>
+      </nav>
+      <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#fcfaf6] mb-4">照護知識專欄</h1>
+      <p class="text-lg text-[#efe5d5] max-w-2xl leading-relaxed">
+        由宇涵居家照護團隊撰寫的專業照護文章，涵蓋失智症照護、術後照護、長照申請、防跌改造等實用知識，幫助您和家人安心面對照護挑戰。
+      </p>
+    </div>
+  </section>
+
+  <!-- Category Filter -->
+  <section class="bg-[#fcfaf6] py-8 border-b border-[#efe5d5]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-wrap gap-3 justify-center">
+        <a href="#" class="px-5 py-2 bg-[#8b621f] text-white rounded-full text-sm font-medium">全部文章</a>
+        <a href="#" class="px-5 py-2 bg-white text-[#6d5d50] rounded-full text-sm font-medium border border-[#efe5d5] hover:border-[#8b621f] hover:text-[#8b621f] transition-colors">照護知識</a>
+        <a href="#" class="px-5 py-2 bg-white text-[#6d5d50] rounded-full text-sm font-medium border border-[#efe5d5] hover:border-[#8b621f] hover:text-[#8b621f] transition-colors">政府資源</a>
+        <a href="#" class="px-5 py-2 bg-white text-[#6d5d50] rounded-full text-sm font-medium border border-[#efe5d5] hover:border-[#8b621f] hover:text-[#8b621f] transition-colors">照護資訊</a>
+        <a href="#" class="px-5 py-2 bg-white text-[#6d5d50] rounded-full text-sm font-medium border border-[#efe5d5] hover:border-[#8b621f] hover:text-[#8b621f] transition-colors">居家安全</a>
+        <a href="#" class="px-5 py-2 bg-white text-[#6d5d50] rounded-full text-sm font-medium border border-[#efe5d5] hover:border-[#8b621f] hover:text-[#8b621f] transition-colors">心理健康</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Articles Grid -->
+  <section class="bg-[#fcfaf6] py-12 lg:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {articles.map((article, index) => (
+          <a href={article.slug} class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-[#efe5d5] hover:border-[#8b621f]/30 flex flex-col" data-aos="fade-up" data-aos-delay={index * 50}>
+            <div class="relative h-48 overflow-hidden">
+              <img src={article.image} alt={article.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+              <div class="absolute top-3 left-3">
+                <span class="bg-[#8b621f] text-white text-xs px-3 py-1 rounded-full">{article.category}</span>
+              </div>
+            </div>
+            <div class="p-6 flex-1 flex flex-col">
+              <div class="flex items-center text-xs text-[#6d5d50] mb-3 space-x-3">
+                <span class="flex items-center">
+                  <svg class="w-3.5 h-3.5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                  {article.date}
+                </span>
+                <span class="flex items-center">
+                  <svg class="w-3.5 h-3.5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  {article.readTime}
+                </span>
+              </div>
+              <h2 class="text-xl font-bold text-[#2b221c] mb-3 group-hover:text-[#8b621f] transition-colors line-clamp-2">{article.title}</h2>
+              <p class="text-[#6d5d50] text-sm leading-relaxed line-clamp-3 flex-1">{article.excerpt}</p>
+              <div class="mt-4 flex items-center text-[#8b621f] font-medium text-sm">
+                閱讀全文
+                <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="bg-[#2b221c] py-12 lg:py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold text-[#fcfaf6] mb-4">需要專業居家看護服務？</h2>
+      <p class="text-[#efe5d5] mb-8">不論是失智照護、術後照護、還是長期居家照顧，宇涵都能為您提供專業支持。</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="tel:0978788886" class="inline-flex items-center justify-center px-8 py-4 bg-[#8b621f] text-white font-semibold rounded-lg hover:bg-[#8b621f]/90 transition-colors text-lg">
+          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          0978-788-886
+        </a>
+        <a href="/contact" class="inline-flex items-center justify-center px-8 py-4 border-2 border-[#efe5d5] text-[#fcfaf6] font-semibold rounded-lg hover:bg-[#fcfaf6]/10 transition-colors text-lg">免費諮詢表單</a>
+      </div>
+    </div>
+  </section>
+</MainLayout>
