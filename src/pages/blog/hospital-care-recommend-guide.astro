@@ -1,12 +1,12 @@
 ---
-import Layout from '../../layouts/Layout.astro';
+import MainLayout from '../../layouts/MainLayout.astro';
 const title = '高雄醫院看護與看護推薦：術後照護的完整指南';
 const description = '從高雄醫院看護過渡到居家照護，術後恢復需要專業規劃。本文分享術後返家準備、傷口照護、復健運動、營養管理與情緒支持五大面向，幫助高雄家庭做好術後照護安排。';
 const date = '2026-05-27';
 const keywords = ['高雄醫院看護', '高雄看護推薦'];
 ---
 
-<Layout title={title} description={description} type="article">
+<MainLayout title={title} description={description} type="article">
   <script type="application/ld+json" slot="head">
     {JSON.stringify({
       "@context": "https://schema.org",
@@ -154,4 +154,4 @@ const keywords = ['高雄醫院看護', '高雄看護推薦'];
       </article>
     </div>
   </main>
-</Layout>
+</MainLayout>
