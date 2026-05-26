@@ -1,12 +1,12 @@
 ---
-import Layout from '../../layouts/Layout.astro';
+import MainLayout from '../../layouts/MainLayout.astro';
 const title = '如何找到優質的高雄居家看護？看護中心推薦的五大評估要點';
 const description = '選擇高雄居家看護服務需要謹慎評估。本文從高雄看護中心推薦角度，分享五大實際評估要點：專業證照、服務完整性、收費透明、督導機制與長輩意願，幫助您為家人選擇最適合的照護夥伴。';
 const date = '2026-05-27';
 const keywords = ['高雄居家看護', '高雄看護中心推薦'];
 ---
 
-<Layout title={title} description={description} type="article">
+<MainLayout title={title} description={description} type="article">
   <script type="application/ld+json" slot="head">
     {JSON.stringify({
       "@context": "https://schema.org",
@@ -157,4 +157,4 @@ const keywords = ['高雄居家看護', '高雄看護中心推薦'];
       </article>
     </div>
   </main>
-</Layout>
+</MainLayout>
