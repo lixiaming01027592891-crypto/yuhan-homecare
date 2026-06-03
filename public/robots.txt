@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://yuhanhomecare.com/sitemap.xml
+Sitemap: https://yuhanhomecare.com/sitemap-index.xml
