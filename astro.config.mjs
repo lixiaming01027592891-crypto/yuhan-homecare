@@ -5,7 +5,14 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   site: 'https://yuhanhomecare.com',
   trailingSlash: 'always',
-  integrations: [tailwind(), sitemap()],
+  integrations: [
+    tailwind(),
+    sitemap({
+      changefreq: 'weekly',
+      priority: 0.7,
+      lastmod: new Date(),
+    }),
+  ],
   output: 'static',
   build: {
     format: 'directory'
