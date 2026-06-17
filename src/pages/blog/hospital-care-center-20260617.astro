@@ -1,0 +1,224 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+
+const title = '高雄醫院看護與看護中心怎麼選？專業照護服務完整指南';
+const description = '比較高雄醫院看護與高雄看護中心的差異，了解醫院陪病、術後照護、長期照護的選擇要點，找到最適合家人的專業照護方案。';
+const date = '2026-06-17';
+const keywords = ['高雄醫院看護', '高雄看護中心', '醫院看護費用', '看護中心推薦'];
+const author = '裕涵居家照護';
+const image1 = '/images/blog/hospital-care-center-1.jpg';
+const image2 = '/images/blog/hospital-care-center-2.jpg';
+---
+
+<MainLayout title={title} description={description} type="article">
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": title,
+    "description": description,
+    "author": { "@type": "Organization", "name": author },
+    "publisher": { "@type": "Organization", "name": "裕涵居家照護", "logo": { "@type": "ImageObject", "url": "https://yuhanhomecare.com/images/logo.png" } },
+    "datePublished": date,
+    "dateModified": date,
+    "image": ["https://yuhanhomecare.com" + image1, "https://yuhanhomecare.com" + image2]
+  })} />
+
+  <article class="bg-[#fcfaf6] min-h-screen">
+    <!-- Hero Section -->
+    <section class="relative bg-[#2d4a3e] text-white py-20 md:py-28">
+      <div class="absolute inset-0 opacity-15">
+        <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"0.15\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+      </div>
+      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 text-center">
+        <div class="text-sm tracking-widest text-[#a8c4b0] mb-3">專業照護指南 · 2026年6月</div>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6">高雄醫院看護與看護中心<br class="hidden md:inline">怎麼選？</h1>
+        <p class="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed">醫院陪病與看護中心的差異解析，助您為家人找到最適合的專業照護方案</p>
+      </div>
+    </section>
+
+    <!-- Table of Contents -->
+    <section class="max-w-4xl mx-auto px-4 sm:px-6 py-10">
+      <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8">
+        <h2 class="text-xl font-bold text-[#2d4a3e] mb-4">文章目錄</h2>
+        <nav class="grid md:grid-cols-2 gap-3">
+          <a href="#section1" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">1</span>
+            <span class="text-[#4a4238]">醫院看護與看護中心的服務差異</span>
+          </a>
+          <a href="#section2" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">2</span>
+            <span class="text-[#4a4238]">什麼情況適合選醫院看護</span>
+          </a>
+          <a href="#section3" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">3</span>
+            <span class="text-[#4a4238]">看護中心的優勢與適用場景</span>
+          </a>
+          <a href="#section4" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">4</span>
+            <span class="text-[#4a4238]">費用比較與預算規劃</span>
+          </a>
+          <a href="#section5" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">5</span>
+            <span class="text-[#4a4238]">如何選擇優質照護服務</span>
+          </a>
+          <a href="#section6" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">6</span>
+            <span class="text-[#4a4238]">常見問題與結語</span>
+          </a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 pb-20 space-y-16">
+
+      <!-- Section 1 -->
+      <section id="section1">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">1</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">醫院看護與看護中心的服務差異</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <img src={image1} alt="高雄醫院看護服務" class="w-full h-64 md:h-80 object-cover rounded-xl" loading="lazy" />
+          <p class="text-[#4a4238] leading-relaxed text-lg">在高雄尋找照護服務時，許多家屬常會面臨一個重要的選擇：究竟應該選擇<strong class="text-[#2d4a3e]">高雄醫院看護</strong>還是<strong class="text-[#2d4a3e]">高雄看護中心</strong>？這兩種照護模式各有其獨特的服務內容與適用情境，了解其中的差異是做出正確決定的第一步。醫院看護主要針對住院期間的陪病需求，而看護中心則提供更全面的機構式照護服務。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">醫院看護服務通常是指在醫療院所內，由專業看護人員協助病患進行日常生活照顧。這類服務的特點是照護地點固定於醫院內，看護人員熟悉醫院的作業流程，能夠及時配合醫護人員的治療計畫。服務內容包括協助進食、翻身拍背、如廁協助、陪同檢查等基礎照護工作，是住院期間不可或缺的支援力量。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">相比之下，<strong class="text-[#2d4a3e]">高雄看護中心</strong>則提供機構式的照護環境。看護中心通常具備完整的照護設施與專業團隊，能夠提供24小時不間斷的照護服務。這類機構適合需要長期照護或家中無人可陪伴長輩居住的家庭。看護中心除了基本的生活照顧外，還會安排復健活動、社交互動、健康監測等多元化的服務內容。</p>
+          <div class="bg-[#f5f3ef] rounded-xl p-6 border-l-4 border-[#2d4a3e]">
+            <h4 class="font-bold text-[#2d4a3e] mb-3">服務模式比較</h4>
+            <div class="grid md:grid-cols-2 gap-4">
+              <div>
+                <h5 class="font-semibold text-[#2d4a3e] mb-2">醫院看護</h5>
+                <ul class="space-y-1 text-[#4a4238]">
+                  <li>· 地點：醫院病房內</li>
+                  <li>· 時間：依住院天數彈性調整</li>
+                  <li>· 對象：住院病患</li>
+                  <li>· 費用：按日計算</li>
+                </ul>
+              </div>
+              <div>
+                <h5 class="font-semibold text-[#2d4a3e] mb-2">看護中心</h5>
+                <ul class="space-y-1 text-[#4a4238]">
+                  <li>· 地點：專業照護機構</li>
+                  <li>· 時間：長期或短期住宿</li>
+                  <li>· 對象：需長期照護者</li>
+                  <li>· 費用：按月或按期計算</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2 -->
+      <section id="section2">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">2</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">什麼情況適合選醫院看護</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <p class="text-[#4a4238] leading-relaxed text-lg">選擇<strong class="text-[#2d4a3e]">高雄醫院看護</strong>的情況，主要圍繞在住院期間的照護需求。當家人因為疾病或手術需要住院治療時，醫院看護能夠提供最直接、最即時的照護支援。以下幾種情況特別適合選擇醫院看護服務。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">首先是手術後的恢復期。手術後的病患往往需要頻繁的翻身、傷口觀察和疼痛管理，這些都需要專業的照護技巧。醫院看護人員熟悉術後照護要點，能夠及時發現異常情況並通知醫護人員。其次是行動不便的長期住院病患，這類病患需要持續的生活協助，家屬若無法全天候陪伴，醫院看護就是最佳的選擇。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">第三是重大疾病治療期間。例如癌症化療、腦中風復健等情況，病患的身體狀況變化較大，需要專業人員隨時關注。<strong class="text-[#2d4a3e]">高雄醫院看護</strong>人員具備基礎醫療知識，能夠協助觀察病徵變化，記錄血壓、血糖等生命徵象，成為醫療團隊與家屬之間的重要橋樑。這樣的專業協助不僅能確保病患安全，也能讓家屬安心工作與生活。</p>
+          <div class="bg-[#f5f3ef] rounded-xl p-6 border-l-4 border-[#e8b86d]">
+            <h4 class="font-bold text-[#2d4a3e] mb-3">適合醫院看護的情況</h4>
+            <div class="grid md:grid-cols-2 gap-3">
+              <div class="flex items-start gap-2"><span class="text-[#e8b86d] text-xl">✓</span><span class="text-[#4a4238]">手術後住院恢復期</span></div>
+              <div class="flex items-start gap-2"><span class="text-[#e8b86d] text-xl">✓</span><span class="text-[#4a4238]">重大疾病治療期間</span></div>
+              <div class="flex items-start gap-2"><span class="text-[#e8b86d] text-xl">✓</span><span class="text-[#4a4238]">行動不便需長期住院</span></div>
+              <div class="flex items-start gap-2"><span class="text-[#e8b86d] text-xl">✓</span><span class="text-[#4a4238]">家屬無法全天候陪伴</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3 -->
+      <section id="section3">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">3</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">看護中心的優勢與適用場景</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <img src={image2} alt="高雄看護中心環境" class="w-full h-64 md:h-80 object-cover rounded-xl" loading="lazy" />
+          <p class="text-[#4a4238] leading-relaxed text-lg"><strong class="text-[#2d4a3e]">高雄看護中心</strong>作為機構式照護的選擇，具備許多獨特的優勢。對於需要長期照護但家中環境不適合或無人可陪伴長輩的家庭來說，看護中心提供了一個安全、專業且具社交功能的居住選擇。這類機構經過政府立案與評鑑，在設施、人力與服務品質上都有一定的標準與規範。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">看護中心的最大優勢在於提供全天候的專業照護。與醫院看護專注於住院期間不同，看護中心的服務時間更長，照護計畫也更具延續性。專業的照護團隊包括護理師、照服員、復健師等，能夠針對每位住民的身體狀況制定個別化的照護方案。從日常起居協助到健康監測、復健運動，都有專人負責。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">另一個重要優勢是社交互動的機會。許多長輩在家中獨居時容易感到孤單，而在看護中心可以認識其他住民，參與團體活動，維持良好的社交關係與心情。優質的<strong class="text-[#2d4a3e]">高雄看護中心</strong>會安排各種休閒活動，如歌唱、手工藝、園藝等，讓住民的生活更加豐富多彩。這種身心靈的全方位照顧，是居家照護較難完全實現的。</p>
+          <div class="bg-[#f5f3ef] rounded-xl p-6 border-l-4 border-[#2d4a3e]">
+            <h4 class="font-bold text-[#2d4a3e] mb-3">看護中心的核心優勢</h4>
+            <div class="grid md:grid-cols-2 gap-4">
+              <div class="flex items-start gap-3">
+                <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm">1</span>
+                <div><span class="font-semibold text-[#2d4a3e]">24小時專業照護</span><p class="text-sm text-[#4a4238]">全天候有護理人員輪班照顧</p></div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm">2</span>
+                <div><span class="font-semibold text-[#2d4a3e]">完整照護團隊</span><p class="text-sm text-[#4a4238]">護理師、照服員、復健師共同服務</p></div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm">3</span>
+                <div><span class="font-semibold text-[#2d4a3e]">社交活動豐富</span><p class="text-sm text-[#4a4238]">團體活動維持身心活躍</p></div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm">4</span>
+                <div><span class="font-semibold text-[#2d4a3e]">安全無障礙環境</span><p class="text-sm text-[#4a4238]">專為長者設計的居住空間</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4 -->
+      <section id="section4">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">4</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">費用比較與預算規劃</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <p class="text-[#4a4238] leading-relaxed text-lg">在選擇照護服務時，費用是家屬最關心的議題之一。<strong class="text-[#2d4a3e]">醫院看護費用</strong>與看護中心的收費方式有明顯不同，了解這些差異有助於做好預算規劃。醫院看護通常按日計費，費用會因為病患的照護需求程度而有所調整。一般來說，基礎照護的每日費用較為親民，但若是需要特殊護理技術或夜間加強照護，費用會相應提高。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">醫院看護的費用結構通常包含以下幾個部分：基本陪病費用、特殊護理技術費用、夜間加成費用等。基本陪病服務包括協助進食、翻身、如廁等日常照顧，這部分的費用相對固定。若病患需要鼻胃管灌食、導尿管護理、氣切照護等特殊護理技術，則會額外計費。建議家屬在聘僱前詳細詢問費用結構，避免後續產生誤會。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">看護中心的費用則通常按月計算，收費項目包括住宿費、照護費、餐食費等。不同等級的看護中心，以及不同類型的房型，費用差異可能相當大。政府立案的機構收費相對透明，且部分費用可以申請長照補助來減輕負擔。在參觀<strong class="text-[#2d4a3e]">看護中心推薦</strong>名單中的機構時，務必詳細了解收費標準與補助申請方式，讓照護支出更加可控。</p>
+          <div class="bg-[#f5f3ef] rounded-xl p-6 border-l-4 border-[#e8b86d]">
+            <h4 class="font-bold text-[#2d4a3e] mb-3">費用規劃建議</h4>
+            <ul class="space-y-2 text-[#4a4238]">
+              <li>· 醫院看護：按日計費，依需求程度調整，適合短期住院</li>
+              <li>· 看護中心：按月計費，包含食宿與照護，適合長期居住</li>
+              <li>· 主動詢問長照補助資格，減輕經濟負擔</li>
+              <li>· 比較多家機構的收費標準與服務內容</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5 -->
+      <section id="section5">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">5</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">如何選擇優質照護服務</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <p class="text-[#4a4238] leading-relaxed text-lg">無論是選擇<strong class="text-[#2d4a3e]">高雄醫院看護</strong>還是<strong class="text-[#2d4a3e]">高雄看護中心</strong>，選擇優質的照護服務都需要從多個面向進行評估。第一個要確認的是機構或服務提供者的合法立案狀態。合法的醫院看護公司應具備營業登記與相關執照，看護中心則需要政府主管機關的設立許可。這些資訊通常可以在機構的官網或現場查詢到。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">第二個重點是看護人員的專業素養。優質的看護人員應具備專業證照，如照顧服務員技術士證，並且有持續接受在職訓練的紀錄。在面談時，可以詢問人員的訓練背景、年資經驗，以及過往服務的案例類型。專業的看護人員不僅技術純熟，更應具備良好的溝通能力與同理心，能夠理解病患與家屬的需求。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">第三個評估面向是服務的彈性與客製化程度。每個病患的情況都不同，優質的照護服務應該能夠根據個別需求調整服務內容。例如，有些病患需要特別的飲食安排，有些則需要額外的復健協助。選擇能夠提供客製化服務方案的機構，才能確保家人獲得最適合的照護。建議多方比較，參考親友的推薦與網路評價，實地參訪後再做決定。</p>
+        </div>
+      </section>
+
+      <!-- Section 6 -->
+      <section id="section6">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">6</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">常見問題與結語</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <p class="text-[#4a4238] leading-relaxed text-lg">在選擇照護服務的過程中，家屬常有許多疑問。最常見的問題之一是：「醫院看護和看護中心可以同時使用嗎？」答案是肯定的。有些病患在住院期間聘僱醫院看護，出院後轉至看護中心繼續復健與照護，這樣的銜接安排相當常見。關鍵在於與照護單位充分溝通，確保照護計畫的延續性。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">另一個常見問題是關於看護人員的更換機制。專業的照護機構應該有明確的人員替補方案，當看護人員因故無法到勤時，能夠及時安排替代人員，不影響病患的照護品質。在簽約前，務必確認這方面的規定與流程，以保障家人的權益。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">總結來說，<strong class="text-[#2d4a3e]">高雄醫院看護</strong>與<strong class="text-[#2d4a3e]">高雄看護中心</strong>各有其適用的情境與優勢。醫院看護適合住院期間的短期照護需求，看護中心則提供長期且全面的機構式照護。選擇時應評估家人的身體狀況、照護需求、經濟預算與個人意願，綜合考量後做出最適合的決定。裕涵居家照護提供專業的照護服務諮詢，歡迎有需求的家屬與我們聯繫，我們將竭誠為您提供適切的建議與服務。</p>
+          <div class="bg-[#2d4a3e] text-white rounded-xl p-6 text-center">
+            <h4 class="font-bold text-lg mb-2">需要照護服務諮詢？</h4>
+            <p class="text-gray-200 mb-4">裕涵居家照護提供專業建議，協助您找到最適合的照護方案</p>
+            <a href="/contact" class="inline-block bg-[#e8b86d] text-[#2d4a3e] px-8 py-3 rounded-full font-bold hover:bg-[#d9a95e] transition-colors">免費諮詢</a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </article>
+</MainLayout>
