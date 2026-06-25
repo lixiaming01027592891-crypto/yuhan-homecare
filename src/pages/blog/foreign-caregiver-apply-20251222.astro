@@ -1,0 +1,214 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+
+const title = '高雄外籍看護申請完整攻略，從資格到流程一次搞懂';
+const description = '全面解析高雄外籍看護與高雄看護申請的完整流程，從申請資格、文件準備到審核流程，為您提供詳細的申請指南。';
+const date = '2025-12-22';
+const keywords = ['高雄外籍看護', '高雄看護申請', '外籍看護申請流程', '看護申請資格'];
+const author = '裕涵居家照護';
+const image1 = '/images/blog/foreign-caregiver-apply-1.jpg';
+const image2 = '/images/blog/foreign-caregiver-apply-2.jpg';
+---
+
+<MainLayout title={title} description={description} type="article">
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": title,
+    "description": description,
+    "author": { "@type": "Organization", "name": author },
+    "publisher": { "@type": "Organization", "name": "裕涵居家照護", "logo": { "@type": "ImageObject", "url": "https://yuhanhomecare.com/images/logo.png" } },
+    "datePublished": date,
+    "dateModified": date,
+    "image": ["https://yuhanhomecare.com" + image1, "https://yuhanhomecare.com" + image2]
+  })} />
+
+  <article class="bg-[#fcfaf6] min-h-screen">
+    <!-- Hero Section -->
+    <section class="relative bg-[#2d4a3e] text-white py-20 md:py-28">
+      <div class="absolute inset-0 opacity-15">
+        <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"0.15\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+      </div>
+      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 text-center">
+        <div class="text-sm tracking-widest text-[#a8c4b0] mb-3">申請指南 · 2025年12月</div>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6">高雄外籍看護申請完整攻略<br class="hidden md:inline">從資格到流程一次搞懂</h1>
+        <p class="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed">全面解析申請資格、文件準備到審核流程，為您提供詳細的申請指南</p>
+      </div>
+    </section>
+
+    <!-- Table of Contents -->
+    <section class="max-w-4xl mx-auto px-4 sm:px-6 py-10">
+      <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8">
+        <h2 class="text-xl font-bold text-[#2d4a3e] mb-4">文章目錄</h2>
+        <nav class="grid md:grid-cols-2 gap-3">
+          <a href="#section1" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">1</span>
+            <span class="text-[#4a4238]">外籍看護的申請資格</span>
+          </a>
+          <a href="#section2" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">2</span>
+            <span class="text-[#4a4238]">申請流程與所需文件</span>
+          </a>
+          <a href="#section3" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">3</span>
+            <span class="text-[#4a4238]">巴氏量表與醫療評估</span>
+          </a>
+          <a href="#section4" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">4</span>
+            <span class="text-[#4a4238]">申請時間與費用說明</span>
+          </a>
+          <a href="#section5" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">5</span>
+            <span class="text-[#4a4238]">外籍看護的管理與規範</span>
+          </a>
+          <a href="#section6" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">6</span>
+            <span class="text-[#4a4238]">結語與申請建議</span>
+          </a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 pb-20 space-y-16">
+
+      <!-- Section 1 -->
+      <section id="section1">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">1</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">外籍看護的申請資格</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <img src={image1} alt="外籍看護申請諮詢" class="w-full h-64 md:h-80 object-cover rounded-xl" loading="lazy" />
+          <p class="text-[#4a4238] leading-relaxed text-lg">申請<strong class="text-[#2d4a3e]">高雄外籍看護</strong>需要符合一定的資格條件。首先，被照顧者必須是「特定病症」的患者，或是經過評估確認有「重度失能」的長輩。特定病症包括：植物人、重度失智症、重度腦中風、重度慢性阻塞性肺病需長期使用呼吸器、脊髓損傷導致四肢或下半身癱瘓、髖關節或膝關節置換手術後六個月內無法自理、末期腎臟病需長期洗腎等。這些病症會嚴重影響患者的日常生活能力，因此有聘僱外籍看護的需求。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">若被照顧者不符合特定病症，則需要通過「巴氏量表（Barthel Index）」評估，分數必須達到「重度依賴」的標準，也就是總分在35分以下。巴氏量表評估被照顧者在進食、移位、個人衛生、如廁、洗澡、行走、上下樓梯、穿脫衣服、大便控制、小便控制等十個項目的自理能力。分數越低表示依賴程度越高，越需要他人協助日常生活。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">此外，申請者（雇主）本身也需要符合一定條件。雇主必須是患者的直系親屬，如配偶、子女、父母等，且需要提供適合外籍看護居住的環境。雇主也需要負擔外籍看護的薪資、食宿、醫療保險等費用，並且每年繳交就業安定費。在申請前，建議先確認自己與被照顧者是否符合這些資格條件，以免浪費時間與費用。<strong class="text-[#2d4a3e]">高雄看護申請</strong>的資格審核較為嚴格，提前做好功課非常重要。</p>
+          <div class="bg-[#f5f3ef] rounded-xl p-6 border-l-4 border-[#2d4a3e]">
+            <h4 class="font-bold text-[#2d4a3e] mb-3">申請資格條件</h4>
+            <div class="grid md:grid-cols-2 gap-4">
+              <div><h5 class="font-semibold text-[#2d4a3e] mb-1">被照顧者（擇一）</h5><ul class="text-sm text-[#4a4238] space-y-1"><li>· 經醫院診斷為特定病症</li><li>· 巴氏量表評估35分以下</li></ul></div>
+              <div><h5 class="font-semibold text-[#2d4a3e] mb-1">雇主條件</h5><ul class="text-sm text-[#4a4238] space-y-1"><li>· 被照顧者的直系親屬</li><li>· 提供適合居住環境</li><li>· 負擔薪資與相關費用</li></ul></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2 -->
+      <section id="section2">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">2</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">申請流程與所需文件</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <img src={image2} alt="外籍看護服務" class="w-full h-64 md:h-80 object-cover rounded-xl" loading="lazy" />
+          <p class="text-[#4a4238] leading-relaxed text-lg"><strong class="text-[#2d4a3e]">高雄外籍看護</strong>的申請流程大致可分為幾個步驟。第一步是「醫療評估」，由醫院開具診斷證明書或進行巴氏量表評估。若是特定病症，需要由區域醫院以上層級的醫院開具診斷證明書。若是申請巴氏量表評估，則需要到指定醫院進行評估。這份醫療文件是申請的核心依據，必須妥善準備。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">第二步是「申請許可函」。雇主需要準備相關文件，包括：申請書、被照顧者的身分證影本、診斷證明書或巴氏量表評估結果、戶口名簿影本（證明親屬關係）、雇主的身分證影本等。將這些文件提交給當地的勞動部勞動力發展署，申請「招募許可函」。許可函核發後，才能進行後續的招募程序。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">第三步是「招募外籍看護」。取得許可函後，可以透過合法的人力仲介公司進行招募。仲介公司會協助尋找合適的人選、辦理入境手續、安排體檢與訓練等。雇主也可以選擇自行招募（親自前往國外面試），但程序較為複雜，大多數家庭會選擇透過仲介公司辦理。第四步是「申請工作許可」，外籍看護入境後，需要向勞動部申請工作許可，才能合法開始工作。整個<strong class="text-[#2d4a3e]">高雄看護申請</strong>流程大約需要3到6個月，建議提前規劃。</p>
+          <div class="bg-[#f5f3ef] rounded-xl p-6 border-l-4 border-[#e8b86d]">
+            <h4 class="font-bold text-[#2d4a3e] mb-3">申請流程步驟</h4>
+            <div class="flex flex-wrap items-center gap-2 text-sm">
+              <span class="px-3 py-2 bg-white rounded-lg border border-[#e8e4dc] text-[#4a4238]">醫療評估</span><span class="text-[#2d4a3e]">→</span>
+              <span class="px-3 py-2 bg-white rounded-lg border border-[#e8e4dc] text-[#4a4238]">準備文件</span><span class="text-[#2d4a3e]">→</span>
+              <span class="px-3 py-2 bg-white rounded-lg border border-[#e8e4dc] text-[#4a4238]">申請許可函</span><span class="text-[#2d4a3e]">→</span>
+              <span class="px-3 py-2 bg-white rounded-lg border border-[#e8e4dc] text-[#4a4238]">招募看護</span><span class="text-[#2d4a3e]">→</span>
+              <span class="px-3 py-2 bg-[#2d4a3e] text-white rounded-lg font-semibold">申請工作許可</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3 -->
+      <section id="section3">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">3</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">巴氏量表與醫療評估</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <p class="text-[#4a4238] leading-relaxed text-lg">巴氏量表（Barthel Index）是申請<strong class="text-[#2d4a3e]">高雄外籍看護</strong>時最重要的評估工具之一。這個量表用來評估被照顧者在日常生活活動上的自理能力，總分為100分。分數越高表示自理能力越好，分數越低表示越需要他人協助。要申請外籍看護，巴氏量表的總分必須在35分以下，也就是達到「重度依賴」的程度。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">巴氏量表評估十個項目，每個項目有不同的分數。這些項目包括：進食（0-10分）、移位（0-15分）、個人衛生（0-5分）、如廁（0-10分）、洗澡（0-5分）、平地行走（0-15分）、上下樓梯（0-10分）、穿脫衣服（0-10分）、大便控制（0-10分）、小便控制（0-10分）。評估時由專業人員觀察被照顧者實際執行這些活動的能力，給予相對應的分數。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">若被照顧者符合特定病症，則不需要進行巴氏量表評估，可以直接由醫院開具診斷證明書。但若是因為年老體衰、多重慢性病等原因導致重度失能，就需要透過巴氏量表來證明照護需求。建議在前往醫院評估前，先觀察長輩在這些項目上的實際表現，並與醫師充分溝通，以確保評估結果能夠真實反映長輩的狀況。巴氏量表的評估結果直接影響<strong class="text-[#2d4a3e]">高雄看護申請</strong>的核准與否，務必認真對待。</p>
+          <div class="bg-[#f5f3ef] rounded-xl p-6 border-l-4 border-[#2d4a3e]">
+            <h4 class="font-bold text-[#2d4a3e] mb-3">巴氏量表評估項目</h4>
+            <div class="grid md:grid-cols-2 gap-2 text-sm">
+              <div class="flex justify-between p-2 bg-white rounded"><span class="text-[#4a4238]">進食</span><span class="text-[#2d4a3e] font-semibold">0-10分</span></div>
+              <div class="flex justify-between p-2 bg-white rounded"><span class="text-[#4a4238]">移位（床↔椅子）</span><span class="text-[#2d4a3e] font-semibold">0-15分</span></div>
+              <div class="flex justify-between p-2 bg-white rounded"><span class="text-[#4a4238]">個人衛生</span><span class="text-[#2d4a3e] font-semibold">0-5分</span></div>
+              <div class="flex justify-between p-2 bg-white rounded"><span class="text-[#4a4238]">如廁</span><span class="text-[#2d4a3e] font-semibold">0-10分</span></div>
+              <div class="flex justify-between p-2 bg-white rounded"><span class="text-[#4a4238]">洗澡</span><span class="text-[#2d4a3e] font-semibold">0-5分</span></div>
+              <div class="flex justify-between p-2 bg-white rounded"><span class="text-[#4a4238]">平地行走</span><span class="text-[#2d4a3e] font-semibold">0-15分</span></div>
+              <div class="flex justify-between p-2 bg-white rounded"><span class="text-[#4a4238]">上下樓梯</span><span class="text-[#2d4a3e] font-semibold">0-10分</span></div>
+              <div class="flex justify-between p-2 bg-white rounded"><span class="text-[#4a4238]">穿脫衣服</span><span class="text-[#2d4a3e] font-semibold">0-10分</span></div>
+              <div class="flex justify-between p-2 bg-white rounded"><span class="text-[#4a4238]">大便控制</span><span class="text-[#2d4a3e] font-semibold">0-10分</span></div>
+              <div class="flex justify-between p-2 bg-white rounded"><span class="text-[#4a4238]">小便控制</span><span class="text-[#2d4a3e] font-semibold">0-10分</span></div>
+            </div>
+            <p class="text-sm text-[#2d4a3e] mt-3 font-semibold">總分100分，申請外籍看護需 ≤ 35分（重度依賴）</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4 -->
+      <section id="section4">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">4</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">申請時間與費用說明</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <p class="text-[#4a4238] leading-relaxed text-lg"><strong class="text-[#2d4a3e]">高雄外籍看護</strong>的申請時間會因為各個環節的處理速度而有所不同。一般來說，從開始準備到外籍看護正式到府工作，大約需要3到6個月的時間。醫療評估通常可以在1到2週內完成；申請招募許可函的審核時間約為1到2個月；招募與辦理入境手續約需1到3個月；入境後的體檢與工作許可申請約需2到4週。若遇到文件補件或審核延遲，時間可能會更長，建議盡早開始準備。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">申請過程中會產生多項費用。首先是醫療評估費用，包括診斷證明書或巴氏量表評估的費用，這部分由醫院收取。其次是仲介服務費，若透過人力仲介公司辦理，需要支付仲介費，費用會因公司與服務內容而異。第三是政府的規費，包括招募許可申請費、工作許可申請費、就業安定費等。就業安定費是每年都需要繳交的費用，用於補助本國照護人力。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">除了上述費用外，雇主還需要負擔外籍看護的薪資、食宿、醫療保險、定期健康檢查等費用。根據勞動部規定，外籍看護的月薪有基本工資標準，且需要依法投保勞健保。這些都是長期的固定支出，在申請前務必做好財務規劃。建議先估算所有的前期費用與每年的固定支出，確認家庭的財務狀況能夠負擔後再開始申請。裕涵居家照護提供<strong class="text-[#2d4a3e]">高雄看護申請</strong>的諮詢服務，可以協助您了解各項費用的詳細資訊。</p>
+          <div class="bg-[#f5f3ef] rounded-xl p-6 border-l-4 border-[#e8b86d]">
+            <h4 class="font-bold text-[#2d4a3e] mb-3">費用項目概覽</h4>
+            <div class="space-y-2">
+              <div class="flex items-center justify-between p-3 bg-white rounded-lg"><span class="text-[#4a4238]">醫療評估費</span><span class="text-sm text-[#4a4238]">醫院收取</span></div>
+              <div class="flex items-center justify-between p-3 bg-white rounded-lg"><span class="text-[#4a4238]">仲介服務費</span><span class="text-sm text-[#4a4238]">依仲介公司</span></div>
+              <div class="flex items-center justify-between p-3 bg-white rounded-lg"><span class="text-[#4a4238]">政府規費</span><span class="text-sm text-[#4a4238]">許可申請費等</span></div>
+              <div class="flex items-center justify-between p-3 bg-white rounded-lg"><span class="text-[#4a4238]">就業安定費</span><span class="text-sm text-[#4a4238]">每年繳交</span></div>
+              <div class="flex items-center justify-between p-3 bg-white rounded-lg"><span class="text-[#4a4238]">看護薪資與勞健保</span><span class="text-sm text-[#4a4238]">每月固定支出</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5 -->
+      <section id="section5">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">5</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">外籍看護的管理與規範</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <p class="text-[#4a4238] leading-relaxed text-lg">聘僱<strong class="text-[#2d4a3e]">高雄外籍看護</strong>後，雇主需要遵守相關的管理規範。首先是「勞動契約」的簽訂，必須依照勞動部規定的標準契約範本，明訂工作內容、工作時間、薪資、休假等條件。外籍看護每週至少應有一天的休息時間，每天的工作時間也應合理，避免過度勞動。雇主不能強迫外籍看護從事契約約定以外的工作。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">其次是「健康檢查」的規定。外籍看護入境後需要進行健康檢查，之後每6個月需要定期健檢一次。若發現外籍看護患有傳染病或其他不適合從事照護工作的疾病，雇主需要通報相關單位。第三是「居留與工作許可」的管理。外籍看護的工作許可與居留證都有期限，到期前需要辦理延長手續。雇主應該注意相關證件的有效期限，及時辦理延期，以免造成非法居留或非法工作的情況。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">此外，雇主也有責任保障外籍看護的基本權益。包括提供安全衛生的住宿環境、給予合理的飲食、尊重其宗教信仰與文化習慣、不得有身心虐待或人口販運的行為。若外籍看護在工作期間有違規行為或無法勝任工作，雇主應透過合法管道處理，如通報仲介公司或勞動主管機關，而不是私自解僱或驅逐。良好的管理與溝通，才能建立穩定的雇傭關係，讓長輩獲得持續穩定的照護服務。</p>
+          <div class="bg-[#f5f3ef] rounded-xl p-6 border-l-4 border-[#2d4a3e]">
+            <h4 class="font-bold text-[#2d4a3e] mb-3">雇主管理規範</h4>
+            <div class="grid md:grid-cols-2 gap-3">
+              <div class="flex items-start gap-2"><span class="text-[#e8b86d] text-xl">●</span><div><span class="font-semibold text-[#2d4a3e]">勞動契約</span><p class="text-sm text-[#4a4238]">依法簽訂，明訂工作條件</p></div></div>
+              <div class="flex items-start gap-2"><span class="text-[#e8b86d] text-xl">●</span><div><span class="font-semibold text-[#2d4a3e]">健康檢查</span><p class="text-sm text-[#4a4238]">入境健檢，每6個月定期檢查</p></div></div>
+              <div class="flex items-start gap-2"><span class="text-[#e8b86d] text-xl">●</span><div><span class="font-semibold text-[#2d4a3e]">證件管理</span><p class="text-sm text-[#4a4238]">注意工作許可與居留證期限</p></div></div>
+              <div class="flex items-start gap-2"><span class="text-[#e8b86d] text-xl">●</span><div><span class="font-semibold text-[#2d4a3e]">權益保障</span><p class="text-sm text-[#4a4238]">提供安全環境，尊重文化習慣</p></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 6 -->
+      <section id="section6">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">6</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">結語與申請建議</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <p class="text-[#4a4238] leading-relaxed text-lg">申請<strong class="text-[#2d4a3e]">高雄外籍看護</strong>是一個需要耐心與準備的過程。從確認申請資格、進行醫療評估、準備申請文件、申請許可函、招募看護到辦理工作許可，每個環節都需要時間與精力。建議有需求的家庭盡早開始規劃，不要等到照護人力已經不足時才匆忙申請。提前準備可以讓整個流程更加順利，也能避免因時間壓力而做出倉促的決定。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">在申請過程中，有幾個建議可以讓您更加順利。第一，選擇信譽良好的人力仲介公司，可以大幅減少申請過程中的困擾。好的仲介公司會協助處理繁瑣的文件與程序，並提供後續的管理支援。第二，與醫師充分溝通，確保醫療評估的結果能夠真實反映被照顧者的狀況。第三，做好財務規劃，了解所有的前期費用與長期支出，確保家庭的財務狀況能夠負擔。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">裕涵居家照護提供專業的<strong class="text-[#2d4a3e]">高雄看護申請</strong>諮詢服務，無論您是在考慮申請外籍看護，還是在尋找其他照護方案，我們都可以為您提供專業的建議與協助。我們熟悉外籍看護的申請流程與法規，能夠幫助您省去許多摸索的時間。同時，我們也提供本國籍的專業看護服務，作為外籍看護的替代方案。歡迎與我們聯繫，讓我們一起為您的家人找到最適合的照護解決方案。</p>
+          <div class="bg-[#2d4a3e] text-white rounded-xl p-6 text-center">
+            <h4 class="font-bold text-lg mb-2">需要外籍看護申請協助？</h4>
+            <p class="text-gray-200 mb-4">裕涵居家照護提供專業的申請諮詢，協助您順利完成整個申請流程</p>
+            <a href="/contact" class="inline-block bg-[#e8b86d] text-[#2d4a3e] px-8 py-3 rounded-full font-bold hover:bg-[#d9a95e] transition-colors">免費諮詢</a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </article>
+</MainLayout>
