@@ -1,0 +1,216 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+
+const title = '高雄老人看護服務推薦，為長輩找到最貼心的照護方案';
+const description = '了解高雄老人看護與高雄看護服務的完整內容，從服務類型、選擇要點到費用規劃，為您的長輩找到最適合的專業照護。';
+const date = '2025-12-22';
+const keywords = ['高雄老人看護', '高雄看護服務', '老人看護推薦', '看護服務內容'];
+const author = '裕涵居家照護';
+const image1 = '/images/blog/elderly-care-service-1.jpg';
+const image2 = '/images/blog/elderly-care-service-2.jpg';
+---
+
+<MainLayout title={title} description={description} type="article">
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": title,
+    "description": description,
+    "author": { "@type": "Organization", "name": author },
+    "publisher": { "@type": "Organization", "name": "裕涵居家照護", "logo": { "@type": "ImageObject", "url": "https://yuhanhomecare.com/images/logo.png" } },
+    "datePublished": date,
+    "dateModified": date,
+    "image": ["https://yuhanhomecare.com" + image1, "https://yuhanhomecare.com" + image2]
+  })} />
+
+  <article class="bg-[#fcfaf6] min-h-screen">
+    <!-- Hero Section -->
+    <section class="relative bg-[#2d4a3e] text-white py-20 md:py-28">
+      <div class="absolute inset-0 opacity-15">
+        <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"0.15\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+      </div>
+      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 text-center">
+        <div class="text-sm tracking-widest text-[#a8c4b0] mb-3">老人照護專區 · 2025年12月</div>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6">高雄老人看護服務推薦<br class="hidden md:inline">為長輩找到最貼心的照護方案</h1>
+        <p class="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed">從服務類型、選擇要點到費用規劃，為您的長輩找到最適合的專業照護</p>
+      </div>
+    </section>
+
+    <!-- Table of Contents -->
+    <section class="max-w-4xl mx-auto px-4 sm:px-6 py-10">
+      <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8">
+        <h2 class="text-xl font-bold text-[#2d4a3e] mb-4">文章目錄</h2>
+        <nav class="grid md:grid-cols-2 gap-3">
+          <a href="#section1" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">1</span>
+            <span class="text-[#4a4238]">老人看護服務的類型</span>
+          </a>
+          <a href="#section2" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">2</span>
+            <span class="text-[#4a4238]">如何評估長輩的照護需求</span>
+          </a>
+          <a href="#section3" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">3</span>
+            <span class="text-[#4a4238]">高雄看護服務的特色與優勢</span>
+          </a>
+          <a href="#section4" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">4</span>
+            <span class="text-[#4a4238]">費用規劃與補助資源</span>
+          </a>
+          <a href="#section5" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">5</span>
+            <span class="text-[#4a4238]">選擇優質看護服務的訣竅</span>
+          </a>
+          <a href="#section6" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">6</span>
+            <span class="text-[#4a4238]">結語與服務推薦</span>
+          </a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 pb-20 space-y-16">
+
+      <!-- Section 1 -->
+      <section id="section1">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">1</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">老人看護服務的類型</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <img src={image1} alt="高雄老人看護服務" class="w-full h-64 md:h-80 object-cover rounded-xl" loading="lazy" />
+          <p class="text-[#4a4238] leading-relaxed text-lg"><strong class="text-[#2d4a3e]">高雄老人看護</strong>服務主要分為幾種類型，每種類型適合不同的照護需求與家庭狀況。第一種是「居家看護」，由專業看護人員到府提供照顧服務，讓長輩可以在自己熟悉的家中接受照顧。這種方式適合希望在家安養、家中有部分空間可以讓看護人員工作的家庭。居家看護的彈性最高，可以依照長輩的需求調整服務時間與內容。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">第二種是「機構式照護」，包括護理之家、長期照護中心、安養機構等。這類機構提供24小時的專業照護，適合需要密集照顧、家中無人可照顧、或是照護需求較為複雜的長輩。機構內有完整的醫療設備與專業團隊，能夠處理各種突發狀況。對於需要醫療級照護的長輩來說，機構式照護是較為安全的選擇。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">第三種是「社區式照護」，例如日間照顧中心、社區關懷據點等。長輩白天到社區中心接受照顧與活動安排，晚上則回到家中與家人同住。這種方式介於居家與機構之間，既能讓長輩享有專業照護與社交活動，又能維持與家人的親密關係。對於還有一定行動能力、需要日間陪伴的長輩來說，社區式照護是不錯的選擇。<strong class="text-[#2d4a3e]">高雄看護服務</strong>機構通常會提供多種服務類型，可以根據長輩的狀況選擇最適合的方案。</p>
+          <div class="bg-[#f5f3ef] rounded-xl p-6 border-l-4 border-[#2d4a3e]">
+            <h4 class="font-bold text-[#2d4a3e] mb-3">老人看護服務三大類型</h4>
+            <div class="grid md:grid-cols-3 gap-4">
+              <div class="bg-white rounded-lg p-4 text-center">
+                <span class="text-3xl mb-2 block">🏠</span>
+                <h5 class="font-semibold text-[#2d4a3e] mb-1">居家看護</h5>
+                <p class="text-sm text-[#4a4238]">到府服務，在熟悉的家中接受照顧，彈性最高</p>
+              </div>
+              <div class="bg-white rounded-lg p-4 text-center">
+                <span class="text-3xl mb-2 block">🏥</span>
+                <h5 class="font-semibold text-[#2d4a3e] mb-1">機構式照護</h5>
+                <p class="text-sm text-[#4a4238]">24小時專業照護，適合需求複雜的長輩</p>
+              </div>
+              <div class="bg-white rounded-lg p-4 text-center">
+                <span class="text-3xl mb-2 block">🏘️</span>
+                <h5 class="font-semibold text-[#2d4a3e] mb-1">社區式照護</h5>
+                <p class="text-sm text-[#4a4238]">日間照顧，晚上回家，兼顧專業與親情</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2 -->
+      <section id="section2">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">2</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">如何評估長輩的照護需求</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <img src={image2} alt="評估長輩照護需求" class="w-full h-64 md:h-80 object-cover rounded-xl" loading="lazy" />
+          <p class="text-[#4a4238] leading-relaxed text-lg">要為長輩找到適合的<strong class="text-[#2d4a3e]">高雄老人看護</strong>服務，首先需要正確評估長輩的照護需求。評估可以從幾個面向進行。第一個面向是「身體功能評估」，觀察長輩的日常生活自理能力，也就是所謂的ADL（Activities of Daily Living）。包括能否自己進食、穿衣、洗澡、如廁、行走、上下床等。若長輩在這些基本生活活動上需要協助，就表示有生活照顧的需求。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">第二個面向是「認知功能評估」。觀察長輩的記憶力、判斷力、定向感（時間、地點、人物）是否正常。若有失智症的徵兆，如重複提問、走失、認不得家人、情緒起伏大等，就需要特別的照護安排。失智長輩不只需要生活照顧，還需要行為管理與安全防護，這類照護需要受過專門訓練的人員。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">第三個面向是「醫療照護需求評估」。了解長輩是否有慢性疾病需要定期追蹤，是否有傷口需要護理，是否有管路（如鼻胃管、導尿管、氣切管）需要照護，是否需要定期服藥或注射。醫療照護需求越高，所需的看護人員專業程度也越高。建議可以請醫師或個案管理師協助評估，以確保選擇的<strong class="text-[#2d4a3e]">高雄看護服務</strong>能夠滿足長輩的所有需求。</p>
+          <div class="bg-[#f5f3ef] rounded-xl p-6 border-l-4 border-[#e8b86d]">
+            <h4 class="font-bold text-[#2d4a3e] mb-3">照護需求評估三面向</h4>
+            <div class="space-y-3">
+              <div class="flex items-start gap-3"><span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">1</span><div><span class="font-semibold text-[#2d4a3e]">身體功能（ADL）</span><p class="text-sm text-[#4a4238]">進食、穿衣、洗澡、如廁、行走等基本生活能力</p></div></div>
+              <div class="flex items-start gap-3"><span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">2</span><div><span class="font-semibold text-[#2d4a3e]">認知功能</span><p class="text-sm text-[#4a4238]">記憶力、判斷力、定向感，是否有失徵兆</p></div></div>
+              <div class="flex items-start gap-3"><span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">3</span><div><span class="font-semibold text-[#2d4a3e]">醫療照護需求</span><p class="text-sm text-[#4a4238]">慢性病追蹤、傷口護理、管路照護、用藥需求</p></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3 -->
+      <section id="section3">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">3</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">高雄看護服務的特色與優勢</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <p class="text-[#4a4238] leading-relaxed text-lg">選擇<strong class="text-[#2d4a3e]">高雄看護服務</strong>有許多特色與優勢。首先，高雄地區的照護資源豐富，從大型醫療院所到社區照護據點，形成了完整的照護網絡。無論長輩需要的是醫療級的專業護理，還是日常生活的一般照顧，都能夠找到合適的服務提供者。特別是在高雄市區，交通便利，看護人員能夠快速到達，緊急時也能及時獲得醫療支援。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">其次，高雄的看護服務機構競爭較為充分，服務品質與價格都有一定的水準。消費者可以有多種選擇，根據自己的預算與需求，找到性價比最高的方案。許多機構也提供試做服務，讓家屬可以在正式簽約前，先體驗看護人員的服務品質。這種市場競爭促使機構不斷提升服務水準，最終受益的是需要照護的家庭。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">第三，高雄市政府積極推動長照政策，提供多種補助與資源。符合資格的長輩可以申請長照補助、身心障礙補助、中低收入戶補助等，大幅降低看護費用的負擔。此外，高雄還有許多社區照護資源，如關懷據點、日照中心、共餐服務等，可以作為正式看護服務的補充。選擇<strong class="text-[#2d4a3e]">高雄老人看護</strong>服務，能夠善用這些在地資源，讓照護更加完善。</p>
+          <div class="bg-[#f5f3ef] rounded-xl p-6 border-l-4 border-[#2d4a3e]">
+            <h4 class="font-bold text-[#2d4a3e] mb-3">高雄看護服務優勢</h4>
+            <div class="grid md:grid-cols-2 gap-3">
+              <div class="flex items-start gap-2"><span class="text-[#e8b86d] text-xl">✓</span><span class="text-[#4a4238]">照護資源豐富，醫療與社區網絡完整</span></div>
+              <div class="flex items-start gap-2"><span class="text-[#e8b86d] text-xl">✓</span><span class="text-[#4a4238]">市場競爭充分，服務品質有保障</span></div>
+              <div class="flex items-start gap-2"><span class="text-[#e8b86d] text-xl">✓</span><span class="text-[#4a4238]">政府長照補助完善，減輕經濟負擔</span></div>
+              <div class="flex items-start gap-2"><span class="text-[#e8b86d] text-xl">✓</span><span class="text-[#4a4238]">交通便利，服務即時性高</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4 -->
+      <section id="section4">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">4</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">費用規劃與補助資源</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <p class="text-[#4a4238] leading-relaxed text-lg"><strong class="text-[#2d4a3e]">高雄老人看護</strong>的費用會因為服務類型、照護需求、服務時數等因素而有所不同。居家看護的費用通常以時數計算，根據看護人員的專業程度，每小時的費率有所差異。機構式照護則通常按月收費，費用包含住宿、餐食、照護等各項服務。社區式照護如日間照顧中心，通常按日計費，費用相對較為經濟。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">要降低看護費用的負擔，最重要的是善用政府提供的各種補助。第一個是「長期照顧服務補助」，只要經過長照需要評估，符合資格的長輩就可以獲得每月的照護補助金。補助金額根據失能等級而定，等級越高補助越多。這筆補助可以直接用於支付居家看護、機構照護或社區照護的費用。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">第二個是「身心障礙者生活補助」與「中低收入老人生活津貼」。若長輩領有身心障礙手冊，或是家庭收入符合中低收入標準，可以申請額外的生活津貼。第三個是「健保居家照護」與「健保喘息服務」。符合健保給付條件的長輩，可以申請健保給付的居家醫療照護，以及每年一定天數的喘息服務，讓主要照顧者可以休息。善用這些補助資源，可以讓<strong class="text-[#2d4a3e]">高雄看護服務</strong>更加負擔得起。</p>
+          <div class="bg-[#f5f3ef] rounded-xl p-6 border-l-4 border-[#e8b86d]">
+            <h4 class="font-bold text-[#2d4a3e] mb-3">可用補助資源</h4>
+            <div class="grid md:grid-cols-2 gap-3">
+              <div class="bg-white rounded-lg p-3"><span class="font-semibold text-[#2d4a3e]">長照服務補助</span><p class="text-sm text-[#4a4238]">依失能等級給予每月定額補助</p></div>
+              <div class="bg-white rounded-lg p-3"><span class="font-semibold text-[#2d4a3e]">身心障礙補助</span><p class="text-sm text-[#4a4238]">持身心障礙手冊可申請</p></div>
+              <div class="bg-white rounded-lg p-3"><span class="font-semibold text-[#2d4a3e]">中低收入津貼</span><p class="text-sm text-[#4a4238]">符合收入標準可申請生活津貼</p></div>
+              <div class="bg-white rounded-lg p-3"><span class="font-semibold text-[#2d4a3e]">健保喘息服務</span><p class="text-sm text-[#4a4238]">每年固定天數讓照顧者休息</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5 -->
+      <section id="section5">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">5</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">選擇優質看護服務的訣竅</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <p class="text-[#4a4238] leading-relaxed text-lg">要選擇優質的<strong class="text-[#2d4a3e]">高雄老人看護</strong>服務，有幾個重要的訣竅。第一個訣竅是「確認機構合法性」。選擇政府立案的合法機構，可以確保服務品質與權益保障。合法機構需要符合政府的各項規範，包括人員資格、設施標準、服務流程等。可以向機構要求查看立案證書，或到各縣市政府的社會局網站查詢機構的合法性。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">第二個訣竅是「親自參觀與面談」。不要只看網路上的介紹或聽親友的推薦，親自到機構參觀，觀察環境的整潔度、人員的態度、長輩的狀態。若是居家看護，可以與看護人員面談，了解其專業背景、工作態度、溝通方式。面談時可以準備一些問題，如遇到緊急狀況如何處理、如何與家屬溝通長輩的狀況等，從回答中判斷其專業程度。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">第三個訣竅是「試做與觀察」。許多優質的<strong class="text-[#2d4a3e]">高雄看護服務</strong>機構會提供試做期，讓家屬可以在正式簽約前，先體驗看護人員的服務。試做期間要觀察看護人員是否確實執行約定的服務內容、與長輩的互動是否良好、是否能及時發現長輩的異常狀況等。若試做後覺得不適合，可以要求更換人員或選擇其他機構。不要勉強接受不合適的服務，畢竟這關乎長輩的健康與安全。</p>
+          <div class="bg-[#f5f3ef] rounded-xl p-6 border-l-4 border-[#2d4a3e]">
+            <h4 class="font-bold text-[#2d4a3e] mb-3">選擇優質看護的訣竅</h4>
+            <div class="space-y-2">
+              <div class="flex items-center gap-3 p-3 bg-white rounded-lg"><span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">1</span><span class="text-[#4a4238]">確認機構合法性與立案資格</span></div>
+              <div class="flex items-center gap-3 p-3 bg-white rounded-lg"><span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">2</span><span class="text-[#4a4238]">親自參觀機構、面談看護人員</span></div>
+              <div class="flex items-center gap-3 p-3 bg-white rounded-lg"><span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">3</span><span class="text-[#4a4238]">善用試做期，觀察實際服務品質</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 6 -->
+      <section id="section6">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">6</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">結語與服務推薦</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <p class="text-[#4a4238] leading-relaxed text-lg">為長輩選擇合適的<strong class="text-[#2d4a3e]">高雄老人看護</strong>服務，是一件需要用心與耐心的事。透過本文的介紹，您應該已經了解了老人看護的服務類型、需求評估方法、高雄看護服務的特色優勢、費用規劃與補助資源，以及選擇優質服務的訣竅。這些知識將幫助您為長輩做出最適合的照護決定。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">請記住，每個長輩的狀況都不同，沒有一種照護方案適合所有人。重要的是根據長輩的身體狀況、認知功能、醫療需求、個人意願，以及家庭的經濟能力與照護人力，綜合考量後做出決定。同時，隨著長輩狀況的變化，照護方案也可能需要調整。定期評估長輩的狀況，適時調整照護計畫，才能確保長輩始終獲得最適合的照顧。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">裕涵居家照護提供專業、有溫度的<strong class="text-[#2d4a3e]">高雄看護服務</strong>，我們的團隊擁有豐富的老人照護經驗，能夠為您的長輩提供量身定制的照護方案。從基礎的生活照顧到專業的醫療護理，從短期的臨時支援到長期的陪伴照護，我們都將以最專業的態度與最溫暖的心，守護您家人的健康與幸福。歡迎與我們聯繫，讓我們一起為您的長輩打造最安心、最舒適的照護環境。</p>
+          <div class="bg-[#2d4a3e] text-white rounded-xl p-6 text-center">
+            <h4 class="font-bold text-lg mb-2">需要老人看護服務？</h4>
+            <p class="text-gray-200 mb-4">裕涵居家照護提供專業的老人照護服務，為您的長輩找到最適合的照護方案</p>
+            <a href="/contact" class="inline-block bg-[#e8b86d] text-[#2d4a3e] px-8 py-3 rounded-full font-bold hover:bg-[#d9a95e] transition-colors">免費諮詢</a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </article>
+</MainLayout>
