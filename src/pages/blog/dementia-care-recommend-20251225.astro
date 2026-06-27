@@ -1,0 +1,205 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+
+const title = '高雄失智症照護與看護推薦，專業照護讓家人更安心';
+const description = '深入了解高雄失智症照護與高雄看護推薦的完整內容，從失智症認識、照護技巧到專業服務選擇，為您的家人提供最適合的照護方案。';
+const date = '2025-12-25';
+const keywords = ['高雄失智症照護', '高雄看護推薦', '失智症照護技巧', '看護推薦指南'];
+const author = '裕涵居家照護';
+const image1 = '/images/blog/dementia-care-recommend-1.jpg';
+const image2 = '/images/blog/dementia-care-recommend-2.jpg';
+---
+
+<MainLayout title={title} description={description} type="article">
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": title,
+    "description": description,
+    "author": { "@type": "Organization", "name": author },
+    "publisher": { "@type": "Organization", "name": "裕涵居家照護", "logo": { "@type": "ImageObject", "url": "https://yuhanhomecare.com/images/logo.png" } },
+    "datePublished": date,
+    "dateModified": date,
+    "image": ["https://yuhanhomecare.com" + image1, "https://yuhanhomecare.com" + image2]
+  })} />
+
+  <article class="bg-[#fcfaf6] min-h-screen">
+    <!-- Hero Section -->
+    <section class="relative bg-[#2d4a3e] text-white py-20 md:py-28">
+      <div class="absolute inset-0 opacity-15">
+        <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"0.15\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+      </div>
+      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 text-center">
+        <div class="text-sm tracking-widest text-[#a8c4b0] mb-3">失智照護專區 · 2025年12月</div>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6">高雄失智症照護與看護推薦<br class="hidden md:inline">專業照護讓家人更安心</h1>
+        <p class="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed">從失智症認識、照護技巧到專業服務選擇，為您的家人提供最適合的照護方案</p>
+      </div>
+    </section>
+
+    <!-- Table of Contents -->
+    <section class="max-w-4xl mx-auto px-4 sm:px-6 py-10">
+      <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8">
+        <h2 class="text-xl font-bold text-[#2d4a3e] mb-4">文章目錄</h2>
+        <nav class="grid md:grid-cols-2 gap-3">
+          <a href="#section1" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">1</span>
+            <span class="text-[#4a4238]">認識失智症與常見類型</span>
+          </a>
+          <a href="#section2" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">2</span>
+            <span class="text-[#4a4238]">失智症照護的核心原則</span>
+          </a>
+          <a href="#section3" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">3</span>
+            <span class="text-[#4a4238]">常見行為問題與應對技巧</span>
+          </a>
+          <a href="#section4" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">4</span>
+            <span class="text-[#4a4238]">居家安全環境的打造</span>
+          </a>
+          <a href="#section5" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">5</span>
+            <span class="text-[#4a4238]">照護者的自我照顧</span>
+          </a>
+          <a href="#section6" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">6</span>
+            <span class="text-[#4a4238]">結語與專業服務推薦</span>
+          </a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 pb-20 space-y-16">
+
+      <!-- Section 1 -->
+      <section id="section1">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">1</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">認識失智症與常見類型</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <img src={image1} alt="失智症照護活動" class="w-full h-64 md:h-80 object-cover rounded-xl" loading="lazy" />
+          <p class="text-[#4a4238] leading-relaxed text-lg">失智症是一種進行性的神經退化性疾病，主要影響患者的記憶力、思考能力、判斷力與行為表現。失智症不是正常老化的必經過程，而是一種需要專業醫療診斷與照護的疾病。隨著台灣人口老化，失智症的盛行率逐年增加，<strong class="text-[#2d4a3e]">高雄失智症照護</strong>的需求也日益增長。了解失智症的基本知識，是提供良好照護的第一步。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">失智症主要分為幾種類型。最常見的是「阿茲海默症」，約佔所有失智症病例的60%到70%。這種類型的特徵是漸進式的記憶力衰退，特別是近期記憶的喪失，患者可能會重複問同樣的問題、忘記剛吃過的飯、找不到回家的路。第二種是「血管性失智症」，通常與腦中風或腦血管疾病有關，患者的認知功能會呈現階梯式的惡化，可能同時伴有肢體無力或語言障礙。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">第三種是「額顳葉型失智症」，這類型的患者通常在較年輕時發病，主要影響人格、行為與語言能力，記憶力可能在早期還保持完好。第四種是「路易氏體失智症」，患者除了認知功能退化外，還會有視幻覺、帕金森氏症的症狀（如肢體僵硬、行動緩慢），以及白天嗜睡等特徵。不同類型的失智症，其照護重點與策略也有所不同。專業的<strong class="text-[#2d4a3e]">高雄失智症照護</strong>人員會根據患者的類型與症狀，提供個別化的照護方案。</p>
+          <div class="bg-[#f5f3ef] rounded-xl p-6 border-l-4 border-[#2d4a3e]">
+            <h4 class="font-bold text-[#2d4a3e] mb-3">失智症四大類型</h4>
+            <div class="grid md:grid-cols-2 gap-4">
+              <div class="bg-white rounded-lg p-4"><h5 class="font-semibold text-[#2d4a3e] mb-1">阿茲海默症（60-70%）</h5><p class="text-sm text-[#4a4238]">漸進式記憶衰退，特別是近期記憶</p></div>
+              <div class="bg-white rounded-lg p-4"><h5 class="font-semibold text-[#2d4a3e] mb-1">血管性失智症</h5><p class="text-sm text-[#4a4238]">階梯式惡化，常伴隨腦中風後遺症</p></div>
+              <div class="bg-white rounded-lg p-4"><h5 class="font-semibold text-[#2d4a3e] mb-1">額顳葉型失智症</h5><p class="text-sm text-[#4a4238]">影響人格行為與語言，較早發病</p></div>
+              <div class="bg-white rounded-lg p-4"><h5 class="font-semibold text-[#2d4a3e] mb-1">路易氏體失智症</h5><p class="text-sm text-[#4a4238]">視幻覺、帕金森症狀、白天嗜睡</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2 -->
+      <section id="section2">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">2</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">失智症照護的核心原則</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <p class="text-[#4a4238] leading-relaxed text-lg">失智症的照護與一般長期照護有很大的不同，因為失智症患者除了身體功能的退化外，還伴隨認知功能與行為的改變。<strong class="text-[#2d4a3e]">高雄失智症照護</strong>有幾個核心原則。第一個原則是「以人為本」。失智症患者雖然認知功能退化，但仍然是有情感、有尊嚴的人。照護時要尊重患者的感受與選擇，用溫柔的態度與其互動，避免使用命令或責備的語氣。將患者視為一個完整的人，而不只是一個「需要被照顧的病患」。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">第二個原則是「維持生活規律」。失智症患者對於環境的變化與不確定性特別敏感，規律的日常生活可以讓他們感到安心與穩定。盡量保持固定的起床時間、用餐時間、活動時間與就寢時間。若需要改變行程，要提前告知並做好準備。規律的生活節奏不只能夠減少焦慮與混亂的行為，還能夠幫助患者維持殘存的能力。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">第三個原則是「簡化溝通與環境」。與失智症患者溝通時，要使用簡單、清楚的語句，一次只給一個指令。避免使用抽象的詞彙或複雜的句子。同時，要盡量簡化生活環境，減少不必要的刺激與干擾。例如移除過多的裝飾品、貼上清楚的標示、保持環境的整潔與明亮。這些看似簡單的調整，能夠大幅降低患者的混亂感與焦慮情緒。選擇專業的<strong class="text-[#2d4a3e]">高雄看護推薦</strong>服務，可以讓失智症的照護更加得心應手。</p>
+          <div class="bg-[#f5f3ef] rounded-xl p-6 border-l-4 border-[#e8b86d]">
+            <h4 class="font-bold text-[#2d4a3e] mb-3">失智症照護三大原則</h4>
+            <div class="space-y-3">
+              <div class="flex items-start gap-3"><span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">1</span><div><span class="font-semibold text-[#2d4a3e]">以人為本</span><p class="text-sm text-[#4a4238]">尊重感受與選擇，溫柔互動，維護尊嚴</p></div></div>
+              <div class="flex items-start gap-3"><span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">2</span><div><span class="font-semibold text-[#2d4a3e]">維持規律</span><p class="text-sm text-[#4a4238]">固定的生活節奏，減少焦慮與混亂</p></div></div>
+              <div class="flex items-start gap-3"><span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">3</span><div><span class="font-semibold text-[#2d4a3e]">簡化溝通與環境</span><p class="text-sm text-[#4a4238]">簡單清楚的語句，簡潔明亮的環境</p></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3 -->
+      <section id="section3">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">3</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">常見行為問題與應對技巧</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <p class="text-[#4a4238] leading-relaxed text-lg">失智症患者在病程中常會出現各種行為問題，這些問題往往是最讓照護者感到困擾與無力的部分。了解這些行為背後的原因，並學習適當的應對技巧，是<strong class="text-[#2d4a3e]">高雄失智症照護</strong>的重要課題。首先要知道的是，失智症患者的行為問題並非故意為難照護者，而是疾病造成的認知功能退化所導致的結果。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">「重複行為」是失智症患者最常見的問題之一，包括重複問同樣的問題、重複做同樣的動作、重複說同樣的話。應對的方法是保持耐心，每次都用同樣簡單的答案回應，不要責備或表現出不耐煩。可以試著轉移注意力，引導患者做其他活動。「遊走與迷路」也是常見的問題，患者可能會突然想出門，或是在家中走來走去。應對的方法是確保門窗的安全，在門上安裝警報器，讓患者配戴含有聯繫資訊的識別手環。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">「日落症候群」是指患者在傍晚時分情緒變得焦躁不安、易怒、甚至出現幻覺或妄想。這可能與光線變暗、疲勞累積有關。應對的方法是保持環境的明亮，在傍晚時段安排安靜舒適的活動，避免過度刺激。「攻擊行為」雖然較少見，但當患者感到困惑、害怕或受挫時，可能會出現推打、咬人等行為。此時要保持冷靜，不要與患者正面衝突，給予空間與時間讓其冷靜下來，之後再試著了解其需求。專業的<strong class="text-[#2d4a3e]">高雄看護推薦</strong>人員都接受過失智症行為管理的專業訓練，能夠妥善應對這些挑戰。</p>
+          <div class="bg-[#f5f3ef] rounded-xl p-6 border-l-4 border-[#2d4a3e]">
+            <h4 class="font-bold text-[#2d4a3e] mb-3">常見行為問題與應對</h4>
+            <div class="space-y-2">
+              <div class="flex items-start gap-3 p-3 bg-white rounded-lg"><span class="font-semibold text-[#2d4a3e] w-24 shrink-0">重複行為</span><span class="text-sm text-[#4a4238]">保持耐心，簡單回應，轉移注意力</span></div>
+              <div class="flex items-start gap-3 p-3 bg-white rounded-lg"><span class="font-semibold text-[#2d4a3e] w-24 shrink-0">遊走與迷路</span><span class="text-sm text-[#4a4238]">確保門窗安全，配戴識別手環</span></div>
+              <div class="flex items-start gap-3 p-3 bg-white rounded-lg"><span class="font-semibold text-[#2d4a3e] w-24 shrink-0">日落症候群</span><span class="text-sm text-[#4a4238]">保持環境明亮，安排安靜活動</span></div>
+              <div class="flex items-start gap-3 p-3 bg-white rounded-lg"><span class="font-semibold text-[#2d4a3e] w-24 shrink-0">攻擊行為</span><span class="text-sm text-[#4a4238]">保持冷靜，給予空間，了解需求</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4 -->
+      <section id="section4">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">4</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">居家安全環境的打造</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <img src={image2} alt="失智症居家安全環境" class="w-full h-64 md:h-80 object-cover rounded-xl" loading="lazy" />
+          <p class="text-[#4a4238] leading-relaxed text-lg">為失智症患者打造安全的居家環境，是<strong class="text-[#2d4a3e]">高雄失智症照護</strong>中非常重要的一環。失智症患者由於判斷力與定向感退化，容易發生跌倒、燒燙傷、走失等意外。透過適當的環境改造，可以大幅降低這些風險。首先要做的是「防止走失」。在門上加裝特殊鎖具或警報器，避免患者自行開門外出。窗戶也要加裝安全鎖或護欄。可以考慮讓患者配戴GPS定位裝置或含有聯繫資訊的識別手環。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">第二是「預防跌倒」。移除地面上的障礙物，鋪設防滑墊或防滑地板，在浴室、走廊、樓梯等處安裝扶手。保持環境的明亮，特別是夜間要有足夠的照明。家具盡量固定，不要經常變動位置，讓患者能夠依照習慣行動。第三是「防止燒燙傷與中毒」。瓦斯爐、熱水器若無人看管時應關閉總開關，或使用自動斷火裝置。清潔劑、藥物等危險物品要鎖在患者無法取得的地方。刀具、打火機等也要妥善收納。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">第四是「減少混淆與焦慮」。在房間門上貼上清楚的標示與圖片，幫助患者辨識不同空間的功能。在牆上掛上大型日曆與時鐘，幫助患者了解時間。擺放患者熟悉的物品與照片，營造溫馨安全的氛圍。減少環境中的噪音與干擾，保持環境的整潔與舒適。這些環境上的調整，能夠讓失智症患者在家中生活得更加安全與自在。專業的<strong class="text-[#2d4a3e]">高雄看護推薦</strong>服務也可以提供居家環境評估與改善建議。</p>
+          <div class="bg-[#f5f3ef] rounded-xl p-6 border-l-4 border-[#e8b86d]">
+            <h4 class="font-bold text-[#2d4a3e] mb-3">居家安全四大重點</h4>
+            <div class="grid md:grid-cols-2 gap-3">
+              <div class="flex items-start gap-2"><span class="text-[#e8b86d] text-xl">🔒</span><div><span class="font-semibold text-[#2d4a3e]">防止走失</span><p class="text-sm text-[#4a4238]">特殊門鎖、GPS定位、識別手環</p></div></div>
+              <div class="flex items-start gap-2"><span class="text-[#e8b86d] text-xl">🚶</span><div><span class="font-semibold text-[#2d4a3e]">預防跌倒</span><p class="text-sm text-[#4a4238]">防滑墊、扶手、充足照明</p></div></div>
+              <div class="flex items-start gap-2"><span class="text-[#e8b86d] text-xl">🔥</span><div><span class="font-semibold text-[#2d4a3e]">防燙傷中毒</span><p class="text-sm text-[#4a4238]">關閉瓦斯總閥、危險物品上鎖</p></div></div>
+              <div class="flex items-start gap-2"><span class="text-[#e8b86d] text-xl">🏠</span><div><span class="font-semibold text-[#2d4a3e]">減少混淆</span><p class="text-sm text-[#4a4238]">清楚標示、熟悉物品、減少干擾</p></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5 -->
+      <section id="section5">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">5</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">照護者的自我照顧</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <p class="text-[#4a4238] leading-relaxed text-lg">照顧失智症患者是一條漫長且艱辛的路，許多照護者因為長期的壓力與疲憊，出現身心耗竭的情況，也就是所謂的「照護者倦怠」。要提供良好的<strong class="text-[#2d4a3e]">高雄失智症照護</strong>，照護者首先要學會照顧自己。只有照護者的身心狀態健康，才能持續提供患者優質的照顧。因此，照護者的自我照顧絕對不是奢侈，而是必要。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">照護者自我照顧的第一個重點是「適度休息」。長期24小時的照護是不現實也不健康的。照護者應該安排固定的休息時間，即使只是短短的半小時，也能夠讓身心得到喘息。善用喘息服務，讓專業人員暫時接手照護工作，照護者可以利用這段時間做自己想做的事，或單純地休息放鬆。許多縣市政府都有提供失智症家庭的喘息服務，可以多加利用。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">第二個重點是「尋求支持」。照護者不應該獨自承擔所有的壓力與責任。可以加入失智症家屬支持團體，與其他有相同經驗的家屬交流，分享照護心得與情緒。也可以向專業的社工或心理諮商師尋求協助，處理照護過程中的情緒困擾。第三個重點是「維持自己的生活」。照護失智症患者雖然重要，但不應該成為生活的全部。照護者應該保留自己的社交生活、興趣嗜好與運動習慣，維持身心健康的平衡。裕涵居家照護提供專業的失智症照護服務，能夠分擔照護者的壓力，讓照護者有時間照顧自己。</p>
+          <div class="bg-[#f5f3ef] rounded-xl p-6 border-l-4 border-[#2d4a3e]">
+            <h4 class="font-bold text-[#2d4a3e] mb-3">照護者自我照顧三要點</h4>
+            <div class="space-y-3">
+              <div class="flex items-start gap-3"><span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">1</span><div><span class="font-semibold text-[#2d4a3e]">適度休息</span><p class="text-sm text-[#4a4238]">安排固定休息時間，善用喘息服務</p></div></div>
+              <div class="flex items-start gap-3"><span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">2</span><div><span class="font-semibold text-[#2d4a3e]">尋求支持</span><p class="text-sm text-[#4a4238]">加入支持團體，向專業人員尋求協助</p></div></div>
+              <div class="flex items-start gap-3"><span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">3</span><div><span class="font-semibold text-[#2d4a3e]">維持自己的生活</span><p class="text-sm text-[#4a4238]">保留社交、興趣與運動，維持身心平衡</p></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 6 -->
+      <section id="section6">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">6</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">結語與專業服務推薦</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <p class="text-[#4a4238] leading-relaxed text-lg">失智症的照護是一條漫長的路，需要專業的知識、無限的耐心與滿滿的愛心。透過本文的介紹，您應該已經對失智症有了更深入的認識，了解了照護的核心原則、行為問題的應對技巧、居家安全的打造方法，以及照護者自我照顧的重要性。<strong class="text-[#2d4a3e]">高雄失智症照護</strong>需要家庭與專業人員的共同努力，才能為患者創造最有品質的生活。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">失智症雖然無法根治，但透過適當的照護與治療，可以延緩病程的惡化，維持患者的生活品質。早期發現、早期診斷、早期介入，是失智症照護的黃金法則。若您發現家中的長輩有記憶力衰退、性格改變、行為異常等情況，建議盡早帶至醫院的記憶門診或神經內科進行評估。越早開始照護計畫，效果越好。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">裕涵居家照護提供專業的<strong class="text-[#2d4a3e]">高雄失智症照護</strong>服務，我們的看護人員均接受過失智症照護的專業訓練，能夠熟練應對各種行為問題，提供患者安全、有尊嚴的照顧。無論您需要的是全日居家照護、日間陪伴，還是定期的喘息服務，我們都能夠根據您的需求，提供最適合的<strong class="text-[#2d4a3e]">高雄看護推薦</strong>方案。讓我們一起攜手，為失智症患者與其家庭帶來更多的溫暖與希望。</p>
+          <div class="bg-[#2d4a3e] text-white rounded-xl p-6 text-center">
+            <h4 class="font-bold text-lg mb-2">需要失智症照護服務？</h4>
+            <p class="text-gray-200 mb-4">裕涵居家照護提供專業的失智症照護，讓您的家人獲得最安心的照顧</p>
+            <a href="/contact" class="inline-block bg-[#e8b86d] text-[#2d4a3e] px-8 py-3 rounded-full font-bold hover:bg-[#d9a95e] transition-colors">免費諮詢</a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </article>
+</MainLayout>
