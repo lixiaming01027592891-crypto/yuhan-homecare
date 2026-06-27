@@ -1,0 +1,205 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+
+const title = '高雄術後照護與康復照護，加速恢復的專業指南';
+const description = '深入了解高雄術後照護與高雄康復照護的完整內容，從術後護理、復健計畫到居家照護，幫助您順利度過術後恢復期。';
+const date = '2025-12-25';
+const keywords = ['高雄術後照護', '高雄康復照護', '術後護理', '康復照護計畫'];
+const author = '裕涵居家照護';
+const image1 = '/images/blog/post-surgery-rehab-1.jpg';
+const image2 = '/images/blog/post-surgery-rehab-2.jpg';
+---
+
+<MainLayout title={title} description={description} type="article">
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": title,
+    "description": description,
+    "author": { "@type": "Organization", "name": author },
+    "publisher": { "@type": "Organization", "name": "裕涵居家照護", "logo": { "@type": "ImageObject", "url": "https://yuhanhomecare.com/images/logo.png" } },
+    "datePublished": date,
+    "dateModified": date,
+    "image": ["https://yuhanhomecare.com" + image1, "https://yuhanhomecare.com" + image2]
+  })} />
+
+  <article class="bg-[#fcfaf6] min-h-screen">
+    <!-- Hero Section -->
+    <section class="relative bg-[#2d4a3e] text-white py-20 md:py-28">
+      <div class="absolute inset-0 opacity-15">
+        <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"0.15\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+      </div>
+      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 text-center">
+        <div class="text-sm tracking-widest text-[#a8c4b0] mb-3">術後照護專區 · 2025年12月</div>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6">高雄術後照護與康復照護<br class="hidden md:inline">加速恢復的專業指南</h1>
+        <p class="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed">從術後護理、復健計畫到居家照護，幫助您順利度過術後恢復期</p>
+      </div>
+    </section>
+
+    <!-- Table of Contents -->
+    <section class="max-w-4xl mx-auto px-4 sm:px-6 py-10">
+      <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8">
+        <h2 class="text-xl font-bold text-[#2d4a3e] mb-4">文章目錄</h2>
+        <nav class="grid md:grid-cols-2 gap-3">
+          <a href="#section1" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">1</span>
+            <span class="text-[#4a4238]">術後照護的重要性與目標</span>
+          </a>
+          <a href="#section2" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">2</span>
+            <span class="text-[#4a4238]">術後常見護理要點</span>
+          </a>
+          <a href="#section3" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">3</span>
+            <span class="text-[#4a4238]">康復照護與復健計畫</span>
+          </a>
+          <a href="#section4" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">4</span>
+            <span class="text-[#4a4238]">居家術後照護的注意事項</span>
+          </a>
+          <a href="#section5" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">5</span>
+            <span class="text-[#4a4238]">營養與飲食建議</span>
+          </a>
+          <a href="#section6" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">6</span>
+            <span class="text-[#4a4238]">結語與服務推薦</span>
+          </a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 pb-20 space-y-16">
+
+      <!-- Section 1 -->
+      <section id="section1">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">1</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">術後照護的重要性與目標</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <img src={image1} alt="高雄術後照護復健" class="w-full h-64 md:h-80 object-cover rounded-xl" loading="lazy" />
+          <p class="text-[#4a4238] leading-relaxed text-lg">手術後的恢復期是決定治療成效的關鍵階段，良好的<strong class="text-[#2d4a3e]">高雄術後照護</strong>能夠大幅降低併發症的風險，加速傷口癒合，幫助病患盡快恢復正常生活。許多人認為手術結束就萬事大吉，但實際上術後照護的重要性不亞於手術本身。根據統計，術後併發症中有相當高的比例與照護不當有關，包括傷口感染、褥瘡、深部靜脈栓塞、肺炎等，這些都是可以透過專業照護來預防的。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">術後照護的主要目標有幾個。第一是「預防併發症」，包括定期觀察傷口狀況、協助翻身拍背預防肺炎、執行被動運動預防關節僵硬與肌肉萎縮等。第二是「促進傷口癒合」，保持傷口清潔乾燥、提供足夠的營養支持、確保充足的休息。第三是「恢復身體功能」，透過漸進式的復健運動，逐步恢復患部的活動能力與肌力。第四是「心理支持」，手術後的病患常會有情緒低落、焦慮等心理反應，需要專業人員的關懷與鼓勵。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">對於高雄地區的病患與家屬來說，選擇專業的<strong class="text-[#2d4a3e]">高雄術後照護</strong>服務是明智的決定。專業的看護人員具備術後護理的專業知識與技能，能夠及時發現異常狀況，正確執行醫囑，並給予病患與家屬適當的指導與支持。無論是住院期間的陪病照護，還是出院後的居家照護，專業的術後照護都能夠讓恢復之路更加順利。</p>
+          <div class="bg-[#f5f3ef] rounded-xl p-6 border-l-4 border-[#2d4a3e]">
+            <h4 class="font-bold text-[#2d4a3e] mb-3">術後照護四大目標</h4>
+            <div class="grid md:grid-cols-2 gap-4">
+              <div class="flex items-start gap-3"><span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">1</span><div><span class="font-semibold text-[#2d4a3e]">預防併發症</span><p class="text-sm text-[#4a4238]">降低感染、褥瘡、栓塞等風險</p></div></div>
+              <div class="flex items-start gap-3"><span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">2</span><div><span class="font-semibold text-[#2d4a3e]">促進傷口癒合</span><p class="text-sm text-[#4a4238]">清潔護理、營養支持、充足休息</p></div></div>
+              <div class="flex items-start gap-3"><span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">3</span><div><span class="font-semibold text-[#2d4a3e]">恢復身體功能</span><p class="text-sm text-[#4a4238]">漸進式復健運動，恢復活動能力</p></div></div>
+              <div class="flex items-start gap-3"><span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">4</span><div><span class="font-semibold text-[#2d4a3e]">心理支持</span><p class="text-sm text-[#4a4238]">關懷陪伴，幫助正向面對恢復期</p></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2 -->
+      <section id="section2">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">2</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">術後常見護理要點</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <p class="text-[#4a4238] leading-relaxed text-lg"><strong class="text-[#2d4a3e]">高雄術後照護</strong>涵蓋許多重要的護理要點。首先是「傷口護理」，這是術後照護中最基本也最重要的一環。專業看護人員需要定期觀察傷口的癒合狀況，注意是否有紅腫、熱痛、滲液或異味等感染徵兆。按照醫囑進行傷口清潔與換藥，保持傷口周圍皮膚的清潔乾燥。同時要注意觀察引流管的通暢與引流液的量、顏色與性質，若發現異常應立即通知醫護人員。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">第二是「疼痛管理」。術後疼痛是常見的問題，但過度的疼痛會影響病患的休息與復健意願。專業看護人員需要定時評估病患的疼痛程度，按照醫囑給予止痛藥物，並記錄用藥時間與效果。除了藥物控制外，也可以運用非藥物的方法來緩解疼痛，如調整舒適的姿勢、深呼吸練習、輕柔按摩等。良好的疼痛管理能夠讓病患更願意配合復健，加速恢復進程。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">第三是「預防併發症」。術後病患由於活動減少、臥床時間增加，容易發生各種併發症。專業的<strong class="text-[#2d4a3e]">高雄術後照護</strong>會定時協助病患翻身拍背，預防褥瘡與肺炎的發生；協助執行被動與主動運動，預防深部靜脈栓塞與關節僵硬；鼓勵深呼吸與咳嗽，促進肺部擴張與痰液排出。這些看似簡單的護理動作，卻是預防術後併發症的關鍵。</p>
+          <div class="bg-[#f5f3ef] rounded-xl p-6 border-l-4 border-[#e8b86d]">
+            <h4 class="font-bold text-[#2d4a3e] mb-3">術後三大護理要點</h4>
+            <div class="space-y-3">
+              <div class="p-3 bg-white rounded-lg"><span class="font-semibold text-[#2d4a3e]">傷口護理：</span><span class="text-[#4a4238]">定期觀察、清潔換藥、注意感染徵兆</span></div>
+              <div class="p-3 bg-white rounded-lg"><span class="font-semibold text-[#2d4a3e]">疼痛管理：</span><span class="text-[#4a4238]">定時評估、按時給藥、非藥物緩解方法</span></div>
+              <div class="p-3 bg-white rounded-lg"><span class="font-semibold text-[#2d4a3e]">預防併發症：</span><span class="text-[#4a4238]">翻身拍背、執行運動、促進肺部擴張</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3 -->
+      <section id="section3">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">3</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">康復照護與復健計畫</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <img src={image2} alt="高雄康復照護居家復健" class="w-full h-64 md:h-80 object-cover rounded-xl" loading="lazy" />
+          <p class="text-[#4a4238] leading-relaxed text-lg"><strong class="text-[#2d4a3e]">高雄康復照護</strong>是術後恢復過程中不可或缺的一環。復健的目標是幫助病患恢復身體功能，減少後遺症，盡快回到正常的生活。復健計畫通常由醫師與復健師根據手術類型、病患狀況與恢復進度來制定，內容包括關節活動度訓練、肌力訓練、平衡訓練、日常生活功能訓練等。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">復健計畫分為幾個階段。第一階段是「保護期」，通常是術後的頭幾週，此時傷口還在癒合，需要特別注意保護手術部位。這個階段的復健以被動運動為主，由看護人員或復健師協助進行關節活動，預防關節僵硬。同時進行深呼吸訓練、咳嗽練習，促進肺部功能恢復。第二階段是「主動期」，當傷口癒合穩定後，開始進行主動運動訓練。病患在專業人員的指導下，逐步增加運動的強度與範圍，訓練患部的肌力與活動度。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">第三階段是「功能恢復期」，此時病患已經具備基本的活動能力，復健的目標轉向恢復日常生活功能。例如骨科手術後的步行訓練、關節置換後的上下樓梯練習、腦部手術後的認知功能訓練等。這個階段的復健需要看護人員的耐心陪伴與鼓勵，幫助病患建立信心，逐步恢復獨立生活的能力。專業的<strong class="text-[#2d4a3e]">高雄康復照護</strong>團隊能夠根據每個病患的恢復狀況，調整復健計畫的內容與進度，確保恢復的效果與安全。</p>
+          <div class="bg-[#f5f3ef] rounded-xl p-6 border-l-4 border-[#2d4a3e]">
+            <h4 class="font-bold text-[#2d4a3e] mb-3">復健三階段</h4>
+            <div class="space-y-3">
+              <div class="flex items-start gap-3"><span class="px-3 py-1 bg-[#2d4a3e] text-white rounded-full text-sm font-bold">第一階段</span><div><span class="font-semibold text-[#2d4a3e]">保護期（術後1-3週）</span><p class="text-sm text-[#4a4238]">被動運動、傷口保護、深呼吸訓練</p></div></div>
+              <div class="flex items-start gap-3"><span class="px-3 py-1 bg-[#e8b86d] text-[#2d4a3e] rounded-full text-sm font-bold">第二階段</span><div><span class="font-semibold text-[#2d4a3e]">主動期（術後3-6週）</span><p class="text-sm text-[#4a4238]">主動運動、肌力訓練、增加活動範圍</p></div></div>
+              <div class="flex items-start gap-3"><span class="px-3 py-1 bg-[#a8c4b0] text-[#2d4a3e] rounded-full text-sm font-bold">第三階段</span><div><span class="font-semibold text-[#2d4a3e]">功能恢復期（術後6週以上）</span><p class="text-sm text-[#4a4238]">日常生活功能訓練、步行練習、認知訓練</p></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4 -->
+      <section id="section4">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">4</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">居家術後照護的注意事項</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <p class="text-[#4a4238] leading-relaxed text-lg">出院後的居家<strong class="text-[#2d4a3e]">高雄術後照護</strong>同樣重要，甚至比住院期間更需要注意。因為家中不像醫院有完整的醫療設備與人力，家屬與看護人員需要承擔更多的照護責任。首先，居家環境需要做適當的調整，確保病患的安全。例如移除地面上的障礙物，鋪設防滑墊，在浴室與走廊安裝扶手，確保充足的照明等。這些看似簡單的調整，可以有效預防跌倒等意外事故的發生。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">其次，需要建立規律的照護流程。包括定時服藥、定時測量生命徵象（如體溫、血壓）、定時進行復健運動、定時觀察傷口狀況等。將這些事項記錄下來，不僅能夠確保照護工作的落實，也能在回診時提供醫師參考。若病患需要特殊護理，如傷口換藥、鼻胃管灌食等，務必由受過訓練的專業人員執行，不要自行嘗試。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">第三，要密切觀察並及時就醫。術後恢復期可能會出現各種狀況，有些是正常的恢復過程，有些則是需要緊急處理的警訊。需要立即就醫的情況包括：傷口大量出血或膿性分泌物、高燒不退、嚴重疼痛無法緩解、呼吸困難、患部腫脹發紫、意識改變等。家屬與看護人員應該了解這些警訊，並知道如何聯繫醫療單位。選擇專業的<strong class="text-[#2d4a3e]">高雄術後照護</strong>服務，可以讓居家照護更加安心。</p>
+          <div class="bg-[#f5f3ef] rounded-xl p-6 border-l-4 border-[#e8b86d]">
+            <h4 class="font-bold text-[#2d4a3e] mb-3">居家照護注意事項</h4>
+            <div class="grid md:grid-cols-2 gap-3">
+              <div class="flex items-start gap-2"><span class="text-[#e8b86d] text-xl">✓</span><span class="text-[#4a4238]">環境安全調整（防滑、扶手、照明）</span></div>
+              <div class="flex items-start gap-2"><span class="text-[#e8b86d] text-xl">✓</span><span class="text-[#4a4238]">建立規律的照護流程與記錄</span></div>
+              <div class="flex items-start gap-2"><span class="text-[#e8b86d] text-xl">✓</span><span class="text-[#4a4238]">特殊護理由專業人員執行</span></div>
+              <div class="flex items-start gap-2"><span class="text-[#e8b86d] text-xl">✓</span><span class="text-[#4a4238]">了解警訊症狀，及時就醫</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5 -->
+      <section id="section5">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">5</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">營養與飲食建議</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <p class="text-[#4a4238] leading-relaxed text-lg">術後的營養攝取對於傷口癒合與身體恢復至關重要。良好的營養狀態能夠加速組織修復、提升免疫力、減少併發症的發生。<strong class="text-[#2d4a3e]">高雄康復照護</strong>團隊通常會根據病患的手術類型、身體狀況與個人需求，提供個別化的營養建議。一般而言，術後飲食應該遵循以下幾個原則。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">第一是「高蛋白質」。蛋白質是傷口癒合與組織修復的重要原料。術後應該增加蛋白質的攝取，包括魚肉、雞肉、瘦肉、蛋、豆腐、牛奶等優質蛋白質來源。若病患的食慾不佳，可以採取少量多餐的方式，或在醫師建議下使用營養補充品。第二是「充足熱量」。身體在恢復期需要額外的能量，若熱量攝取不足，身體會分解肌肉組織來提供能量，影響恢復進度。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">第三是「均衡營養」。除了蛋白質與熱量外，維生素與礦物質同樣重要。維生素C能夠促進膠原蛋白合成，有助於傷口癒合；鋅能夠促進細胞生長與免疫功能；鐵質能夠預防術後貧血。新鮮的蔬菜水果、全穀類、堅果種子都是良好的營養來源。第四是「充足水分」。水分能夠促進新陳代謝、幫助營養運輸與廢物排除，預防便秘與泌尿道感染。專業的<strong class="text-[#2d4a3e]">高雄術後照護</strong>會協助規劃適合的飲食計畫，確保病患獲得充足的營養支持。</p>
+          <div class="bg-[#f5f3ef] rounded-xl p-6 border-l-4 border-[#2d4a3e]">
+            <h4 class="font-bold text-[#2d4a3e] mb-3">術後飲食四大原則</h4>
+            <div class="space-y-2">
+              <div class="flex items-center gap-3 p-3 bg-white rounded-lg"><span class="text-2xl">🥩</span><div><span class="font-semibold text-[#2d4a3e]">高蛋白質</span><p class="text-sm text-[#4a4238]">魚肉、雞肉、蛋、豆腐、牛奶</p></div></div>
+              <div class="flex items-center gap-3 p-3 bg-white rounded-lg"><span class="text-2xl">🍚</span><div><span class="font-semibold text-[#2d4a3e]">充足熱量</span><p class="text-sm text-[#4a4238]">全穀類、地瓜、少量多餐</p></div></div>
+              <div class="flex items-center gap-3 p-3 bg-white rounded-lg"><span class="text-2xl">🥗</span><div><span class="font-semibold text-[#2d4a3e]">均衡營養</span><p class="text-sm text-[#4a4238]">蔬菜水果、堅果種子、維生素礦物質</p></div></div>
+              <div class="flex items-center gap-3 p-3 bg-white rounded-lg"><span class="text-2xl">💧</span><div><span class="font-semibold text-[#2d4a3e]">充足水分</span><p class="text-sm text-[#4a4238]">每日1500-2000cc，促進代謝</p></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 6 -->
+      <section id="section6">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">6</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">結語與服務推薦</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <p class="text-[#4a4238] leading-relaxed text-lg">手術後的恢復是一段需要專業照護與耐心等待的過程。透過本文的介紹，您應該已經了解了<strong class="text-[#2d4a3e]">高雄術後照護</strong>與<strong class="text-[#2d4a3e]">高雄康復照護</strong>的重要性，以及術後護理的各項要點。從傷口護理、疼痛管理、預防併發症，到漸進式的復健計畫、居家照護的注意事項、營養飲食的支持，每個環節都環環相扣，缺一不可。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">對於術後病患與家屬來說，最重要的是不要輕忽術後照護的重要性。許多併發症與後遺症，其實都可以透過專業的照護來預防或減輕。若家人沒有足夠的時間或專業知識來照顧術後病患，聘請專業的術後看護人員是明智且負責的選擇。專業的看護人員不只能夠執行正確的護理技術，還能夠給予病患情緒支持與家屬照護指導，讓整個恢復過程更加順利。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">裕涵居家照護提供專業的術後照護與康復照護服務，我們的團隊擁有豐富的術後護理經驗，能夠為各類手術後的病患提供全面的照護支持。無論您需要住院期間的陪病照護，還是出院後的居家照護與復健協助，我們都將以專業與愛心，陪伴您走過恢復期的每一步。歡迎與我們聯繫，讓我們一起為您的健康與康復努力。</p>
+          <div class="bg-[#2d4a3e] text-white rounded-xl p-6 text-center">
+            <h4 class="font-bold text-lg mb-2">需要術後照護服務？</h4>
+            <p class="text-gray-200 mb-4">裕涵居家照護提供專業的術後照護與康復指導，助您順利恢復健康</p>
+            <a href="/contact" class="inline-block bg-[#e8b86d] text-[#2d4a3e] px-8 py-3 rounded-full font-bold hover:bg-[#d9a95e] transition-colors">免費諮詢</a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </article>
+</MainLayout>
