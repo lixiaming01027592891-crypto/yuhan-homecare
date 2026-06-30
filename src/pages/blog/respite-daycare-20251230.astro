@@ -1,0 +1,220 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+
+const title = '高雄喘息服務與日間照顧，讓照護者安心休息的專業選擇';
+const description = '了解高雄喘息服務與高雄日間照顧的完整內容，從服務類型、申請資格到費用補助，為照護家庭提供全面的支援方案。';
+const date = '2025-12-30';
+const keywords = ['高雄喘息服務', '高雄日間照顧', '喘息服務申請', '日間照顧中心'];
+const author = '裕涵居家照護';
+const image1 = '/images/blog/respite-daycare-1.jpg';
+const image2 = '/images/blog/respite-daycare-2.jpg';
+---
+
+<MainLayout title={title} description={description} type="article">
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": title,
+    "description": description,
+    "author": { "@type": "Organization", "name": author },
+    "publisher": { "@type": "Organization", "name": "裕涵居家照護", "logo": { "@type": "ImageObject", "url": "https://yuhanhomecare.com/images/logo.png" } },
+    "datePublished": date,
+    "dateModified": date,
+    "image": ["https://yuhanhomecare.com" + image1, "https://yuhanhomecare.com" + image2]
+  })} />
+
+  <article class="bg-[#fcfaf6] min-h-screen">
+    <!-- Hero Section -->
+    <section class="relative bg-[#2d4a3e] text-white py-20 md:py-28">
+      <div class="absolute inset-0 opacity-15">
+        <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"0.15\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+      </div>
+      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 text-center">
+        <div class="text-sm tracking-widest text-[#a8c4b0] mb-3">喘息服務專區 · 2025年12月</div>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6">高雄喘息服務與日間照顧<br class="hidden md:inline">讓照護者安心休息的專業選擇</h1>
+        <p class="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed">從服務類型、申請資格到費用補助，為照護家庭提供全面的支援方案</p>
+      </div>
+    </section>
+
+    <!-- Table of Contents -->
+    <section class="max-w-4xl mx-auto px-4 sm:px-6 py-10">
+      <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8">
+        <h2 class="text-xl font-bold text-[#2d4a3e] mb-4">文章目錄</h2>
+        <nav class="grid md:grid-cols-2 gap-3">
+          <a href="#section1" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">1</span>
+            <span class="text-[#4a4238]">什麼是喘息服務</span>
+          </a>
+          <a href="#section2" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">2</span>
+            <span class="text-[#4a4238]">日間照顧的服務內容</span>
+          </a>
+          <a href="#section3" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">3</span>
+            <span class="text-[#4a4238]">申請資格與流程</span>
+          </a>
+          <a href="#section4" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">4</span>
+            <span class="text-[#4a4238]">費用與補助資源</span>
+          </a>
+          <a href="#section5" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">5</span>
+            <span class="text-[#4a4238]">如何選擇適合的服務</span>
+          </a>
+          <a href="#section6" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">6</span>
+            <span class="text-[#4a4238]">結語與服務推薦</span>
+          </a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 pb-20 space-y-16">
+
+      <!-- Section 1 -->
+      <section id="section1">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">1</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">什麼是喘息服務</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <img src={image1} alt="高雄日間照顧中心" class="w-full h-64 md:h-80 object-cover rounded-xl" loading="lazy" />
+          <p class="text-[#4a4238] leading-relaxed text-lg"><strong class="text-[#2d4a3e]">高雄喘息服務</strong>是一項由政府推動的長期照顧服務，目的是讓長期照顧失能者的家庭照護者能夠獲得暫時的休息機會。照顧失能或失智的長輩是一項長期且繁重的責任，許多家庭照護者每天24小時待命，幾乎沒有自己的時間與空間。長期下來，身心俱疲，甚至出現健康問題。喘息服務就是為了解決這個困境而設計的，讓專業的照護人員暫時接手照護工作，讓主要照護者能夠好好休息、處理個人事務，或是單純地喘口氣。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">喘息服務的形式有多種。最常見的是「居家喘息」，由專業的照護人員到府提供照顧服務，讓家屬可以外出或休息。另一種是「機構喘息」，將被照顧者暫時送到護理之家或長照機構，由機構提供24小時的專業照護。還有「社區喘息」，利用日間照顧中心或社區關懷據點的服務，讓被照顧者在白天到中心接受照顧，晚上再回到家中。每種形式各有其適用的情境，家庭可以根據自身的需求與狀況來選擇。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">許多照護者會有愧疚感，覺得將長輩交給他人照顧是不孝的行為。但事實上，適度的休息不僅對照護者有益，對被照顧者也是有好處的。當照護者身心疲憊時，照護品質必然會下降，甚至可能在無意中對被照顧者發脾氣或疏忽照顧。透過<strong class="text-[#2d4a3e]">高雄喘息服務</strong>，讓專業人員暫時接手，照護者可以恢復體力與精神，回到照護崗位時更加有耐心與愛心。這是一種對雙方都有益的安排。</p>
+          <div class="bg-[#f5f3ef] rounded-xl p-6 border-l-4 border-[#2d4a3e]">
+            <h4 class="font-bold text-[#2d4a3e] mb-3">喘息服務三種形式</h4>
+            <div class="grid md:grid-cols-3 gap-4">
+              <div class="bg-white rounded-lg p-4 text-center">
+                <span class="text-3xl mb-2 block">🏠</span>
+                <h5 class="font-semibold text-[#2d4a3e] mb-1">居家喘息</h5>
+                <p class="text-sm text-[#4a4238]">專業人員到府照顧，家屬可外出或休息</p>
+              </div>
+              <div class="bg-white rounded-lg p-4 text-center">
+                <span class="text-3xl mb-2 block">🏥</span>
+                <h5 class="font-semibold text-[#2d4a3e] mb-1">機構喘息</h5>
+                <p class="text-sm text-[#4a4238]">暫送至護理之家或長照機構，24小時照護</p>
+              </div>
+              <div class="bg-white rounded-lg p-4 text-center">
+                <span class="text-3xl mb-2 block">🏘️</span>
+                <h5 class="font-semibold text-[#2d4a3e] mb-1">社區喘息</h5>
+                <p class="text-sm text-[#4a4238]">利用日照中心，白天照顧晚上回家</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2 -->
+      <section id="section2">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">2</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">日間照顧的服務內容</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <img src={image2} alt="喘息服務讓照護者休息" class="w-full h-64 md:h-80 object-cover rounded-xl" loading="lazy" />
+          <p class="text-[#4a4238] leading-relaxed text-lg"><strong class="text-[#2d4a3e]">高雄日間照顧</strong>中心是喘息服務的重要形式之一，也是許多失能長輩喜歡的照護選擇。日間照顧中心提供白天的專業照護服務，長輩在早上被送到中心，晚上再由家人接回家。這種模式讓長輩能夠在白天接受專業的照顧與豐富的活動安排，同時又能夠在晚上回到熟悉的家中與家人共度時光。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">日間照顧中心的服務內容非常豐富。首先是「基本生活照顧」，包括協助進食、如廁、服藥、量血壓等日常生活協助。第二是「健康促進活動」，中心會安排體適能運動、手指操、健走等活動，幫助長輩維持身體機能。第三是「認知促進活動」，對於有輕度失智的長輩，中心會安排記憶遊戲、懷舊治療、音樂治療等活動，延緩認知功能的退化。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">第四是「社交活動」，長輩在中心可以認識其他朋友，一起聊天、唱歌、做手工藝，減少孤獨感。第五是「營養餐食」，中心會提供營養均衡的午餐與點心，確保長輩的飲食健康。許多長輩剛開始到<strong class="text-[#2d4a3e]">高雄日間照顧</strong>中心時會有些抗拒，但去過幾次之後，往往會喜歡上那裡的環境與朋友，甚至主動要求要去。對於家庭照護者來說，日間照顧中心不僅提供了喘息的機會，也讓長輩的生活更加充實有意義。</p>
+          <div class="bg-[#f5f3ef] rounded-xl p-6 border-l-4 border-[#e8b86d]">
+            <h4 class="font-bold text-[#2d4a3e] mb-3">日間照顧服務內容</h4>
+            <div class="grid md:grid-cols-2 gap-3">
+              <div class="flex items-start gap-2"><span class="text-[#e8b86d] text-xl">●</span><div><span class="font-semibold text-[#2d4a3e]">基本生活照顧</span><p class="text-sm text-[#4a4238]">進食、如廁、服藥、量血壓</p></div></div>
+              <div class="flex items-start gap-2"><span class="text-[#e8b86d] text-xl">●</span><div><span class="font-semibold text-[#2d4a3e]">健康促進活動</span><p class="text-sm text-[#4a4238]">體適能運動、手指操、健走</p></div></div>
+              <div class="flex items-start gap-2"><span class="text-[#e8b86d] text-xl">●</span><div><span class="font-semibold text-[#2d4a3e]">認知促進活動</span><p class="text-sm text-[#4a4238]">記憶遊戲、懷舊治療、音樂治療</p></div></div>
+              <div class="flex items-start gap-2"><span class="text-[#e8b86d] text-xl">●</span><div><span class="font-semibold text-[#2d4a3e]">社交活動</span><p class="text-sm text-[#4a4238]">聊天、唱歌、手工藝，減少孤獨</p></div></div>
+              <div class="flex items-start gap-2"><span class="text-[#e8b86d] text-xl">●</span><div><span class="font-semibold text-[#2d4a3e]">營養餐食</span><p class="text-sm text-[#4a4238]">均衡午餐與點心，確保飲食健康</p></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3 -->
+      <section id="section3">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">3</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">申請資格與流程</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <p class="text-[#4a4238] leading-relaxed text-lg">要申請<strong class="text-[#2d4a3e]">高雄喘息服務</strong>或<strong class="text-[#2d4a3e]">高雄日間照顧</strong>，首先需要符合長照服務的申請資格。被照顧者必須是失能或失智的長輩，且經過長照需要評估，被核定為長照等級2級以上。長照需要評估會由專業評估人員到家中或醫院進行，評估內容包括被照顧者的身體功能、認知功能、日常生活能力等，評估結果會決定長照等級與對應的服務額度。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">申請流程的第一步是「提出申請」。可以撥打1966長照專線，或是直接到各區的長期照顧管理中心提出申請。申請時需要提供被照顧者的身分證、診斷證明書等基本資料。第二步是「接受評估」，長照管理中心會安排評估人員到家中進行評估，了解被照顧者的照護需求與家庭狀況。第三步是「核定等級與額度」，根據評估結果，核定長照等級與每月的服務額度。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">第四步是「選擇服務與簽約」，根據核定的額度，選擇需要的服務項目與服務提供單位。若是選擇日間照顧中心，可以到各中心參觀了解環境與服務內容，選擇最適合的。第五步是「開始接受服務」，簽約後就可以開始使用服務了。在服務過程中，若有任何問題或需求變化，可以隨時與服務單位或個案管理師聯繫，調整服務內容。整個<strong class="text-[#2d4a3e]">高雄喘息服務</strong>的申請流程大約需要2到4週的時間。</p>
+          <div class="bg-[#f5f3ef] rounded-xl p-6 border-l-4 border-[#2d4a3e]">
+            <h4 class="font-bold text-[#2d4a3e] mb-3">申請流程五步驟</h4>
+            <div class="flex flex-wrap items-center gap-2 text-sm">
+              <span class="px-3 py-2 bg-white rounded-lg border border-[#e8e4dc] text-[#4a4238]">1. 提出申請</span><span class="text-[#2d4a3e]">→</span>
+              <span class="px-3 py-2 bg-white rounded-lg border border-[#e8e4dc] text-[#4a4238]">2. 接受評估</span><span class="text-[#2d4a3e]">→</span>
+              <span class="px-3 py-2 bg-white rounded-lg border border-[#e8e4dc] text-[#4a4238]">3. 核定等級</span><span class="text-[#2d4a3e]">→</span>
+              <span class="px-3 py-2 bg-white rounded-lg border border-[#e8e4dc] text-[#4a4238]">4. 選擇服務</span><span class="text-[#2d4a3e]">→</span>
+              <span class="px-3 py-2 bg-[#2d4a3e] text-white rounded-lg font-semibold">5. 開始服務</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4 -->
+      <section id="section4">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">4</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">費用與補助資源</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <p class="text-[#4a4238] leading-relaxed text-lg"><strong class="text-[#2d4a3e]">高雄喘息服務</strong>與<strong class="text-[#2d4a3e]">高雄日間照顧</strong>的費用會根據服務類型、服務時數與被照顧者的長照等級而有所不同。一般來說，長照等級越高，每月可以使用的服務額度也越高。以日間照顧為例，費用通常按日計算，包含交通接送、餐食、照護服務等。喘息服務的費用則依形式不同而異，居家喘息按時數計費，機構喘息按日計費。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">政府提供的長照補助可以大幅減輕家庭的負擔。根據長照等級，政府會給予每月的服務額度，用於支付喘息服務、日間照顧、居家服務等長照費用。額度的使用由家庭自行決定，可以全部用於日間照顧，也可以搭配使用多種服務。對於中低收入戶，政府還會提供額外的補助，自付比例更低。部分縣市政府還會提供額外的喘息服務津貼，可以多加利用。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">除了長照補助外，還有其他資源可以利用。例如「家庭照顧者支持服務」，許多縣市政府的長照中心會提供照護者教育訓練、心理支持、支持團體等服務，全部免費。「喘息服務專線」1966可以提供各項長照服務的諮詢與轉介。善用這些資源，不只能夠減輕經濟負擔，也能夠獲得更多的照護知識與情感支持。建議有需求的家庭主動聯繫所在地的長照管理中心，了解所有可以利用的<strong class="text-[#2d4a3e]">高雄喘息服務</strong>資源。</p>
+          <div class="bg-[#f5f3ef] rounded-xl p-6 border-l-4 border-[#e8b86d]">
+            <h4 class="font-bold text-[#2d4a3e] mb-3">可用資源</h4>
+            <div class="grid md:grid-cols-2 gap-3">
+              <div class="bg-white rounded-lg p-3"><span class="font-semibold text-[#2d4a3e]">長照補助</span><p class="text-sm text-[#4a4238]">依長照等級給予每月服務額度</p></div>
+              <div class="bg-white rounded-lg p-3"><span class="font-semibold text-[#2d4a3e]">中低收入補助</span><p class="text-sm text-[#4a4238]">額外補助，自付比例更低</p></div>
+              <div class="bg-white rounded-lg p-3"><span class="font-semibold text-[#2d4a3e]">照顧者支持服務</span><p class="text-sm text-[#4a4238]">免費教育訓練、心理支持、支持團體</p></div>
+              <div class="bg-white rounded-lg p-3"><span class="font-semibold text-[#2d4a3e]">1966長照專線</span><p class="text-sm text-[#4a4238]">各項長照服務諮詢與轉介</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5 -->
+      <section id="section5">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">5</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">如何選擇適合的服務</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <p class="text-[#4a4238] leading-relaxed text-lg">選擇適合的<strong class="text-[#2d4a3e]">高雄日間照顧</strong>中心或喘息服務，需要考慮幾個因素。第一個因素是「被照顧者的狀況與需求」。若是被照顧者行動能力尚可、喜歡與人互動，日間照顧中心會是很好的選擇，能夠提供豐富的活動與社交機會。若是被照顧者行動不便、需要較多醫療照護，則可能需要選擇有護理人員的日照中心，或是考慮居家喘息的形式。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">第二個因素是「家庭的實際狀況」。包括家屬的工作時間、是否有交通工具可以接送、家中是否有其他成員需要照顧等。若家屬白天需要上班，日間照顧中心可以提供整天的照護。若家中只有一位照護者且需要全天休息，機構喘息可能是更好的選擇。第三個因素是「地點與交通」。選擇距離家中較近的日間照顧中心，可以減少接送的時間與交通成本。許多日間照顧中心有提供交通接送服務，可以向中心詢問。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">第四個因素是「中心的環境與服務品質」。建議親自到中心參觀，觀察環境的整潔度、人員的態度、活動的安排是否豐富多元。可以與其他使用者的家屬交流，了解實際的使用經驗。第五個因素是「費用與補助」。確認中心的收費標準，以及可以使用的補助額度，計算實際的自付金額。裕涵居家照護提供專業的<strong class="text-[#2d4a3e]">高雄喘息服務</strong>諮詢，可以協助您評估需求，推薦最適合的服務方案。</p>
+          <div class="bg-[#f5f3ef] rounded-xl p-6 border-l-4 border-[#2d4a3e]">
+            <h4 class="font-bold text-[#2d4a3e] mb-3">選擇服務的考量因素</h4>
+            <div class="space-y-2">
+              <div class="flex items-center gap-3 p-3 bg-white rounded-lg"><span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">1</span><span class="text-[#4a4238]">被照顧者的狀況與需求</span></div>
+              <div class="flex items-center gap-3 p-3 bg-white rounded-lg"><span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">2</span><span class="text-[#4a4238]">家庭的實際狀況與時間安排</span></div>
+              <div class="flex items-center gap-3 p-3 bg-white rounded-lg"><span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">3</span><span class="text-[#4a4238]">地點與交通的便利性</span></div>
+              <div class="flex items-center gap-3 p-3 bg-white rounded-lg"><span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">4</span><span class="text-[#4a4238]">中心的環境與服務品質</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 6 -->
+      <section id="section6">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">6</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">結語與服務推薦</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <p class="text-[#4a4238] leading-relaxed text-lg">長期照顧是一場馬拉松，不是短跑。照護者需要學會善待自己，才能持續提供優質的照顧。<strong class="text-[#2d4a3e]">高雄喘息服務</strong>與<strong class="text-[#2d4a3e]">高雄日間照顧</strong>就是為了幫助照護家庭而設計的重要資源。透過這些服務，照護者可以獲得寶貴的休息時間，被照顧者也能夠在專業的環境中接受豐富的照護與活動安排。這是一種雙贏的安排，讓整個家庭都能夠在長期照顧的旅程中走得更加長遠。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">如果您是家庭照護者，感到身心俱疲、快要撐不下去，請記得尋求幫助不是軟弱的表現，而是智慧的選擇。善用政府提供的各項長照資源，讓專業人員分擔您的重擔。撥打1966長照專線，或聯繫所在地的長照管理中心，了解您可以使用的<strong class="text-[#2d4a3e]">高雄喘息服務</strong>與<strong class="text-[#2d4a3e]">高雄日間照顧</strong>資源。適度的休息與支持，將讓您重新找回照顧的動力與愛心。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">裕涵居家照護提供專業的喘息服務與日間照顧轉介諮詢。我們可以協助您評估需求、了解各項補助資源、推薦適合的服務單位。無論您需要的是短期的居家喘息支援，還是長期的日間照顧安排，我們都將竭誠為您服務。讓我們一起攜手，為照護家庭創造更多的支持與溫暖，讓每一位照護者都能夠在照顧他人的同時，也照顧好自己。</p>
+          <div class="bg-[#2d4a3e] text-white rounded-xl p-6 text-center">
+            <h4 class="font-bold text-lg mb-2">需要喘息服務諮詢？</h4>
+            <p class="text-gray-200 mb-4">裕涵居家照護提供專業的喘息服務與日間照顧諮詢，讓照護者獲得應有的休息</p>
+            <a href="/contact" class="inline-block bg-[#e8b86d] text-[#2d4a3e] px-8 py-3 rounded-full font-bold hover:bg-[#d9a95e] transition-colors">免費諮詢</a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </article>
+</MainLayout>
