@@ -1,0 +1,217 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+
+const title = '癌症術後照護與高雄復健照護，癌症患者的全方位恢復指南';
+const description = '深入了解癌症術後照護與高雄復健照護的完整內容，從術後護理、化療副作用管理到身心靈恢復，幫助癌症患者順利度過治療期。';
+const date = '2025-12-30';
+const keywords = ['癌症術後照護', '高雄復健照護', '癌症照護', '術後復健'];
+const author = '裕涵居家照護';
+const image1 = '/images/blog/cancer-rehab-1.jpg';
+const image2 = '/images/blog/cancer-rehab-2.jpg';
+---
+
+<MainLayout title={title} description={description} type="article">
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": title,
+    "description": description,
+    "author": { "@type": "Organization", "name": author },
+    "publisher": { "@type": "Organization", "name": "裕涵居家照護", "logo": { "@type": "ImageObject", "url": "https://yuhanhomecare.com/images/logo.png" } },
+    "datePublished": date,
+    "dateModified": date,
+    "image": ["https://yuhanhomecare.com" + image1, "https://yuhanhomecare.com" + image2]
+  })} />
+
+  <article class="bg-[#fcfaf6] min-h-screen">
+    <!-- Hero Section -->
+    <section class="relative bg-[#2d4a3e] text-white py-20 md:py-28">
+      <div class="absolute inset-0 opacity-15">
+        <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"0.15\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+      </div>
+      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 text-center">
+        <div class="text-sm tracking-widest text-[#a8c4b0] mb-3">癌症照護專區 · 2025年12月</div>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6">癌症術後照護與復健照護<br class="hidden md:inline">癌症患者的全方位恢復指南</h1>
+        <p class="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed">從術後護理、化療副作用管理到身心靈恢復，幫助癌症患者順利度過治療期</p>
+      </div>
+    </section>
+
+    <!-- Table of Contents -->
+    <section class="max-w-4xl mx-auto px-4 sm:px-6 py-10">
+      <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8">
+        <h2 class="text-xl font-bold text-[#2d4a3e] mb-4">文章目錄</h2>
+        <nav class="grid md:grid-cols-2 gap-3">
+          <a href="#section1" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">1</span>
+            <span class="text-[#4a4238]">癌症術後照護的重要性</span>
+          </a>
+          <a href="#section2" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">2</span>
+            <span class="text-[#4a4238]">術後傷口護理與感染預防</span>
+          </a>
+          <a href="#section3" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">3</span>
+            <span class="text-[#4a4238]">化療與放療副作用管理</span>
+          </a>
+          <a href="#section4" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">4</span>
+            <span class="text-[#4a4238]">營養支持與飲食調理</span>
+          </a>
+          <a href="#section5" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">5</span>
+            <span class="text-[#4a4238]">身心靈的全方位照護</span>
+          </a>
+          <a href="#section6" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">6</span>
+            <span class="text-[#4a4238]">結語與服務推薦</span>
+          </a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 pb-20 space-y-16">
+
+      <!-- Section 1 -->
+      <section id="section1">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">1</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">癌症術後照護的重要性</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <img src={image1} alt="癌症術後復健照護" class="w-full h-64 md:h-80 object-cover rounded-xl" loading="lazy" />
+          <p class="text-[#4a4238] leading-relaxed text-lg">癌症手術後的照護對於患者的恢復與預後有著決定性的影響。良好的<strong class="text-[#2d4a3e]">癌症術後照護</strong>不僅能夠加速傷口癒合、預防併發症，還能夠幫助患者盡快恢復體力，為後續的化療或放療做好準備。癌症患者在手術後身體較為虛弱，免疫力也較低，這時候特別需要專業的照護來確保安全與舒適。許多患者與家屬在手術後會感到徬徨，不知道該如何照顧，這時專業的術後照護服務就顯得格外重要。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">癌症術後照護的目標有幾個面向。首先是「身體層面」，包括傷口護理、疼痛管理、預防感染、恢復身體功能等。第二是「營養層面」，癌症患者在術後往往會有食慾不振、體重下降的問題，需要透過適當的營養支持來維持體力。第三是「心理層面」，癌症診斷與治療對患者來說是巨大的心理衝擊，術後的情緒支持與心理關懷同樣重要。第四是「社會層面」，協助患者與家屬適應治療期間的生活變化，維持良好的家庭關係與社會支持網絡。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">對於高雄地區的癌症患者與家屬來說，選擇專業的<strong class="text-[#2d4a3e]">高雄復健照護</strong>服務，可以讓術後恢復更加順利。專業的癌症看護人員不僅具備一般術後護理的知識，還了解癌症治療的特殊需求，能夠提供更具針對性的照護。無論是住院期間的陪病照護，還是出院後的居家照護，專業的癌症術後照護都能夠為患者與家屬帶來安心與支持。</p>
+          <div class="bg-[#f5f3ef] rounded-xl p-6 border-l-4 border-[#2d4a3e]">
+            <h4 class="font-bold text-[#2d4a3e] mb-3">術後照護四大面向</h4>
+            <div class="grid md:grid-cols-2 gap-4">
+              <div class="flex items-start gap-3"><span class="text-2xl">💪</span><div><span class="font-semibold text-[#2d4a3e]">身體層面</span><p class="text-sm text-[#4a4238]">傷口護理、疼痛管理、感染預防</p></div></div>
+              <div class="flex items-start gap-3"><span class="text-2xl">🍎</span><div><span class="font-semibold text-[#2d4a3e]">營養層面</span><p class="text-sm text-[#4a4238]">維持體力、預防體重下降</p></div></div>
+              <div class="flex items-start gap-3"><span class="text-2xl">💚</span><div><span class="font-semibold text-[#2d4a3e]">心理層面</span><p class="text-sm text-[#4a4238]">情緒支持、心理關懷</p></div></div>
+              <div class="flex items-start gap-3"><span class="text-2xl">👨‍👩‍👧</span><div><span class="font-semibold text-[#2d4a3e]">社會層面</span><p class="text-sm text-[#4a4238]">家庭支持、生活適應</p></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2 -->
+      <section id="section2">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">2</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">術後傷口護理與感染預防</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <img src={image2} alt="癌症術後居家照護" class="w-full h-64 md:h-80 object-cover rounded-xl" loading="lazy" />
+          <p class="text-[#4a4238] leading-relaxed text-lg"><strong class="text-[#2d4a3e]">癌症術後照護</strong>中，傷口護理是最基本也最重要的一環。癌症手術的傷口通常較大，加上患者術後免疫力較低，感染風險相對較高。專業的傷口護理包括定期觀察傷口的癒合狀況、注意是否有紅腫、熱痛、滲液或異味等感染徵兆、按照醫囑進行傷口清潔與換藥。若傷口有引流管，還需要注意引流液的量、顏色與性質，以及引流管的通暢性。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">預防感染是術後照護的重中之重。癌症患者在化療期間，白血球數量會下降，抵抗力變弱，更容易受到感染。因此，照護時要特別注意衛生：勤洗手，特別是在接觸患者前後；保持傷口周圍皮膚的清潔乾燥；避免讓患者接觸感冒或感染的人群；注意環境的清潔與通風。若發現患者有發燒、傷口紅腫熱痛、膿性分泌物等感染徵兆，應立即聯繫醫療人員。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">淋巴水腫是許多癌症術後患者會面臨的問題，特別是乳癌手術後的患者。當淋巴結被切除或淋巴管被破壞時，淋巴液無法正常回流，導致患肢腫脹。專業的<strong class="text-[#2d4a3e]">高雄復健照護</strong>人員可以指導患者進行淋巴引流按摩、教導正確的肢體擺位與運動方式、建議使用彈性繃帶或壓力衣，有效預防與改善淋巴水腫的情況。</p>
+          <div class="bg-[#f5f3ef] rounded-xl p-6 border-l-4 border-[#e8b86d]">
+            <h4 class="font-bold text-[#2d4a3e] mb-3">感染預防要點</h4>
+            <div class="grid md:grid-cols-2 gap-3">
+              <div class="flex items-start gap-2"><span class="text-[#e8b86d] text-xl">✓</span><span class="text-[#4a4238]">勤洗手，接觸患者前後</span></div>
+              <div class="flex items-start gap-2"><span class="text-[#e8b86d] text-xl">✓</span><span class="text-[#4a4238]">保持傷口清潔乾燥</span></div>
+              <div class="flex items-start gap-2"><span class="text-[#e8b86d] text-xl">✓</span><span class="text-[#4a4238]">避免接觸感染者</span></div>
+              <div class="flex items-start gap-2"><span class="text-[#e8b86d] text-xl">✓</span><span class="text-[#4a4238]">注意環境清潔通風</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3 -->
+      <section id="section3">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">3</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">化療與放療副作用管理</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <p class="text-[#4a4238] leading-relaxed text-lg">癌症患者在術後通常需要接受化療或放療，這些治療雖然能夠殺死癌細胞，但也會帶來各種副作用。專業的<strong class="text-[#2d4a3e]">癌症術後照護</strong>需要能夠識別與管理這些副作用，幫助患者舒適地度過治療期。化療常見的副作用包括噁心嘔吐、掉髮、疲倦、食慾不振、口腔黏膜炎、白血球下降等。放療的副作用則依照射部位而異，可能包括皮膚紅腫、疲勞、局部疼痛等。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">針對噁心嘔吐，可以採取少量多餐的方式，避免油膩與刺激性食物，在醫師指示下使用止吐藥物。針對口腔黏膜炎，要保持口腔清潔，使用軟毛牙刷，避免酸性或辛辣食物，可以使用醫師開立的口腔護理藥物。針對疲倦，要鼓勵患者適度休息，但也不要整天臥床，可以進行輕度的活動，如散步，有助於改善體力。針對食慾不振，可以準備患者喜歡的食物，採取少量多餐，必要時在醫師建議下使用營養補充品。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">白血球下降是化療期間需要特別注意的問題。當白血球過低時，患者的抵抗力大幅下降，容易受到感染。此時需要特別注意個人衛生，避免前往人多的公共場所，注意體溫變化。若出現發燒（體溫超過38度），應立即就醫。專業的<strong class="text-[#2d4a3e]">高雄復健照護</strong>人員能夠密切監測患者的狀況，及時發現與處理各種副作用，讓患者能夠順利完成治療。</p>
+          <div class="bg-[#f5f3ef] rounded-xl p-6 border-l-4 border-[#2d4a3e]">
+            <h4 class="font-bold text-[#2d4a3e] mb-3">常見副作用與因應</h4>
+            <div class="space-y-2">
+              <div class="flex items-start gap-3 p-3 bg-white rounded-lg"><span class="font-semibold text-[#2d4a3e] w-24 shrink-0">噁心嘔吐</span><span class="text-sm text-[#4a4238]">少量多餐，避免油膩，按時服用止吐藥</span></div>
+              <div class="flex items-start gap-3 p-3 bg-white rounded-lg"><span class="font-semibold text-[#2d4a3e] w-24 shrink-0">口腔黏膜炎</span><span class="text-sm text-[#4a4238]">保持口腔清潔，避免刺激性食物</span></div>
+              <div class="flex items-start gap-3 p-3 bg-white rounded-lg"><span class="font-semibold text-[#2d4a3e] w-24 shrink-0">疲倦</span><span class="text-sm text-[#4a4238]">適度休息搭配輕度活動，如散步</span></div>
+              <div class="flex items-start gap-3 p-3 bg-white rounded-lg"><span class="font-semibold text-[#2d4a3e] w-24 shrink-0">食慾不振</span><span class="text-sm text-[#4a4238]">準備喜愛的食物，少量多餐</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4 -->
+      <section id="section4">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">4</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">營養支持與飲食調理</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <p class="text-[#4a4238] leading-relaxed text-lg">營養在癌症治療與恢復過程中扮演著極為重要的角色。良好的營養狀態能夠幫助患者維持體力、減少治療副作用、加速傷口癒合、提升免疫力。<strong class="text-[#2d4a3e]">癌症術後照護</strong>中的營養支持，需要根據患者的治療階段、身體狀況與個人喜好來調整。一般來說，癌症患者的飲食應該遵循高蛋白、高熱量、均衡營養的原則。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">蛋白質是組織修復與免疫力維持的重要營養素。癌症患者在術後與治療期間，蛋白質的需求量比一般人更高。建議多攝取優質蛋白質，如魚肉、雞肉、瘦肉、蛋、豆腐、牛奶等。若患者因為食慾不振而無法攝取足夠的蛋白質，可以在醫師或營養師的建議下，使用高蛋白營養補充品。熱量攝取也要足夠，可以透過全穀類、地瓜、堅果等健康碳水化合物來補充能量。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">在化療期間，患者的味覺可能會改變，對某些食物產生厭惡感。此時要靈活調整菜單，嘗試不同的烹調方式與調味，找出患者能夠接受的食物。若口腔黏膜炎嚴重，可以選擇質地較軟的食物，如粥、蒸蛋、豆腐、果泥等。水分攝取也很重要，每天應該攝取1500到2000cc的水分，幫助身體代謝與排毒。專業的<strong class="text-[#2d4a3e]">高雄復健照護</strong>團隊可以與營養師合作，為患者制定個別化的營養計畫。</p>
+          <div class="bg-[#f5f3ef] rounded-xl p-6 border-l-4 border-[#e8b86d]">
+            <h4 class="font-bold text-[#2d4a3e] mb-3">癌症飲食三大原則</h4>
+            <div class="grid md:grid-cols-3 gap-4">
+              <div class="bg-white rounded-lg p-4 text-center">
+                <span class="text-3xl mb-2 block">🥩</span>
+                <h5 class="font-semibold text-[#2d4a3e] mb-1">高蛋白</h5>
+                <p class="text-sm text-[#4a4238]">魚肉、雞肉、蛋、豆腐、牛奶</p>
+              </div>
+              <div class="bg-white rounded-lg p-4 text-center">
+                <span class="text-3xl mb-2 block">🍚</span>
+                <h5 class="font-semibold text-[#2d4a3e] mb-1">高熱量</h5>
+                <p class="text-sm text-[#4a4238]">全穀類、地瓜、堅果，補充能量</p>
+              </div>
+              <div class="bg-white rounded-lg p-4 text-center">
+                <span class="text-3xl mb-2 block">🥗</span>
+                <h5 class="font-semibold text-[#2d4a3e] mb-1">均衡營養</h5>
+                <p class="text-sm text-[#4a4238]">蔬菜水果、維生素礦物質</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5 -->
+      <section id="section5">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">5</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">身心靈的全方位照護</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <p class="text-[#4a4238] leading-relaxed text-lg">癌症的治療不僅僅是身體的治療，更是對患者與家屬身心靈的全面考驗。<strong class="text-[#2d4a3e]">癌症術後照護</strong>需要關注患者的身體、心理與靈性需求，提供全方位的支持。在身體層面，除了前述的傷口護理、副作用管理與營養支持外，適度的運動也是恢復的重要一環。研究顯示，癌症患者在治療期間進行適度的運動，能夠減少疲倦感、改善情緒、提升生活品質。可以從輕度的運動開始，如散步、伸展操、瑜伽等，逐步增加運動的強度與時間。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">在心理層面，癌症患者在治療過程中常會經歷焦慮、憂鬱、恐懼等情緒。這些情緒反應是完全正常的，但需要適當的處理與支持。家屬與看護人員應該給予患者充分的傾聽與陪伴，鼓勵患者表達內心的感受。若情緒困擾嚴重，可以尋求專業的心理諮商或精神科醫師的協助。許多醫院也有提供癌症病人的心理社會支持服務，可以多加利用。參加癌症病友支持團體，與有相同經歷的人交流，也能夠帶來很大的力量與安慰。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">在靈性層面，每個人面對生命威脅時，都會思考生命的意義與價值。有些患者會透過宗教信仰來獲得力量與平安，有些則會透過與家人朋友的深度交流來找到生命的意義。尊重患者的靈性需求，提供安靜的空間讓其祈禱或冥想，或是安排宗教人士的探訪，都能夠幫助患者在治療過程中找到內心的平靜。專業的<strong class="text-[#2d4a3e]">高雄復健照護</strong>服務不只關注患者的身體狀況，也重視其心理與靈性的需求，提供真正的全方位照護。</p>
+          <div class="bg-[#f5f3ef] rounded-xl p-6 border-l-4 border-[#2d4a3e]">
+            <h4 class="font-bold text-[#2d4a3e] mb-3">身心靈照護重點</h4>
+            <div class="grid md:grid-cols-3 gap-4">
+              <div class="bg-white rounded-lg p-4"><h5 class="font-semibold text-[#2d4a3e] mb-1">身</h5><p class="text-sm text-[#4a4238]">傷口護理、副作用管理、適度運動、營養支持</p></div>
+              <div class="bg-white rounded-lg p-4"><h5 class="font-semibold text-[#2d4a3e] mb-1">心</h5><p class="text-sm text-[#4a4238]">情緒支持、心理諮商、病友團體、傾聽陪伴</p></div>
+              <div class="bg-white rounded-lg p-4"><h5 class="font-semibold text-[#2d4a3e] mb-1">靈</h5><p class="text-sm text-[#4a4238]">尊重信仰、冥想祈禱、生命意義探索</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 6 -->
+      <section id="section6">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">6</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">結語與服務推薦</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <p class="text-[#4a4238] leading-relaxed text-lg">癌症術後的恢復是一段需要耐心、專業與愛心的旅程。透過本文的介紹，您應該已經了解了<strong class="text-[#2d4a3e]">癌症術後照護</strong>與<strong class="text-[#2d4a3e]">高雄復健照護</strong>的各項要點。從傷口護理、感染預防、副作用管理、營養支持，到身心靈的全方位照護，每個環節都對患者的恢復與生活品質有著重要的影響。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">面對癌症，患者與家屬都不應該孤軍奮戰。尋求專業的協助不是軟弱的表現，而是智慧的選擇。專業的癌症術後照護人員能夠提供正確的護理技術、及時的狀況監測、適當的情緒支持，讓患者能夠專心地與病魔奮戰，讓家屬能夠從繁重的照護工作中獲得喘息。良好的照護不僅能夠改善患者的生活品質，也能夠增強其對抗疾病的信心與勇氣。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">裕涵居家照護提供專業的癌症術後照護與復健照護服務，我們的團隊擁有豐富的癌症照護經驗，能夠為患者與家屬提供全方位的支持。從術後傷口護理、化療副作用管理、復健運動指導，到營養諮詢與心理支持，我們都將以最專業的態度與最溫暖的心，陪伴您走過這段艱辛的旅程。歡迎與我們聯繫，讓我們一起為您的健康與恢復努力。</p>
+          <div class="bg-[#2d4a3e] text-white rounded-xl p-6 text-center">
+            <h4 class="font-bold text-lg mb-2">需要癌症術後照護服務？</h4>
+            <p class="text-gray-200 mb-4">裕涵居家照護提供專業的癌症照護與復健指導，陪伴您走過治療的每一步</p>
+            <a href="/contact" class="inline-block bg-[#e8b86d] text-[#2d4a3e] px-8 py-3 rounded-full font-bold hover:bg-[#d9a95e] transition-colors">免費諮詢</a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </article>
+</MainLayout>
