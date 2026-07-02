@@ -1,0 +1,207 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+
+const title = '高雄看護費用完整解析與高雄24小時看護費用比較指南';
+const description = '深入了解高雄看護費用與高雄24小時看護費用的完整資訊，從收費標準、影響因素到費用規劃，為您提供透明的費用指南。';
+const date = '2026-01-03';
+const keywords = ['高雄看護費用', '高雄24小時看護費用', '看護費用比較', '24小時看護價格'];
+const author = '裕涵居家照護';
+const image1 = '/images/blog/care-cost-24h-1.jpg';
+const image2 = '/images/blog/care-cost-24h-2.jpg';
+---
+
+<MainLayout title={title} description={description} type="article">
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": title,
+    "description": description,
+    "author": { "@type": "Organization", "name": author },
+    "publisher": { "@type": "Organization", "name": "裕涵居家照護", "logo": { "@type": "ImageObject", "url": "https://yuhanhomecare.com/images/logo.png" } },
+    "datePublished": date,
+    "dateModified": date,
+    "image": ["https://yuhanhomecare.com" + image1, "https://yuhanhomecare.com" + image2]
+  })} />
+
+  <article class="bg-[#fcfaf6] min-h-screen">
+    <!-- Hero Section -->
+    <section class="relative bg-[#2d4a3e] text-white py-20 md:py-28">
+      <div class="absolute inset-0 opacity-15">
+        <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"0.15\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+      </div>
+      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 text-center">
+        <div class="text-sm tracking-widest text-[#a8c4b0] mb-3">費用指南 · 2026年1月</div>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6">高雄看護費用完整解析<br class="hidden md:inline">與24小時看護費用比較指南</h1>
+        <p class="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed">從收費標準、影響因素到費用規劃，為您提供透明的費用指南</p>
+      </div>
+    </section>
+
+    <!-- Table of Contents -->
+    <section class="max-w-4xl mx-auto px-4 sm:px-6 py-10">
+      <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8">
+        <h2 class="text-xl font-bold text-[#2d4a3e] mb-4">文章目錄</h2>
+        <nav class="grid md:grid-cols-2 gap-3">
+          <a href="#section1" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">1</span>
+            <span class="text-[#4a4238]">看護費用的基本結構</span>
+          </a>
+          <a href="#section2" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">2</span>
+            <span class="text-[#4a4238]">24小時看護的費用模式</span>
+          </a>
+          <a href="#section3" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">3</span>
+            <span class="text-[#4a4238]">影響看護費用的關鍵因素</span>
+          </a>
+          <a href="#section4" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">4</span>
+            <span class="text-[#4a4238]">長照補助與費用減免</span>
+          </a>
+          <a href="#section5" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">5</span>
+            <span class="text-[#4a4238]">如何規劃看護預算</span>
+          </a>
+          <a href="#section6" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">6</span>
+            <span class="text-[#4a4238]">結語與服務推薦</span>
+          </a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 pb-20 space-y-16">
+
+      <!-- Section 1 -->
+      <section id="section1">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">1</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">看護費用的基本結構</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <img src={image1} alt="高雄看護費用諮詢" class="w-full h-64 md:h-80 object-cover rounded-xl" loading="lazy" />
+          <p class="text-[#4a4238] leading-relaxed text-lg">了解<strong class="text-[#2d4a3e]">高雄看護費用</strong>的基本結構，是規劃長期照護預算的第一步。看護費用的組成通常包括幾個部分：首先是「基本服務費」，這是看護人員提供日常照顧服務的基礎費用，涵蓋了協助進食、沐浴、如廁、翻身拍背等日常生活照顧。基本服務費的計價方式通常以時間為單位，可以按小時、按日或按月計算。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">第二是「專業護理費」，若被照顧者需要特殊的護理技術，如傷口換藥、鼻胃管灌食、導尿管護理、氣切照護、血糖監測等，這些專業護理服務會額外計費。具備護理師執照或特殊護理認證的看護人員，其專業護理費會高於一般的生活照顧服務。第三是「夜間加成費」，夜間的看護服務由於需要輪班，且工作較為辛苦，通常會有夜間加成費用。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">第四是「假日加成費」，在國定假日或特殊節日提供看護服務，通常會有額外的加成費用。第五是「交通費」，若看護人員需要長途通勤到服務地點，可能會收取額外的交通費用。在諮詢<strong class="text-[#2d4a3e]">高雄看護費用</strong>時，建議詳細了解各項費用的組成，要求服務機構提供書面的詳細報價單，以避免後續產生費用爭議。</p>
+          <div class="bg-[#f5f3ef] rounded-xl p-6 border-l-4 border-[#2d4a3e]">
+            <h4 class="font-bold text-[#2d4a3e] mb-3">看護費用組成項目</h4>
+            <div class="grid md:grid-cols-2 gap-4">
+              <div class="flex items-start gap-3"><span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">1</span><div><span class="font-semibold text-[#2d4a3e]">基本服務費</span><p class="text-sm text-[#4a4238]">日常照顧的基礎費用</p></div></div>
+              <div class="flex items-start gap-3"><span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">2</span><div><span class="font-semibold text-[#2d4a3e]">專業護理費</span><p class="text-sm text-[#4a4238]">特殊護理技術額外計費</p></div></div>
+              <div class="flex items-start gap-3"><span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">3</span><div><span class="font-semibold text-[#2d4a3e]">夜間加成費</span><p class="text-sm text-[#4a4238]">夜班輪班的額外費用</p></div></div>
+              <div class="flex items-start gap-3"><span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">4</span><div><span class="font-semibold text-[#2d4a3e]">假日加成費</span><p class="text-sm text-[#4a4238]">國定假日的加成費用</p></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2 -->
+      <section id="section2">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">2</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">24小時看護的費用模式</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <img src={image2} alt="高雄24小時看護服務" class="w-full h-64 md:h-80 object-cover rounded-xl" loading="lazy" />
+          <p class="text-[#4a4238] leading-relaxed text-lg"><strong class="text-[#2d4a3e]">高雄24小時看護費用</strong>會因為服務模式的差異而有很大的不同。第一種模式是「專職看護」，由一位看護人員全職住在被照顧者家中，提供全天候的照護服務。這種模式下，看護人員有固定的休息時間，但在需要時要隨時待命。專職看護的費用通常按月計算，費用包含了食宿，是長期照護的常見選擇。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">第二種模式是「輪班看護」，由兩到三位看護人員輪流值班，每人負責固定的時段，例如一位負責日間、一位負責夜間。這種模式下，每位看護人員有明確的上下班時間，工作時間較為規律，服務品質也較為穩定。輪班看護的費用通常高於專職看護，因為需要支付多位人員的薪資，但照護的連續性與專業度也較高。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">第三種模式是「部分時段看護」，根據被照顧者的實際需求，只聘請看護在特定的時段服務。例如白天家人上班時聘請看護，晚上與週末由家人接手。這種模式的費用較為經濟，適合家人可以部分時間照顧的情況。無論選擇哪種模式，都應該與服務機構詳細討論<strong class="text-[#2d4a3e]">高雄24小時看護費用</strong>的計算方式，選擇最適合家庭預算與照護需求的方案。</p>
+          <div class="bg-[#f5f3ef] rounded-xl p-6 border-l-4 border-[#e8b86d]">
+            <h4 class="font-bold text-[#2d4a3e] mb-3">24小時看護三種模式</h4>
+            <div class="space-y-3">
+              <div class="flex items-start gap-3 p-3 bg-white rounded-lg"><span class="px-3 py-1 bg-[#2d4a3e] text-white rounded-full text-sm font-bold">專職</span><div><span class="font-semibold text-[#2d4a3e]">專職看護</span><p class="text-sm text-[#4a4238]">一位看護全天候待命，按月計費含食宿</p></div></div>
+              <div class="flex items-start gap-3 p-3 bg-white rounded-lg"><span class="px-3 py-1 bg-[#e8b86d] text-[#2d4a3e] rounded-full text-sm font-bold">輪班</span><div><span class="font-semibold text-[#2d4a3e]">輪班看護</span><p class="text-sm text-[#4a4238]">2-3位看護輪流，服務品質穩定，費用較高</p></div></div>
+              <div class="flex items-start gap-3 p-3 bg-white rounded-lg"><span class="px-3 py-1 bg-[#a8c4b0] text-[#2d4a3e] rounded-full text-sm font-bold">部分</span><div><span class="font-semibold text-[#2d4a3e]">部分時段</span><p class="text-sm text-[#4a4238]">只在需要時段聘請，費用較經濟</p></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3 -->
+      <section id="section3">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">3</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">影響看護費用的關鍵因素</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <p class="text-[#4a4238] leading-relaxed text-lg"><strong class="text-[#2d4a3e]">高雄看護費用</strong>與<strong class="text-[#2d4a3e]">高雄24小時看護費用</strong>會受到多個關鍵因素的影響。第一個因素是「照護需求的複雜度」。被照顧者的身體狀況越複雜、需要的護理技術越多，看護費用就越高。例如，只需要基本生活協助的長輩，其看護費用會明顯低於需要氣切照護、鼻胃管灌食、失智症行為管理等特殊照護的病患。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">第二個因素是「看護人員的專業程度」。一般具備照顧服務員技術士證的看護人員，其費用較為親民。若需要具備護理師執照或特殊認證（如失智症照護認證、傷口造口認證等）的專業人員，費用會相對較高。資深、經驗豐富的看護人員，其專業價值也較高，收費自然會高於新手看護。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">第三個因素是「服務時段」。日間服務的費率通常較為經濟，夜間服務會有加成，假日的費用最高。第四個因素是「服務機構的品牌與規模」。知名度高、規模大的機構，由於管理成本高、服務品質有保障，收費可能較高。但相對的，大機構在人員篩選、訓練、保險與替代機制方面通常更為完善。第五個因素是「地理位置」，位於市中心或醫療資源豐富地區的服務，費用也可能較高。</p>
+          <div class="bg-[#f5f3ef] rounded-xl p-6 border-l-4 border-[#2d4a3e]">
+            <h4 class="font-bold text-[#2d4a3e] mb-3">影響費用的五大因素</h4>
+            <div class="grid md:grid-cols-2 gap-3">
+              <div class="flex items-start gap-2"><span class="text-[#e8b86d] text-xl">●</span><div><span class="font-semibold text-[#2d4a3e]">照護複雜度</span><p class="text-sm text-[#4a4238]">護理技術需求越高，費用越高</p></div></div>
+              <div class="flex items-start gap-2"><span class="text-[#e8b86d] text-xl">●</span><div><span class="font-semibold text-[#2d4a3e]">人員專業度</span><p class="text-sm text-[#4a4238]">護理師、特殊認證加成</p></div></div>
+              <div class="flex items-start gap-2"><span class="text-[#e8b86d] text-xl">●</span><div><span class="font-semibold text-[#2d4a3e]">服務時段</span><p class="text-sm text-[#4a4238]">日間 &lt; 夜間 &lt; 假日</p></div></div>
+              <div class="flex items-start gap-2"><span class="text-[#e8b86d] text-xl">●</span><div><span class="font-semibold text-[#2d4a3e]">機構品牌</span><p class="text-sm text-[#4a4238]">管理成本與服務保障</p></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4 -->
+      <section id="section4">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">4</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">長照補助與費用減免</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <p class="text-[#4a4238] leading-relaxed text-lg">許多家屬不知道的是，<strong class="text-[#2d4a3e]">高雄看護費用</strong>可以透過政府提供的長照補助來大幅減輕負擔。台灣的長期照顧服務體系為有需要的家庭提供多種補助方案。申請長照補助的第一步是進行「長照需要評估」，家屬可以撥打1966長照專線，或前往各地的長期照顧管理中心申請。評估人員會到家中或醫院進行評估，根據被照顧者的身體狀況與生活自理能力，核定照護等級與對應的補助額度。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">長照補助的額度會根據被照顧者的失能等級來核定。等級越高，每月可以獲得的補助金額也越高。這筆補助可以直接用於支付看護費用，大幅降低家庭的實際支出。除了基本的長照補助外，中低收入戶還可以申請額外的補助，自付比例更低。部分縣市政府還有提供特殊的照護津貼方案，可以向所在地的社會局或長照管理中心詢問。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">此外，還有其他相關補助可以同時申請。例如身心障礙者生活補助、老人特別照護津貼、重大傷病相關補助等。這些補助可以與長照補助同時使用，進一步減輕家庭的經濟負擔。建議家屬主動了解所有可以申請的補助項目，讓<strong class="text-[#2d4a3e]">高雄24小時看護費用</strong>變得更加負擔得起。裕涵居家照護提供專業的補助申請諮詢服務，協助您最大化地利用各項政府資源。</p>
+          <div class="bg-[#f5f3ef] rounded-xl p-6 border-l-4 border-[#e8b86d]">
+            <h4 class="font-bold text-[#2d4a3e] mb-3">可申請的補助資源</h4>
+            <div class="grid md:grid-cols-2 gap-3">
+              <div class="bg-white rounded-lg p-3"><span class="font-semibold text-[#2d4a3e]">長照服務補助</span><p class="text-sm text-[#4a4238]">依失能等級每月定額補助</p></div>
+              <div class="bg-white rounded-lg p-3"><span class="font-semibold text-[#2d4a3e]">中低收入補助</span><p class="text-sm text-[#4a4238]">額外補助，自付比例更低</p></div>
+              <div class="bg-white rounded-lg p-3"><span class="font-semibold text-[#2d4a3e]">身心障礙補助</span><p class="text-sm text-[#4a4238]">持身心障礙手冊可申請</p></div>
+              <div class="bg-white rounded-lg p-3"><span class="font-semibold text-[#2d4a3e]">地方特殊津貼</span><p class="text-sm text-[#4a4238]">各縣市額外照護津貼</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5 -->
+      <section id="section5">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">5</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">如何規劃看護預算</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <p class="text-[#4a4238] leading-relaxed text-lg">規劃<strong class="text-[#2d4a3e]">高雄看護費用</strong>的預算，需要從幾個步驟著手。第一步是「評估照護需求」，了解被照顧者需要哪些照護服務、每天需要多長時間的照護、是否需要特殊護理技術。可以請醫師或個案管理師協助評估，以確保需求的準確性。清楚了解需求後，才能估算出大致的費用範圍。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">第二步是「了解補助額度」，盡早申請長照需要評估，了解自己可以獲得的政府補助金額。將補助額度從總費用中扣除，就是家庭實際需要負擔的金額。第三步是「比較多家機構」，向至少3到5家看護服務機構詢問報價，比較其服務內容與費用結構。不要只看價格，還要考慮服務品質、人員專業度、替代機制等因素。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">第四步是「預留彈性空間」，在預算中預留10%到20%的彈性空間，以應對突發狀況或需求變化。例如被照顧者的狀況惡化需要增加照護時數，或看護人員請假需要臨時安排替代人選等。第五步是「定期檢視與調整」，隨著被照顧者狀況的變化，照護需求與費用也可能需要調整。建議每3到6個月檢視一次預算與服務內容，確保資源的有效運用。裕涵居家照護提供專業的<strong class="text-[#2d4a3e]">高雄看護費用</strong>諮詢，協助您制定合理的照護預算。</p>
+          <div class="bg-[#f5f3ef] rounded-xl p-6 border-l-4 border-[#2d4a3e]">
+            <h4 class="font-bold text-[#2d4a3e] mb-3">預算規劃五步驟</h4>
+            <div class="space-y-2">
+              <div class="flex items-center gap-3 p-3 bg-white rounded-lg"><span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">1</span><span class="text-[#4a4238]">評估照護需求與時數</span></div>
+              <div class="flex items-center gap-3 p-3 bg-white rounded-lg"><span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">2</span><span class="text-[#4a4238]">了解可獲得的補助額度</span></div>
+              <div class="flex items-center gap-3 p-3 bg-white rounded-lg"><span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">3</span><span class="text-[#4a4238]">比較至少3-5家機構報價</span></div>
+              <div class="flex items-center gap-3 p-3 bg-white rounded-lg"><span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">4</span><span class="text-[#4a4238]">預留10-20%彈性空間</span></div>
+              <div class="flex items-center gap-3 p-3 bg-white rounded-lg"><span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">5</span><span class="text-[#4a4238]">每3-6個月定期檢視調整</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 6 -->
+      <section id="section6">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">6</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">結語與服務推薦</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <p class="text-[#4a4238] leading-relaxed text-lg">了解<strong class="text-[#2d4a3e]">高雄看護費用</strong>與<strong class="text-[#2d4a3e]">高雄24小時看護費用</strong>的結構與影響因素，是做出明智照護決策的基礎。透過本文的介紹，您應該已經掌握了看護費用的組成項目、24小時看護的服務模式、影響費用的關鍵因素、可申請的補助資源，以及預算規劃的方法。這些知識將幫助您在眾多的照護選項中，找到最符合家庭需求與預算的方案。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">在規劃看護費用時，請記住「最貴的不一定最好，最便宜的也不一定最適合」。關鍵是找到性價比最高的方案，也就是在最合理的價格下，獲得最優質的照護服務。同時，不要忘記善用政府提供的各項補助資源，這些補助可以大幅減輕家庭的經濟負擔，讓專業的看護服務變得更加可負擔。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">裕涵居家照護一直秉持「透明收費、專業服務」的理念，為高雄地區的家庭提供優質的看護服務。我們會在簽約前提供詳細的書面報價單，清楚列出所有費用項目，不會有隱藏費用。同時，我們也提供補助申請的諮詢服務，協助您最大化地利用政府資源。無論您需要的是一般看護、24小時專業照護，還是特殊護理服務，我們都將根據您的需求與預算，提供最適合的服務方案。歡迎與我們聯繫，讓專業團隊為您解答所有關於看護費用的疑問。</p>
+          <div class="bg-[#2d4a3e] text-white rounded-xl p-6 text-center">
+            <h4 class="font-bold text-lg mb-2">想了解看護費用詳情？</h4>
+            <p class="text-gray-200 mb-4">裕涵居家照護提供透明報價與專業建議，協助您規劃最適合的照護預算</p>
+            <a href="/contact" class="inline-block bg-[#e8b86d] text-[#2d4a3e] px-8 py-3 rounded-full font-bold hover:bg-[#d9a95e] transition-colors">免費諮詢</a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </article>
+</MainLayout>
