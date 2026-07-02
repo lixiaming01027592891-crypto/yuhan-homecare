@@ -1,0 +1,206 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+
+const title = '高雄居家照顧與居家服務，讓長輩在家享受專業照護';
+const description = '深入了解高雄居家照顧與高雄居家服務的完整內容，從服務項目、申請流程到費用規劃，為您的家人提供最適合的居家照護方案。';
+const date = '2026-01-03';
+const keywords = ['高雄居家照顧', '高雄居家服務', '居家照顧服務', '居家服務申請'];
+const author = '裕涵居家照護';
+const image1 = '/images/blog/home-care-service-1.jpg';
+const image2 = '/images/blog/home-care-service-2.jpg';
+---
+
+<MainLayout title={title} description={description} type="article">
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": title,
+    "description": description,
+    "author": { "@type": "Organization", "name": author },
+    "publisher": { "@type": "Organization", "name": "裕涵居家照護", "logo": { "@type": "ImageObject", "url": "https://yuhanhomecare.com/images/logo.png" } },
+    "datePublished": date,
+    "dateModified": date,
+    "image": ["https://yuhanhomecare.com" + image1, "https://yuhanhomecare.com" + image2]
+  })} />
+
+  <article class="bg-[#fcfaf6] min-h-screen">
+    <!-- Hero Section -->
+    <section class="relative bg-[#2d4a3e] text-white py-20 md:py-28">
+      <div class="absolute inset-0 opacity-15">
+        <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"0.15\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+      </div>
+      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 text-center">
+        <div class="text-sm tracking-widest text-[#a8c4b0] mb-3">居家照顧專區 · 2026年1月</div>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6">高雄居家照顧與居家服務<br class="hidden md:inline">讓長輩在家享受專業照護</h1>
+        <p class="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed">從服務項目、申請流程到費用規劃，為您的家人提供最適合的居家照護方案</p>
+      </div>
+    </section>
+
+    <!-- Table of Contents -->
+    <section class="max-w-4xl mx-auto px-4 sm:px-6 py-10">
+      <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8">
+        <h2 class="text-xl font-bold text-[#2d4a3e] mb-4">文章目錄</h2>
+        <nav class="grid md:grid-cols-2 gap-3">
+          <a href="#section1" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">1</span>
+            <span class="text-[#4a4238]">居家照顧的服務項目</span>
+          </a>
+          <a href="#section2" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">2</span>
+            <span class="text-[#4a4238]">居家服務的類型與特色</span>
+          </a>
+          <a href="#section3" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">3</span>
+            <span class="text-[#4a4238]">誰適合居家照顧服務</span>
+          </a>
+          <a href="#section4" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">4</span>
+            <span class="text-[#4a4238]">申請流程與費用說明</span>
+          </a>
+          <a href="#section5" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">5</span>
+            <span class="text-[#4a4238]">如何選擇優質的居家服務</span>
+          </a>
+          <a href="#section6" class="flex items-center gap-3 p-3 rounded-lg hover:bg-[#f5f3ef] transition-colors">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">6</span>
+            <span class="text-[#4a4238]">結語與服務推薦</span>
+          </a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Content -->
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 pb-20 space-y-16">
+
+      <!-- Section 1 -->
+      <section id="section1">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">1</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">居家照顧的服務項目</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <img src={image1} alt="高雄居家照顧服務" class="w-full h-64 md:h-80 object-cover rounded-xl" loading="lazy" />
+          <p class="text-[#4a4238] leading-relaxed text-lg"><strong class="text-[#2d4a3e]">高雄居家照顧</strong>服務的項目非常廣泛，涵蓋了長輩日常生活的各個面向。首先是「身體照顧服務」，這是居家照顧的核心內容，包括協助洗澡、洗頭、刷牙、刮鬍子、更衣等個人衛生協助；協助如廁、更換尿布、失禁照護等排泄照顧；協助翻身、拍背、按摩、被動運動等身體照護；以及協助進食、餵食、鼻胃管灌食等飲食照顧。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">第二是「家務服務」，居家照顧不僅僅是照顧被照顧者本人，還包括維持居家環境的整潔與舒適。家務服務包括簡單的清掃、洗衣、整理環境、準備餐食、清洗碗盤等。這些服務能夠讓被照顧者在一個乾淨、舒適的環境中生活，也有助於維持其生活品質與尊嚴。對於獨居或雙老家庭來說，家務服務尤其重要。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">第三是「陪同服務」，包括陪同就醫、領藥、散步、購物、辦理各種事務等。許多長輩由於行動不便或不熟悉現代社會的運作，需要有人陪同外出。專業的居家服務人員不僅可以提供物理上的協助，還可以在就醫時協助與醫師溝通，確保長輩的醫療需求被正確理解與處理。第四是「關懷訪視」，定期探訪獨居長輩，確認其安全與健康狀況，提供情感支持與社交互動。<strong class="text-[#2d4a3e]">高雄居家服務</strong>的項目可以根據家庭的需求進行彈性組合，提供最適合的照護方案。</p>
+          <div class="bg-[#f5f3ef] rounded-xl p-6 border-l-4 border-[#2d4a3e]">
+            <h4 class="font-bold text-[#2d4a3e] mb-3">居家照顧四大服務項目</h4>
+            <div class="grid md:grid-cols-2 gap-4">
+              <div class="bg-white rounded-lg p-4"><h5 class="font-semibold text-[#2d4a3e] mb-1">身體照顧</h5><p class="text-sm text-[#4a4238]">沐浴、如廁、進食、翻身按摩</p></div>
+              <div class="bg-white rounded-lg p-4"><h5 class="font-semibold text-[#2d4a3e] mb-1">家務服務</h5><p class="text-sm text-[#4a4238]">清掃、洗衣、備餐、環境整理</p></div>
+              <div class="bg-white rounded-lg p-4"><h5 class="font-semibold text-[#2d4a3e] mb-1">陪同服務</h5><p class="text-sm text-[#4a4238]">陪同就醫、領藥、散步、購物</p></div>
+              <div class="bg-white rounded-lg p-4"><h5 class="font-semibold text-[#2d4a3e] mb-1">關懷訪視</h5><p class="text-sm text-[#4a4238]">定期探訪、安全確認、情感支持</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2 -->
+      <section id="section2">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">2</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">居家服務的類型與特色</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <img src={image2} alt="高雄居家服務團隊" class="w-full h-64 md:h-80 object-cover rounded-xl" loading="lazy" />
+          <p class="text-[#4a4238] leading-relaxed text-lg"><strong class="text-[#2d4a3e]">高雄居家服務</strong>可以分為幾種類型，每種類型有不同的特色與適用對象。第一種是「政府提供的長照居家服務」，這是由各縣市政府長期照顧管理中心提供的服務，符合長照資格的失能者可以申請。服務內容包括身體照顧、家務服務、陪同服務等，費用由政府補助一部分，使用者只需負擔部分費用。這種服務的優點是費用較低，但可能需要排隊等候，且服務時數有限制。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">第二種是「民間居家照顧機構提供的服務」，這是由私人機構提供的付費服務，服務內容與時數較為彈性，可以根據家庭的需求客製化。民間機構的服務品質參差不齊，選擇時需要仔細評估機構的合法性、人員的專業度、服務的口碑等。第三種是「非營利組織提供的居家服務」，許多非營利組織（如 YMCA、佛教團體、天主教團體等）也提供居家服務，費用通常介於政府服務與民間機構之間，服務品質也有一定的保障。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">無論選擇哪種類型的<strong class="text-[#2d4a3e]">高雄居家照顧</strong>服務，都要確認服務提供者是否合法立案、服務人員是否具備專業資格、是否有完善的服務監督與申訴機制。建議在簽約前實地參訪機構，與服務人員面談，了解服務的詳細內容與收費標準。選擇合法、專業、有口碑的服務機構，才能確保長輩獲得安全、優質的照顧。</p>
+          <div class="bg-[#f5f3ef] rounded-xl p-6 border-l-4 border-[#e8b86d]">
+            <h4 class="font-bold text-[#2d4a3e] mb-3">居家服務三種類型</h4>
+            <div class="space-y-3">
+              <div class="flex items-start gap-3 p-3 bg-white rounded-lg"><span class="px-3 py-1 bg-[#2d4a3e] text-white rounded-full text-sm font-bold">政府</span><div><span class="font-semibold text-[#2d4a3e]">長照居家服務</span><p class="text-sm text-[#4a4238]">費用低，需排隊，時數有限制</p></div></div>
+              <div class="flex items-start gap-3 p-3 bg-white rounded-lg"><span class="px-3 py-1 bg-[#e8b86d] text-[#2d4a3e] rounded-full text-sm font-bold">民間</span><div><span class="font-semibold text-[#2d4a3e]">私人照顧機構</span><p class="text-sm text-[#4a4238]">服務彈性，需評估品質與合法性</p></div></div>
+              <div class="flex items-start gap-3 p-3 bg-white rounded-lg"><span class="px-3 py-1 bg-[#a8c4b0] text-[#2d4a3e] rounded-full text-sm font-bold">非營利</span><div><span class="font-semibold text-[#2d4a3e]">非營利組織</span><p class="text-sm text-[#4a4238]">費用中等，品質有保障</p></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3 -->
+      <section id="section3">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">3</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">誰適合居家照顧服務</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <p class="text-[#4a4238] leading-relaxed text-lg"><strong class="text-[#2d4a3e]">高雄居家照顧</strong>服務適合多種不同狀況的家庭與長輩。首先是「失能長輩」，因為年老體衰、疾病或意外導致身體功能退化，無法完全自理日常生活，需要他人協助完成基本生活活動的長輩。這類長輩通常經過長照需要評估，被核定為長照等級，可以申請政府或民間的居家服務。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">第二是「術後恢復期的病患」，剛從醫院出院，身體還在恢復中，暫時需要他人協助日常生活與傷口護理。這類病患可能不需要長期的照護，只需要短期的居家服務支援，直到身體恢復到可以自理為止。第三是「失智症患者」，失智長輩雖然身體功能可能還好，但由於認知功能退化，無法獨自安全地生活，需要有人陪伴與監督。失智症的居家照護需要受過專門訓練的人員，能夠應對各種行為問題。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">第四是「獨居或雙老家庭」，家中只有一位或兩位老人居住，沒有年輕家人可以照顧，或是配偶本身也需要照顧，無法互相支援。第五是「家庭照護者需要喘息的家庭」，家中有主要照護者，但長期照顧導致身心俱疲，需要暫時的休息與支援。無論是哪種情況，<strong class="text-[#2d4a3e]">高雄居家服務</strong>都能夠提供適當的協助，讓長輩在家也能獲得安全、舒適、有尊嚴的照顧。</p>
+          <div class="bg-[#f5f3ef] rounded-xl p-6 border-l-4 border-[#2d4a3e]">
+            <h4 class="font-bold text-[#2d4a3e] mb-3">適合居家照顧的五大對象</h4>
+            <div class="space-y-2">
+              <div class="flex items-center gap-3 p-3 bg-white rounded-lg"><span class="text-[#e8b86d] text-xl">✓</span><span class="text-[#4a4238]">失能長輩（需協助日常生活）</span></div>
+              <div class="flex items-center gap-3 p-3 bg-white rounded-lg"><span class="text-[#e8b86d] text-xl">✓</span><span class="text-[#4a4238]">術後恢復期病患（短期支援）</span></div>
+              <div class="flex items-center gap-3 p-3 bg-white rounded-lg"><span class="text-[#e8b86d] text-xl">✓</span><span class="text-[#4a4238]">失智症患者（需專門照護）</span></div>
+              <div class="flex items-center gap-3 p-3 bg-white rounded-lg"><span class="text-[#e8b86d] text-xl">✓</span><span class="text-[#4a4238]">獨居或雙老家庭</span></div>
+              <div class="flex items-center gap-3 p-3 bg-white rounded-lg"><span class="text-[#e8b86d] text-xl">✓</span><span class="text-[#4a4238]">照護者需要喘息的家庭</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4 -->
+      <section id="section4">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">4</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">申請流程與費用說明</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <p class="text-[#4a4238] leading-relaxed text-lg">申請<strong class="text-[#2d4a3e]">高雄居家服務</strong>的流程會因為服務類型而有所不同。若是申請政府提供的長照居家服務，流程如下：第一步，撥打1966長照專線或到各區長期照顧管理中心提出申請。第二步，接受長照需要評估，由專業評估人員到家中或醫院進行評估。第三步，等待評估結果，核定長照等級與每月服務額度。第四步，選擇居家服務單位，簽訂服務契約。第五步，開始接受服務。整個流程大約需要2到4週。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">若是選擇民間居家照顧機構，流程則較為簡單。可以直接聯繫機構，說明照護需求，機構會安排人員進行需求評估，然後提供服務建議與報價，雙方確認後簽約，即可開始服務。民間機構的申請流程通常可以在1週內完成，對於急需照護服務的家庭來說較為方便。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">關於費用，政府長照居家服務的費用由使用者依身分別（一般戶、中低收入戶、低收入戶）負擔不同比例，一般戶約負擔16%到30%的費用，中低收入戶負擔5%到10%，低收入戶則免費。民間機構的費用則由市場機制決定，通常按小時計費，費用會因為服務內容、人員專業度、服務時段等因素而有所不同。非營利組織的費用通常介於兩者之間。無論選擇哪種服務，都應該在簽約前確認所有費用項目，並了解是否有額外的費用（如交通費、假日加成費等）。</p>
+          <div class="bg-[#f5f3ef] rounded-xl p-6 border-l-4 border-[#e8b86d]">
+            <h4 class="font-bold text-[#2d4a3e] mb-3">政府長照居家服務負擔比例</h4>
+            <div class="space-y-2">
+              <div class="flex items-center justify-between p-3 bg-white rounded-lg"><span class="text-[#4a4238]">一般戶</span><span class="text-[#2d4a3e] font-semibold">負擔16%-30%</span></div>
+              <div class="flex items-center justify-between p-3 bg-white rounded-lg"><span class="text-[#4a4238]">中低收入戶</span><span class="text-[#2d4a3e] font-semibold">負擔5%-10%</span></div>
+              <div class="flex items-center justify-between p-3 bg-white rounded-lg"><span class="text-[#4a4238]">低收入戶</span><span class="text-[#2d4a3e] font-semibold">免費</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5 -->
+      <section id="section5">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">5</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">如何選擇優質的居家服務</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <p class="text-[#4a4238] leading-relaxed text-lg">選擇優質的<strong class="text-[#2d4a3e]">高雄居家照顧</strong>服務，需要從多個面向進行評估。第一個要確認的是「機構的合法性」，選擇政府立案的合法機構，可以確保服務品質與權益保障。合法機構需要符合政府的各項規範，包括人員資格、服務流程、保險等。可以向機構要求查看立案證書，或到各縣市政府的社會局網站查詢。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">第二個要評估的是「服務人員的專業度」，優質的居家服務人員應該具備照顧服務員技術士證或其他相關專業證照，並且有持續接受在職訓練。可以詢問機構人員的訓練背景、年資經驗，以及是否有特殊認證（如失智症照護認證、傷口護理認證等）。專業的人員不僅技術純熟，更應該具備良好的溝通能力與同理心。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">第三個要了解的是「服務的監督與申訴機制」，優質的機構應該有完善的服務監督機制，定期評估服務品質，並且有明確的申訴管道。若對服務不滿意，應該能夠更換服務人員或提出申訴。第四個要考量的是「服務的彈性與客製化程度」，每個家庭的需求都不同，優質的機構應該能夠根據個別需求調整服務內容與時間。裕涵居家照護提供專業的<strong class="text-[#2d4a3e]">高雄居家服務</strong>，所有服務人員均經過嚴格篩選與專業訓練，並提供完善的服務監督與客製化方案，讓您安心託付家人的照護。</p>
+          <div class="bg-[#f5f3ef] rounded-xl p-6 border-l-4 border-[#2d4a3e]">
+            <h4 class="font-bold text-[#2d4a3e] mb-3">選擇優質居家服務四要點</h4>
+            <div class="space-y-2">
+              <div class="flex items-center gap-3 p-3 bg-white rounded-lg"><span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">1</span><span class="text-[#4a4238]">確認機構合法性與立案資格</span></div>
+              <div class="flex items-center gap-3 p-3 bg-white rounded-lg"><span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">2</span><span class="text-[#4a4238]">評估服務人員的專業度與經驗</span></div>
+              <div class="flex items-center gap-3 p-3 bg-white rounded-lg"><span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">3</span><span class="text-[#4a4238]">了解監督機制與申訴管道</span></div>
+              <div class="flex items-center gap-3 p-3 bg-white rounded-lg"><span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center text-sm font-bold">4</span><span class="text-[#4a4238]">確認服務的彈性與客製化程度</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 6 -->
+      <section id="section6">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="flex-shrink-0 w-10 h-10 rounded-full bg-[#2d4a3e] text-white flex items-center justify-center font-bold">6</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2d4a3e]">結語與服務推薦</h2>
+        </div>
+        <div class="bg-white rounded-2xl shadow-sm border border-[#e8e4dc] p-6 md:p-8 space-y-6">
+          <p class="text-[#4a4238] leading-relaxed text-lg"><strong class="text-[#2d4a3e]">高雄居家照顧</strong>與<strong class="text-[#2d4a3e]">高雄居家服務</strong>讓長輩可以在最熟悉的家中，接受專業、有尊嚴的照護。對於許多長輩來說，家是最安全、最舒適的地方，能夠在家安老是最幸福的事情。透過本文的介紹，您應該已經了解了居家照顧的服務項目、服務類型、適用對象、申請流程與費用，以及選擇優質服務的方法。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">居家照顧不僅僅是提供生活上的協助，更是維護長輩生活品質與尊嚴的重要方式。專業的居家服務人員不只是照顧者，更是長輩的陪伴者與傾聽者。他們用專業與愛心，讓長輩在家也能享有安全、舒適、有品質的生活。對於家庭照護者來說，居家服務也是重要的支持力量，能夠分擔照護的壓力，讓照護之路走得更長遠。</p>
+          <p class="text-[#4a4238] leading-relaxed text-lg">裕涵居家照護深耕高雄地區，提供專業、有溫度的<strong class="text-[#2d4a3e]">高雄居家照顧</strong>與<strong class="text-[#2d4a3e]">高雄居家服務</strong>。我們的服務團隊擁有豐富的照護經驗與專業的證照資格，能夠為您的家人提供量身定制的照護方案。從基礎的生活照顧到專業的護理服務，從短期的術後支援到長期的陪伴照護，我們都將以最專業的態度與最溫暖的心，守護您家人的健康與幸福。歡迎與我們聯繫，讓我們一起為您的家人打造最安心、最舒適的居家照護環境。</p>
+          <div class="bg-[#2d4a3e] text-white rounded-xl p-6 text-center">
+            <h4 class="font-bold text-lg mb-2">需要居家照顧服務？</h4>
+            <p class="text-gray-200 mb-4">裕涵居家照護提供專業的居家照顧與居家服務，讓長輩在家享受有品質的照護</p>
+            <a href="/contact" class="inline-block bg-[#e8b86d] text-[#2d4a3e] px-8 py-3 rounded-full font-bold hover:bg-[#d9a95e] transition-colors">免費諮詢</a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </article>
+</MainLayout>
