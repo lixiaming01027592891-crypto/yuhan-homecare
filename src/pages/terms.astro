@@ -1,0 +1,68 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import { COMPANY } from '../consts';
+
+const title = '使用條款｜宇涵居家照護';
+const description = '宇涵居家照護使用條款：說明本網站與居家照護服務的使用規範，包含服務性質、照顧與醫療處置的界線及免責事項。';
+const canonicalURL = '/terms/';
+---
+
+<MainLayout title={title} description={description} canonicalURL={canonicalURL}>
+  <section class="bg-[#fcfaf6] py-16 lg:py-24">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav aria-label="breadcrumb" class="mb-6">
+        <ol class="flex text-sm text-[#6d5d50]">
+          <li><a href="/" class="hover:text-[#8b621f] transition-colors">首頁</a></li>
+          <li class="mx-2">/</li>
+          <li class="text-[#2b221c] font-medium" aria-current="page">使用條款</li>
+        </ol>
+      </nav>
+
+      <h1 class="text-3xl sm:text-4xl font-bold text-[#2b221c] mb-6">使用條款</h1>
+      <p class="text-[#6d5d50] leading-relaxed mb-10">
+        歡迎使用 {COMPANY.name} 網站與服務。當您瀏覽本網站或委託本公司提供居家照護服務，即表示您同意遵守以下條款。
+      </p>
+
+      <div class="space-y-8 text-[#4a3f36] leading-relaxed">
+        <div>
+          <h2 class="text-xl font-semibold text-[#2b221c] mb-2">一、服務性質與界線</h2>
+          <p>本公司提供之服務為<strong>居家照顧與生活協助</strong>，包含長者陪伴、失能照顧、術後生活照顧、用藥提醒、日常生理數值量測與記錄、狀況觀察與通報等。依《醫療法》與《長期照顧服務法》規定，換藥、注射、給藥、管路護理等<strong>醫療處置屬醫療行為</strong>，須由醫師或護理人員執行，或在其醫囑與指導下進行；本公司照顧服務員不執行醫療行為。</p>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-semibold text-[#2b221c] mb-2">二、服務委託與變更</h2>
+          <p>服務內容、時段與費用以雙方確認之服務約定為準。如需變更或取消服務，請提前告知，以便本公司妥善安排人員。</p>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-semibold text-[#2b221c] mb-2">三、健康資訊告知</h2>
+          <p>為確保照顧品質與安全，委託服務時請據實提供服務對象之健康狀況、病史、用藥與特殊需求。若因未告知或提供不實資訊致生風險，本公司不負相關責任。緊急狀況時，本公司將協助聯繫家屬與醫療單位。</p>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-semibold text-[#2b221c] mb-2">四、免責聲明</h2>
+          <p>本網站所載之照護資訊、費用與補助說明僅供一般參考，實際情形依個案評估與主管機關規定為準，不構成醫療建議。任何健康疑慮，請諮詢專業醫療人員。</p>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-semibold text-[#2b221c] mb-2">五、智慧財產權</h2>
+          <p>本網站之文字、圖片與設計均屬本公司或授權者所有，未經同意不得重製、散布或作商業使用。</p>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-semibold text-[#2b221c] mb-2">六、聯絡方式</h2>
+          <p>
+            {COMPANY.name}<br />
+            電話：<a href={COMPANY.telLink} class="text-[#8b621f] hover:underline">{COMPANY.phone}</a><br />
+            地址：{COMPANY.address.full}
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-semibold text-[#2b221c] mb-2">七、條款修訂</h2>
+          <p>本公司保留隨時修訂本使用條款之權利，修訂後將公布於本網站。繼續使用即視為同意修訂後之條款。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</MainLayout>

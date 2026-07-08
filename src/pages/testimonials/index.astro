@@ -53,7 +53,6 @@ const testimonials = [
 const stats = [
   { number: "500+", label: "累積服務家庭" },
   { number: "98%", label: "客戶滿意度" },
-  { number: "4.9", label: "平均評分" },
   { number: "5年", label: "平均照護經驗" }
 ];
 
@@ -65,13 +64,7 @@ const reviewSchema = {
   "url": new URL("/testimonials/", Astro.site).toString(),
   "mainEntity": {
     "@type": "Organization",
-    "name": "宇涵居家照護",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "500",
-      "bestRating": "5"
-    }
+    "name": "宇涵居家照護"
   }
 };
 ---
@@ -101,7 +94,7 @@ const reviewSchema = {
   <!-- 統計數據 -->
   <section class="py-12 bg-[#2b221c]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
         {stats.map(stat => (
           <div class="text-center">
             <div class="text-3xl sm:text-4xl font-bold text-[#8b621f] mb-2">{stat.number}</div>

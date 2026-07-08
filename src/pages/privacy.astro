@@ -1,0 +1,69 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import { COMPANY } from '../consts';
+
+const title = '隱私權政策｜宇涵居家照護';
+const description = '宇涵居家照護隱私權政策：說明我們如何蒐集、處理、利用與保護您在諮詢與服務過程中提供的個人資料，包含健康相關資訊。';
+const canonicalURL = '/privacy/';
+---
+
+<MainLayout title={title} description={description} canonicalURL={canonicalURL}>
+  <section class="bg-[#fcfaf6] py-16 lg:py-24">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav aria-label="breadcrumb" class="mb-6">
+        <ol class="flex text-sm text-[#6d5d50]">
+          <li><a href="/" class="hover:text-[#8b621f] transition-colors">首頁</a></li>
+          <li class="mx-2">/</li>
+          <li class="text-[#2b221c] font-medium" aria-current="page">隱私權政策</li>
+        </ol>
+      </nav>
+
+      <h1 class="text-3xl sm:text-4xl font-bold text-[#2b221c] mb-6">隱私權政策</h1>
+      <p class="text-[#6d5d50] leading-relaxed mb-10">
+        {COMPANY.name}（以下簡稱「本公司」）尊重並保護每一位服務對象與家屬的個人資料。因照護服務性質，本公司可能接觸到健康相關的敏感個人資料，我們依《個人資料保護法》審慎蒐集、處理及利用。當您與本公司諮詢或委託服務時，即表示您已閱讀並同意本政策。
+      </p>
+
+      <div class="space-y-8 text-[#4a3f36] leading-relaxed">
+        <div>
+          <h2 class="text-xl font-semibold text-[#2b221c] mb-2">一、蒐集的資料</h2>
+          <p>為安排與提供居家照護服務，本公司可能蒐集：家屬與服務對象之姓名、聯絡方式、地址、以及照護所需之健康與生活狀況資訊（例如病史、行動能力、用藥提醒需求等）。上述健康相關資料僅在提供照護服務之必要範圍內蒐集。</p>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-semibold text-[#2b221c] mb-2">二、利用目的</h2>
+          <p>所蒐集之個人資料僅用於照護服務評估與安排、人員派遣、服務聯繫、個案照顧紀錄、補助申請協助及必要之營運通知，不會用於前述目的以外之用途。</p>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-semibold text-[#2b221c] mb-2">三、資料保護與保存</h2>
+          <p>本公司採取合理的技術與組織措施保護您的個人資料，並要求照護人員遵守保密義務，防止未經授權的存取、竄改或洩漏。健康相關資料之保存以達成照護目的之必要期間為限，逾期或經您請求後即予刪除。</p>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-semibold text-[#2b221c] mb-2">四、資料揭露</h2>
+          <p>除依法令規定、配合主管機關要求、或經您明示同意（例如協助辦理長照補助、轉介醫療單位）外，本公司不會將您的個人資料提供給無關第三方。</p>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-semibold text-[#2b221c] mb-2">五、您的權利</h2>
+          <p>依《個人資料保護法》，您得就本公司保有之個人資料，行使查詢、閱覽、複製、補正、停止蒐集處理利用或刪除等權利。如需行使權利，請透過下列方式與我們聯繫。</p>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-semibold text-[#2b221c] mb-2">六、聯絡方式</h2>
+          <p>
+            {COMPANY.name}<br />
+            電話：<a href={COMPANY.telLink} class="text-[#8b621f] hover:underline">{COMPANY.phone}</a><br />
+            地址：{COMPANY.address.full}<br />
+            Email：<a href={`mailto:${COMPANY.email}`} class="text-[#8b621f] hover:underline">{COMPANY.email}</a>
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-semibold text-[#2b221c] mb-2">七、政策更新</h2>
+          <p>本公司保留隨時修訂本隱私權政策之權利，修訂後將公布於本網站，恕不另行個別通知。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</MainLayout>
