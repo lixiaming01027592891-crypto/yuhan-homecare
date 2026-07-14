@@ -1,0 +1,158 @@
+---
+import { Image } from 'astro:assets';
+import MainLayout from '../../layouts/MainLayout.astro';
+import serviceDaily from '../../assets/images/service-daily.jpg';
+import blogDementia from '../../assets/images/blog-dementia.jpg';
+import blogBedsore from '../../assets/images/blog-bedsore.jpg';
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: '長者口腔照護與假牙清潔：居家日常保養指南',
+  description: '長者口腔照護與假牙清潔的居家做法。從每天的口腔清潔、假牙保養細節、口乾口臭的日常應對，到何時該尋求牙科協助，分享居家照顧的實務經驗與常見誤區。',
+  image: new URL('/images/service-daily.jpg', Astro.site).toString(),
+  datePublished: '2026-07-14T08:00:00+08:00',
+  author: { '@type': 'Organization', name: '宇涵居家照護' },
+  publisher: { '@type': 'Organization', name: '宇涵居家照護', logo: { '@type': 'ImageObject', url: new URL('/images/logo.png', Astro.site).toString() } },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': new URL('/blog/elderly-oral-care-denture-cleaning-20260714', Astro.site).toString() },
+};
+---
+
+<MainLayout
+  title="長者口腔照護與假牙清潔｜居家日常保養指南｜宇涵"
+  description="長者口腔照護與假牙清潔怎麼做？從每天的口腔清潔、假牙保養、口乾口臭的日常應對，到何時該尋求牙科協助，分享居家照顧的實務經驗與常見誤區。"
+  keywords="長者口腔照護,假牙清潔,口腔清潔,居家照護,口乾照顧,長者口臭,牙齦保養,臥床口腔照護"
+  schema={schema}
+>
+  <article>
+    <section class="relative bg-[#2b221c] py-16 lg:py-24">
+      <div class="absolute inset-0 opacity-15">
+        <Image src={serviceDaily} alt="長者口腔照護與假牙清潔" widths={[400, 800, 1200]} sizes="(max-width: 768px) 100vw, 800px" class="w-full h-full object-cover" loading="eager" />
+      </div>
+      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav aria-label="麵包屑" class="mb-6">
+          <ol class="flex items-center space-x-2 text-sm text-[#efe5d5]/80">
+            <li><a href="/" class="hover:text-[#8b621f]">首頁</a></li><li><span class="text-[#efe5d5]/40">/</span></li>
+            <li><a href="/blog" class="hover:text-[#8b621f]">照護知識</a></li><li><span class="text-[#efe5d5]/40">/</span></li>
+            <li class="text-[#fcfaf6]">口腔照護</li>
+          </ol>
+        </nav>
+        <span class="inline-block bg-[#8b621f] text-white text-xs px-3 py-1 rounded-full mb-4">照護知識</span>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#fcfaf6] mb-4 leading-tight">長者口腔照護與假牙清潔：居家日常保養指南</h1>
+        <div class="flex items-center text-[#efe5d5] text-sm space-x-4">
+          <span>2026-07-14</span><span>9 分鐘閱讀</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="bg-[#fcfaf6] py-12 lg:py-16">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="prose prose-lg max-w-none">
+          <p class="text-lg text-[#6d5d50] leading-relaxed mb-8">
+            「牙齒又不會痛，先不用管吧。」這是我們到府照顧時，最常聽到家屬對長輩口腔的想法。但實務上，臥床或行動不便的長者，口腔問題往往不是喊痛，而是默默影響進食、說話與情緒。食物殘渣沒清、假牙洗不乾淨、口水變少，日積月累之下，容易出現口臭、牙齦紅腫，甚至讓長輩越來越不想吃東西。口腔清潔屬於日常保養範疇，不是醫療診斷，卻是居家照顧裡最容易被略過、也最值得每天花幾分鐘做好的一環。以下分享我們在居家實務中累積的做法與常見誤區。
+          </p>
+
+          <!-- 為什麼被略過 -->
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">為什麼長者的口腔最容易被略過</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-4">在多數家庭裡，翻身、餵藥、傷口照顧總是排在前面，口腔清潔常常被擠到最後，甚至整天沒做。幾個常見的原因：</p>
+          <ul class="list-disc list-inside text-[#6d5d50] leading-relaxed mb-6 space-y-2">
+            <li><strong class="text-[#2b221c]">長輩不會主動反映</strong>：尤其失智或表達退化的長者，嘴巴不舒服也說不清楚</li>
+            <li><strong class="text-[#2b221c]">自己刷不乾淨</strong>：手部力氣變差、握不穩牙刷，看似有刷、其實沒刷到</li>
+            <li><strong class="text-[#2b221c]">誤以為戴假牙就免刷</strong>：其實牙齦與剩下的真牙同樣要清潔，假牙本身也要洗</li>
+            <li><strong class="text-[#2b221c]">照顧項目太多</strong>：家屬分身乏術，口腔往往最後才想到</li>
+          </ul>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            第一手觀察：我們常發現長輩的口腔狀況，是在家屬提到「最近比較沒胃口」或「嘴巴有味道」時才被注意到。與其等出狀況再處理，不如每天固定看一眼、清一次，反而輕鬆許多。
+          </p>
+
+          <!-- 每天清潔 -->
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">還有牙齒的長者，每天怎麼清潔</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-4">重點不是刷得多用力，而是每天穩定做到、動作輕柔到位：</p>
+          <ul class="list-disc list-inside text-[#6d5d50] leading-relaxed mb-4 space-y-1">
+            <li>早晚各一次，飯後能清更好；選小刷頭、軟毛牙刷，長輩牙齦較敏感</li>
+            <li>臥床長輩可先把床頭搖高約30度以上、頭稍微側向一邊，減少嗆到的風險</li>
+            <li>一手輕撥開臉頰，一手小範圍、輕力道刷，牙齒外側、內側與咬合面都要顧到</li>
+            <li>舌苔可用軟毛牙刷或舌苔刷輕輕刮，對改善口氣很有幫助</li>
+            <li>若長輩無法漱口吐水，改用紗布或口腔棉棒沾少量水擦拭，避免大量水流進喉嚨</li>
+          </ul>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            常見誤區：用力刷、用硬毛牙刷，反而刮傷牙齦流血；牙膏擠太多、來不及吐掉，長輩容易不舒服。份量少、動作輕、有耐心，才是把口腔清乾淨的關鍵。
+          </p>
+
+          <!-- 假牙 -->
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">假牙的清潔與保養細節</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-4">假牙是許多長者每天使用的物件，清潔沒做好，異味與牙齦不適很快就會找上門：</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+            <div class="bg-white rounded-xl p-5 border border-[#efe5d5]">
+              <h4 class="font-bold text-[#8b621f] mb-2">每天怎麼洗</h4>
+              <p class="text-sm text-[#6d5d50]">每餐飯後取下沖掉殘渣，睡前徹底清潔一次。用假牙專用軟刷加清水或假牙清潔錠，別用含研磨劑的一般牙膏，那會刮出細紋反而藏污納垢。</p>
+            </div>
+            <div class="bg-white rounded-xl p-5 border border-[#efe5d5]">
+              <h4 class="font-bold text-[#8b621f] mb-2">避免摔裂</h4>
+              <p class="text-sm text-[#6d5d50]">清洗時在水槽墊條毛巾或先裝一點水，萬一手滑掉落也不容易摔破，這是很多家屬吃過虧才學會的小細節。</p>
+            </div>
+            <div class="bg-white rounded-xl p-5 border border-[#efe5d5]">
+              <h4 class="font-bold text-[#8b621f] mb-2">晚上讓牙床休息</h4>
+              <p class="text-sm text-[#6d5d50]">睡前取下假牙讓牙床透氣，泡在清水或假牙保存液中，切記不要泡熱水，高溫會讓假牙變形。</p>
+            </div>
+            <div class="bg-white rounded-xl p-5 border border-[#efe5d5]">
+              <h4 class="font-bold text-[#8b621f] mb-2">戴回前先清口腔</h4>
+              <p class="text-sm text-[#6d5d50]">重新戴上前，先清潔口腔內的牙齦與上顎，別讓殘渣悶在假牙與牙床之間一整天。</p>
+            </div>
+          </div>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            提醒：假牙若出現鬆動、摩擦破皮、咬合怪怪的，別自己硬修或忍著繼續戴，回牙科調整比較安全。口腔清潔和<a href="/blog/elderly-bathing-hygiene-care/" class="text-[#8b621f] hover:underline">長者沐浴與清潔照顧</a>一樣，都可以固定排進每天的照顧節奏裡，比較不會遺漏。
+          </p>
+
+          <!-- 口乾口臭 -->
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">口乾、口臭與牙齦不適的日常應對</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-4">這些是居家最常遇到的小狀況，多數可以先從日常保養著手：</p>
+          <ul class="list-disc list-inside text-[#6d5d50] leading-relaxed mb-4 space-y-1">
+            <li><strong class="text-[#2b221c]">口乾</strong>：不少長輩因水喝得少或藥物影響而口乾，可少量多次補水、含一小口水潤口，飲食上也能延伸參考<a href="/blog/elderly-diet-swallowing-care/" class="text-[#8b621f] hover:underline">長者居家飲食照顧指南</a></li>
+            <li><strong class="text-[#2b221c]">口臭</strong>：多半和殘渣、舌苔、假牙沒洗乾淨有關，把清潔確實做到，通常就會明顯改善</li>
+            <li><strong class="text-[#2b221c]">牙齦紅、輕微流血</strong>：先檢查是不是刷太用力或假牙摩擦，把力道與配戴方式調整過來再觀察</li>
+          </ul>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            以上都屬於日常保養可以先處理的範圍。但若持續沒改善，或出現明顯疼痛、腫脹，就不要一直拖著。
+          </p>
+
+          <!-- 就醫 -->
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">這些狀況，建議尋求牙醫或醫療協助</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-4">以下情況不屬於日常保養能處理的範圍，本文也不做醫療診斷，建議儘早請牙醫或醫療人員評估：</p>
+          <ul class="list-disc list-inside text-[#6d5d50] leading-relaxed mb-6 space-y-2">
+            <li>口腔內有久不癒合的破洞、白斑或不明腫塊</li>
+            <li>牙齦持續腫痛、化膿或明顯出血</li>
+            <li>假牙造成的傷口反覆破皮、疼痛</li>
+            <li>吞嚥時明顯疼痛、發燒或懷疑感染</li>
+            <li>長輩因牙痛、口腔不適而拒食、體重下降</li>
+          </ul>
+
+          <!-- CTA -->
+          <div class="bg-[#8b621f]/10 rounded-xl p-6 mb-10 border border-[#8b621f]/20">
+            <h3 class="text-xl font-bold text-[#2b221c] mb-3">需要居家照顧協助？</h3>
+            <p class="text-[#6d5d50] mb-4">宇涵居家照護提供高雄居家看護與長照服務，協助長輩的日常口腔清潔、假牙保養、進食與生活照顧，讓家人照顧起來更安心。</p>
+            <div class="flex flex-col sm:flex-row gap-3">
+              <a href="tel:0935803258" class="inline-flex items-center justify-center px-6 py-3 bg-[#8b621f] text-white font-semibold rounded-lg hover:bg-[#8b621f]/90 transition-colors">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                0935803258
+              </a>
+              <a href="/contact" class="inline-flex items-center justify-center px-6 py-3 border border-[#8b621f] text-[#8b621f] font-semibold rounded-lg hover:bg-[#8b621f]/10 transition-colors">免費諮詢表單</a>
+            </div>
+          </div>
+
+          <h3 class="text-xl font-bold text-[#2b221c] mb-4">相關文章推薦</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+            <a href="/blog/elderly-diet-swallowing-care" class="flex items-start space-x-4 bg-white rounded-xl p-4 border border-[#efe5d5] hover:border-[#8b621f]/30 transition-colors">
+              <Image src={blogDementia} alt="長者居家飲食照顧" widths={[80, 160, 240]} sizes="80px" class="w-20 h-20 rounded-lg object-cover flex-shrink-0" loading="lazy" />
+              <div><h4 class="font-bold text-[#2b221c] hover:text-[#8b621f]">長者居家飲食照顧指南</h4><p class="text-sm text-[#6d5d50]">食慾差、進食嗆咳的日常照顧...</p></div>
+            </a>
+            <a href="/blog/bed-sore-prevention" class="flex items-start space-x-4 bg-white rounded-xl p-4 border border-[#efe5d5] hover:border-[#8b621f]/30 transition-colors">
+              <Image src={blogBedsore} alt="褥瘡預防與皮膚護理" widths={[80, 160, 240]} sizes="80px" class="w-20 h-20 rounded-lg object-cover flex-shrink-0" loading="lazy" />
+              <div><h4 class="font-bold text-[#2b221c] hover:text-[#8b621f]">褥瘡預防與照護指南</h4><p class="text-sm text-[#6d5d50]">臥床長者的皮膚日常護理...</p></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</MainLayout>

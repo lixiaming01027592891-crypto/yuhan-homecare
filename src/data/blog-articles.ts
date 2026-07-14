@@ -216,4 +216,13 @@ export const blogArticles: BlogArticle[] = [
     date: '2025-01-26',
     readTime: '11 分鐘',
   },
+  {
+    title: '長者口腔照護與假牙清潔：居家日常保養指南',
+    excerpt: '長者口腔照護與假牙清潔怎麼做？從每天的口腔清潔、假牙保養細節、口乾口臭的日常應對，到何時該尋求牙科協助，分享居家照顧的實務經驗與常見誤區。',
+    image: '/images/service-daily.jpg',
+    slug: '/blog/elderly-oral-care-denture-cleaning-20260714',
+    category: '照護知識',
+    date: '2026-07-14',
+    readTime: '9 分鐘',
+  },
 ].sort((a, b) => (a.date < b.date ? 1 : -1));
