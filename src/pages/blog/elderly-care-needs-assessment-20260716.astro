@@ -1,0 +1,172 @@
+---
+import { Image } from 'astro:assets';
+import MainLayout from '../../layouts/MainLayout.astro';
+import serviceElderly from '../../assets/images/service-elderly.jpg';
+import blogHospital from '../../assets/images/blog-hospital.jpg';
+import blogFall from '../../assets/images/blog-fall.jpg';
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: '如何評估長輩需要的照護等級：安排高雄居家看護前的需求盤點',
+  description: '長輩到底需要多少照顧？從日常生活自理能力、認知與安全風險、醫療復健需求三個面向，一步步評估照護需求等級，再換算成合適的照護安排，讓高雄居家看護的規劃更貼近實際狀況。',
+  image: new URL('/images/service-elderly.jpg', Astro.site).toString(),
+  datePublished: '2026-07-16T08:00:00+08:00',
+  author: { '@type': 'Organization', name: '宇涵居家照護' },
+  publisher: { '@type': 'Organization', name: '宇涵居家照護', logo: { '@type': 'ImageObject', url: new URL('/images/logo.png', Astro.site).toString() } },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': new URL('/blog/elderly-care-needs-assessment-20260716', Astro.site).toString() },
+};
+---
+
+<MainLayout
+  title="如何評估長輩需要的照護等級？安排高雄居家看護前的需求盤點｜宇涵"
+  description="長輩需要多少照顧才夠？從日常自理能力、認知與安全風險、醫療復健需求逐步評估照護等級，再換算成合適的服務安排，讓照護規劃更貼近實際。"
+  keywords="照護需求評估,照護等級,高雄居家看護,長輩自理能力,日常生活能力,失能評估,居家照顧安排,照護時數"
+  schema={schema}
+>
+  <article>
+    <section class="relative bg-[#2b221c] py-16 lg:py-24">
+      <div class="absolute inset-0 opacity-15">
+        <Image src={serviceElderly} alt="評估長輩的照護需求等級" widths={[400, 800, 1200]} sizes="(max-width: 768px) 100vw, 800px" class="w-full h-full object-cover" loading="eager" />
+      </div>
+      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav aria-label="麵包屑" class="mb-6">
+          <ol class="flex items-center space-x-2 text-sm text-[#efe5d5]/80">
+            <li><a href="/" class="hover:text-[#8b621f]">首頁</a></li><li><span class="text-[#efe5d5]/40">/</span></li>
+            <li><a href="/blog" class="hover:text-[#8b621f]">照護知識</a></li><li><span class="text-[#efe5d5]/40">/</span></li>
+            <li class="text-[#fcfaf6]">照護需求評估</li>
+          </ol>
+        </nav>
+        <span class="inline-block bg-[#8b621f] text-white text-xs px-3 py-1 rounded-full mb-4">照護知識</span>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#fcfaf6] mb-4 leading-tight">如何評估長輩需要的照護等級：安排高雄居家看護前的需求盤點</h1>
+        <div class="flex items-center text-[#efe5d5] text-sm space-x-4">
+          <span>2026-07-16</span><span>10 分鐘閱讀</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="bg-[#fcfaf6] py-12 lg:py-16">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="prose prose-lg max-w-none">
+          <p class="text-lg text-[#6d5d50] leading-relaxed mb-8">
+            「我媽到底需要幾個小時的看護？要不要請人住到家裡？」這是家屬打電話來時，最常先問的問題。實務上，很多家庭是先急著找人，卻沒有先把「長輩現在到底需要什麼樣的照顧」盤點清楚，結果不是請了太多時數造成負擔，就是安排的人力其實照顧不來。照護需求評估本身不是醫療診斷，而是把長輩的自理能力、安全風險與日常需要，用比較有系統的方式看過一遍，再決定要投入多少人力與哪一種服務。以下分享我們到府評估時，實際會一起看的幾個面向。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">為什麼先評估需求，比急著找看護更重要</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-4">
+            照顧不是「有人來就好」，而是要讓人力對應到真正的需要。沒有先評估就決定，常會出現兩種落差：一種是把能自己走、自己吃飯的長輩，安排成全天候貼身照顧，家人壓力與時間都被拉得很緊；另一種是明明需要協助翻身、管路照顧的臥床長輩，卻只安排幾小時陪伴，真正吃力的時段反而沒人在。
+          </p>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            先把需求盤清楚，後面選擇服務型態、估算時數、跟看護溝通分工，才會有依據。評估的目的不是替長輩貼上標籤，而是讓每一分照顧的力氣，都花在最需要的地方。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">先從日常生活能力看起：現在能自己做到哪些事</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-4">
+            最基礎、也最實用的一步，是誠實記錄長輩每天的「基本自理能力」。不用專業術語，就是問自己：這幾件事，他現在能不能自己完成、還是需要有人在旁邊、或完全要人代勞？
+          </p>
+          <ul class="list-disc list-inside text-[#6d5d50] leading-relaxed mb-4 space-y-1">
+            <li><strong class="text-[#2b221c]">進食</strong>：能自己拿餐具吃，還是需要餵食、或有嗆咳、吞嚥困難的狀況</li>
+            <li><strong class="text-[#2b221c]">如廁</strong>：能自己上廁所、需要攙扶，還是已經使用尿布、需要協助清理</li>
+            <li><strong class="text-[#2b221c]">移位與行走</strong>：能自己起身走動、要扶著助行器，還是臥床需要人協助翻身、轉位</li>
+            <li><strong class="text-[#2b221c]">洗澡與穿衣</strong>：能自理，還是需要有人在旁看著、或全程協助</li>
+          </ul>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            一個小提醒：建議記「最近一週的實際狀況」，而不是「他以前很能幹」或「狀況好的時候可以」。照顧要對應的是現在，不是回憶裡的樣子。這份紀錄之後跟看護交接、跟醫療團隊討論時，也都用得上。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">除了身體，也要看認知與安全風險</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-4">
+            很多家庭只盯著「能不能走、能不能吃」，卻忽略了認知與安全，而這常常才是決定要不要有人隨時在旁的關鍵。以下幾點值得一起看：
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+            <div class="bg-white rounded-xl p-5 border border-[#efe5d5]">
+              <h4 class="font-bold text-[#8b621f] mb-2">記憶與判斷</h4>
+              <p class="text-sm text-[#6d5d50]">會不會忘記關瓦斯、重複吃藥、認不得時間地點。若已影響安全，代表需要更多看顧與提醒，而非只是陪伴。</p>
+            </div>
+            <div class="bg-white rounded-xl p-5 border border-[#efe5d5]">
+              <h4 class="font-bold text-[#8b621f] mb-2">跌倒風險</h4>
+              <p class="text-sm text-[#6d5d50]">是否曾跌倒、夜間會不會自己下床、走路是否不穩。跌倒風險高的長輩，夜間時段的照顧安排要特別留意。</p>
+            </div>
+            <div class="bg-white rounded-xl p-5 border border-[#efe5d5]">
+              <h4 class="font-bold text-[#8b621f] mb-2">走失與情緒</h4>
+              <p class="text-sm text-[#6d5d50]">有沒有想往外走、日夜顛倒或情緒起伏。失智長輩的照顧重點，往往在陪伴與環境安排，而不只是身體協助。</p>
+            </div>
+            <div class="bg-white rounded-xl p-5 border border-[#efe5d5]">
+              <h4 class="font-bold text-[#8b621f] mb-2">獨處的時間</h4>
+              <p class="text-sm text-[#6d5d50]">評估長輩能否安全地獨自待著、待多久。這個問題的答案，直接影響需要日間、夜間，還是全天候的照顧。</p>
+            </div>
+          </div>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            如果跌倒或居家環境是主要擔心的部分，可以延伸參考<a href="/blog/fall-prevention/" class="text-[#8b621f] hover:underline">長者居家防跌與無障礙改造</a>，先把環境調整好，往往能減輕不少照顧壓力。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">醫療與復健需求，決定照護的專業程度</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-4">
+            身體與認知之外，還要看有沒有「需要一定專業或技術」的照護項目。這一塊建議務必和醫療團隊確認，本文提供的是盤點方向，不是醫療評估，實際做法請依個案由醫護人員指導：
+          </p>
+          <ul class="list-disc list-inside text-[#6d5d50] leading-relaxed mb-4 space-y-1">
+            <li>是否有鼻胃管、導尿管、傷口或造口需要照顧與觀察</li>
+            <li>用藥種類多不多、需不需要有人協助分藥與提醒服藥</li>
+            <li>術後或中風後是否需要配合復健、定時擺位與活動</li>
+            <li>有沒有慢性病需要量測血壓、血糖，並注意變化</li>
+          </ul>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            這些項目越多、越需要技術，代表照護的專業要求越高，安排人力時就要把交接與教學的時間一起算進去。哪些屬於日常照顧可協助、哪些必須由醫療專業處理，建議先諮詢主治醫師或出院準備護理師，再據此規劃。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">把需求換算成照護安排：時數、人力與服務型態</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-4">
+            前面盤點完，最後一步就是把「需求」對應到「合適的安排」。這裡沒有標準答案，但可以掌握幾個對照的方向：
+          </p>
+          <ul class="list-disc list-inside text-[#6d5d50] leading-relaxed mb-4 space-y-2">
+            <li><strong class="text-[#2b221c]">大致能自理、只需部分協助</strong>：可能日間幾小時的到府協助就足夠，重點放在洗澡、備餐、陪伴外出等時段</li>
+            <li><strong class="text-[#2b221c]">夜間不安全或需要翻身</strong>：要把夜間時段納入考量，評估是否需要夜間陪伴或全天候照顧</li>
+            <li><strong class="text-[#2b221c]">臨時人手空窗</strong>：家人請假、外籍看護休假時，可用短期支援先接手，銜接方式可參考<a href="/blog/temp-home-care/" class="text-[#8b621f] hover:underline">臨時看護如何協助家庭渡過照護空窗期</a></li>
+            <li><strong class="text-[#2b221c]">在家或到機構的取捨</strong>：需要熟悉環境與一對一，居家照護較合適；若家庭人力有限，也可比較不同型態，延伸閱讀<a href="/blog/hospital-vs-home/" class="text-[#8b621f] hover:underline">醫院看護與居家看護比較指南</a></li>
+          </ul>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            把需求盤點的結果整理出來，跟服務單位討論時就能講得很具體：長輩現在的自理程度、主要擔心的風險、有哪些醫療照護項目、希望協助的時段。資訊越清楚，媒合出來的安排也越貼近實際。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">需求會變動，記得定期重新評估</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-4">
+            照護需求不是評估一次就固定。長輩出院初期、病情變化、季節交替，狀況都可能不一樣。我們建議把評估當成「會定期回頭看的一件事」，例如每隔一段時間或狀況有明顯改變時，就重新盤點一次，再調整時數與分工。
+          </p>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            以下情況，建議尋求醫療或專業評估，不要只靠家屬自己判斷：
+          </p>
+          <ul class="list-disc list-inside text-[#6d5d50] leading-relaxed mb-6 space-y-2">
+            <li>自理能力在短時間內明顯退步，或出現新的吞嚥、行走困難</li>
+            <li>有管路、傷口、複雜用藥等需要專業技術的照護需求</li>
+            <li>認知或情緒變化明顯，影響到安全與日常作息</li>
+            <li>不確定該申請哪些長照資源或補助，需要專業協助釐清</li>
+          </ul>
+
+          <div class="bg-[#8b621f]/10 rounded-xl p-6 mb-10 border border-[#8b621f]/20">
+            <h3 class="text-xl font-bold text-[#2b221c] mb-3">需要協助評估照護需求？</h3>
+            <p class="text-[#6d5d50] mb-4">宇涵居家照護提供高雄地區的居家看護、醫院看護與臨時看護服務。我們可以先協助您一起盤點長輩目前的照護需求，再依實際狀況討論合適的人力與時段安排，讓照顧更貼近家庭的實際節奏。</p>
+            <div class="flex flex-col sm:flex-row gap-3">
+              <a href="tel:0935803258" class="inline-flex items-center justify-center px-6 py-3 bg-[#8b621f] text-white font-semibold rounded-lg hover:bg-[#8b621f]/90 transition-colors">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                0935803258
+              </a>
+              <a href="/contact" class="inline-flex items-center justify-center px-6 py-3 border border-[#8b621f] text-[#8b621f] font-semibold rounded-lg hover:bg-[#8b621f]/10 transition-colors">免費諮詢表單</a>
+            </div>
+          </div>
+
+          <h3 class="text-xl font-bold text-[#2b221c] mb-4">相關文章推薦</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+            <a href="/blog/hospital-vs-home" class="flex items-start space-x-4 bg-white rounded-xl p-4 border border-[#efe5d5] hover:border-[#8b621f]/30 transition-colors">
+              <Image src={blogHospital} alt="醫院看護與居家看護比較" widths={[80, 160, 240]} sizes="80px" class="w-20 h-20 rounded-lg object-cover flex-shrink-0" loading="lazy" />
+              <div><h4 class="font-bold text-[#2b221c] hover:text-[#8b621f]">醫院看護與居家看護比較指南</h4><p class="text-sm text-[#6d5d50]">從照護內容與家屬負擔比較兩種選擇...</p></div>
+            </a>
+            <a href="/blog/fall-prevention" class="flex items-start space-x-4 bg-white rounded-xl p-4 border border-[#efe5d5] hover:border-[#8b621f]/30 transition-colors">
+              <Image src={blogFall} alt="長者居家防跌與無障礙改造" widths={[80, 160, 240]} sizes="80px" class="w-20 h-20 rounded-lg object-cover flex-shrink-0" loading="lazy" />
+              <div><h4 class="font-bold text-[#2b221c] hover:text-[#8b621f]">長者居家防跌與無障礙改造</h4><p class="text-sm text-[#6d5d50]">從環境評估降低跌倒風險...</p></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</MainLayout>

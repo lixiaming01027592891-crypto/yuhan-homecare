@@ -10,6 +10,15 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    title: '如何評估長輩需要的照護等級：安排高雄居家看護前的需求盤點',
+    excerpt: '長輩到底需要多少照顧？從日常生活自理能力、認知與安全風險、醫療復健需求三個面向，一步步評估照護需求等級，讓高雄居家看護的規劃更貼近實際狀況。',
+    image: '/images/service-elderly.jpg',
+    slug: '/blog/elderly-care-needs-assessment-20260716',
+    category: '照護知識',
+    date: '2026-07-16',
+    readTime: '10 分鐘',
+  },
+  {
     title: '換個環境安頓下來：高雄看護中心推薦怎麼選才適合長輩',
     excerpt: '當長期照護成為必要，許多高雄家庭開始考慮看護中心。本文從需求釐清、實地走訪到簽約注意事項，分享選擇看護中心的實用經驗。',
     image: '/images/blog-kaohsiung-center-recommend-1.jpg',
