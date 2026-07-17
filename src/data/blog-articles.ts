@@ -234,4 +234,13 @@ export const blogArticles: BlogArticle[] = [
     date: '2026-07-14',
     readTime: '9 分鐘',
   },
+  {
+    title: '24小時看護還是日間看護？高雄居家看護的時段怎麼安排最合適',
+    excerpt: '該請24小時看護還是日間看護？從長輩自理程度、夜間安全、家庭人力到費用負擔，比較兩種時段的適用情境，替高雄居家看護找到不浪費的照顧節奏。',
+    image: '/images/service-daily.jpg',
+    slug: '/blog/home-care-24h-vs-daytime-20260717',
+    category: '照護知識',
+    date: '2026-07-17',
+    readTime: '10 分鐘',
+  },
 ].sort((a, b) => (a.date < b.date ? 1 : -1));

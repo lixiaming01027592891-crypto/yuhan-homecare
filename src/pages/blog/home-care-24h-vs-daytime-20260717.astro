@@ -1,0 +1,169 @@
+---
+import { Image } from 'astro:assets';
+import MainLayout from '../../layouts/MainLayout.astro';
+import serviceDaily from '../../assets/images/service-daily.jpg';
+import blogHospital from '../../assets/images/blog-hospital.jpg';
+import blogTempCare from '../../assets/images/blog-temp-care-1.jpg';
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: '24小時看護還是日間看護？高雄居家看護的時段怎麼安排最合適',
+  description: '該請24小時看護還是日間看護？從長輩的自理程度、夜間安全、家庭人力到費用負擔，比較兩種時段安排的適用情境，協助你為高雄居家看護找到合適又不浪費的照顧節奏。',
+  image: new URL('/images/service-daily.jpg', Astro.site).toString(),
+  datePublished: '2026-07-17T08:00:00+08:00',
+  author: { '@type': 'Organization', name: '宇涵居家照護' },
+  publisher: { '@type': 'Organization', name: '宇涵居家照護', logo: { '@type': 'ImageObject', url: new URL('/images/logo.png', Astro.site).toString() } },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': new URL('/blog/home-care-24h-vs-daytime-20260717', Astro.site).toString() },
+};
+---
+
+<MainLayout
+  title="24小時看護還是日間看護？高雄居家看護的時段怎麼安排最合適｜宇涵"
+  description="該請24小時看護還是日間看護？從長輩自理程度、夜間安全、家庭人力到費用負擔，比較兩種時段的適用情境，替高雄居家看護找到不浪費的照顧節奏。"
+  keywords="24小時看護,日間看護,高雄居家看護,高雄看護,夜間照顧,看護時數,居家照護安排,長輩照顧"
+  schema={schema}
+>
+  <article>
+    <section class="relative bg-[#2b221c] py-16 lg:py-24">
+      <div class="absolute inset-0 opacity-15">
+        <Image src={serviceDaily} alt="安排長輩的日常照護時段" widths={[400, 800, 1200]} sizes="(max-width: 768px) 100vw, 800px" class="w-full h-full object-cover" loading="eager" />
+      </div>
+      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav aria-label="麵包屑" class="mb-6">
+          <ol class="flex items-center space-x-2 text-sm text-[#efe5d5]/80">
+            <li><a href="/" class="hover:text-[#8b621f]">首頁</a></li><li><span class="text-[#efe5d5]/40">/</span></li>
+            <li><a href="/blog" class="hover:text-[#8b621f]">照護知識</a></li><li><span class="text-[#efe5d5]/40">/</span></li>
+            <li class="text-[#fcfaf6]">時段安排</li>
+          </ol>
+        </nav>
+        <span class="inline-block bg-[#8b621f] text-white text-xs px-3 py-1 rounded-full mb-4">照護知識</span>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#fcfaf6] mb-4 leading-tight">24小時看護還是日間看護？高雄居家看護的時段怎麼安排最合適</h1>
+        <div class="flex items-center text-[#efe5d5] text-sm space-x-4">
+          <span>2026-07-17</span><span>10 分鐘閱讀</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="bg-[#fcfaf6] py-12 lg:py-16">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="prose prose-lg max-w-none">
+          <p class="text-lg text-[#6d5d50] leading-relaxed mb-8">
+            「請一個住家裡二十四小時的，還是白天來幾個小時就好？」這幾乎是每個家庭打電話進來時，遲早都會問的問題。多數人一開始的直覺是「請越久越安心」，但實際排下去才發現，時段選得不合，不是家人被費用壓得喘不過氣，就是真正需要人的那幾個小時反而沒人在。24小時看護與日間看護沒有誰比較好，只有適不適合。這篇想從我們實際到府安排的經驗，聊聊兩種時段各自適合什麼狀況、又該怎麼判斷，讓時間與人力都花在刀口上。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">先分清楚：24小時看護和日間看護實際差在哪</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-4">
+            兩者的差別不只是「時間長短」，而是照顧的模式與涵蓋的風險不一樣。先把定義講清楚，後面比較才有依據：
+          </p>
+          <ul class="list-disc list-inside text-[#6d5d50] leading-relaxed mb-6 space-y-2">
+            <li><strong class="text-[#2b221c]">24小時看護</strong>：看護人員全天候在家，含夜間，通常會安排休息與換班機制，重點是「隨時有人在」，能即時應對夜間如廁、翻身、突發狀況。</li>
+            <li><strong class="text-[#2b221c]">日間看護</strong>：多半是白天固定幾個小時到府，例如協助洗澡、備餐、陪伴、復健活動，時段結束後由家人自行照顧或長輩自理。</li>
+          </ul>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            換句話說，24小時看護買的是「夜間與空檔也有人守著」的安全感；日間看護買的是「在最吃力的時段有專人分擔」。搞清楚自己家最需要補的是哪一塊，選擇就會清楚很多。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">什麼情況比較適合24小時看護</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-4">
+            以我們實際接觸的家庭來看，會走向全天候安排的，大多不是因為「想要多」，而是這幾種狀況讓夜間也離不開人：
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+            <div class="bg-white rounded-xl p-5 border border-[#efe5d5]">
+              <h4 class="font-bold text-[#8b621f] mb-2">夜間需要協助</h4>
+              <p class="text-sm text-[#6d5d50]">臥床需要定時翻身、半夜起來如廁、需要協助管路照顧，夜裡就必須有人隨時回應。</p>
+            </div>
+            <div class="bg-white rounded-xl p-5 border border-[#efe5d5]">
+              <h4 class="font-bold text-[#8b621f] mb-2">獨處風險高</h4>
+              <p class="text-sm text-[#6d5d50]">長輩無法安全獨自待著，例如夜間會自己下床、容易跌倒，或有失智走動、日夜顛倒的狀況。</p>
+            </div>
+            <div class="bg-white rounded-xl p-5 border border-[#efe5d5]">
+              <h4 class="font-bold text-[#8b621f] mb-2">家中無人可顧</h4>
+              <p class="text-sm text-[#6d5d50]">家人都要上班、無法輪夜班，或本身也年長體力有限，夜間確實接不了手。</p>
+            </div>
+            <div class="bg-white rounded-xl p-5 border border-[#efe5d5]">
+              <h4 class="font-bold text-[#8b621f] mb-2">出院初期不穩</h4>
+              <p class="text-sm text-[#6d5d50]">剛返家、狀況還在觀察的階段，全天候看顧能讓家人先安心度過最需要盯著的那段時間。</p>
+            </div>
+          </div>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            如果不確定長輩現在的自理與安全程度落在哪裡，建議先做一次比較有系統的盤點，可以參考<a href="/blog/elderly-care-needs-assessment-20260716" class="text-[#8b621f] hover:underline">如何評估長輩需要的照護等級</a>，把需求看清楚再決定要不要走到全天候，通常會少走很多冤枉路。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">什麼情況日間看護就夠了</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-4">
+            並不是每個家庭都需要二十四小時。當長輩夜裡大致能安穩、風險集中在白天特定時段，日間看護往往更貼合，也更省力：
+          </p>
+          <ul class="list-disc list-inside text-[#6d5d50] leading-relaxed mb-6 space-y-2">
+            <li>長輩大致能自理，主要需要白天洗澡、備餐、服藥提醒與陪伴外出等協助。</li>
+            <li>夜間能自己安穩入睡、起夜不多，家人在家也還照顧得來。</li>
+            <li>家人白天要上班、無法陪伴，但下班後與夜間能接手。</li>
+            <li>希望長輩白天有人互動、活動一下，避免整天獨處、生活失去節奏。</li>
+          </ul>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            日間看護的好處，是把資源集中在最需要人的時段，家人也能保留一定的參與感與生活空間。實務上很多家庭是從日間開始，觀察一段時間後再視狀況調整，不必一開始就把時數拉到最滿。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">費用與家庭人力：不是時數越多越好</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-4">
+            很現實地說，時段拉得越長，費用與家庭的整體負擔就越高。24小時看護涉及夜間、休假換班等安排，投入本來就比日間多；不同服務型態的實際收費會依個案、內容與地區而有差異，建議直接向服務單位問清楚計價方式，避免只看單一數字就下決定。想先了解費用大致怎麼構成，可以參考<a href="/blog/care-cost-24h-20260103" class="text-[#8b621f] hover:underline">高雄看護費用與24小時看護費用比較</a>。
+          </p>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            這裡想提醒的是：費用不只算看護，也要把「家人的時間與體力」一起算進去。有些家庭勉強用日間撐著，卻換來家人長期睡不好、身心俱疲，長遠看未必划算；反過來，若夜間其實平穩，硬撐全天候也是一種浪費。找到剛好對得上需求的時段，才是真正省下的地方。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">怎麼判斷？先問自己這幾個問題</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-4">
+            如果還在猶豫，不妨用下面幾個問題，對著長輩最近一週的實際狀況誠實回答，答案通常會慢慢浮現：
+          </p>
+          <ul class="list-disc list-inside text-[#6d5d50] leading-relaxed mb-6 space-y-2">
+            <li>夜裡有沒有需要有人協助的事？頻率高不高、家人接得住嗎？</li>
+            <li>長輩能不能安全地獨自待著？能待多久？最不放心的是哪個時段？</li>
+            <li>白天最需要協助的，是洗澡、備餐、復健，還是單純的陪伴與看顧？</li>
+            <li>家人的班表與體力，實際能分擔到什麼程度、能撐多久？</li>
+          </ul>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            把這幾題的答案攤開來，就能看出風險是集中在夜間還是白天、家人的缺口在哪。真正需要有人守夜的，別為了省而勉強日間；風險主要在白天的，也不必一步就跳到全天候。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">需求會變，安排也可以彈性調整</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-4">
+            時段安排不是一次定終身。出院初期可能先用全天候看顧，狀況穩定後改成日間；也可能原本日間就夠，後來病情變化又需要補上夜間。把它當成「會隨狀況調整的一件事」，反而更能貼近長輩當下的需要，也避免長期多付或人力不足。
+          </p>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            要特別說明的是，本文分享的是日常照顧安排的經驗，並非醫療診斷或治療建議。以下情況，建議尋求醫療或專業評估後再決定，不要只憑感覺判斷：
+          </p>
+          <ul class="list-disc list-inside text-[#6d5d50] leading-relaxed mb-6 space-y-2">
+            <li>長輩有管路、傷口、複雜用藥等需要專業技術的照護需求。</li>
+            <li>自理能力或認知在短時間內明顯退步，夜間安全出現新的疑慮。</li>
+            <li>不確定該申請哪些長照資源與補助，需要專業協助釐清時。</li>
+          </ul>
+
+          <div class="bg-[#8b621f]/10 rounded-xl p-6 mb-10 border border-[#8b621f]/20">
+            <h3 class="text-xl font-bold text-[#2b221c] mb-3">不確定該排幾小時？我們可以一起討論</h3>
+            <p class="text-[#6d5d50] mb-4">宇涵居家照護提供高雄地區的居家看護、醫院看護與臨時看護服務。我們可以先了解長輩目前的狀況與家庭的班表，再一起討論適合的時段安排，讓照顧貼近實際需要，也不多花冤枉的時數。</p>
+            <div class="flex flex-col sm:flex-row gap-3">
+              <a href="tel:0935803258" class="inline-flex items-center justify-center px-6 py-3 bg-[#8b621f] text-white font-semibold rounded-lg hover:bg-[#8b621f]/90 transition-colors">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                0935803258
+              </a>
+              <a href="/contact" class="inline-flex items-center justify-center px-6 py-3 border border-[#8b621f] text-[#8b621f] font-semibold rounded-lg hover:bg-[#8b621f]/10 transition-colors">免費諮詢表單</a>
+            </div>
+          </div>
+
+          <h3 class="text-xl font-bold text-[#2b221c] mb-4">相關文章推薦</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+            <a href="/blog/hospital-vs-home" class="flex items-start space-x-4 bg-white rounded-xl p-4 border border-[#efe5d5] hover:border-[#8b621f]/30 transition-colors">
+              <Image src={blogHospital} alt="醫院看護與居家看護比較" widths={[80, 160, 240]} sizes="80px" class="w-20 h-20 rounded-lg object-cover flex-shrink-0" loading="lazy" />
+              <div><h4 class="font-bold text-[#2b221c] hover:text-[#8b621f]">醫院看護與居家看護比較指南</h4><p class="text-sm text-[#6d5d50]">從照護內容與家屬負擔比較兩種選擇...</p></div>
+            </a>
+            <a href="/blog/temp-home-care" class="flex items-start space-x-4 bg-white rounded-xl p-4 border border-[#efe5d5] hover:border-[#8b621f]/30 transition-colors">
+              <Image src={blogTempCare} alt="臨時看護協助照護空窗期" widths={[80, 160, 240]} sizes="80px" class="w-20 h-20 rounded-lg object-cover flex-shrink-0" loading="lazy" />
+              <div><h4 class="font-bold text-[#2b221c] hover:text-[#8b621f]">臨時看護如何協助家庭渡過照護空窗期</h4><p class="text-sm text-[#6d5d50]">短期人手空窗時的銜接安排...</p></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</MainLayout>
