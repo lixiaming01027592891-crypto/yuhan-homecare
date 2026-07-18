@@ -243,4 +243,13 @@ export const blogArticles: BlogArticle[] = [
     date: '2026-07-17',
     readTime: '10 分鐘',
   },
+  {
+    title: '和看護培養默契：高雄居家看護的日常溝通與交接怎麼做',
+    excerpt: '看護請來了，磨合才正要開始。從第一天狀況交接、每天照護紀錄、和外籍看護溝通到家人之間對齊，分享讓高雄居家看護合作更順暢的實務做法，減少誤會也照顧得更貼心。',
+    image: '/images/service-communication.jpg',
+    slug: '/blog/home-caregiver-communication-handover-20260718',
+    category: '照護知識',
+    date: '2026-07-18',
+    readTime: '10 分鐘',
+  },
 ].sort((a, b) => (a.date < b.date ? 1 : -1));
