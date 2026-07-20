@@ -252,4 +252,13 @@ export const blogArticles: BlogArticle[] = [
     date: '2026-07-18',
     readTime: '10 分鐘',
   },
+  {
+    title: '爸媽是不是該請看護了？從生活訊號判斷高雄居家看護的時機',
+    excerpt: '長輩開始有些小狀況卻又不到住院程度，到底該不該請看護？從生活自理、居家安全、身體變化到家人負荷，整理幾個常被忽略的訊號，幫助家庭判斷安排高雄居家看護的時機。',
+    image: '/images/service-elderly.jpg',
+    slug: '/blog/signs-time-to-hire-caregiver-20260720',
+    category: '照護知識',
+    date: '2026-07-20',
+    readTime: '10 分鐘',
+  },
 ].sort((a, b) => (a.date < b.date ? 1 : -1));
