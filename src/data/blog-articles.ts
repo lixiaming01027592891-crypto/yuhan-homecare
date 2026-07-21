@@ -261,4 +261,13 @@ export const blogArticles: BlogArticle[] = [
     date: '2026-07-20',
     readTime: '10 分鐘',
   },
+  {
+    title: '外籍看護還是本國看護？高雄看護怎麼選才貼近長輩的需求',
+    excerpt: '請外籍看護還是本國看護，是許多高雄家庭安排照顧時最先卡住的問題。從申請流程、費用結構、到職時間到長期相處，比較兩者的差別與適用情境，幫你依家裡實際狀況判斷高雄看護該怎麼選。',
+    image: '/images/blog-foreign.jpg',
+    slug: '/blog/foreign-vs-local-caregiver-20260721',
+    category: '照護知識',
+    date: '2026-07-21',
+    readTime: '11 分鐘',
+  },
 ].sort((a, b) => (a.date < b.date ? 1 : -1));

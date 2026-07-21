@@ -1,0 +1,152 @@
+---
+import { Image } from 'astro:assets';
+import MainLayout from '../../layouts/MainLayout.astro';
+import blogForeign from '../../assets/images/blog-foreign.jpg';
+import serviceElderly from '../../assets/images/service-elderly.jpg';
+import blogPackages from '../../assets/images/blog-packages.jpg';
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: '外籍看護還是本國看護？高雄看護怎麼選才貼近長輩的需求',
+  description: '請外籍看護還是本國看護，是許多高雄家庭安排照顧時第一個卡住的問題。從申請流程、費用結構、到職時間到長期相處，比較兩者的差別與適用情境，幫你依家裡實際狀況判斷高雄看護該怎麼選。',
+  image: new URL('/images/blog-foreign.jpg', Astro.site).toString(),
+  datePublished: '2026-07-21T08:00:00+08:00',
+  author: { '@type': 'Organization', name: '宇涵居家照護' },
+  publisher: { '@type': 'Organization', name: '宇涵居家照護', logo: { '@type': 'ImageObject', url: new URL('/images/logo.png', Astro.site).toString() } },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': new URL('/blog/foreign-vs-local-caregiver-20260721', Astro.site).toString() },
+};
+---
+
+<MainLayout
+  title="外籍看護還是本國看護？高雄看護怎麼選才貼近長輩需求｜宇涵"
+  description="請外籍看護還是本國看護，是許多高雄家庭安排照顧時最先卡住的問題。從申請流程、費用結構、到職時間到長期相處比較兩者差別與適用情境，幫你判斷高雄看護該怎麼選。"
+  keywords="高雄看護,高雄居家看護,外籍看護,本國看護,高雄臨時看護,外籍看護申請,居家照護"
+  schema={schema}
+>
+  <article>
+    <section class="relative bg-[#2b221c] py-16 lg:py-24">
+      <div class="absolute inset-0 opacity-15">
+        <Image src={blogForeign} alt="家人考慮外籍看護與本國看護怎麼選才適合長輩" widths={[400, 800, 1200]} sizes="(max-width: 768px) 100vw, 800px" class="w-full h-full object-cover" loading="eager" />
+      </div>
+      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav aria-label="麵包屑" class="mb-6">
+          <ol class="flex items-center space-x-2 text-sm text-[#efe5d5]/80">
+            <li><a href="/" class="hover:text-[#8b621f]">首頁</a></li><li><span class="text-[#efe5d5]/40">/</span></li>
+            <li><a href="/blog" class="hover:text-[#8b621f]">照護知識</a></li><li><span class="text-[#efe5d5]/40">/</span></li>
+            <li class="text-[#fcfaf6]">外籍與本國看護怎麼選</li>
+          </ol>
+        </nav>
+        <span class="inline-block bg-[#8b621f] text-white text-xs px-3 py-1 rounded-full mb-4">照護知識</span>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#fcfaf6] mb-4 leading-tight">外籍看護還是本國看護？高雄看護怎麼選才貼近長輩的需求</h1>
+        <div class="flex items-center text-[#efe5d5] text-sm space-x-4">
+          <span>2026-07-21</span><span>11 分鐘閱讀</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="bg-[#fcfaf6] py-12 lg:py-16">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="prose prose-lg max-w-none">
+          <p class="text-lg text-[#6d5d50] leading-relaxed mb-8">
+            很多高雄的家庭在決定要請人幫忙照顧長輩時，第一個卡住的問題往往不是「要不要請」，而是「該請外籍看護，還是本國看護」。這兩條路在申請流程、費用結構、能配合的時段和相處方式上其實差滿多的，適合的情境也不一樣。這篇想從我們實際協助不少家庭安排照顧的經驗，把外籍與本國看護的差別講清楚，幫你依照家裡的實際狀況，找到比較合適的方向，而不是聽別人說哪一種好就跟著決定。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">外籍與本國看護，本質上是兩種不同的安排</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            先釐清一個常見的混淆：外籍看護和本國看護，並不是同一種服務的兩個價位選項，而是制度上就不太一樣的兩條路。外籍看護通常指的是透過合法程序申請聘僱的移工，多半是長期、住家型的全天候照顧，需要符合一定的申請資格與流程，也需要時間等待媒合到職。本國看護涵蓋的範圍則比較廣，包含居家看護、醫院看護、臨時看護等，可以依時段彈性安排，短期、單日甚至只是白天幾個小時的需求都能配合。先理解這個根本差別，是判斷哪一種適合自己家的第一步。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">從照顧需求回推，比從價格回推更準</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-4">
+            決定請哪一種看護，建議先從長輩的實際照顧需求開始盤點，而不是一開始就比誰便宜。可以先靜下來想清楚幾件事：
+          </p>
+          <ul class="list-disc list-inside text-[#6d5d50] leading-relaxed mb-6 space-y-2">
+            <li><strong class="text-[#2b221c]">需要照顧的時間長度</strong>：是長期穩定的每日照顧，還是出院後過渡期、家人短期出遠門這類階段性的需求。</li>
+            <li><strong class="text-[#2b221c]">照顧的密度</strong>：白天有人陪伴、協助生活起居就夠，還是連夜間都需要有人在旁邊隨時照應。</li>
+            <li><strong class="text-[#2b221c]">照護內容的複雜度</strong>：像管路照顧、翻身拍背、失智陪伴等，對看護的經驗與溝通配合要求比較高。</li>
+            <li><strong class="text-[#2b221c]">家裡的居住空間</strong>：是否有能讓住家型看護長期同住、也讓彼此都自在的環境。</li>
+          </ul>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            如果需求偏向長期、住家、全天候，而家中也有合適的居住條件，外籍看護是不少家庭會考慮的方向；如果需求是短期、彈性，或以特定時段為主，本國的居家看護、臨時看護通常更能貼合，也不必為用不到的時間付出成本。想更有系統地把需求盤清楚，可以先參考<a href="/blog/elderly-care-needs-assessment-20260716" class="text-[#8b621f] hover:underline">如何評估長輩需要的照護等級</a>，把「需要幫忙到什麼程度」理清楚再做選擇。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">申請與到職的節奏，差別很大</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-4">
+            時間，是很多家庭在比較時容易低估的一個變數。兩者從決定到真正有人開始照顧，中間的等待落差不小：
+          </p>
+          <ul class="list-disc list-inside text-[#6d5d50] leading-relaxed mb-6 space-y-2">
+            <li>外籍看護需要經過合法的申請與媒合程序，從提出到實際到職往往需要一段等待時間，比較適合「還有時間可以慢慢準備」的情況。</li>
+            <li>本國看護，特別是臨時看護，相對能較快到位，適合出院在即、原本的照顧人力突然出缺、或臨時需要有人補上這類等不及的狀況。</li>
+          </ul>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            也因為這個時間差，實務上不少家庭會採取「先後接力」的做法：在等待外籍看護到職的空窗期，先安排本國臨時看護把照顧補上，避免中間出現斷點。關於這段銜接怎麼安排，<a href="/blog/foreign-caregiver-gap" class="text-[#8b621f] hover:underline">外籍看護空窗期的替代方案</a>裡有更完整的討論，可以搭配著看。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">費用結構與可運用的資源不太一樣</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            談到費用，比起去記一個「大概多少錢」的數字，更實際的是理解兩者的「費用結構」本來就不一樣。每個家庭的照顧內容、時段、天數都會讓實際費用差很多，建議直接向服務單位依個案詢問報價，本文不列出具體金額，以免造成誤導。大方向上，外籍看護屬於長期聘僱，除了薪資，通常還牽涉仲介、健檢、保險等相關費用，是一筆需要長期規劃的支出；本國看護則多以時段或日計費，彈性較高，適合精算實際需要的時數，用多少算多少。
+          </p>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            另外，符合資格的家庭也可能運用政府的長照相關補助或喘息資源，減輕一部分負擔。不過補助的項目、額度與申請資格會依個案狀況與最新規定而不同，建議直接向長照管理中心或相關單位確認，本文僅提供方向、無法取代正式的評估。想先了解制度大概長什麼樣子，可以看<a href="/blog/ltc-4-packages" class="text-[#8b621f] hover:underline">長照四包錢補助完整說明</a>，對可運用的資源會比較有概念。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">相處與磨合，才是長期照顧的關鍵</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-4">
+            看護請來之後，能不能長久合作，往往不取決於是外籍還是本國，而在於相處與磨合。兩者各有需要多留意的地方：
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+            <div class="bg-white rounded-xl p-5 border border-[#efe5d5]">
+              <h4 class="font-bold text-[#8b621f] mb-2">語言與生活習慣</h4>
+              <p class="text-sm text-[#6d5d50]">外籍看護在中文溝通、飲食口味、生活方式上可能需要一段適應期，家人多一點耐心說明，通常都能慢慢磨合。</p>
+            </div>
+            <div class="bg-white rounded-xl p-5 border border-[#efe5d5]">
+              <h4 class="font-bold text-[#8b621f] mb-2">作息與界線</h4>
+              <p class="text-sm text-[#6d5d50]">住家型看護與家庭長期同住，事先把工作內容、休假與生活空間的分際講清楚，能減少後續不必要的摩擦。</p>
+            </div>
+            <div class="bg-white rounded-xl p-5 border border-[#efe5d5]">
+              <h4 class="font-bold text-[#8b621f] mb-2">交接與默契</h4>
+              <p class="text-sm text-[#6d5d50]">不論哪一種，剛開始都需要時間交接長輩的習慣、用藥時間與身體狀況，建立默契急不得，第一週尤其重要。</p>
+            </div>
+            <div class="bg-white rounded-xl p-5 border border-[#efe5d5]">
+              <h4 class="font-bold text-[#8b621f] mb-2">家人的參與</h4>
+              <p class="text-sm text-[#6d5d50]">看護不是把長輩「外包」出去，家人保持適度參與與關心，照顧品質與長輩的心情通常都會更穩定。</p>
+            </div>
+          </div>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            無論選哪一種，把長輩當成一個完整的人來照顧、把看護當成合作的夥伴而不是工具，通常是相處順利的共同關鍵。磨合需要時間，多一點溝通與同理，往往比一開始選對「哪一種」更能決定這段照顧走得順不順。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">沒有一種絕對比較好，依個案評估最實在</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            回到最開始的問題：外籍看護和本國看護，到底哪一種好？誠實地說，沒有標準答案。適不適合，取決於長輩的身體與照顧需求、家庭的經濟與居住條件，以及這份需求是長期還是短期。本文分享的是照顧安排層面的實務經驗，屬於日常照護資訊，並不是醫療或法律上的建議；涉及長輩健康狀況的照護判斷，仍建議諮詢醫療專業並依個案評估，申請的資格與流程也請以主管機關的最新規定為準。與其糾結於哪一種「比較好」，不如把焦點放在「哪一種比較適合現在的我們」，等長輩的狀況變了，照顧的安排本來也可以跟著一起調整。
+          </p>
+
+          <div class="bg-[#8b621f]/10 rounded-xl p-6 mb-10 border border-[#8b621f]/20">
+            <h3 class="text-xl font-bold text-[#2b221c] mb-3">不確定外籍還是本國看護適合？先聊聊需求</h3>
+            <p class="text-[#6d5d50] mb-4">宇涵居家照護提供高雄地區的居家看護、醫院看護與臨時看護服務。如果你正在外籍與本國看護之間猶豫，歡迎和我們聊聊長輩目前的狀況與家裡的條件，一起釐清需求、評估合適的照顧方式，不必急著下決定。</p>
+            <div class="flex flex-col sm:flex-row gap-3">
+              <a href="tel:0935803258" class="inline-flex items-center justify-center px-6 py-3 bg-[#8b621f] text-white font-semibold rounded-lg hover:bg-[#8b621f]/90 transition-colors">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                0935803258
+              </a>
+              <a href="/contact" class="inline-flex items-center justify-center px-6 py-3 border border-[#8b621f] text-[#8b621f] font-semibold rounded-lg hover:bg-[#8b621f]/10 transition-colors">免費諮詢表單</a>
+            </div>
+          </div>
+
+          <h3 class="text-xl font-bold text-[#2b221c] mb-4">相關文章推薦</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+            <a href="/blog/elderly-care-needs-assessment-20260716" class="flex items-start space-x-4 bg-white rounded-xl p-4 border border-[#efe5d5] hover:border-[#8b621f]/30 transition-colors">
+              <Image src={serviceElderly} alt="評估長輩需要的照護等級" widths={[80, 160, 240]} sizes="80px" class="w-20 h-20 rounded-lg object-cover flex-shrink-0" loading="lazy" />
+              <div><h4 class="font-bold text-[#2b221c] hover:text-[#8b621f]">如何評估長輩需要的照護等級</h4><p class="text-sm text-[#6d5d50]">安排照護前的需求盤點方向...</p></div>
+            </a>
+            <a href="/blog/ltc-4-packages" class="flex items-start space-x-4 bg-white rounded-xl p-4 border border-[#efe5d5] hover:border-[#8b621f]/30 transition-colors">
+              <Image src={blogPackages} alt="長照四包錢補助完整說明" widths={[80, 160, 240]} sizes="80px" class="w-20 h-20 rounded-lg object-cover flex-shrink-0" loading="lazy" />
+              <div><h4 class="font-bold text-[#2b221c] hover:text-[#8b621f]">長照四包錢補助完整說明</h4><p class="text-sm text-[#6d5d50]">善用政府長照資源減輕負擔...</p></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</MainLayout>
