@@ -270,4 +270,13 @@ export const blogArticles: BlogArticle[] = [
     date: '2026-07-21',
     readTime: '11 分鐘',
   },
+  {
+    title: '長輩不肯讓人照顧？和長輩溝通、接受高雄居家看護的幾個方法',
+    excerpt: '長輩排斥請看護、覺得自己還能來，是許多家庭安排照顧時最難跨過的一關。從理解抗拒的原因、調整說法、從短時間試起到讓長輩參與決定，分享和長輩溝通、慢慢接受高雄居家看護的實務方法。',
+    image: '/images/service-elderly.jpg',
+    slug: '/blog/helping-elders-accept-home-care-20260722',
+    category: '照護知識',
+    date: '2026-07-22',
+    readTime: '10 分鐘',
+  },
 ].sort((a, b) => (a.date < b.date ? 1 : -1));
