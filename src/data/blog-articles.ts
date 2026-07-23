@@ -279,4 +279,13 @@ export const blogArticles: BlogArticle[] = [
     date: '2026-07-22',
     readTime: '10 分鐘',
   },
+  {
+    title: '住院時請一位高雄醫院看護，一天實際上都在忙些什麼？',
+    excerpt: '住院期間要不要請看護、看護一天都在忙什麼？從白天的生活照顧、夜間陪伴、和護理站的溝通到出院銜接，以一位家屬的陪病觀察，分享安排高雄醫院看護的實務經驗。',
+    image: '/images/blog-hospital.jpg',
+    slug: '/blog/hospital-caregiver-daily-work-20260723',
+    category: '照護知識',
+    date: '2026-07-23',
+    readTime: '11 分鐘',
+  },
 ].sort((a, b) => (a.date < b.date ? 1 : -1));

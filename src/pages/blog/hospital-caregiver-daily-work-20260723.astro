@@ -1,0 +1,132 @@
+---
+import { Image } from 'astro:assets';
+import MainLayout from '../../layouts/MainLayout.astro';
+import blogHospital from '../../assets/images/blog-hospital.jpg';
+import serviceCommunication from '../../assets/images/service-communication.jpg';
+import blogBurnout from '../../assets/images/blog-burnout.jpg';
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: '住院時請一位高雄醫院看護，一天實際上都在忙些什麼？',
+  description: '住院期間到底要不要請看護、看護一天都在做什麼？從白天的生活照顧、夜間陪伴、和護理站的溝通到出院銜接，以一位家屬的陪病觀察，分享安排高雄醫院看護的實務經驗。',
+  image: new URL('/images/blog-hospital.jpg', Astro.site).toString(),
+  datePublished: '2026-07-23T08:00:00+08:00',
+  author: { '@type': 'Organization', name: '宇涵居家照護' },
+  publisher: { '@type': 'Organization', name: '宇涵居家照護', logo: { '@type': 'ImageObject', url: new URL('/images/logo.png', Astro.site).toString() } },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': new URL('/blog/hospital-caregiver-daily-work-20260723', Astro.site).toString() },
+};
+---
+
+<MainLayout
+  title="住院請高雄醫院看護，一天都在做什麼？一位家屬的陪病觀察｜宇涵"
+  description="住院期間要不要請看護、看護一天都在忙什麼？從白天的生活照顧、夜間陪伴、和護理站的溝通到出院銜接，以家屬的陪病經驗，分享安排高雄醫院看護的實務觀察。"
+  keywords="高雄醫院看護,高雄醫院居家看護,高雄看護,住院陪病,陪病看護,居家看護"
+  schema={schema}
+>
+  <article>
+    <section class="relative bg-[#2b221c] py-16 lg:py-24">
+      <div class="absolute inset-0 opacity-15">
+        <Image src={blogHospital} alt="住院期間高雄醫院看護在病房陪伴、協助長輩的日常照顧" widths={[400, 800, 1200]} sizes="(max-width: 768px) 100vw, 800px" class="w-full h-full object-cover" loading="eager" />
+      </div>
+      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav aria-label="麵包屑" class="mb-6">
+          <ol class="flex items-center space-x-2 text-sm text-[#efe5d5]/80">
+            <li><a href="/" class="hover:text-[#8b621f]">首頁</a></li><li><span class="text-[#efe5d5]/40">/</span></li>
+            <li><a href="/blog" class="hover:text-[#8b621f]">照護知識</a></li><li><span class="text-[#efe5d5]/40">/</span></li>
+            <li class="text-[#fcfaf6]">高雄醫院看護的一天</li>
+          </ol>
+        </nav>
+        <span class="inline-block bg-[#8b621f] text-white text-xs px-3 py-1 rounded-full mb-4">照護知識</span>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#fcfaf6] mb-4 leading-tight">住院時請一位高雄醫院看護，一天實際上都在忙些什麼？</h1>
+        <div class="flex items-center text-[#efe5d5] text-sm space-x-4">
+          <span>2026-07-23</span><span>11 分鐘閱讀</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="bg-[#fcfaf6] py-12 lg:py-16">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="prose prose-lg max-w-none">
+          <p class="text-lg text-[#6d5d50] leading-relaxed mb-8">
+            家人臨時要住院，很多人第一個反應是：「我自己去顧就好，何必請人。」真的排班排下去才發現，白天要上班、晚上顧一整夜、隔天再進公司，撐不了幾天全家就輪流累垮。這時候不少高雄家庭才開始認真考慮請一位陪病看護。當初我媽在高雄一家醫院住院時，我們也是這樣一路摸索過來的。這篇就用家屬的角度，聊聊高雄醫院看護一天到底在忙什麼、能幫上哪些忙，讓正在猶豫要不要請人的你，心裡先有個底。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">醫院看護和居家看護，其實不是同一回事</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            很多人以為看護就是看護，其實住院時的醫院看護和回家之後的居家看護，情境差很多。醫院看護是在病房裡陪著長輩，重點放在住院這段期間的生活照顧與貼身陪伴：協助日常起居、留意長輩的需要、在家屬不在時補上人手。它不是取代醫療團隊，而是讓長輩在陌生又不好受的病房裡，隨時有個熟悉、可靠的人在旁邊。先把這件事想清楚，你在安排高雄醫院看護時，對「該請人幫什麼」才會有比較實際的期待。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">白天的陪病，多半是這些瑣碎卻重要的小事</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-4">
+            白天看似平靜，但病房裡的雜事一件接一件，一個人很難同時兼顧。實際陪過就知道，看護白天大多在忙這些：
+          </p>
+          <ul class="list-disc list-inside text-[#6d5d50] leading-relaxed mb-6 space-y-2">
+            <li>協助長輩進食、喝水，行動不便的就一口一口慢慢餵，並留意有沒有嗆到或吃不下。</li>
+            <li>擦澡、換衣、協助如廁與清潔，維持長輩的清爽和尊嚴，這些最耗人力也最需要耐心。</li>
+            <li>推著輪椅或病床陪長輩去做各項檢查，來回等候、幫忙看好隨身物品。</li>
+            <li>臥床的長輩定時協助翻身、換姿勢，讓長輩躺得舒服一點。</li>
+            <li>陪著說說話、聽長輩發發牢騷，長輩情緒穩，整個病房的氣氛也會好很多。</li>
+          </ul>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            這些事單看每一件都不難，難在得從早到晚不間斷地做，而且要細心。有個人專門顧著，家屬白天才騰得出手去辦手續、跑保險、或回去補個眠。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">夜裡那一班，才是家屬最需要人手的時候</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            如果說白天還能勉強撐，夜間往往才是壓垮家屬的一關。長輩半夜可能要起來上廁所、翻來覆去睡不好、或因為換了環境而不安。這些時候身邊有個清醒、顧著的人，長輩會安心很多，也能減少半夜自己下床、發生意外的風險。我印象很深的是，請了夜班看護之後，我終於能回家好好睡一晚，隔天再去接手時，整個人的狀態和情緒都不一樣。夜間陪伴的價值，常常要真的熬過幾個不眠的夜，才會體會到它有多重要。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">看護不是醫護人員，分際要先講清楚</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            這一點想特別強調，也是家屬容易誤會的地方。看護負責的是生活照顧與陪伴，真正的醫療處置，例如打針、給藥、傷口與各種管路的處理，都是醫師與護理人員的專業，看護不會、也不應該越界去做。一位負責任的看護，會做的是細心觀察長輩的狀況，發現異常時第一時間通知護理站與家屬，把訊息如實傳達，扮演長輩、家屬和醫護之間的橋樑。本文分享的是陪病與日常照顧層面的經驗，屬於一般照護資訊，不是醫療診斷或治療建議；長輩的病情與相關處置，仍請以主治醫師和醫療團隊的說明為準。把這條界線先講清楚，彼此的配合才會順、也才安全。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">交接與溝通：把長輩的狀況說清楚，照顧才接得上</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            陪病最怕的就是資訊斷掉。家屬和看護輪班交接時，最好花個幾分鐘把重點交代清楚：長輩今天吃了多少、睡得好不好、有沒有哪裡不舒服、醫護交代了什麼要注意的事。這些看似瑣碎的紀錄，往往是照顧能不能接得上的關鍵。我們當時是用一本小冊子，把每天的狀況簡單記下來，換班的人一看就懂。找高雄醫院看護時，可以多留意對方願不願意好好溝通、肯不肯把長輩的情況主動回報，這種細節，比什麼都更能看出一個人可不可靠。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">單班、雙班還是全天？依住院情況彈性安排</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            要請多少時段，沒有標準答案，得看長輩的狀況和家裡的人力。有的家庭白天自己顧、只請夜班；有的長輩需要較多協助，就安排全天；也有人是住院前幾天最吃緊，先請人頂著，等長輩穩定一點再減。建議先評估長輩實際需要多少幫忙，再從用得到的時段排起，不必一開始就把時間都填滿。如果你還在猶豫住院請人、還是等回家再安排居家照顧，可以參考<a href="/blog/hospital-vs-home" class="text-[#8b621f] hover:underline">醫院看護與居家看護比較指南</a>，把兩種情境的差別想清楚，再決定怎麼配置比較划算。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">家屬也要留一點力氣給自己</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            住院這段日子，長輩辛苦，家屬其實也在硬撐。很多人覺得請看護是「偷懶」，硬是自己扛，結果幾天下來身心俱疲，連好好陪長輩的耐心都快沒了。請人幫忙不是把長輩推開，而是讓照顧這件事能走得長久一點。把該分出去的分出去，自己留點時間吃飯、睡覺、喘口氣，回到病房時反而更有精神。關於長期照顧下家人如何調適那種累，<a href="/blog/family-caregiver-burnout" class="text-[#8b621f] hover:underline">家屬照顧者倦怠與身心調適</a>裡有更完整的整理，也很值得一看。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">出院之後，照顧其實還沒結束</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            很多家庭以為出院就輕鬆了，實際上返家後的頭幾天，常常才是手忙腳亂的開始。長輩剛回到家，生活還沒重新上軌道，這時如果醫院陪病的節奏能順順地接上居家照顧，過渡會平順很多。事先想好回家後要不要安排居家看護、需要哪些協助，會讓這段銜接省下不少慌亂。關於從病房到客廳這段路怎麼走得穩，可以看看<a href="/blog/hospital-to-home-transition" class="text-[#8b621f] hover:underline">從醫院回到家的照護銜接</a>的實際做法，提早準備，長輩和家人都能安心一些。
+          </p>
+
+          <div class="bg-[#8b621f]/10 rounded-xl p-6 mb-10 border border-[#8b621f]/20">
+            <h3 class="text-xl font-bold text-[#2b221c] mb-3">家人臨時要住院，需要有人幫忙陪病？</h3>
+            <p class="text-[#6d5d50] mb-4">宇涵居家照護提供高雄地區的醫院看護、居家看護與臨時看護服務。如果你正為了住院期間的人手安排傷腦筋，歡迎和我們聊聊長輩目前的狀況，一起看看該怎麼從用得到的時段開始安排，讓長輩住院時有人好好陪著，家人也能輪流喘口氣。</p>
+            <div class="flex flex-col sm:flex-row gap-3">
+              <a href="tel:0978788886" class="inline-flex items-center justify-center px-6 py-3 bg-[#8b621f] text-white font-semibold rounded-lg hover:bg-[#8b621f]/90 transition-colors">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                0978-788-886
+              </a>
+              <a href="/contact" class="inline-flex items-center justify-center px-6 py-3 border border-[#8b621f] text-[#8b621f] font-semibold rounded-lg hover:bg-[#8b621f]/10 transition-colors">免費諮詢表單</a>
+            </div>
+          </div>
+
+          <h3 class="text-xl font-bold text-[#2b221c] mb-4">相關文章推薦</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+            <a href="/blog/hospital-vs-home" class="flex items-start space-x-4 bg-white rounded-xl p-4 border border-[#efe5d5] hover:border-[#8b621f]/30 transition-colors">
+              <Image src={serviceCommunication} alt="醫院看護與居家看護比較" widths={[80, 160, 240]} sizes="80px" class="w-20 h-20 rounded-lg object-cover flex-shrink-0" loading="lazy" />
+              <div><h4 class="font-bold text-[#2b221c] hover:text-[#8b621f]">醫院看護與居家看護比較指南</h4><p class="text-sm text-[#6d5d50]">住院顧還是回家顧，先想清楚...</p></div>
+            </a>
+            <a href="/blog/family-caregiver-burnout" class="flex items-start space-x-4 bg-white rounded-xl p-4 border border-[#efe5d5] hover:border-[#8b621f]/30 transition-colors">
+              <Image src={blogBurnout} alt="家屬照顧者倦怠與身心調適" widths={[80, 160, 240]} sizes="80px" class="w-20 h-20 rounded-lg object-cover flex-shrink-0" loading="lazy" />
+              <div><h4 class="font-bold text-[#2b221c] hover:text-[#8b621f]">家屬照顧者倦怠與身心調適</h4><p class="text-sm text-[#6d5d50]">陪病之餘先顧好自己...</p></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</MainLayout>
