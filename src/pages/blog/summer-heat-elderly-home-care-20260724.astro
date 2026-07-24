@@ -1,0 +1,127 @@
+---
+import { Image } from 'astro:assets';
+import MainLayout from '../../layouts/MainLayout.astro';
+import serviceDaily from '../../assets/images/service-daily.jpg';
+import serviceElderly from '../../assets/images/service-elderly.jpg';
+import blogBurnout from '../../assets/images/blog-burnout.jpg';
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: '高溫來襲，長輩在家怎麼顧？高雄居家看護的夏季照顧與補水提醒',
+  description: '高雄的夏天又熱又悶，長輩對高溫特別敏感。從讓家裡涼一點、提醒喝水、觀察中暑警訊到安排出門時段，以家屬與看護的實務經驗，分享夏天安排高雄居家看護時可以多留意的照顧細節。',
+  image: new URL('/images/service-daily.jpg', Astro.site).toString(),
+  datePublished: '2026-07-24T08:00:00+08:00',
+  author: { '@type': 'Organization', name: '宇涵居家照護' },
+  publisher: { '@type': 'Organization', name: '宇涵居家照護', logo: { '@type': 'ImageObject', url: new URL('/images/logo.png', Astro.site).toString() } },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': new URL('/blog/summer-heat-elderly-home-care-20260724', Astro.site).toString() },
+};
+---
+
+<MainLayout
+  title="高溫來襲，長輩在家怎麼顧？高雄居家看護的夏季照顧與補水提醒｜宇涵"
+  description="高雄夏天又熱又悶，長輩對高溫特別敏感。從讓家裡涼一點、提醒喝水、觀察中暑警訊到安排出門時段，以家屬與看護的實務經驗，分享夏天照顧長輩可以多留意的細節。"
+  keywords="高雄居家看護,高雄看護,夏季照顧,長輩防中暑,長者補水,居家看護"
+  schema={schema}
+>
+  <article>
+    <section class="relative bg-[#2b221c] py-16 lg:py-24">
+      <div class="absolute inset-0 opacity-15">
+        <Image src={serviceDaily} alt="夏天高溫下高雄居家看護協助長輩補水、維持涼爽的日常照顧" widths={[400, 800, 1200]} sizes="(max-width: 768px) 100vw, 800px" class="w-full h-full object-cover" loading="eager" />
+      </div>
+      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav aria-label="麵包屑" class="mb-6">
+          <ol class="flex items-center space-x-2 text-sm text-[#efe5d5]/80">
+            <li><a href="/" class="hover:text-[#8b621f]">首頁</a></li><li><span class="text-[#efe5d5]/40">/</span></li>
+            <li><a href="/blog" class="hover:text-[#8b621f]">照護知識</a></li><li><span class="text-[#efe5d5]/40">/</span></li>
+            <li class="text-[#fcfaf6]">長輩的夏季照顧</li>
+          </ol>
+        </nav>
+        <span class="inline-block bg-[#8b621f] text-white text-xs px-3 py-1 rounded-full mb-4">照護知識</span>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#fcfaf6] mb-4 leading-tight">高溫來襲，長輩在家怎麼顧？高雄居家看護的夏季照顧與補水提醒</h1>
+        <div class="flex items-center text-[#efe5d5] text-sm space-x-4">
+          <span>2026-07-24</span><span>10 分鐘閱讀</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="bg-[#fcfaf6] py-12 lg:py-16">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="prose prose-lg max-w-none">
+          <p class="text-lg text-[#6d5d50] leading-relaxed mb-8">
+            住在高雄的人都知道，這裡的夏天不是普通的熱。七、八月午後常常悶到讓人喘不過氣，柏油路蒸出來的熱氣，連年輕人走個幾步都受不了。對家裡有長輩的家庭來說，這個季節其實比想像中更需要用心。長輩對高溫的反應和我們不一樣，很多不舒服他們自己說不出口，等到發現時往往已經很不對勁。這篇想用照顧現場的角度，聊聊夏天怎麼幫長輩把日子過得涼爽又安全，也分享我們在安排高雄居家看護時，會特別提醒同仁多留意的幾件事。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">為什麼長輩特別怕熱，卻又常常「不覺得熱」</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            照顧久了會發現一個矛盾：長輩其實比誰都怕熱，偏偏又常說自己「還好、不熱」。這不是嘴硬，而是上了年紀之後，身體對口渴和溫度的感覺會變得比較遲鈍，流汗散熱的能力也不如從前，所以體感和實際狀況常常對不上。有些長輩本身有慢性病，或長期服用某些藥物，也可能讓身體調節溫度變得更吃力。再加上不少長輩節儉慣了，捨不得開冷氣、怕電費，寧可忍著。這些習慣單獨看都不嚴重，湊在一起卻可能讓中暑的風險悄悄升高。理解了這一層，我們才知道「主動幫忙留意」比「等長輩喊熱」要重要得多。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">先把家裡弄涼一點：環境的小調整最實在</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-4">
+            要顧好長輩，第一步不是講大道理，而是把住的環境調整到舒服。這些做起來不難，效果卻很直接：
+          </p>
+          <ul class="list-disc list-inside text-[#6d5d50] leading-relaxed mb-6 space-y-2">
+            <li>白天拉上窗簾或加裝遮光簾，擋掉直曬進來的陽光，室內溫度就能降下不少。</li>
+            <li>電扇搭配冷氣一起用，讓空氣流動，不必把冷氣開得很強也能感覺涼爽，也比較省電。</li>
+            <li>幫長輩換上透氣好散熱的棉麻衣物，被子、床單也換成薄一點的材質。</li>
+            <li>最熱的午後時段盡量待在通風的房間，避免在悶熱的廚房或沒有對外窗的房間久待。</li>
+            <li>如果家裡沒有冷氣，至少安排一個有穿堂風、比較陰涼的角落，讓長輩在最熱的時候有地方可以避。</li>
+          </ul>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            很多家庭擔心冷氣傷身或耗電而不敢開，其實適度地讓室溫維持在舒服的範圍，對長輩來說反而更安全。和長輩溝通時，與其講「你會中暑」，不如陪著他一起感受「這樣是不是涼多了」，往往更容易被接受。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">補水這件事，比你想的還要費心</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            夏天照顧長輩，最花心思的其實是「喝水」。前面提過，長輩的口渴感變得遲鈍，常常等到真的很渴才想到喝，這時身體可能已經缺水一段時間了。與其一次要他灌一大杯，不如少量多次、定時提醒，一天分成好幾回，每次喝個幾口，長輩比較不會抗拒，也比較喝得下。可以在他伸手就能拿到的地方放一杯溫開水，看到了自然會想喝。除了白開水，清淡的湯品、水分多的水果也都能補充水分。要提醒的是，如果長輩本身有吞嚥或其他健康上的限制，喝水的量和方式最好先請教醫療團隊的意見；關於進食時怎麼避免嗆咳，我們在<a href="/blog/elderly-diet-swallowing-care" class="text-[#8b621f] hover:underline">長輩飲食與吞嚥照顧</a>裡有更完整的整理，可以一起參考。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">這些警訊出現，別再硬撐，該就醫就就醫</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            夏天照顧長輩，心裡一定要有一條警戒線。當長輩出現臉色發紅、皮膚摸起來又乾又燙、頭暈、想吐、精神特別差、講話變得含糊或反應怪怪的，甚至該流汗卻沒有流汗，這些都可能是身體在高溫下發出的求救訊號，不能當作「只是有點累」而放著不管。這種時候最要緊的是先把長輩移到陰涼處、鬆開衣物、適度降溫，並儘快尋求專業醫療協助或送醫，不要在家裡自己觀望等它好。這裡要特別說明：本文分享的是日常照顧與陪伴的經驗，屬於一般生活照護資訊，不是醫療診斷或治療建議；長輩實際的身體狀況與處置，仍請以醫師和醫療團隊的判斷為準。把這條界線放在心上，該送醫時就別猶豫，這往往才是最關鍵的一步。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">夏天裡，一位居家看護能多幫上哪些忙</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            很多家屬白天要上班，沒辦法整天守在長輩身邊留意這些細節，這也是不少家庭在夏天考慮安排高雄居家看護的原因。有一位到府的看護在，很多事情就有人幫忙盯著：定時提醒並協助長輩喝水、留意室內是不是太悶熱、天氣特別熱時協助擦澡或用溫毛巾幫忙降溫、陪著長輩度過難熬的午後，也隨時觀察精神和氣色有沒有變化。一旦發現不對勁，能第一時間通知家屬、必要時協助就醫。這些照顧看起來瑣碎，卻是讓長輩在酷暑裡過得安穩的關鍵。看護做的是生活照顧與陪伴，並不是取代醫療，但那份「一直有人在留意」的踏實，正是夏天最讓家人放心的地方。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">出門、回診，盡量避開最毒的太陽</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            長輩偶爾還是要出門，像是回診、復健或到公園走走。夏天安排這些行程，時段的挑選很重要。盡量避開中午到下午這段最曬、最悶的時間，改到清晨或傍晚比較涼爽的時候；出門記得帶水、戴帽子或撐傘，走一段就找有遮蔭的地方歇一下。回診如果能預約較早的時段，也能少曬一點太陽。行動不便的長輩上下車、在戶外等候時特別容易悶出一身汗，有看護陪同會安全許多。這些安排看似小事，卻能讓長輩少受不少罪，也讓陪同的家人輕鬆一點。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">別忘了，顧人的家屬自己也在曬</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            最後想提醒一句：在大熱天裡忙進忙出照顧長輩的家屬，自己也一樣在流汗、一樣會累。很多人一心撲在長輩身上，反而忘了自己也要喝水、也要休息，結果長輩還沒事，照顧的人先中暑、先累垮了。照顧是一條長路，尤其在這種消耗特別大的季節，記得把自己的狀態也顧好，該找人輪替、該喘口氣就別硬撐。關於長期照顧下的身心調適，<a href="/blog/family-caregiver-burnout" class="text-[#8b621f] hover:underline">家屬照顧者倦怠與身心調適</a>裡有不少可以參考的做法。照顧的人先站穩了，才有力氣把長輩的夏天顧好。
+          </p>
+
+          <div class="bg-[#8b621f]/10 rounded-xl p-6 mb-10 border border-[#8b621f]/20">
+            <h3 class="text-xl font-bold text-[#2b221c] mb-3">這個夏天，需要有人幫忙照顧長輩？</h3>
+            <p class="text-[#6d5d50] mb-4">宇涵居家照護提供高雄地區的居家看護、醫院看護與臨時看護服務。如果你擔心大熱天裡長輩一個人在家沒人留意，或家人白天上班無法兼顧，歡迎和我們聊聊長輩目前的狀況，一起看看該怎麼從用得到的時段開始安排，讓長輩涼涼爽爽地度過這個夏天，家人也能安心一些。</p>
+            <div class="flex flex-col sm:flex-row gap-3">
+              <a href="tel:0978788886" class="inline-flex items-center justify-center px-6 py-3 bg-[#8b621f] text-white font-semibold rounded-lg hover:bg-[#8b621f]/90 transition-colors">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                0978-788-886
+              </a>
+              <a href="/contact" class="inline-flex items-center justify-center px-6 py-3 border border-[#8b621f] text-[#8b621f] font-semibold rounded-lg hover:bg-[#8b621f]/10 transition-colors">免費諮詢表單</a>
+            </div>
+          </div>
+
+          <h3 class="text-xl font-bold text-[#2b221c] mb-4">相關文章推薦</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+            <a href="/blog/elderly-diet-swallowing-care" class="flex items-start space-x-4 bg-white rounded-xl p-4 border border-[#efe5d5] hover:border-[#8b621f]/30 transition-colors">
+              <Image src={serviceElderly} alt="長輩飲食與吞嚥照顧" widths={[80, 160, 240]} sizes="80px" class="w-20 h-20 rounded-lg object-cover flex-shrink-0" loading="lazy" />
+              <div><h4 class="font-bold text-[#2b221c] hover:text-[#8b621f]">長輩吃不下、容易嗆咳？居家飲食照顧指南</h4><p class="text-sm text-[#6d5d50]">補水與進食都要留意的細節...</p></div>
+            </a>
+            <a href="/blog/family-caregiver-burnout" class="flex items-start space-x-4 bg-white rounded-xl p-4 border border-[#efe5d5] hover:border-[#8b621f]/30 transition-colors">
+              <Image src={blogBurnout} alt="家屬照顧者倦怠與身心調適" widths={[80, 160, 240]} sizes="80px" class="w-20 h-20 rounded-lg object-cover flex-shrink-0" loading="lazy" />
+              <div><h4 class="font-bold text-[#2b221c] hover:text-[#8b621f]">家屬照顧者倦怠與身心調適</h4><p class="text-sm text-[#6d5d50]">照顧長輩之餘先顧好自己...</p></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</MainLayout>

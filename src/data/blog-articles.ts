@@ -10,6 +10,15 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    title: '高溫來襲，長輩在家怎麼顧？高雄居家看護的夏季照顧與補水提醒',
+    excerpt: '高雄夏天又熱又悶，長輩對高溫特別敏感卻常說不熱。從讓家裡涼一點、少量多次補水、觀察中暑警訊到安排出門時段，以家屬與看護的實務經驗，分享夏天照顧長輩可以多留意的細節。',
+    image: '/images/service-daily.jpg',
+    slug: '/blog/summer-heat-elderly-home-care-20260724',
+    category: '照護知識',
+    date: '2026-07-24',
+    readTime: '10 分鐘',
+  },
+  {
     title: '如何評估長輩需要的照護等級：安排高雄居家看護前的需求盤點',
     excerpt: '長輩到底需要多少照顧？從日常生活自理能力、認知與安全風險、醫療復健需求三個面向，一步步評估照護需求等級，讓高雄居家看護的規劃更貼近實際狀況。',
     image: '/images/service-elderly.jpg',
