@@ -10,6 +10,15 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    title: '陪長輩回診那一天：高雄居家看護的就醫陪同與交通安排',
+    excerpt: '陪長輩回診，累的往往不是看診那幾分鐘，而是出門前的準備、路上的交通與院內的等候。從前一天的資料整理、交通方式選擇、院內動線到返家後的重點交接，分享就醫陪同時可以留意的生活照顧細節。',
+    image: '/images/service-temporary.jpg',
+    slug: '/blog/clinic-visit-accompaniment-transport-20260725',
+    category: '照護知識',
+    date: '2026-07-25',
+    readTime: '10 分鐘',
+  },
+  {
     title: '高溫來襲，長輩在家怎麼顧？高雄居家看護的夏季照顧與補水提醒',
     excerpt: '高雄夏天又熱又悶，長輩對高溫特別敏感卻常說不熱。從讓家裡涼一點、少量多次補水、觀察中暑警訊到安排出門時段，以家屬與看護的實務經驗，分享夏天照顧長輩可以多留意的細節。',
     image: '/images/service-daily.jpg',
