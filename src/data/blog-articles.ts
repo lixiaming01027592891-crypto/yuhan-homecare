@@ -10,6 +10,15 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    title: '子女在外縣市，長輩獨居高雄：遠距照顧下的高雄居家看護安排',
+    excerpt: '人在外地工作、父母獨自住在高雄，最怕的往往不是大事，而是「不知道家裡現在怎麼樣」。從盤點獨居長輩的生活風險、安排固定到府的節奏、建立遠距回報習慣到返鄉那幾天的重點，分享遠距家庭的照顧安排經驗。',
+    image: '/images/service-safety.jpg',
+    slug: '/blog/elderly-living-alone-remote-family-care-20260728',
+    category: '照護知識',
+    date: '2026-07-28',
+    readTime: '11 分鐘',
+  },
+  {
     title: '陪長輩回診那一天：高雄居家看護的就醫陪同與交通安排',
     excerpt: '陪長輩回診，累的往往不是看診那幾分鐘，而是出門前的準備、路上的交通與院內的等候。從前一天的資料整理、交通方式選擇、院內動線到返家後的重點交接，分享就醫陪同時可以留意的生活照顧細節。',
     image: '/images/service-temporary.jpg',
