@@ -10,6 +10,15 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    title: '高雄看護推薦怎麼問才問得到重點？第一次諮詢該說清楚與問明白的事',
+    excerpt: '第一次打電話找看護，常常不知道該從哪裡說起。從長輩狀況怎麼描述、需求與時段怎麼講清楚，到費用、替換機制與溝通窗口該問哪些問題，分享高雄家庭第一次諮詢看護服務的實務經驗。',
+    image: '/images/service-communication.jpg',
+    slug: '/blog/kaohsiung-caregiver-consultation-questions-20260729',
+    category: '照護知識',
+    date: '2026-07-29',
+    readTime: '9 分鐘',
+  },
+  {
     title: '子女在外縣市，長輩獨居高雄：遠距照顧下的高雄居家看護安排',
     excerpt: '人在外地工作、父母獨自住在高雄，最怕的往往不是大事，而是「不知道家裡現在怎麼樣」。從盤點獨居長輩的生活風險、安排固定到府的節奏、建立遠距回報習慣到返鄉那幾天的重點，分享遠距家庭的照顧安排經驗。',
     image: '/images/service-safety.jpg',
