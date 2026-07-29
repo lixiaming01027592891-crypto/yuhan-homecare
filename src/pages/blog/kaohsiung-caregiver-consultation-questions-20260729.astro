@@ -1,0 +1,102 @@
+---
+import { Image } from 'astro:assets';
+import MainLayout from '../../layouts/MainLayout.astro';
+import serviceCommunication from '../../assets/images/service-communication.jpg';
+import serviceElderly from '../../assets/images/service-elderly.jpg';
+import serviceDaily from '../../assets/images/service-daily.jpg';
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: '高雄看護推薦怎麼問才問得到重點？第一次諮詢該說清楚與問明白的事',
+  description: '第一次打電話找看護，常常不知道該從哪裡說起。從需求怎麼描述、時段與特殊狀況怎麼講、諮詢時該問哪些問題，到費用與替換機制怎麼確認，分享高雄家庭第一次諮詢看護服務的實務經驗。',
+  image: new URL('/images/service-communication.jpg', Astro.site).toString(),
+  datePublished: '2026-07-29T08:00:00+08:00',
+  author: { '@type': 'Organization', name: '宇涵居家照護' },
+  publisher: { '@type': 'Organization', name: '宇涵居家照護', logo: { '@type': 'ImageObject', url: new URL('/images/logo.png', Astro.site).toString() } },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': new URL('/blog/kaohsiung-caregiver-consultation-questions-20260729', Astro.site).toString() },
+};
+---
+
+<MainLayout
+  title="高雄看護推薦怎麼問才問得到重點？第一次諮詢該說清楚與問明白的事｜宇涵"
+  description="第一次找看護不知道怎麼開口？從需求描述、時段與特殊狀況的說明，到諮詢時該問的問題與費用、替換機制的確認，分享高雄家庭第一次諮詢看護服務的實務經驗。"
+  keywords="高雄看護推薦,高雄看護,高雄居家看護,看護諮詢,找看護,到府陪伴"
+  schema={schema}
+>
+  <article>
+    <section class="relative bg-[#2b221c] py-16 lg:py-24">
+      <div class="absolute inset-0 opacity-15">
+        <Image src={serviceCommunication} alt="高雄看護推薦第一次諮詢，把長輩的狀況與家庭需求說清楚，是找到合適人選的第一步" widths={[400, 800, 1200]} sizes="(max-width: 768px) 100vw, 800px" class="w-full h-full object-cover" loading="eager" />
+      </div>
+      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav aria-label="麵包屑" class="mb-6">
+          <ol class="flex items-center space-x-2 text-sm text-[#efe5d5]/80">
+            <li><a href="/" class="hover:text-[#8b621f]">首頁</a></li><li><span class="text-[#efe5d5]/40">/</span></li>
+            <li><a href="/blog" class="hover:text-[#8b621f]">照護知識</a></li><li><span class="text-[#efe5d5]/40">/</span></li>
+            <li class="text-[#fcfaf6]">第一次諮詢怎麼問</li>
+          </ol>
+        </nav>
+        <span class="inline-block bg-[#8b621f] text-white text-xs px-3 py-1 rounded-full mb-4">照護知識</span>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#fcfaf6] mb-4 leading-tight">高雄看護推薦怎麼問才問得到重點？第一次諮詢該說清楚與問明白的事</h1>
+        <div class="flex items-center text-[#efe5d5] text-sm space-x-4">
+          <span>2026-07-29</span><span>9 分鐘閱讀</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="bg-[#fcfaf6] py-12 lg:py-16">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="prose prose-lg max-w-none">
+          <p class="text-lg text-[#6d5d50] leading-relaxed mb-8">
+            「我想請看護，但我真的不知道要從哪裡開始講。」第一次打電話諮詢的家屬，十個裡有八個會這樣開場。心裡其實很清楚家裡的狀況，卻不知道哪些是對方需要知道的，結果講了十分鐘還在繞。其實第一通電話不用完美，只要把幾件關鍵的事說清楚、把幾個重要的問題問到，後面安排就會順很多。這篇分享我們在諮詢現場的觀察，讓你在搜尋高雄看護推薦之後，第一通電話就能講到重點。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">先說清楚：長輩現在的樣子</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            諮詢時最有幫助的，是具體描述長輩「平常的一天」：能不能自己走路、如廁洗澡需不需要人扶、吃飯是自理還是要備好、白天大多做什麼、晚上睡得如何、有沒有容易忘事或走失的狀況。不需要專有名詞，白話的描述反而最準。如果還在猶豫該不該請，<a href="/blog/signs-time-to-hire-caregiver-20260720" class="text-[#8b621f] hover:underline">該請看護的幾個生活訊號</a>可以幫你先把家裡的狀況整理成一張清單。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">再講明白：你要的是什麼樣的幫忙</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            是每週幾個時段的陪伴協助，還是白天整日、夜間或全天？主要想解決的是備餐清潔、行動看顧、陪同就醫，還是希望家裡白天有人？需求講得越具體，人選與時段才配得起來；是短期空窗還是長期安排，也先講明。需求釐清到媒合的完整過程，可以參考<a href="/blog/finding-caregiver-guide" class="text-[#8b621f] hover:underline">尋找高雄看護的實務經驗</a>。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">該問的問題：費用、替換與溝通方式</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            第一通電話建議問三件事。一是費用結構：怎麼計算、包含哪些項目、臨時加時或取消怎麼處理，實際費用以雙方確認的方案為準。二是替換機制：人選不合或看護臨時請假，多久能遞補。三是溝通方式：開始服務後，誰是固定聯絡窗口、狀況怎麼回報。這三題問完，你對這個團隊的運作就大致有數了。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">一個小提醒：照顧與醫療的界線</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            諮詢時也建議先確認雙方對角色的期待一致：看護提供的是生活照顧、陪伴與狀況觀察回報，而不是醫療判斷。任何關於病情、用藥或檢查的疑問，都應該直接請教醫師、藥師等醫療專業人員。本文分享的是安排照顧的一般經驗，不能取代醫療專業的診斷與建議。把這條線講清楚，之後的合作反而更安心。
+          </p>
+
+          <div class="bg-[#8b621f]/10 rounded-xl p-6 mb-10 border border-[#8b621f]/20">
+            <h3 class="text-xl font-bold text-[#2b221c] mb-3">不知道怎麼開口？從聊聊長輩的近況開始就好</h3>
+            <p class="text-[#6d5d50] mb-4">宇涵居家照護提供高雄地區的居家看護、醫院看護與臨時看護服務。如果你正想替家人找一雙幫忙的手，不用準備得完美，把長輩現在的樣子告訴我們，我們陪你一起把需求理清楚，找出合適的節奏。</p>
+            <div class="flex flex-col sm:flex-row gap-3">
+              <a href="tel:0978788886" class="inline-flex items-center justify-center px-6 py-3 bg-[#8b621f] text-white font-semibold rounded-lg hover:bg-[#8b621f]/90 transition-colors">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                0978-788-886
+              </a>
+              <a href="/contact" class="inline-flex items-center justify-center px-6 py-3 border border-[#8b621f] text-[#8b621f] font-semibold rounded-lg hover:bg-[#8b621f]/10 transition-colors">免費諮詢表單</a>
+            </div>
+          </div>
+
+          <h3 class="text-xl font-bold text-[#2b221c] mb-4">相關文章推薦</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+            <a href="/blog/signs-time-to-hire-caregiver-20260720" class="flex items-start space-x-4 bg-white rounded-xl p-4 border border-[#efe5d5] hover:border-[#8b621f]/30 transition-colors">
+              <Image src={serviceElderly} alt="判斷該請高雄居家看護的幾個生活訊號" widths={[80, 160, 240]} sizes="80px" class="w-20 h-20 rounded-lg object-cover flex-shrink-0" loading="lazy" />
+              <div><h4 class="font-bold text-[#2b221c] hover:text-[#8b621f]">爸媽是不是該請看護了？</h4><p class="text-sm text-[#6d5d50]">從生活訊號判斷請看護的時機...</p></div>
+            </a>
+            <a href="/blog/home-care-24h-vs-daytime-20260717" class="flex items-start space-x-4 bg-white rounded-xl p-4 border border-[#efe5d5] hover:border-[#8b621f]/30 transition-colors">
+              <Image src={serviceDaily} alt="高雄居家看護時段怎麼安排最合適" widths={[80, 160, 240]} sizes="80px" class="w-20 h-20 rounded-lg object-cover flex-shrink-0" loading="lazy" />
+              <div><h4 class="font-bold text-[#2b221c] hover:text-[#8b621f]">24小時看護還是日間看護？</h4><p class="text-sm text-[#6d5d50]">兩種時段的適用情境比較...</p></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</MainLayout>
