@@ -10,6 +10,15 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    title: '照顧不能只靠一個人：安排高雄居家看護前，先開一次家庭照顧會議',
+    excerpt: '手足之間誰出時間、誰出錢、誰做決定？照顧最常卡住的不是找不到人，而是家人之間沒談清楚。從會議該先攤開哪些事實、分工的四種切法、費用怎麼談不傷感情，到主要聯絡人與決策順位怎麼設定，分享家庭照顧會議的實務做法。',
+    image: '/images/about-team.jpg',
+    slug: '/blog/family-care-meeting-sibling-roles-20260730',
+    category: '照護知識',
+    date: '2026-07-30',
+    readTime: '10 分鐘',
+  },
+  {
     title: '高雄看護推薦怎麼問才問得到重點？第一次諮詢該說清楚與問明白的事',
     excerpt: '第一次打電話找看護，常常不知道該從哪裡說起。從長輩狀況怎麼描述、需求與時段怎麼講清楚，到費用、替換機制與溝通窗口該問哪些問題，分享高雄家庭第一次諮詢看護服務的實務經驗。',
     image: '/images/service-communication.jpg',

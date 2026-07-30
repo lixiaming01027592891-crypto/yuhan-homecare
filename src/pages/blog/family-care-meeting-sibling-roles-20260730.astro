@@ -1,0 +1,122 @@
+---
+import { Image } from 'astro:assets';
+import MainLayout from '../../layouts/MainLayout.astro';
+import aboutTeam from '../../assets/images/about-team.jpg';
+import serviceCommunication from '../../assets/images/service-communication.jpg';
+import serviceElderly from '../../assets/images/service-elderly.jpg';
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: '照顧不能只靠一個人：安排高雄居家看護前，先開一次家庭照顧會議',
+  description: '手足之間誰出時間、誰出錢、誰做決定？照顧長輩最常卡住的不是找不到人，而是家人之間沒談清楚。從會議該談哪些事實、分工的四種切法、費用怎麼談不傷感情，到主要聯絡人怎麼設定，分享家庭照顧會議的實務做法。',
+  image: new URL('/images/about-team.jpg', Astro.site).toString(),
+  datePublished: '2026-07-30T08:00:00+08:00',
+  author: { '@type': 'Organization', name: '宇涵居家照護' },
+  publisher: { '@type': 'Organization', name: '宇涵居家照護', logo: { '@type': 'ImageObject', url: new URL('/images/logo.png', Astro.site).toString() } },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': new URL('/blog/family-care-meeting-sibling-roles-20260730', Astro.site).toString() },
+};
+---
+
+<MainLayout
+  title="照顧不能只靠一個人：安排高雄居家看護前，先開一次家庭照顧會議｜宇涵"
+  description="手足之間誰出時間、誰出錢、誰做決定？從家庭照顧會議該談的事實、分工的四種切法、費用怎麼談不傷感情，到主要聯絡人與決策順位怎麼設定，分享家庭在安排照顧前先把話講明白的實務經驗。"
+  keywords="高雄居家看護,高雄看護,家庭照顧會議,手足照顧分工,照顧責任分擔,到府陪伴"
+  schema={schema}
+>
+  <article>
+    <section class="relative bg-[#2b221c] py-16 lg:py-24">
+      <div class="absolute inset-0 opacity-15">
+        <Image src={aboutTeam} alt="家人坐下來一起討論長輩的照顧分工，是安排高雄居家看護前最值得花的時間" widths={[400, 800, 1200]} sizes="(max-width: 768px) 100vw, 800px" class="w-full h-full object-cover" loading="eager" />
+      </div>
+      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav aria-label="麵包屑" class="mb-6">
+          <ol class="flex items-center space-x-2 text-sm text-[#efe5d5]/80">
+            <li><a href="/" class="hover:text-[#8b621f]">首頁</a></li><li><span class="text-[#efe5d5]/40">/</span></li>
+            <li><a href="/blog" class="hover:text-[#8b621f]">照護知識</a></li><li><span class="text-[#efe5d5]/40">/</span></li>
+            <li class="text-[#fcfaf6]">家庭照顧會議</li>
+          </ol>
+        </nav>
+        <span class="inline-block bg-[#8b621f] text-white text-xs px-3 py-1 rounded-full mb-4">照護知識</span>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#fcfaf6] mb-4 leading-tight">照顧不能只靠一個人：安排高雄居家看護前，先開一次家庭照顧會議</h1>
+        <div class="flex items-center text-[#efe5d5] text-sm space-x-4">
+          <span>2026-07-30</span><span>10 分鐘閱讀</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="bg-[#fcfaf6] py-12 lg:py-16">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="prose prose-lg max-w-none">
+          <p class="text-lg text-[#6d5d50] leading-relaxed mb-8">
+            「我不是不想幫，是每次都沒人跟我說。」一場為了媽媽要不要請人幫忙的家庭討論，常常從分工開始，講到十幾年前的舊事。照顧一位長輩，要處理的從來不只是誰去醫院、誰付錢，還包括誰做決定、誰在半夜接電話、誰承擔那份說不出口的疲累。我們協助家庭安排照顧的這些年，發現真正走得比較穩的家庭，多半在請人之前做過同一件事：坐下來，開一次家庭照顧會議，把事情一件一件講明白，再決定要請什麼樣的幫手、請多久。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">為什麼照顧最後常落在一個人身上</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            很少有家庭真的開會決定「就由你來顧」。多數時候是自然滑過去的：誰住得離長輩最近、誰工作時間看起來比較彈性、誰第一次接到電話就跑去醫院，往後所有事就都找他。時間久了，這個人手上握著最多資訊，也最容易被誤會成「他自己要管那麼多」。其他手足不是不在意，而是插不進去，久了乾脆等人交代。這種資訊落差在子女分散各地時特別明顯，關於距離造成的照顧盲點，可以參考<a href="/blog/elderly-living-alone-remote-family-care-20260728" class="text-[#8b621f] hover:underline">子女在外縣市、長輩獨居的遠距照顧安排</a>。把責任攤開來談，其實是把主要照顧者從孤島上接下來。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">會議的第一步：先談事實，再談分工</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            家庭討論最容易失敗的開場是「你們到底要不要幫」。比較有機會談下去的方式，是先把事實攤在桌上：長輩現在洗澡、如廁、上下樓需不需要人扶，一天大概幾個時段需要有人在旁邊，每週有哪些固定行程，晚上會不會起來走動，家裡誰目前實際花了多少時間在照顧。事實講清楚，大家對「到底缺多少人力」才會有共同的認知，不會停在各自的印象裡爭論。若不確定該盤點哪些項目，<a href="/blog/elderly-care-needs-assessment-20260716" class="text-[#8b621f] hover:underline">安排照顧前的需求盤點</a>可以當成會議前的檢查清單，先各自填一次再對照，落差往往就是最需要討論的地方。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">分工不只有「誰去顧」：四種可以出的力</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            很多手足覺得自己幫不上忙，是因為只把照顧想成「到現場陪」。實際上至少有四種力可以出。第一是時間：陪伴時段、假日輪替、陪同外出。第二是金錢：分攤請人的費用、日用品與交通支出。第三是行政：查詢與申請資源、聯絡服務單位、整理文件與各項紀錄、比較方案。第四是情緒支持：固定打電話陪長輩聊天，也記得問問主要照顧者今天累不累。四種力允許不同組合，住在外縣市、工作走不開的人，往往在行政與金錢上最能發揮。重點不是每個人做一樣多，而是每個人都有一件明確屬於自己的事。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">費用怎麼談，才不會談到傷感情</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            談錢建議放在分工之後，而且順序是「先算總額，再談比例」。把可能的支出一次列出來：請人的費用、日常採買、交通、耗材與家中小改造，再看長輩本身的積蓄與可用資源能負擔多少，剩下的缺口才是手足要分的部分。願意多出時間的人少出一些錢、走不開的人多分擔一些費用，是常見也合理的做法，講開了反而比暗自計較輕鬆。另外建議建立一本共同帳，不論用記帳軟體或群組裡的月結訊息都可以，讓每一筆支出都看得到。實際的服務費用會依時段、天數與照顧內容不同，請以與服務單位雙方確認的方案為準，不要在會議上憑印象猜數字，以免後面反覆。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">設定主要聯絡人與決策順位</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            照顧開始之後，最怕的是「每個人都在管，但沒有人是窗口」。看護到家裡工作，需要知道每天回報給誰、臨時狀況先通知誰；服務單位安排人力與時段時，也需要一個能拍板的對象。建議會議上直接產出三件事：一位主要聯絡人、一位備援聯絡人，以及一條界線——哪些事聯絡人可以當場決定（例如今天多留兩個小時），哪些事一定要全家討論（例如調整長期時段或增加天數）。同時約好資訊怎麼流通，家庭群組裡每天或每週固定一則簡短更新，能省下大量重複解釋。開始服務後怎麼和照顧人員建立回報節奏，可以參考<a href="/blog/home-caregiver-communication-handover-20260718" class="text-[#8b621f] hover:underline">日常溝通與交接怎麼做</a>。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">把主要照顧者的休息，寫進分工表裡</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            會議上很容易忘記排一件事：主要照顧者的休假。照顧是長跑，撐到力氣用完才喊停，整個家的節奏都會跟著亂。比較實際的做法是明確寫下來，例如每週有半天由手足接手或由外部人力補上，這半天不需要理由也不用交換條件。若家中主要照顧者已經出現長期睡不好、對小事失去耐性、身體常有小病痛的情況，<a href="/blog/family-caregiver-burnout" class="text-[#8b621f] hover:underline">照顧者倦怠與身心調適</a>整理了一些可以先自我檢視的方向。把休息當成分工的一部分，不是額外的體貼，而是讓照顧能走得久的基本設計。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">會議之後：先跑兩週，再回頭調整</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            分工不必一次談到完美。比較好用的方式是先訂一個兩到四週的版本，實際跑一段時間，再回頭看哪裡卡住：是白天的空檔沒人補、假日交接總是斷掉，還是需要的時段其實比原本想的更長。真的跑過一輪，家人對「還缺什麼」的感覺才會一致，這時候要不要延長時段、要不要調整安排，都會好談很多。如果討論到後來確定要請人幫忙，第一通電話該說清楚哪些事、又該問明白哪些事，可以先看<a href="/blog/kaohsiung-caregiver-consultation-questions-20260729" class="text-[#8b621f] hover:underline">第一次諮詢該問什麼</a>，會議上整理好的那份事實清單，正好就是最好用的說明材料。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">一個小提醒：照顧與醫療的界線</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            家庭會議談的是生活層面的安排：時段怎麼排、費用怎麼分、誰是窗口、長輩的日常誰協助。看護提供的同樣是生活照顧、陪伴與狀況觀察回報，而不是醫療判斷。任何關於病情、用藥、檢查或復健強度的問題，都應該直接請教醫師、藥師、護理人員等醫療專業人員，並依專業指示執行。本文分享的是家庭溝通與照顧安排的一般經驗，不能取代醫療專業的診斷與建議。把這條界線在會議上一起說清楚，家人之後對誰該問誰、什麼事該找專業，也會少很多來回。
+          </p>
+
+          <div class="bg-[#8b621f]/10 rounded-xl p-6 mb-10 border border-[#8b621f]/20">
+            <h3 class="text-xl font-bold text-[#2b221c] mb-3">家裡談出結論了，接下來的人力可以一起討論</h3>
+            <p class="text-[#6d5d50] mb-4">宇涵居家照護提供高雄地區的居家看護、醫院看護與臨時看護服務。無論你們談出的是每週幾個時段的協助、白天整日的陪伴，或只是手足輪班之間的空檔補位，都歡迎把會議上整理好的狀況告訴我們，一起找出合適的節奏與安排。</p>
+            <div class="flex flex-col sm:flex-row gap-3">
+              <a href="tel:0978788886" class="inline-flex items-center justify-center px-6 py-3 bg-[#8b621f] text-white font-semibold rounded-lg hover:bg-[#8b621f]/90 transition-colors">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                0978-788-886
+              </a>
+              <a href="/contact" class="inline-flex items-center justify-center px-6 py-3 border border-[#8b621f] text-[#8b621f] font-semibold rounded-lg hover:bg-[#8b621f]/10 transition-colors">免費諮詢表單</a>
+            </div>
+          </div>
+
+          <h3 class="text-xl font-bold text-[#2b221c] mb-4">相關文章推薦</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+            <a href="/blog/home-caregiver-communication-handover-20260718" class="flex items-start space-x-4 bg-white rounded-xl p-4 border border-[#efe5d5] hover:border-[#8b621f]/30 transition-colors">
+              <Image src={serviceCommunication} alt="和高雄居家看護建立日常溝通與交接的節奏" widths={[80, 160, 240]} sizes="80px" class="w-20 h-20 rounded-lg object-cover flex-shrink-0" loading="lazy" />
+              <div><h4 class="font-bold text-[#2b221c] hover:text-[#8b621f]">和看護培養默契</h4><p class="text-sm text-[#6d5d50]">日常溝通與交接怎麼做...</p></div>
+            </a>
+            <a href="/blog/elderly-care-needs-assessment-20260716" class="flex items-start space-x-4 bg-white rounded-xl p-4 border border-[#efe5d5] hover:border-[#8b621f]/30 transition-colors">
+              <Image src={serviceElderly} alt="安排照顧前先盤點長輩的實際需求" widths={[80, 160, 240]} sizes="80px" class="w-20 h-20 rounded-lg object-cover flex-shrink-0" loading="lazy" />
+              <div><h4 class="font-bold text-[#2b221c] hover:text-[#8b621f]">如何評估長輩需要的照護等級</h4><p class="text-sm text-[#6d5d50]">安排照顧前的需求盤點...</p></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</MainLayout>
