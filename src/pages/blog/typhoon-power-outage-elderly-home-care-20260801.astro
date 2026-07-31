@@ -1,0 +1,127 @@
+---
+import { Image } from 'astro:assets';
+import MainLayout from '../../layouts/MainLayout.astro';
+import serviceSafety from '../../assets/images/service-safety.jpg';
+import serviceDaily from '../../assets/images/service-daily.jpg';
+import serviceElderly from '../../assets/images/service-elderly.jpg';
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: '颱風天長輩在家怎麼辦？高雄居家看護的停電、停水與人力調度準備',
+  description: '颱風季來臨，行動不便的長輩最怕的不是風雨那一天，而是停電、停水與外出中斷之後的日常。從風雨前的人力與交通確認、停電時受影響的生活環節、物資怎麼備、電梯停用時的移動安全，到看護排班調度與遠距家屬的聯絡節奏，分享高雄家庭的颱風季照顧準備。',
+  image: new URL('/images/service-safety.jpg', Astro.site).toString(),
+  datePublished: '2026-08-01T08:00:00+08:00',
+  author: { '@type': 'Organization', name: '宇涵居家照護' },
+  publisher: { '@type': 'Organization', name: '宇涵居家照護', logo: { '@type': 'ImageObject', url: new URL('/images/logo.png', Astro.site).toString() } },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': new URL('/blog/typhoon-power-outage-elderly-home-care-20260801', Astro.site).toString() },
+};
+---
+
+<MainLayout
+  title="颱風天長輩在家怎麼辦？高雄居家看護的停電、停水與人力調度準備｜宇涵"
+  description="颱風季來臨，長輩在家最怕的不是風雨那一天，而是停電、停水與外出中斷之後的日常。從風雨前的人力確認、停電時的生活影響、物資準備、電梯停用時的移動安全到遠距家屬的聯絡節奏，分享高雄家庭的颱風季照顧準備經驗。"
+  keywords="高雄居家看護,高雄看護,颱風照顧準備,停電長輩照顧,長輩防災準備,到府陪伴"
+  schema={schema}
+>
+  <article>
+    <section class="relative bg-[#2b221c] py-16 lg:py-24">
+      <div class="absolute inset-0 opacity-15">
+        <Image src={serviceSafety} alt="颱風季來臨前，替行動不便的長輩做好停電與停水的居家照顧準備" widths={[400, 800, 1200]} sizes="(max-width: 768px) 100vw, 800px" class="w-full h-full object-cover" loading="eager" />
+      </div>
+      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav aria-label="麵包屑" class="mb-6">
+          <ol class="flex items-center space-x-2 text-sm text-[#efe5d5]/80">
+            <li><a href="/" class="hover:text-[#8b621f]">首頁</a></li><li><span class="text-[#efe5d5]/40">/</span></li>
+            <li><a href="/blog" class="hover:text-[#8b621f]">照護知識</a></li><li><span class="text-[#efe5d5]/40">/</span></li>
+            <li class="text-[#fcfaf6]">颱風季照顧準備</li>
+          </ol>
+        </nav>
+        <span class="inline-block bg-[#8b621f] text-white text-xs px-3 py-1 rounded-full mb-4">照護知識</span>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#fcfaf6] mb-4 leading-tight">颱風天長輩在家怎麼辦？高雄居家看護的停電、停水與人力調度準備</h1>
+        <div class="flex items-center text-[#efe5d5] text-sm space-x-4">
+          <span>2026-08-01</span><span>11 分鐘閱讀</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="bg-[#fcfaf6] py-12 lg:py-16">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="prose prose-lg max-w-none">
+          <p class="text-lg text-[#6d5d50] leading-relaxed mb-8">
+            「颱風要來了，明天還有人可以過來嗎？」每年夏天到秋天，我們在高雄接到的電話裡，總有幾通是這樣開頭的。風雨還沒到，家屬心裡已經開始盤算：媽媽住的是沒有電梯的老公寓四樓，停電之後樓梯間一片黑；家裡有需要插電的照顧設備；平常固定過來的看護住在另一個行政區，萬一路封了怎麼辦。其實對行動不便的長輩來說，颱風真正難的往往不是風雨最大的那幾個小時，而是停電、停水、外出中斷之後那一兩天的日常怎麼撐住。以下整理我們陪高雄家庭走過幾次風季的實務準備，談的都是生活照顧層面的安排。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">風雨來之前：先確認人，再確認物</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            多數家庭一聽到颱風消息，第一個動作是去賣場搬水搬泡麵，但如果家裡有需要人協助的長輩，順序建議倒過來：先確認「人」。提前一到兩天和服務單位確認接下來幾天的排班、確認照顧人員的通勤路線會不會受影響、確認若真的無法到班有沒有替代安排，再回頭準備物資，會安心得多。同時把緊急聯絡順序再對一次：誰是第一個要通知的人、誰是備援、鄰居或大樓管理室的電話有沒有存在手機裡。家中若還沒設定清楚的窗口，可以先看<a href="/blog/family-care-meeting-sibling-roles-20260730" class="text-[#8b621f] hover:underline">家庭照顧會議與手足分工</a>裡談到的主要聯絡人設定方式，風雨天最怕的就是每個人都在問、卻沒有人在決定。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">停電時，家裡最先受影響的其實是這些日常</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            提到停電，大家想到的多半是冷氣不能吹，但對長輩而言，受影響最深的常常是幾件更瑣碎的事。第一是照明，夜裡起來如廁的那段路一旦全黑，跌倒風險就明顯升高。第二是電梯，住在高樓層又行動不便的長輩，等於這幾天完全無法下樓。第三是通風與體感，高雄的夏天又濕又悶，沒有冷氣與電扇時室內溫度上升得很快，長輩對熱的反應又常常比較遲鈍，這部分可以搭配<a href="/blog/summer-heat-elderly-home-care-20260724" class="text-[#8b621f] hover:underline">夏季高溫的居家照顧與補水提醒</a>一起準備。第四是熱水與冰箱，洗澡與食物保存都會受到影響。第五是通訊，手機沒電就等於斷了聯絡。至於家中若有需要持續供電的照顧設備，斷電時該怎麼處理、能撐多久，請務必事先向醫療專業人員或設備提供單位確認，不要自行判斷或臨時嘗試。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">物資怎麼備，才不會備了一堆卻用不上</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            颱風前的採買很容易買成「全家人的份」，卻忘了長輩其實吃不動。食物準備上，建議挑常溫就能直接吃、質地偏軟、不需要用力咀嚼的品項，家中長輩若本來就容易嗆咳，更要避開又乾又硬的餅乾類，相關細節可參考<a href="/blog/elderly-diet-swallowing-care" class="text-[#8b621f] hover:underline">長輩飲食與吞嚥的居家照顧</a>。飲水要和生活用水分開估算，別把儲水全算成能喝的。照明部分，手電筒或頭燈至少準備兩支並固定放在長輩床邊與客廳，比一支高亮度的更實用；行動電源、電池與充飽電的手機同樣重要。另外常被忽略的是現金與零錢，停電時行動支付與提款都可能不方便。至於長期服用的藥品存量夠不夠、要不要提前回診領取，請直接依醫師或藥師的指示確認，日常的提醒方式則可參考<a href="/blog/elderly-medication-safety-reminders-20260712" class="text-[#8b621f] hover:underline">居家用藥安全的生活提醒</a>。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">電梯停用與地面濕滑：最容易被低估的移動風險</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            風雨期間最該做的一件事，其實是讓長輩盡量不要移動到危險的地方。門口、陽台附近容易被雨水打濕，鞋子踩過再走進客廳，地板就成了滑面；有些家庭會在颱風前把陽台的盆栽雜物搬進屋內，反而讓走道變窄。建議提早把主要動線清空、備好乾拖把隨時擦乾積水、在夜間動線上放一盞不用插電的小燈。若電梯停用，除非有急迫需要，否則不建議讓行動不便的長輩勉強走樓梯上下；真的需要外出，也應等風雨過去、路面狀況穩定後再安排。居家防跌的整體檢查方向，<a href="/blog/fall-prevention" class="text-[#8b621f] hover:underline">長者居家防跌與無障礙改造</a>裡有更完整的整理，颱風季正好是重新檢視一次的好時機。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">停水那幾天，清潔與如廁怎麼安排</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            比起停電，停水更常讓家屬手忙腳亂，因為它直接影響到如廁與清潔這兩件最不能等的事。實務上可以先把浴缸或大容器裝滿水作為沖廁用水，另外分裝幾瓶乾淨的飲用水；免沖洗的清潔用品、乾洗澡巾、濕紙巾與乾洗手可以事先備一些，短期內用來替代擦澡。長輩若有使用替換型的衛生用品，數量要多抓幾天的量，避免中途不夠又出不了門。口腔清潔常在這種時候被跳過，但停水那幾天飲食型態改變，反而更需要維持，做法可以參考<a href="/blog/elderly-oral-care-denture-cleaning-20260714" class="text-[#8b621f] hover:underline">長者口腔照護與假牙清潔</a>。床單、毛巾與換洗衣物也建議多備兩套，洗衣不便時才不會沒得換。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">看護排班與交通中斷的實務調度</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            颱風期間的人力安排，建議提前把三種情境都先想過：一是照常到班、二是延後或縮短時段、三是完全無法到班。第二與第三種情境最需要事先講好由誰接手、家人能不能補上、要不要在風雨前一天請人員提早到並延長時段，讓照顧不會斷在最危險的時候。要提醒的是，颱風警報期間讓照顧人員冒險通勤並不是好選擇，寧可提前調整，也不要臨時硬撐。若家中原本的長期人力剛好碰上休假或無法到崗，可以參考<a href="/blog/temp-home-care" class="text-[#8b621f] hover:underline">臨時看護如何協助家庭渡過照護空窗期</a>的銜接做法。無論由誰接手，交接的資訊都要寫清楚：長輩的作息時段、飲食與協助方式、家中物資放在哪裡、緊急時先聯絡誰，這些平時就該有的紀錄，在颱風天特別能派上用場，做法可見<a href="/blog/home-caregiver-communication-handover-20260718" class="text-[#8b621f] hover:underline">日常溝通與交接怎麼做</a>。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">獨居長輩與遠距家屬的聯絡節奏</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            長輩獨居、子女又在外縣市的家庭，颱風天最煎熬的就是那份「不知道家裡現在怎麼樣」。比較實際的做法是提前約好固定的回報時間，例如早上與傍晚各一次，時間到了誰先打給誰講好；同時準備第二條聯絡管道，訊息有時候比通話更容易傳出去。手機在風雨來之前務必充飽，行動電源也先備好。另外，把鄰居、大樓管理室或社區裡熟識的人加進聯絡名單，遠比從外縣市趕回來實際得多。如果長輩本來就不習慣主動求助，建議把「颱風期間有事就打這通電話」講得很具體，貼在冰箱或電話旁邊。更完整的遠距安排方式，可以看<a href="/blog/elderly-living-alone-remote-family-care-20260728" class="text-[#8b621f] hover:underline">子女在外縣市、長輩獨居的遠距照顧安排</a>。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">風雨過後：復原那幾天同樣需要留意</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            颱風走了不代表結束。恢復供電之後，家電建議一項一項慢慢開，不要同時全部插上；冰箱裡放了幾天的食物，只要有疑慮就不要給長輩吃。屋內若有滲水或積水，地板一定要徹底擦乾再讓長輩走動，室內濕氣重時也記得通風除濕。還有一件很容易被忽略的事：颱風那兩三天長輩幾乎整天坐著或躺著，活動量突然變少，之後恢復日常作息時腳步會比平常更不穩，前幾天的散步或活動安排要放慢一點、旁邊要有人陪。同時也留意長輩的睡眠與情緒，有些人在密閉又吵雜的環境待久了會顯得比較煩躁或提不起勁。若觀察到身體上的不適或明顯異常，請盡快聯絡醫療專業人員或就醫，不要自行判斷。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">一個提醒：照顧與醫療的界線</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            這篇談的是生活層面的準備：物資、動線、排班、聯絡方式與日常協助。看護提供的同樣是生活照顧、陪伴與狀況觀察回報，而不是醫療判斷。舉凡病情變化、用藥調整、慢性病在停電或停水期間該注意什麼、需要供電的照顧設備該如何處置，都應該直接請教醫師、藥師、護理人員等醫療專業人員，並依專業指示執行；緊急狀況請立即撥打救護專線或前往醫療院所。本文分享的是照顧安排與家庭準備的一般經驗，不能取代醫療專業的診斷與建議。把這條界線先講清楚，颱風天真的遇到狀況時，家人才知道該找誰、該問誰。
+          </p>
+
+          <div class="bg-[#8b621f]/10 rounded-xl p-6 mb-10 border border-[#8b621f]/20">
+            <h3 class="text-xl font-bold text-[#2b221c] mb-3">颱風季的照顧人力，歡迎提早一起討論</h3>
+            <p class="text-[#6d5d50] mb-4">宇涵居家照護提供高雄地區的居家看護、醫院看護與臨時看護服務。無論是風雨前想先確認排班、需要延長時段陪伴長輩度過停電停水的日子，或是家人臨時走不開需要短期補位，都歡迎把家裡的狀況與時段需求告訴我們，一起找出合適的安排。</p>
+            <div class="flex flex-col sm:flex-row gap-3">
+              <a href="tel:0978788886" class="inline-flex items-center justify-center px-6 py-3 bg-[#8b621f] text-white font-semibold rounded-lg hover:bg-[#8b621f]/90 transition-colors">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                0978-788-886
+              </a>
+              <a href="/contact" class="inline-flex items-center justify-center px-6 py-3 border border-[#8b621f] text-[#8b621f] font-semibold rounded-lg hover:bg-[#8b621f]/10 transition-colors">免費諮詢表單</a>
+            </div>
+          </div>
+
+          <h3 class="text-xl font-bold text-[#2b221c] mb-4">相關文章推薦</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+            <a href="/blog/summer-heat-elderly-home-care-20260724" class="flex items-start space-x-4 bg-white rounded-xl p-4 border border-[#efe5d5] hover:border-[#8b621f]/30 transition-colors">
+              <Image src={serviceDaily} alt="高雄夏季高溫時長輩在家的照顧與補水提醒" widths={[80, 160, 240]} sizes="80px" class="w-20 h-20 rounded-lg object-cover flex-shrink-0" loading="lazy" />
+              <div><h4 class="font-bold text-[#2b221c] hover:text-[#8b621f]">高溫來襲，長輩在家怎麼顧</h4><p class="text-sm text-[#6d5d50]">夏季照顧與補水提醒...</p></div>
+            </a>
+            <a href="/blog/elderly-living-alone-remote-family-care-20260728" class="flex items-start space-x-4 bg-white rounded-xl p-4 border border-[#efe5d5] hover:border-[#8b621f]/30 transition-colors">
+              <Image src={serviceElderly} alt="子女在外縣市時長輩獨居高雄的遠距照顧安排" widths={[80, 160, 240]} sizes="80px" class="w-20 h-20 rounded-lg object-cover flex-shrink-0" loading="lazy" />
+              <div><h4 class="font-bold text-[#2b221c] hover:text-[#8b621f]">長輩獨居、子女在外縣市</h4><p class="text-sm text-[#6d5d50]">遠距照顧的安排方式...</p></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</MainLayout>

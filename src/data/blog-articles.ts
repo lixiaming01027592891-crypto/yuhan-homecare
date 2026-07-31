@@ -10,6 +10,15 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    title: '颱風天長輩在家怎麼辦？高雄居家看護的停電、停水與人力調度準備',
+    excerpt: '颱風季來臨，行動不便的長輩最怕的往往不是風雨那一天，而是停電、停水與外出中斷之後的日常。從風雨前的人力與交通確認、停電時最先受影響的生活環節、物資怎麼備、電梯停用時的移動安全，到看護排班調度與遠距家屬的聯絡節奏，分享高雄家庭的颱風季照顧準備。',
+    image: '/images/service-safety.jpg',
+    slug: '/blog/typhoon-power-outage-elderly-home-care-20260801',
+    category: '照護知識',
+    date: '2026-08-01',
+    readTime: '11 分鐘',
+  },
+  {
     title: '照顧不能只靠一個人：安排高雄居家看護前，先開一次家庭照顧會議',
     excerpt: '手足之間誰出時間、誰出錢、誰做決定？照顧最常卡住的不是找不到人，而是家人之間沒談清楚。從會議該先攤開哪些事實、分工的四種切法、費用怎麼談不傷感情，到主要聯絡人與決策順位怎麼設定，分享家庭照顧會議的實務做法。',
     image: '/images/about-team.jpg',
