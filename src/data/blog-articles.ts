@@ -10,6 +10,15 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    title: '看護可以幫忙做到哪裡？高雄居家看護的服務範圍、家事界線與期待落差',
+    excerpt: '看護到府之後，家屬最常出現的疑問不是價格，而是「這件事可不可以請他幫忙」。從以長輩為中心的生活照顧內容、家事的灰色地帶、醫療相關事項為何要交給醫療專業人員，到期待落差最常出現的三個時間點與諮詢時該怎麼逐項確認，分享把服務界線談清楚的實務做法。',
+    image: '/images/service-communication.jpg',
+    slug: '/blog/caregiver-service-scope-boundaries-20260802',
+    category: '照護知識',
+    date: '2026-08-02',
+    readTime: '11 分鐘',
+  },
+  {
     title: '颱風天長輩在家怎麼辦？高雄居家看護的停電、停水與人力調度準備',
     excerpt: '颱風季來臨，行動不便的長輩最怕的往往不是風雨那一天，而是停電、停水與外出中斷之後的日常。從風雨前的人力與交通確認、停電時最先受影響的生活環節、物資怎麼備、電梯停用時的移動安全，到看護排班調度與遠距家屬的聯絡節奏，分享高雄家庭的颱風季照顧準備。',
     image: '/images/service-safety.jpg',
