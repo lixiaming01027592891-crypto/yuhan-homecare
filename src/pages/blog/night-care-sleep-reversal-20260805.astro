@@ -1,0 +1,127 @@
+---
+import { Image } from 'astro:assets';
+import MainLayout from '../../layouts/MainLayout.astro';
+import serviceSafety from '../../assets/images/service-safety.jpg';
+import serviceDaily from '../../assets/images/service-daily.jpg';
+import serviceElderly from '../../assets/images/service-elderly.jpg';
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: '長輩夜裡不睡、日夜顛倒怎麼辦？高雄居家看護的夜間照顧與家屬輪替安排',
+  description: '長輩白天打瞌睡、夜裡起來走動，整個家跟著睡不好。從日夜顛倒常見的生活面成因、白天的作息與光線安排、傍晚到睡前的環境準備、夜間起身的動線安全，到夜間看護的實際工作內容、家屬輪替怎麼排才不會有人被拖垮，以及什麼狀況該提醒家屬帶長輩就醫評估，分享高雄家庭的夜間照顧經驗。',
+  image: new URL('/images/service-safety.jpg', Astro.site).toString(),
+  datePublished: '2026-08-05T08:00:00+08:00',
+  author: { '@type': 'Organization', name: '宇涵居家照護' },
+  publisher: { '@type': 'Organization', name: '宇涵居家照護', logo: { '@type': 'ImageObject', url: new URL('/images/logo.png', Astro.site).toString() } },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': new URL('/blog/night-care-sleep-reversal-20260805', Astro.site).toString() },
+};
+---
+
+<MainLayout
+  title="長輩夜裡不睡、日夜顛倒怎麼辦？高雄居家看護的夜間照顧與家屬輪替安排｜宇涵"
+  description="長輩白天猛打瞌睡、夜裡卻醒著走動，全家人跟著熬。從日夜顛倒的生活面成因、白天的作息與光線安排、睡前環境準備、夜間起身動線安全，到夜間看護的工作內容與家屬輪替排法，分享高雄居家看護的夜間照顧經驗。"
+  keywords="高雄居家看護,高雄看護,夜間看護,長輩日夜顛倒,長輩夜裡不睡,家屬輪班照顧"
+  schema={schema}
+>
+  <article>
+    <section class="relative bg-[#2b221c] py-16 lg:py-24">
+      <div class="absolute inset-0 opacity-15">
+        <Image src={serviceSafety} alt="夜間為長輩準備好走道照明與床邊動線，降低起身時的跌倒風險" widths={[400, 800, 1200]} sizes="(max-width: 768px) 100vw, 800px" class="w-full h-full object-cover" loading="eager" />
+      </div>
+      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav aria-label="麵包屑" class="mb-6">
+          <ol class="flex items-center space-x-2 text-sm text-[#efe5d5]/80">
+            <li><a href="/" class="hover:text-[#8b621f]">首頁</a></li><li><span class="text-[#efe5d5]/40">/</span></li>
+            <li><a href="/blog" class="hover:text-[#8b621f]">照護知識</a></li><li><span class="text-[#efe5d5]/40">/</span></li>
+            <li class="text-[#fcfaf6]">夜間照顧與輪替</li>
+          </ol>
+        </nav>
+        <span class="inline-block bg-[#8b621f] text-white text-xs px-3 py-1 rounded-full mb-4">照護知識</span>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#fcfaf6] mb-4 leading-tight">長輩夜裡不睡、日夜顛倒怎麼辦？高雄居家看護的夜間照顧與家屬輪替安排</h1>
+        <div class="flex items-center text-[#efe5d5] text-sm space-x-4">
+          <span>2026-08-05</span><span>11 分鐘閱讀</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="bg-[#fcfaf6] py-12 lg:py-16">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="prose prose-lg max-w-none">
+          <p class="text-lg text-[#6d5d50] leading-relaxed mb-8">
+            「我媽白天坐在沙發上一直打瞌睡，晚上十一點多突然精神很好，開始在客廳走來走去、要我幫她找東西，我隔天還要上班。」這是我們在高雄接到的電話裡，語氣最疲憊的一種。長輩夜裡不睡，受影響的從來不只是長輩自己——同住的子女被吵醒、隔天上班沒精神，久了整個家的耐性都被磨掉，講話開始帶火氣，連白天的相處都跟著變差。要先說一件事：日夜顛倒的成因很多，有些和身體狀況有關，那部分要交給醫師評估；但也有相當一部分，是可以從白天的作息、家裡的光線與睡前的流程去調整的。以下談的都是生活照顧與人力安排層面的經驗，不是醫療建議。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">先看看白天發生了什麼：日夜顛倒常見的生活面成因</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            很多家屬會把焦點全放在「晚上怎麼讓他睡」，但實務上，夜裡的狀況大多是白天累積出來的。最常見的第一個原因是白天活動量太少。長輩行動不方便之後，一整天可能就是床、椅子、餐桌三個點來回，身體幾乎沒有消耗，到了晚上自然不覺得累。第二個是白天補眠太多，早上補一段、午飯後又睡一大段、傍晚看電視再瞇一下，一天的睡眠額度提早用完。第三個是光線不足，房間窗簾整天拉著、客廳偏暗，身體很難分辨現在是白天還是晚上。第四個是作息不固定，起床時間每天差兩三個小時，三餐時間也跟著浮動，身體沒有可以依循的節奏。第五個是環境陌生，剛出院返家、剛搬去和子女同住、換了新房間或新床，長輩在夜裡醒來會一時搞不清楚自己在哪裡，於是起身走動、開燈找人。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">白天可以怎麼安排：把節奏重新拉回來</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            調整的第一步不是晚上，而是早上。先固定一個起床時間，就算前一晚睡不好，也盡量在差不多的時間協助長輩起身、洗臉、換掉睡衣，讓身體知道「一天開始了」。接著是光線，早上把窗簾拉開，讓長輩坐在採光好的位置吃早餐；高雄的日照相對充足，天氣許可時陪長輩到陽台、騎樓或社區中庭坐十幾二十分鐘，比待在室內開燈有感得多。再來是白天要有事做，不必是激烈的活動，摺毛巾、擦桌子、澆花、翻相簿、聽老歌、和人聊聊以前的事，都算數；有人陪著講話，長輩就不容易一坐下就睡著。最後是控制午睡長度，午餐後小睡通常安排三十分鐘到一小時之間，時間到就輕聲叫醒、扶起來喝口水、換個環境坐，避免一睡就是整個下午，也盡量不要讓長輩在傍晚之後才補眠。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">傍晚到睡前：環境要開始「安靜下來」</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            傍晚之後，家裡的燈光可以慢慢從明亮的白光換成偏暖、亮度低一點的光，客廳電視音量調小，減少長輩在睡前接觸太多刺激——特別是吵雜的節目、突然的來訪、或是子女在旁邊講電話談公事。再來是建立一套固定的睡前流程，每天用同樣的順序做同樣的事：擦澡或擦臉、換睡衣、刷牙或清潔假牙、上一次廁所、坐在床邊聊兩句、關大燈留小燈。順序固定本身就是訊號，長輩不需要記得時間，身體會自己知道接下來要睡了。水分的部分要拿捏：白天該喝的水不能少喝，但晚餐後到睡前可以把量分小口、提前喝完，睡前一小時盡量少大量飲水，並且務必在上床前協助如廁一次，減少半夜非起來不可的次數。若長輩本身有水分或飲食上的限制，這部分請依照醫療專業人員的指示調整，不要自行增減。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">夜間起身的安全：燈、地板、扶手與呼叫方式</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            半夜起身是整晚風險最高的時刻——剛睡醒、眼睛還沒適應、腳步不穩、又急著上廁所。動線照明是第一件要處理的事：從床邊到廁所這段路，全程都要看得見，中間不能有一段是暗的。夜燈建議裝在低處、朝地板照，光線柔和不刺眼，讓長輩看得到地面又不會被強光刺醒；床邊也放一盞伸手就摸得到的小燈或開關。地板要防滑，浴室門口鋪止滑墊並隨時保持乾燥，這條路上不要放地毯、延長線、小板凳、堆放的紙箱。床邊裝一支扶手或穩固的支撐點，讓長輩起身時有東西可以抓，不會用力拉到床單或床頭櫃。最後是呼叫方式，床邊放一個好按的鈴、對講機或手機，並且事先講好「起來之前先叫我」，不要讓長輩因為體貼、不想吵人而自己硬撐著下床。這幾件事花的力氣不多，但夜裡真正能減少的風險相當可觀，建議在調整作息之前就先把環境弄好。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">夜間看護實際上在做什麼？排班型態怎麼分</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            不少家屬以為夜間看護就是「來陪睡」，其實夜裡要做的事不少。常見的工作內容包括：陪伴與安撫，長輩半夜醒來想找人講話、或因為環境陌生而不安時在旁邊回應；協助翻身與調整姿勢，長期臥床的長輩夜裡仍需要定時變換姿勢；協助如廁，扶著上下床、陪到廁所、清潔與更換；留意呼吸、體溫、被子與環境溫度；以及把夜間發生的事逐一記錄下來。至於排班型態，實務上大致分成三種：一種是夜間時段的陪伴（例如晚上到隔天早上的固定時段），家屬白天自己照顧；一種是24小時安排，日夜由不同人員接班；還有一種是短期的加強期，例如出院返家後的頭一兩週先加派夜間人力，等作息穩定再調整。要選哪一種，取決於長輩夜裡起身的頻率、需要多少協助，以及家裡白天有沒有人手，可以先看<a href="/blog/home-care-24h-vs-daytime-20260717" class="text-[#8b621f] hover:underline">24小時看護與日間看護的時段比較</a>再決定。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">家屬輪替怎麼排，才不會有人被拖垮</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            我們看過太多家庭，一開始說好「大家輪流」，結果三個月後幾乎都變成同一個人在扛——通常是住得最近、或最不會拒絕的那一位。要避免這種結果，建議把幾件事講明白。第一，輪替要排成看得見的表，寫上日期與時段貼在冰箱，不要用口頭約定。第二，每一輪之間要有真正的休息，連續熬夜三、四天再換手，換下來的人往往需要好幾天才恢復，不如把單次值夜的天數縮短、輪替得密一些。第三，不能到現場的家人也要分擔，出錢、預約看診、聯絡服務單位、處理保險與文書都算數，不要讓「有沒有到現場」變成唯一的付出標準。第四，把夜間人力當成一開始就編進去的成本，而不是撐不下去才求救——等到主要照顧者已經失眠、情緒緊繃、身體出狀況才調整，代價通常更大。這些分工怎麼談，建議在安排人力之前先開一次<a href="/blog/family-care-meeting-sibling-roles-20260730" class="text-[#8b621f] hover:underline">家庭照顧會議把手足分工談清楚</a>，會比事後爭執有用得多。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">交接時該記錄哪些資訊</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            夜間照顧最怕的是「換人之後前面的觀察全部歸零」。不論是家屬之間輪替，還是家屬和看護交班，建議固定記幾件事：昨晚幾點上床、大約幾點入睡、中間醒來幾次、每次醒來的時間與原因（如廁、口渴、喊人、找東西、作夢驚醒）、有沒有自行下床、有沒有跌倒或差點跌倒、如廁次數與情形、進食與喝水的量、白天補眠了多久、情緒與說話的狀況，以及任何和前一天不一樣的地方。記錄不必寫得多漂亮，用一本簿子、一張表格或手機群組留言都可以，重點是每天都在同一個地方、用同樣的欄位寫。這些累積下來的紀錄有兩個用處：一是讓下一個接手的人知道該注意什麼，二是回診時可以具體告訴醫療專業人員「最近兩週夜裡平均醒三到四次，多半是要上廁所」，這比一句「他最近都睡不好」有參考價值得多。交接的實際做法可以參考<a href="/blog/home-caregiver-communication-handover-20260718" class="text-[#8b621f] hover:underline">和看護的日常溝通與交接怎麼做</a>。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">什麼情況該提醒家屬帶長輩就醫評估</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            生活面的調整能處理的是作息與環境，但有些狀況已經超出照顧安排的範圍，該做的是盡快安排就醫評估，而不是繼續在家裡試各種方法。例如：夜裡的混亂或躁動在短時間內明顯變嚴重、白天出現以前沒有的意識不清或叫不太醒、睡眠中呼吸有明顯異常、夜裡反覆喊痛或身體某處不適、短期內體重或食慾大幅變化、跌倒過一次或多次、原本認得的人事物突然變得混淆、情緒低落或不願意進食，以及家屬覺得「這次和以往不太一樣」的直覺。這些都建議諮詢醫師或相關醫療專業人員評估。另外要特別提醒：任何助眠或鎮靜相關的藥物，都必須由醫師評估與開立，家屬不要自行給藥、不要拿別人的藥給長輩吃，也不要自行增減劑量；看護能做的是在醫療專業人員指示的服藥時間到時提醒，並把觀察到的情況忠實記錄與回報，讓家屬有依據去和醫療團隊討論。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">一個提醒：照顧與醫療的界線</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            這篇談的是白天的作息安排、家裡的光線與環境準備、夜間起身的動線安全，以及人力怎麼排班與輪替，都屬於生活照顧的範圍。居家看護提供的是生活協助、陪伴與狀況觀察回報，不做醫療診斷，也不能治療或改善任何疾病與睡眠相關的病症。長輩夜裡不睡的原因可能牽涉身體不適、疾病變化或藥物作用，這些都必須由醫師、藥師、護理師等醫療專業人員評估與處理；遇到緊急狀況請立即撥打救護專線或前往醫療院所。本文分享的是照顧安排與人力調度的一般經驗，不能取代醫療專業的診斷與建議。夜裡的日子很長，但只要白天的節奏拉回來、環境安全做好、人力排得開，這一段通常是撐得過去的。
+          </p>
+
+          <div class="bg-[#8b621f]/10 rounded-xl p-6 mb-10 border border-[#8b621f]/20">
+            <h3 class="text-xl font-bold text-[#2b221c] mb-3">夜裡撐得很辛苦？先聊聊怎麼安排比較實際</h3>
+            <p class="text-[#6d5d50] mb-4">宇涵居家照護提供高雄地區的居家看護、醫院看護與臨時看護服務。如果家中長輩最近夜裡起身頻繁、家屬已經連續好幾天沒睡好，歡迎把情況說給我們聽——長輩夜裡大概醒幾次、需要哪些協助、家裡白天還有沒有人手，我們會一起評估適合的時段與排班方式，讓照顧的人也有喘口氣的空間。</p>
+            <div class="flex flex-col sm:flex-row gap-3">
+              <a href="tel:0978788886" class="inline-flex items-center justify-center px-6 py-3 bg-[#8b621f] text-white font-semibold rounded-lg hover:bg-[#8b621f]/90 transition-colors">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                0978-788-886
+              </a>
+              <a href="/contact" class="inline-flex items-center justify-center px-6 py-3 border border-[#8b621f] text-[#8b621f] font-semibold rounded-lg hover:bg-[#8b621f]/10 transition-colors">免費諮詢表單</a>
+            </div>
+          </div>
+
+          <h3 class="text-xl font-bold text-[#2b221c] mb-4">相關文章推薦</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+            <a href="/blog/home-care-24h-vs-daytime-20260717" class="flex items-start space-x-4 bg-white rounded-xl p-4 border border-[#efe5d5] hover:border-[#8b621f]/30 transition-colors">
+              <Image src={serviceDaily} alt="比較24小時看護與日間看護的時段安排" widths={[80, 160, 240]} sizes="80px" class="w-20 h-20 rounded-lg object-cover flex-shrink-0" loading="lazy" />
+              <div><h4 class="font-bold text-[#2b221c] hover:text-[#8b621f]">24小時還是日間看護</h4><p class="text-sm text-[#6d5d50]">時段怎麼安排最合適...</p></div>
+            </a>
+            <a href="/blog/signs-time-to-hire-caregiver-20260720" class="flex items-start space-x-4 bg-white rounded-xl p-4 border border-[#efe5d5] hover:border-[#8b621f]/30 transition-colors">
+              <Image src={serviceElderly} alt="從生活訊號判斷安排高雄居家看護的時機" widths={[80, 160, 240]} sizes="80px" class="w-20 h-20 rounded-lg object-cover flex-shrink-0" loading="lazy" />
+              <div><h4 class="font-bold text-[#2b221c] hover:text-[#8b621f]">是不是該請看護了</h4><p class="text-sm text-[#6d5d50]">從生活訊號判斷時機...</p></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</MainLayout>

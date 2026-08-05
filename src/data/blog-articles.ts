@@ -10,6 +10,15 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    title: '長輩夜裡不睡、日夜顛倒怎麼辦？高雄居家看護的夜間照顧與家屬輪替安排',
+    excerpt: '長輩白天猛打瞌睡、夜裡卻醒著走動，全家人跟著熬夜。從日夜顛倒常見的生活面成因、白天的作息與光線安排、傍晚到睡前的環境準備、夜間起身的動線安全，到夜間看護的實際工作內容、家屬輪替怎麼排才不會有人被拖垮，以及什麼狀況該帶長輩就醫評估，分享高雄家庭的夜間照顧經驗。',
+    image: '/images/service-safety.jpg',
+    slug: '/blog/night-care-sleep-reversal-20260805',
+    category: '照護知識',
+    date: '2026-08-05',
+    readTime: '11 分鐘',
+  },
+  {
     title: '看護可以幫忙做到哪裡？高雄居家看護的服務範圍、家事界線與期待落差',
     excerpt: '看護到府之後，家屬最常出現的疑問不是價格，而是「這件事可不可以請他幫忙」。從以長輩為中心的生活照顧內容、家事的灰色地帶、醫療相關事項為何要交給醫療專業人員，到期待落差最常出現的三個時間點與諮詢時該怎麼逐項確認，分享把服務界線談清楚的實務做法。',
     image: '/images/service-communication.jpg',
