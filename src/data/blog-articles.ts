@@ -10,6 +10,15 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    title: '看護臨時請假怎麼辦？高雄居家看護的代班機制與家屬的備案準備',
+    excerpt: '看護臨時無法到班，家屬最怕的是「今天沒人」。從缺班常見的原因、有制度的服務單位怎麼安排代班、代班人員到府前家屬要先做什麼、交接資訊該怎麼留成一份紙本、家屬自己頂一天的優先順序，到長輩對陌生面孔的不安怎麼緩解與簽約前該問清楚的代班條款，分享高雄家庭的備案準備經驗。',
+    image: '/images/service-communication.jpg',
+    slug: '/blog/caregiver-absence-backup-plan-20260807',
+    category: '照護知識',
+    date: '2026-08-07',
+    readTime: '11 分鐘',
+  },
+  {
     title: '長輩夜裡不睡、日夜顛倒怎麼辦？高雄居家看護的夜間照顧與家屬輪替安排',
     excerpt: '長輩白天猛打瞌睡、夜裡卻醒著走動，全家人跟著熬夜。從日夜顛倒常見的生活面成因、白天的作息與光線安排、傍晚到睡前的環境準備、夜間起身的動線安全，到夜間看護的實際工作內容、家屬輪替怎麼排才不會有人被拖垮，以及什麼狀況該帶長輩就醫評估，分享高雄家庭的夜間照顧經驗。',
     image: '/images/service-safety.jpg',
