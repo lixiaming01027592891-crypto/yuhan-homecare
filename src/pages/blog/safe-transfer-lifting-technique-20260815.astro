@@ -1,0 +1,132 @@
+---
+import { Image } from 'astro:assets';
+import MainLayout from '../../layouts/MainLayout.astro';
+import serviceRehab from '../../assets/images/service-rehab.jpg';
+import blogBedsore from '../../assets/images/blog-bedsore.jpg';
+import blogFall from '../../assets/images/blog-fall.jpg';
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: '幫長輩翻身、移位怎麼做才不會傷到自己？家屬的省力技巧與腰背保護',
+  description: '照顧長輩最常受傷的其實是家屬自己。從移位為什麼負荷最大、錯誤姿勢的共同點、靠近與屈膝的省力原則、床與輪椅的事前準備、溝通與口令怎麼喊、輔具怎麼幫上忙、兩人合作的分工，到什麼情況不要自己硬做與腰痛手麻的身體訊號，分享高雄居家照顧的實務經驗。',
+  image: new URL('/images/service-rehab.jpg', Astro.site).toString(),
+  datePublished: '2026-08-15T08:00:00+08:00',
+  author: { '@type': 'Organization', name: '宇涵居家照護' },
+  publisher: { '@type': 'Organization', name: '宇涵居家照護', logo: { '@type': 'ImageObject', url: new URL('/images/logo.png', Astro.site).toString() } },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': new URL('/blog/safe-transfer-lifting-technique-20260815', Astro.site).toString() },
+};
+---
+
+<MainLayout
+  title="幫長輩翻身、移位怎麼做才不會傷到自己？家屬的省力技巧與腰背保護｜宇涵"
+  description="照顧長輩最常受傷的其實是家屬自己。從移位為什麼負荷最大、錯誤姿勢的共同點、靠近與屈膝的省力原則、床與輪椅的事前準備、溝通與口令、輔具的幫忙，到什麼情況不要硬做與腰痛手麻的身體訊號，分享高雄居家照顧的實務經驗。"
+  keywords="高雄居家看護,高雄看護,長輩移位,翻身技巧,家屬腰背保護,照顧省力"
+  schema={schema}
+>
+  <article>
+    <section class="relative bg-[#2b221c] py-16 lg:py-24">
+      <div class="absolute inset-0 opacity-15">
+        <Image src={serviceRehab} alt="家屬在床邊協助長輩坐起與移位時的施力姿勢" widths={[400, 800, 1200]} sizes="(max-width: 768px) 100vw, 800px" class="w-full h-full object-cover" loading="eager" />
+      </div>
+      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav aria-label="麵包屑" class="mb-6">
+          <ol class="flex items-center space-x-2 text-sm text-[#efe5d5]/80">
+            <li><a href="/" class="hover:text-[#8b621f]">首頁</a></li><li><span class="text-[#efe5d5]/40">/</span></li>
+            <li><a href="/blog" class="hover:text-[#8b621f]">照護知識</a></li><li><span class="text-[#efe5d5]/40">/</span></li>
+            <li class="text-[#fcfaf6]">移位技巧與腰背保護</li>
+          </ol>
+        </nav>
+        <span class="inline-block bg-[#8b621f] text-white text-xs px-3 py-1 rounded-full mb-4">照護知識</span>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#fcfaf6] mb-4 leading-tight">幫長輩翻身、移位怎麼做才不會傷到自己？家屬的省力技巧與腰背保護</h1>
+        <div class="flex items-center text-[#efe5d5] text-sm space-x-4">
+          <span>2026-08-15</span><span>7 分鐘閱讀</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="bg-[#fcfaf6] py-12 lg:py-16">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="prose prose-lg max-w-none">
+          <p class="text-lg text-[#6d5d50] leading-relaxed mb-8">
+            「扶一下就好」，往往是家屬腰傷的起點。從床邊移到輪椅、從躺著坐起來、從坐著站起來，這些動作一天要重複好幾次，每次都不覺得費力，累積下來先受傷的卻常是照顧的人。我們在高雄接觸過的家庭裡，不少主要照顧者都有長期腰痠或肩頸緊繃，卻總覺得忍一下就過去。這篇談的是移位時的施力方式與身體保護，屬於生活照顧的經驗分享，不是醫療或復健建議。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">為什麼受傷幾乎都發生在「移位」這個動作</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            移位是所有照顧動作裡負荷最集中的一種，因為它同時具備重量大、距離遠、時間短三個條件。長輩不像箱子有把手可以抓，重心會跑、身體會軟，有時還會突然抓住你或往後仰。床邊到輪椅、躺到坐、坐到站這三段，都要在很短的時間內把支撐從一個點交到另一個點，中間沒接住，直覺反應就是用手臂和腰硬撐。腰在彎曲又負重時最脆弱，多數家屬閃到腰，都在這種只能硬接的瞬間。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">錯誤姿勢的共同點：彎腰、伸長手、又扭又出力</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            仔細看家屬受傷的那一刻，姿勢幾乎都很像。第一是彎腰，上半身往前折，腰承受的壓力遠比想像中大。第二是伸長手臂，人站得離床太遠只好伸手去撈，距離一拉開，同樣的重量對腰的負擔就加倍。第三是扭轉，腳沒動，只轉上半身把長輩送到輪椅上。這三件事單獨做就已吃力，最傷的是同時發生。如果你每做完一次移位都會不自覺挺一下腰，通常是姿勢出了問題，不是體力不夠。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">省力的四個基本原則</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            原則其實不多，記住四件事就能改掉大半壞習慣。第一，靠近：讓長輩盡量貼近自己的身體，中間不要隔著床欄或棉被。第二，屈膝不彎腰：用蹲的方式把重心往下放，背維持自然直立。第三，用下肢的力量：該出力的是大腿和臀部，不是手臂和腰，像自己站起來那樣把力量往上帶。第四，同方向：身體、腳尖和長輩要去的方向保持一致，需要轉向時用腳步移動，不要用腰去轉。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">動手之前的三十秒準備</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            很多受傷其實是準備不足造成的。移位前先花三十秒看幾件事：床的高度能調整的話，調到長輩坐在床邊時雙腳踩得到地面；輪椅靠近床邊並和床呈斜角而不是正對著，移動距離越短越安全；煞車兩側都要確實鎖上，這是最常被漏掉的一步；腳踏板先收起，免得絆到腳；地面上的拖鞋、地墊、電線都先移開。居家動線的整理可以參考<a href="/blog/fall-prevention" class="text-[#8b621f] hover:underline">長者居家防跌與無障礙改造</a>。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">先講話再出力：數到三再一起動</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            移位不該是家屬單方面的工作。動手前先告訴長輩接下來要做什麼，例如「等一下扶你坐起來，手抓住這裡」，讓他知道會發生什麼事，身體就不會突然緊繃或反抗。接著請他一起出力，數到三再動，口令要簡單。長輩願意配合的一次移位，家屬花的力氣可能只有硬拉的一半。相反地，完全代勞把人整個抱起來，不只家屬更累更危險，長輩原本還能使用的力量也會越用越少。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">輔具能幫的比想像中多</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            不必等到完全撐不住才考慮輔具。移位滑墊能減少長輩在床上平移或翻身時的摩擦力，家屬不必用抬的；移位腰帶讓家屬有穩定的地方可抓握，不必去拉長輩的手臂或衣服，姿勢自然不會歪。床欄是讓長輩自己扶著使力並防止翻落，不是給家屬當成把人往上拉的把手。臥床長輩變換姿勢的做法可參考<a href="/blog/bed-sore-prevention" class="text-[#8b621f] hover:underline">褥瘡預防與照護完整指南</a>。輔具怎麼挑、怎麼用，建議請專業人員依長輩的身體狀況評估。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">兩個人一起做：怎麼分工、誰喊口令</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            超過一個人能安全處理的重量，就該找第二個人幫忙。但兩個人不等於比較安全，沒有默契反而容易互相拉扯。先講好誰主導：由靠近長輩上半身的人喊口令，另一人負責下半身與雙腿。開始前把步驟講一次，要移到哪裡、分幾步。口令固定用同一組，例如「一、二、三，起」，數到三之後才動，不要有人搶快。任何一方覺得不對都可以喊停，先把長輩安置回穩定位置再重來。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">這幾種情況，不要自己硬做</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            有幾種狀況建議直接增加人力或請專業人員協助，不要憑蠻力嘗試：長輩體型明顯比家屬大、體重差距懸殊；身上有鼻胃管、尿管等管路，移動時牽扯到會有風險；剛開完刀或有傷口、骨折固定；意識不清、無法配合指令或會突然掙扎；正在頭暈或明顯無力。這些都涉及身體狀況與安全評估，請依醫師、護理或復健等專業人員的指導進行，別讓一次逞強變成兩個人一起受傷。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">家屬自己的身體訊號：腰痛、手麻不要忍</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            照顧者最常把自己的不舒服排在最後一位。幾個訊號出現時就該停下來：連續好幾天的腰痛、轉身會抽痛；手指或手臂發麻、抓握不穩；肩頸緊到會頭痛；某個動作明顯比上個月吃力。這些不是休息一下就好的小事，建議儘早就醫由專業人員評估。也要檢視照顧安排，如果每天的移位次數已超過一個人的負荷，該調整的是人力配置。相關的身心負荷可參考<a href="/blog/family-caregiver-burnout" class="text-[#8b621f] hover:underline">家屬照顧者倦怠與身心調適</a>。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">一個提醒：請專業人員實際示範一次</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            文字和影片能幫忙建立觀念，但移位是身體的事，看懂和做對差距很大。手放的位置差幾公分、出力就完全不同，建議請物理治療師、職能治療師或居家護理人員，依長輩的實際狀況示範一次，並在旁邊看家屬做一遍、當場修正。居家看護提供的是生活協助、陪伴與狀況觀察回報，不做醫療診斷，也不能治療或改善任何疾病，本文亦不提供任何復健動作處方。凡是涉及身體狀況、管路、術後與疼痛的問題，一律請依醫師、治療師等醫療或復健專業人員的指導；長輩若出現不適或明顯變化，建議諮詢醫療專業人員，緊急狀況請立即撥打救護專線或前往醫療院所。
+          </p>
+
+          <div class="bg-[#8b621f]/10 rounded-xl p-6 mb-10 border border-[#8b621f]/20">
+            <h3 class="text-xl font-bold text-[#2b221c] mb-3">移位越來越吃力？先聊聊家裡的實際狀況</h3>
+            <p class="text-[#6d5d50] mb-4">宇涵居家照護提供高雄地區的居家看護、醫院看護與臨時看護服務。如果家中長輩的移位、翻身協助已經超出家屬一個人的負荷，歡迎把狀況說給我們聽，一起討論適合的時段安排與人力配置，讓照顧走得久一點。</p>
+            <div class="flex flex-col sm:flex-row gap-3">
+              <a href="tel:0978788886" class="inline-flex items-center justify-center px-6 py-3 bg-[#8b621f] text-white font-semibold rounded-lg hover:bg-[#8b621f]/90 transition-colors">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                0978-788-886
+              </a>
+              <a href="/contact" class="inline-flex items-center justify-center px-6 py-3 border border-[#8b621f] text-[#8b621f] font-semibold rounded-lg hover:bg-[#8b621f]/10 transition-colors">免費諮詢表單</a>
+            </div>
+          </div>
+
+          <h3 class="text-xl font-bold text-[#2b221c] mb-4">相關文章推薦</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+            <a href="/blog/bed-sore-prevention" class="flex items-start space-x-4 bg-white rounded-xl p-4 border border-[#efe5d5] hover:border-[#8b621f]/30 transition-colors">
+              <Image src={blogBedsore} alt="臥床長輩定時變換姿勢與皮膚照顧的實務做法" widths={[80, 160, 240]} sizes="80px" class="w-20 h-20 rounded-lg object-cover flex-shrink-0" loading="lazy" />
+              <div><h4 class="font-bold text-[#2b221c] hover:text-[#8b621f]">褥瘡預防與照護</h4><p class="text-sm text-[#6d5d50]">臥床長輩的姿勢變換...</p></div>
+            </a>
+            <a href="/blog/fall-prevention" class="flex items-start space-x-4 bg-white rounded-xl p-4 border border-[#efe5d5] hover:border-[#8b621f]/30 transition-colors">
+              <Image src={blogFall} alt="居家環境的防跌整理與無障礙動線調整" widths={[80, 160, 240]} sizes="80px" class="w-20 h-20 rounded-lg object-cover flex-shrink-0" loading="lazy" />
+              <div><h4 class="font-bold text-[#2b221c] hover:text-[#8b621f]">居家防跌與改造</h4><p class="text-sm text-[#6d5d50]">動線與環境怎麼調整...</p></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</MainLayout>

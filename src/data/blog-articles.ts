@@ -10,6 +10,15 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    title: '幫長輩翻身、移位怎麼做才不會傷到自己？家屬的省力技巧與腰背保護',
+    excerpt: '照顧長輩最先受傷的，往往是家屬自己。從移位為什麼負荷最集中、錯誤姿勢的三個共同點、靠近與屈膝的省力原則、床與輪椅的事前準備、溝通與口令怎麼喊、移位滑墊與移位腰帶的幫忙、兩個人合作的分工，到什麼情況不要自己硬做，以及腰痛手麻該停下來的身體訊號，分享高雄居家照顧的實務經驗。',
+    image: '/images/service-rehab.jpg',
+    slug: '/blog/safe-transfer-lifting-technique-20260815',
+    category: '照護知識',
+    date: '2026-08-15',
+    readTime: '7 分鐘',
+  },
+  {
     title: '看護臨時請假怎麼辦？高雄居家看護的代班機制與家屬的備案準備',
     excerpt: '看護臨時無法到班，家屬最怕的是「今天沒人」。從缺班常見的原因、有制度的服務單位怎麼安排代班、代班人員到府前家屬要先做什麼、交接資訊該怎麼留成一份紙本、家屬自己頂一天的優先順序，到長輩對陌生面孔的不安怎麼緩解與簽約前該問清楚的代班條款，分享高雄家庭的備案準備經驗。',
     image: '/images/service-communication.jpg',
