@@ -1,0 +1,137 @@
+---
+import { Image } from 'astro:assets';
+import MainLayout from '../../layouts/MainLayout.astro';
+import serviceDaily from '../../assets/images/service-daily.jpg';
+import blogFall from '../../assets/images/blog-fall.jpg';
+import serviceRehab from '../../assets/images/service-rehab.jpg';
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: '長輩的衣服怎麼挑才好穿脫？從開襟、材質到鞋子的居家選擇建議',
+  description: '衣服看似小事，卻是每天都要重複的動作。從開襟為什麼優於套頭、前開與後開的適用情境、扣子拉鍊與魔鬼氈的差別、褲子的腰圍與如廁便利、材質與車縫線、尺寸不是越大越好、鞋子與室內防跌，到換季分層穿法與洗滌替換的安排，分享高雄居家照顧的實務經驗。',
+  image: new URL('/images/service-daily.jpg', Astro.site).toString(),
+  datePublished: '2026-08-17T08:00:00+08:00',
+  author: { '@type': 'Organization', name: '宇涵居家照護' },
+  publisher: { '@type': 'Organization', name: '宇涵居家照護', logo: { '@type': 'ImageObject', url: new URL('/images/logo.png', Astro.site).toString() } },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': new URL('/blog/elderly-clothing-dressing-guide-20260817', Astro.site).toString() },
+};
+---
+
+<MainLayout
+  title="長輩的衣服怎麼挑才好穿脫？從開襟、材質到鞋子的居家選擇建議｜宇涵"
+  description="衣服看似小事，卻是每天都要重複的動作。從開襟為什麼優於套頭、前開與後開的適用情境、扣子拉鍊與魔鬼氈的差別、褲子的腰圍與如廁便利、材質與車縫線、尺寸與鞋子的防跌考量，到換季分層穿法與洗滌替換的安排，分享高雄居家照顧的實務經驗。"
+  keywords="高雄居家看護,高雄看護,長輩衣物選擇,穿脫方便,開襟衣物,長者防滑鞋"
+  schema={schema}
+>
+  <article>
+    <section class="relative bg-[#2b221c] py-16 lg:py-24">
+      <div class="absolute inset-0 opacity-15">
+        <Image src={serviceDaily} alt="家屬協助長輩在床邊更衣、整理衣物的日常照顧場景" widths={[400, 800, 1200]} sizes="(max-width: 768px) 100vw, 800px" class="w-full h-full object-cover" loading="eager" />
+      </div>
+      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav aria-label="麵包屑" class="mb-6">
+          <ol class="flex items-center space-x-2 text-sm text-[#efe5d5]/80">
+            <li><a href="/" class="hover:text-[#8b621f]">首頁</a></li><li><span class="text-[#efe5d5]/40">/</span></li>
+            <li><a href="/blog" class="hover:text-[#8b621f]">照護知識</a></li><li><span class="text-[#efe5d5]/40">/</span></li>
+            <li class="text-[#fcfaf6]">衣物選擇與穿脫</li>
+          </ol>
+        </nav>
+        <span class="inline-block bg-[#8b621f] text-white text-xs px-3 py-1 rounded-full mb-4">照護知識</span>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#fcfaf6] mb-4 leading-tight">長輩的衣服怎麼挑才好穿脫？從開襟、材質到鞋子的居家選擇建議</h1>
+        <div class="flex items-center text-[#efe5d5] text-sm space-x-4">
+          <span>2026-08-17</span><span>9 分鐘閱讀</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="bg-[#fcfaf6] py-12 lg:py-16">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="prose prose-lg max-w-none">
+          <p class="text-lg text-[#6d5d50] leading-relaxed mb-8">
+            「這件他以前最愛穿，現在一舉手就喊痛。」不少家庭是在照顧開始之後，才發現衣櫃裡的衣服幾乎都不好穿脫。衣服看起來是小事，卻是每天早晚都要來一次的動作，選得不對，長輩不舒服、家屬也更費力，原本還能自己完成的事情就一件件交了出去。我們在高雄協助居家照顧時，常建議家屬先花一個下午整理長輩的衣櫃。這篇談的是衣物與鞋子的選擇經驗，屬於生活照顧的分享，不是醫療建議。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">衣服選得對，長輩才有機會自己穿</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            穿衣服這件事藏著兩層意義。第一層是照顧難度：一件難穿的衣服，可能讓三分鐘的事變成十分鐘的拉扯，家屬要出更多力，長輩也更容易在過程中被拉到手臂或肩膀。第二層是自尊：能自己扣好扣子、把手伸進袖子的人，和每天被人從頭套下去的人，感受完全不同。原則其實很簡單，長輩還做得到的部分就讓他自己做，家屬把難的那幾步接手。衣服的選擇，正是把「還做得到」的範圍撐大的方法。早上趕時間時尤其明顯，多留幾分鐘常比直接代勞值得。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">開襟優於套頭：肩膀、單側無力與管路的考量</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            套頭上衣要把手臂高舉、讓頭鑽過去，對肩關節活動受限、單側無力或身上有管路的長輩來說，往往是每天固定的折磨。前開襟的衣服可以像披外套一樣，先穿不方便的那一側，再繞到另一側，全程不必抬高手臂，也不會蓋住頭臉。後開襟則多用在長期臥床、需要在床上更衣的情況，好處是前胸平整、不必反覆翻身，但要留意背後堆疊的布料會不會壓在皮膚上、久躺會不會悶熱。兩種各有適用的人。睡衣同樣建議選開襟款式，夜裡起身或更換時都會輕鬆得多。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">扣子、拉鍊還是魔鬼氈：看手指還做得到什麼</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            開襟之後，接著看扣合方式。手部精細動作退化、握力變差或手會抖的長輩，小顆鈕扣幾乎是不可能的任務，換成大顆一點、扣眼寬一點的款式，很多人就能自己完成。拉鍊的難處在起頭那一段，拉頭上加一個好抓的環會容易許多。魔鬼氈最省事，單手就能操作，適合單側無力的人，缺點是用久了黏性會變差、邊緣也可能刮到皮膚，要定期檢查更換。讓長輩實際試扣幾次，比在店裡憑想像判斷準得多。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">褲子的重點，在腰圍和如廁的那幾秒</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            褲子最常被忽略，卻和如廁順不順利直接相關。腰圍建議挑鬆緊帶款式，長輩單手就能拉下拉上，不必和皮帶或褲頭的扣子拔河，來不來得及有時就差這幾秒。褲管不要太窄，太合身的褲子在坐姿下很難拉上來，家屬也不好協助，但也不能寬到踩得到褲腳。長度以站著時不碰到地面為準；坐輪椅的長輩則要注意褲管會不會卡進腳踏板或輪子。有使用尿布時，褲子的鬆緊也會影響更換時要移動幾次。口袋的位置也順便看一下，太深或開在背後的口袋長輩並不好使用。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">材質與車縫線：貼著皮膚的那一面最重要</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            長輩的皮膚通常比較薄也比較乾，對衣物的耐受度不如年輕時。貼身衣物建議挑吸汗透氣、觸感柔軟的材質，流汗後悶在身上不但不舒服，皮膚也容易受影響。特別要看的是車縫線和標籤的位置：粗硬的縫線、塑膠印花、後領標籤，長時間壓在同一個地方都可能造成不適；長期臥床的長輩尤其要留意背部、臀部和肩胛這些持續受壓的位置。皮膚若已出現泛紅或破皮，請依醫療專業人員的指導處理。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">尺寸不是越大越好</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            許多家屬會刻意買大一號，覺得比較好穿脫。實際上過大的衣物有幾個風險：袖口太寬容易勾到門把、輪椅扶手或床欄；下襬太長，站起來時會被自己踩到；褲腳過長更是明確的絆倒來源。移位或翻身時，多出來的布料還可能捲在身體下面，家屬一使力就連著皮膚一起拉扯。合身但保留活動餘裕，才是好穿脫真正的意思。買之前先讓長輩試穿，並實際做一次坐下與站起的動作。移位時的施力與安全，可以參考<a href="/blog/safe-transfer-lifting-technique-20260815" class="text-[#8b621f] hover:underline">翻身移位的省力技巧與腰背保護</a>。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">鞋子才是室內防跌的關鍵</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            衣服選得再好，一雙不對的鞋還是可能讓人跌倒。最常見的是在室內穿拖鞋走動：後跟是空的，腳一抬鞋子就往前跑，走到門檻或地墊邊緣特別危險。建議室內也穿包覆後跟、鞋底止滑的鞋子，鞋頭不要太翹、鞋底不要太軟。扣合同樣建議魔鬼氈，長輩彎腰綁鞋帶本身就不安全，鬆掉的鞋帶又是另一個絆倒來源。腳若容易水腫，尺寸要留一點調整空間。居家環境的整理可以搭配<a href="/blog/fall-prevention" class="text-[#8b621f] hover:underline">長者居家防跌與無障礙改造</a>一起看。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">換季與室內外溫差：分層比一件厚外套實際</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            高雄的日夜溫差和冷氣房的落差，常常比季節本身更難應付。長輩對冷熱的感受和表達可能都不如以往靈敏，若只穿一件很厚的外套，熱了就得整件脫掉，一冷一熱反而折騰。比較實際的做法是分層：一件吸汗的貼身衣物、一件中層的薄外套或背心，需要時再加一件。這樣調整的單位小，長輩自己也做得到。出門前先想一下要待在哪裡、待多久，包包裡放一件薄外套，通常比出門前糾結穿哪一件更有用。室內也備一件隨手可披的薄外套，放在長輩坐著時拿得到的地方。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">有管路或傷口時，先問過醫療專業人員</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            身上有鼻胃管、尿管、引流管或傷口敷料時，衣物就不只是方便的問題。管路的走向、固定的位置、換藥時需要露出多少範圍，這些都涉及醫療照護，衣服的開口方式與更衣順序，請一律依醫師、護理或復健等醫療專業人員的指導進行，家屬不要自行改造衣物或調整管路。日常能做的是觀察與回報：衣物有沒有壓到管路、鬆緊帶有沒有勒到固定處、更衣後長輩的表情或姿勢有沒有改變，把看到的說給專業人員聽。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">洗滌與替換頻率：先算清楚要備幾套</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            款式選對之後，接著是數量。先估一天大概要換幾次：流汗、用餐沾到、如廁來不及都是常見情形，再加上洗好晾乾需要的時間，才知道要備幾套才不會臨時沒得換。連日陰雨的季節要再抓寬一點。貼身衣物建議分開清洗、確實晾乾，洗劑殘留和沒乾透的衣物都可能讓皮膚不舒服。衣物分類放好、位置固定，家中有多人輪流協助時才不會臨時找不到。沐浴後換上乾淨衣物的流程可以一起安排，做法可參考<a href="/blog/elderly-bathing-hygiene-care" class="text-[#8b621f] hover:underline">長輩沐浴與清潔照顧的安全指南</a>。
+          </p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">最後一步：讓長輩自己挑一件喜歡的</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">
+            最容易被漏掉的一件事，是問長輩想穿什麼。顏色、款式、是不是他一向習慣的樣子，這些看似與功能無關，卻直接影響他願不願意配合、想不想出門見人。可以把幾件都符合好穿脫條件的衣服放在一起，讓他自己選。衣櫃也值得重新整理一次，把好穿脫的那幾件放在最順手的那一層，暫時不合適的先收起來。居家看護提供的是生活協助、陪伴與狀況觀察回報，不做醫療診斷，也不能治療或改善任何疾病，本文亦不推薦任何特定商品或品牌。凡是涉及皮膚狀況、傷口、管路與身體活動限制的問題，一律請依醫師、治療師等醫療或復健專業人員的指導；長輩若出現不適或明顯變化，建議諮詢醫療專業人員，緊急狀況請立即撥打救護專線或前往醫療院所。
+          </p>
+
+          <div class="bg-[#8b621f]/10 rounded-xl p-6 mb-10 border border-[#8b621f]/20">
+            <h3 class="text-xl font-bold text-[#2b221c] mb-3">每天更衣都在拉扯？先聊聊家裡的實際狀況</h3>
+            <p class="text-[#6d5d50] mb-4">宇涵居家照護提供高雄地區的居家看護、醫院看護與臨時看護服務。如果長輩每天的更衣、如廁與外出準備已經讓家屬吃不消，歡迎把狀況說給我們聽，一起討論適合的時段安排與協助方式。</p>
+            <div class="flex flex-col sm:flex-row gap-3">
+              <a href="tel:0978788886" class="inline-flex items-center justify-center px-6 py-3 bg-[#8b621f] text-white font-semibold rounded-lg hover:bg-[#8b621f]/90 transition-colors">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                0978-788-886
+              </a>
+              <a href="/contact" class="inline-flex items-center justify-center px-6 py-3 border border-[#8b621f] text-[#8b621f] font-semibold rounded-lg hover:bg-[#8b621f]/10 transition-colors">免費諮詢表單</a>
+            </div>
+          </div>
+
+          <h3 class="text-xl font-bold text-[#2b221c] mb-4">相關文章推薦</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+            <a href="/blog/fall-prevention" class="flex items-start space-x-4 bg-white rounded-xl p-4 border border-[#efe5d5] hover:border-[#8b621f]/30 transition-colors">
+              <Image src={blogFall} alt="居家環境的防跌整理與無障礙動線調整" widths={[80, 160, 240]} sizes="80px" class="w-20 h-20 rounded-lg object-cover flex-shrink-0" loading="lazy" />
+              <div><h4 class="font-bold text-[#2b221c] hover:text-[#8b621f]">居家防跌與改造</h4><p class="text-sm text-[#6d5d50]">動線與環境怎麼調整...</p></div>
+            </a>
+            <a href="/blog/safe-transfer-lifting-technique-20260815" class="flex items-start space-x-4 bg-white rounded-xl p-4 border border-[#efe5d5] hover:border-[#8b621f]/30 transition-colors">
+              <Image src={serviceRehab} alt="家屬在床邊協助長輩坐起與移位時的施力姿勢" widths={[80, 160, 240]} sizes="80px" class="w-20 h-20 rounded-lg object-cover flex-shrink-0" loading="lazy" />
+              <div><h4 class="font-bold text-[#2b221c] hover:text-[#8b621f]">翻身移位省力技巧</h4><p class="text-sm text-[#6d5d50]">家屬的腰背怎麼保護...</p></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</MainLayout>
