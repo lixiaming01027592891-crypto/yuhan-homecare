@@ -1,0 +1,119 @@
+---
+import { Image } from 'astro:assets';
+import MainLayout from '../../layouts/MainLayout.astro';
+import familyCareChat from '../../assets/images/family-care-chat-rules-20260824.webp';
+import serviceCommunication from '../../assets/images/service-communication.jpg';
+import aboutTeam from '../../assets/images/about-team.jpg';
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: '照顧群組每個人都在回，反而沒人做決定？單一窗口、分級通知與已讀規則',
+  description: '照顧群組訊息一多，常出現五個人都已讀、卻沒人確認下一步。本文整理家屬單一窗口與備援人怎麼排、日常紀錄與待決事項如何分開、訊息用時間與和平常差異寫清楚、緊急程度由家庭和醫療團隊事前定義，以及照片與個資只傳必要範圍的實務做法。',
+  image: new URL('/images/blog/family-care-chat-rules-20260824.webp', Astro.site).toString(),
+  datePublished: '2026-08-24T08:00:00+08:00',
+  author: { '@type': 'Organization', name: '宇涵居家照護' },
+  publisher: { '@type': 'Organization', name: '宇涵居家照護', logo: { '@type': 'ImageObject', url: new URL('/images/logo.png', Astro.site).toString() } },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': new URL('/blog/family-care-chat-single-contact-rules-20260824', Astro.site).toString() },
+};
+---
+
+<MainLayout
+  title="照顧群組每個人都在回，反而沒人做決定？單一窗口與通知規則｜宇涵"
+  description="照顧群組訊息一多，常出現五個人都已讀、卻沒人確認下一步。本文整理單一窗口與備援人、日常紀錄與待決事項分流、固定訊息格式、分級通知及個資界線。"
+  keywords="高雄居家看護,高雄看護,照顧群組,家屬單一窗口,照護交接,居家照顧回報"
+  schema={schema}
+>
+  <article>
+    <section class="relative bg-[#2b221c] py-16 lg:py-24">
+      <div class="absolute inset-0 opacity-20">
+        <Image src={familyCareChat} alt="家屬在照顧群組中依固定格式查看長輩日常回報與待決事項" widths={[400, 800, 1200]} sizes="(max-width: 768px) 100vw, 800px" class="w-full h-full object-cover" loading="eager" />
+      </div>
+      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav aria-label="麵包屑" class="mb-6">
+          <ol class="flex items-center space-x-2 text-sm text-[#efe5d5]/80">
+            <li><a href="/" class="hover:text-[#8b621f]">首頁</a></li><li><span class="text-[#efe5d5]/40">/</span></li>
+            <li><a href="/blog" class="hover:text-[#8b621f]">照護知識</a></li><li><span class="text-[#efe5d5]/40">/</span></li>
+            <li class="text-[#fcfaf6]">家屬群組規則</li>
+          </ol>
+        </nav>
+        <span class="inline-block bg-[#8b621f] text-white text-xs px-3 py-1 rounded-full mb-4">照護知識</span>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#fcfaf6] mb-4 leading-tight">照顧群組每個人都在回，反而沒人做決定？單一窗口、分級通知與已讀規則</h1>
+        <div class="flex items-center text-[#efe5d5] text-sm space-x-4"><span>2026-08-24</span><span>9 分鐘閱讀</span></div>
+      </div>
+    </section>
+
+    <div class="bg-[#fcfaf6] py-12 lg:py-16">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="prose prose-lg max-w-none">
+          <p class="text-lg text-[#6d5d50] leading-relaxed mb-8">家裡開了照顧群組，本來是希望資訊不要漏掉，幾週後卻變成另一種壓力：早餐照片、代購收據、回診問題與一句「今天怪怪的」全混在一起；五個人都按了已讀，卻沒有人回答到底要不要改行程。群組真正缺的通常不是更多訊息，而是誰負責決定、什麼事情要立刻打電話、什麼只要留紀錄。把規則先定好，看護、家屬與遠方手足才不會各自猜。</p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">先指定一位主要窗口，再安排一位備援</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">主要窗口的工作不是二十四小時盯手機，而是接住需要決定的事情，確認後給出單一版本。這個人最好熟悉長輩日常、能聯絡其他手足，也有權在既定範圍內決定就醫陪同、臨時看護或採買。姓名與可聯絡時段直接寫在群組公告，不要讓照顧者每天重新猜該找誰。</p>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">備援人則在主要窗口開會、出國、生病或一段時間未回覆時接手。交接條件也要明確，例如主要窗口在約定時間內沒有回應，才由備援回覆；兩個人不要同時下不同指令。家庭角色怎麼分配，可先參考<a href="/blog/family-care-meeting-sibling-roles-20260730/" class="text-[#8b621f] hover:underline">家庭照顧會議與手足分工</a>。</p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">把訊息分成「日常紀錄」和「需要決定」</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">日常紀錄是讓大家知道今天吃飯、喝水、活動、睡眠與情緒大致如何，不要求每一則都有人回覆。需要決定的訊息則要在第一行直接標示，例如「請窗口在今晚八點前確認：明天下午回診由誰陪同」。兩種訊息混在一起，真正要處理的事很容易被早餐照片往上推走。</p>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">可以約定日常紀錄集中在固定時段一次發，除非出現家庭事前定義的異常狀況。如此遠方家屬不會每跳一則通知就緊張，照顧者也不必一整天停下工作拍照打字。</p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">固定格式只要五行，不需要寫長篇報告</h2>
+          <div class="bg-white rounded-xl p-6 border border-[#efe5d5] mb-6">
+            <p class="text-[#6d5d50] mb-2"><strong>時間：</strong>何時觀察到或完成。</p>
+            <p class="text-[#6d5d50] mb-2"><strong>發生什麼：</strong>只寫看見的事實。</p>
+            <p class="text-[#6d5d50] mb-2"><strong>和平常差異：</strong>第一次、較多、較少，還是其實相同。</p>
+            <p class="text-[#6d5d50] mb-2"><strong>已做什麼：</strong>已休息、已聯絡、已依既定指示處理。</p>
+            <p class="text-[#6d5d50] mb-0"><strong>需要誰回：</strong>純紀錄，或請窗口在何時前確認。</p>
+          </div>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">例如不要只寫「阿公今天怪怪的」，改成「14:30，午睡起來比平常少說話，叫名字會回應；已先陪在旁邊並量了家中原本就有紀錄的項目；請主要窗口現在回電。」描述事實比自行下診斷有用，任何測量與處置則依既有醫療指示，不因群組意見自行新增。</p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">緊急分級要由家庭與醫療團隊事前定義</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">群組可以使用三層概念：一般日常留到固定回報、需要家屬在約定時間內決定、以及不等群組回覆而按既定緊急流程處理。但什麼情況屬於哪一層，不能由文章替每個長輩統一決定，應依長輩疾病、醫師或護理團隊的指示，以及家庭可以提供的支援事前寫清楚。</p>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">出現意識、呼吸、說話、肢體活動等突然且明顯異常，或其他疑似緊急狀況時，不應只在群組等待已讀，請立即依台灣緊急醫療流程撥打 119 或尋求醫療協助。看護與家屬群組不能取代醫療判斷。</p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">已讀不等於接手，回覆要用明確動詞</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">貼圖、愛心與「收到」只代表看見，不代表有人正在處理。需要行動時，回覆應寫成「我會在三點前打電話確認」「我負責明天陪診」「已聯絡主要窗口，等待回覆」。一旦有人接手，其他人不要同時再開第二條路線，避免重複預約、取消或給照顧者相反指示。</p>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">群組公告可直接寫：只有出現「我接手」加上完成時間，才算任務被領走；若超時未完成，由備援人接續。規則聽起來像工作管理，實際上是在保護照顧者與長輩不用承受多人意見。</p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">照片與個資，只傳做決定真正需要的部分</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">群組成員多時，病歷、身分證、藥袋、金融資料與長輩私密照片不應隨手整張上傳。先問這張圖是否真的影響眼前決定；能用文字描述就不多傳，需要拍攝時避開臉部、門牌、證件號碼與無關背景，並取得長輩同意。醫療文件優先透過醫療院所提供的安全管道保存與查閱。</p>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">群組成員也應定期整理，已不再參與照顧的人移出，新增人員前先說明用途。照顧資訊不是家族新聞，分享範圍越清楚，長輩與照顧者越能保有尊嚴與信任。</p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">換班或臨時看護加入時，先讀置頂摘要</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">臨時支援不需要往上滑三個月訊息。置頂摘要只保留當前照顧重點、主要與備援窗口、既定緊急流程、近期行程、不可自行更動的醫療指示，以及回報格式。每次換班只更新仍有效的內容，舊狀況註明日期後歸檔。</p>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">看護日常交接的細節，可搭配<a href="/blog/home-caregiver-communication-handover-20260718/" class="text-[#8b621f] hover:underline">高雄居家看護的溝通與交接</a>閱讀。群組是工具，真正有用的是每個人對角色、界線與下一步有相同理解。</p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">一份可直接放進群組公告的規則</h2>
+          <ul class="text-[#6d5d50] leading-relaxed mb-8">
+            <li>主要窗口一人、備援一人；兩人不下相反指令。</li>
+            <li>日常回報固定時段集中發，需要決定的事項在第一行標明期限。</li>
+            <li>訊息寫時間、事實、和平常差異、已處理與需要誰回。</li>
+            <li>只有明確寫「我接手」與完成時間，才算有人負責。</li>
+            <li>緊急分級依醫療團隊與家庭事前約定；緊急狀況不等群組已讀。</li>
+            <li>照片與個資只傳必要範圍，成員異動就更新權限與置頂摘要。</li>
+          </ul>
+
+          <div class="bg-[#8b621f]/10 rounded-xl p-6 mb-10 border border-[#8b621f]/20">
+            <h3 class="text-xl font-bold text-[#2b221c] mb-3">需要把居家照顧的回報與人力安排說清楚？</h3>
+            <p class="text-[#6d5d50] mb-4">宇涵居家照護提供高雄地區居家看護、醫院看護與臨時看護服務。可先說明長輩目前狀況、需要的時段與家庭聯絡方式，再一起確認服務與交接安排。本文為一般照顧溝通資訊，不提供醫療或法律建議。</p>
+            <div class="flex flex-col sm:flex-row gap-3">
+              <a href="tel:0978788886" class="inline-flex items-center justify-center px-6 py-3 bg-[#8b621f] text-white font-semibold rounded-lg hover:bg-[#8b621f]/90 transition-colors">0978-788-886</a>
+              <a href="/contact" class="inline-flex items-center justify-center px-6 py-3 border border-[#8b621f] text-[#8b621f] font-semibold rounded-lg hover:bg-[#8b621f]/10 transition-colors">免費諮詢表單</a>
+            </div>
+          </div>
+
+          <h3 class="text-xl font-bold text-[#2b221c] mb-4">相關文章推薦</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+            <a href="/blog/home-caregiver-communication-handover-20260718/" class="flex items-start space-x-4 bg-white rounded-xl p-4 border border-[#efe5d5] hover:border-[#8b621f]/30 transition-colors">
+              <Image src={serviceCommunication} alt="家屬與看護交接日常照顧紀錄" widths={[80, 160, 240]} sizes="80px" class="w-20 h-20 rounded-lg object-cover flex-shrink-0" loading="lazy" />
+              <div><h4 class="font-bold text-[#2b221c] hover:text-[#8b621f]">和看護培養默契：日常溝通與交接</h4><p class="text-sm text-[#6d5d50]">把每日狀況交代清楚...</p></div>
+            </a>
+            <a href="/blog/family-care-meeting-sibling-roles-20260730/" class="flex items-start space-x-4 bg-white rounded-xl p-4 border border-[#efe5d5] hover:border-[#8b621f]/30 transition-colors">
+              <Image src={aboutTeam} alt="家人一起確認照顧分工與決策順位" widths={[80, 160, 240]} sizes="80px" class="w-20 h-20 rounded-lg object-cover flex-shrink-0" loading="lazy" />
+              <div><h4 class="font-bold text-[#2b221c] hover:text-[#8b621f]">先開一次家庭照顧會議</h4><p class="text-sm text-[#6d5d50]">把手足角色與決策順位談好...</p></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</MainLayout>
