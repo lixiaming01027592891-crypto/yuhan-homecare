@@ -1,0 +1,86 @@
+---
+import { Image } from 'astro:assets';
+import MainLayout from '../../layouts/MainLayout.astro';
+import serviceCommunication from '../../assets/images/service-communication.jpg';
+import serviceDaily from '../../assets/images/service-daily.jpg';
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: '換人照顧時要交接什麼？家屬共用照顧筆記的實用寫法',
+  description: '照顧交接不是把所有事情寫得很細，而是讓下一個人快速知道今天最重要的狀況。本文整理家屬共用照顧筆記可記哪些固定資訊、哪些每天更新、用藥怎麼避免自己改醫囑、臨時替補怎麼快速接手，以及紙本與手機紀錄怎麼選。',
+  image: new URL('/images/service-communication.jpg', Astro.site).toString(),
+  datePublished: '2026-08-24T08:00:00+08:00',
+  author: { '@type': 'Organization', name: '宇涵居家照護' },
+  publisher: { '@type': 'Organization', name: '宇涵居家照護', logo: { '@type': 'ImageObject', url: new URL('/images/logo.png', Astro.site).toString() } },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': new URL('/blog/family-care-handover-note-20260824', Astro.site).toString() },
+};
+---
+
+<MainLayout
+  title="換人照顧時要交接什麼？家屬共用照顧筆記的實用寫法｜宇涵"
+  description="照顧交接不是寫得愈多愈好，而是讓下一個人快速知道今天最重要的資訊。整理高雄居家看護家庭常用的交接筆記分類、每日更新方式、用藥紀錄與臨時替補接手重點。"
+  keywords="高雄居家看護,高雄看護,照顧交接,家屬照顧筆記,看護交接,家庭照顧分工,高雄看護中心"
+  schema={schema}
+>
+  <article>
+    <section class="relative bg-[#2b221c] py-16 lg:py-24">
+      <div class="absolute inset-0 opacity-15">
+        <Image src={serviceCommunication} alt="家屬與照顧者一起查看照顧紀錄並進行交接" widths={[400, 800, 1200]} sizes="(max-width: 768px) 100vw, 800px" class="w-full h-full object-cover" loading="eager" />
+      </div>
+      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav aria-label="麵包屑" class="mb-6">
+          <ol class="flex items-center space-x-2 text-sm text-[#efe5d5]/80">
+            <li><a href="/" class="hover:text-[#8b621f]">首頁</a></li><li><span class="text-[#efe5d5]/40">/</span></li>
+            <li><a href="/blog" class="hover:text-[#8b621f]">照護知識</a></li><li><span class="text-[#efe5d5]/40">/</span></li>
+            <li class="text-[#fcfaf6]">照顧交接筆記</li>
+          </ol>
+        </nav>
+        <span class="inline-block bg-[#8b621f] text-white text-xs px-3 py-1 rounded-full mb-4">照護知識</span>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#fcfaf6] mb-4 leading-tight">換人照顧時要交接什麼？家屬共用照顧筆記的實用寫法</h1>
+        <div class="flex items-center text-[#efe5d5] text-sm space-x-4"><span>2026-08-24</span><span>7 分鐘閱讀</span></div>
+      </div>
+    </section>
+
+    <div class="bg-[#fcfaf6] py-12 lg:py-16">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="prose prose-lg max-w-none">
+          <p class="text-lg text-[#6d5d50] leading-relaxed mb-8">照顧最容易出錯的時間，往往不是平常，而是「換手」的那半小時。白天看護下班、家屬晚上接手，週末兄弟姊妹輪班，或原本的照顧者臨時請假，下一個人如果只能靠一句「今天都差不多」，很多小資訊就會在交接時掉下去。共用照顧筆記的目的不是寫成病歷，而是讓下一個人用幾分鐘知道今天哪些事情不能漏。</p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">先分成「長期固定」和「今天有變」兩層</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">每天重新抄一遍地址、緊急聯絡人、平常作息，很快就沒有人想維護。比較實用的是把紀錄拆成兩層。第一層放相對固定的資訊，例如聯絡方式、飲食禁忌、行動時需要哪些輔具、平常比較熟悉的生活節奏；第二層只寫今天真的有變動的事情。</p>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">例如今天午餐吃得比平常少、下午外出回診、晚上預計家屬會晚到，這些才需要進每日紀錄。固定資訊有改再更新一次，日誌就不會每天被大量重複文字淹沒。</p>
+
+          <Image src={serviceDaily} alt="照顧筆記可把固定作息與每日變動分開記錄，讓下一位照顧者快速找到重點" widths={[400, 700, 1000]} sizes="(max-width: 768px) 100vw, 760px" class="rounded-2xl my-8 w-full" />
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">每日交接先回答五個問題就夠了</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">交接筆記可以固定回答五件事：今天吃喝與睡眠和往常有沒有明顯不同、今天的活動或外出有哪些、需要延續處理的事情是什麼、用品是否快用完、下一位照顧者有沒有一件特別要注意的事。這種格式比自由書寫更容易長期維持。</p>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">如果今天完全正常，也可以直接寫「依平常作息，無新增事項」。紀錄的價值不是每天一定要寫滿，而是讓接手者一眼知道有沒有新狀況。</p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">用藥可以記「有沒有依指示完成」，不要自己重新設計醫囑</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">涉及藥物時，家屬共用筆記最重要的作用是避免重複、遺漏和資訊斷裂，而不是自行調整藥量或服用方式。藥名、時間與劑量應依醫師、藥袋或其他醫療專業指示執行；交接時可以記錄是否已依指示完成，以及有沒有需要向醫療端詢問的事項。</p>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">如果家人對同一份醫囑理解不同，不要在群組裡投票決定怎麼吃，直接回到原本的醫療指示或詢問專業人員。照顧筆記應該保存已確認的資訊，而不是把猜測變成下一班的指令。</p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">臨時替補的人，只給他最需要的版本</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">如果只是臨時接四個小時，不需要先讀半年紀錄。最前面可以另外做一張「快速接手頁」：緊急聯絡人、今天的重要行程、必要的生活協助、不能忽略的安全事項，以及物品放在哪裡。詳細歷史留在後面，需要時再查。</p>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">這和家庭備案是同一套邏輯。先把誰能接手和怎麼進門安排好，再把資訊也整理成接得住的形式。可延伸閱讀<a href="/blog/family-backup-first-in-line-caregiver-20260823/" class="text-[#8b621f] hover:underline">照顧備案怎麼準備</a>。</p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">紙本、LINE 還是共享文件？選全家真的會用的</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">紀錄工具沒有唯一正解。家中長輩習慣紙筆，就在固定位置放一本；家屬本來就在 LINE 群組協調，可以固定用同一格式回報；需要多人長期維護，也可以使用共享文件。真正重要的是只有一個大家都知道的最新版，不要每個人各記一份。</p>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">若紀錄包含身分、健康或聯絡資訊，也要注意誰有權看到，不必把完整資料丟進不相關的公開群組。需要提供給新的服務人員時，只交付實際照顧會用到的內容即可。</p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">交接最後一句，要留下「下一步是誰做」</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">最容易漏掉的不是資訊，而是責任。像「紙尿褲快沒了」只是狀況；「紙尿褲剩兩天份，今晚由妹妹下單」才是一個完整交接。每個需要後續處理的事項，最好都能看出下一步由誰負責，避免所有人都看過但沒有人真的去做。</p>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">若家中已有固定看護或照護服務，也可先和服務單位確認交接方式與可配合範圍。先前關於日常溝通的整理可參考<a href="/blog/home-caregiver-communication-handover-20260718/" class="text-[#8b621f] hover:underline">和看護的日常溝通與交接</a>。</p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">重點整理</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">一份好用的照顧筆記，不需要每天寫很多。固定資料和每日變動分開，交接時只抓今天的差異；用藥依既有醫療指示紀錄，不自行修改；臨時替補準備快速接手頁；每件待辦留下明確負責人。讓紀錄服務交接，而不是讓家屬多一份每天必須完成的作業。</p>
+
+          <div class="mt-12 rounded-2xl bg-[#efe5d5]/60 p-6">
+            <p class="text-[#6d5d50] leading-relaxed m-0"><strong class="text-[#2b221c]">宇涵居家照護</strong>提供高雄地區居家照護相關服務。若家中正在評估固定照顧、臨時替補或服務交接，可以先整理長輩目前的生活需求、時段與家屬分工，再向服務單位確認實際可配合方式。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</MainLayout>
