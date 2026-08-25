@@ -10,6 +10,15 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    title: '看護換班只說「今天都正常」夠嗎？十分鐘交接表與未完成事項清單',
+    excerpt: '居家或醫院看護換班時，口頭說一切正常容易漏掉剛發生的變化。本文整理十分鐘交接順序：先說和平常不同、再核對既定照顧安排、飲食排泄與活動紀錄、用品設備、未完成事項及家屬窗口，並說明醫療指示不可由看護自行改動。',
+    image: '/images/blog/caregiver-shift-handover-checklist-20260826.webp',
+    slug: '/blog/caregiver-shift-handover-checklist-20260826',
+    category: '照護知識',
+    date: '2026-08-26',
+    readTime: '9 分鐘',
+  },
+  {
     title: '照顧群組每個人都在回，反而沒人做決定？單一窗口、分級通知與已讀規則',
     excerpt: '照顧群組訊息一多，常出現五個人都已讀、卻沒人確認下一步。本文整理家屬單一窗口與備援人怎麼排、日常紀錄與待決事項如何分開、訊息用時間與和平常差異寫清楚、緊急程度由家庭和醫療團隊事前定義，以及照片與個資只傳必要範圍的實務做法。',
     image: '/images/blog/family-care-chat-rules-20260824.webp',

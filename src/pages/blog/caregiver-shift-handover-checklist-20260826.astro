@@ -1,0 +1,117 @@
+---
+import { Image } from 'astro:assets';
+import MainLayout from '../../layouts/MainLayout.astro';
+import caregiverShiftHandover from '../../assets/images/caregiver-shift-handover-checklist-20260826.webp';
+import serviceCommunication from '../../assets/images/service-communication.jpg';
+import aboutTeam from '../../assets/images/about-team.jpg';
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: '看護換班只說「今天都正常」夠嗎？十分鐘交接表與未完成事項清單',
+  description: '居家或醫院看護換班時，口頭說一切正常容易漏掉剛發生的變化。本文整理十分鐘交接順序：先說和平常不同、再核對既定照顧安排、飲食排泄與活動紀錄、用品設備、未完成事項及家屬窗口，並說明醫療指示不可由看護自行改動。',
+  image: new URL('/images/blog/caregiver-shift-handover-checklist-20260826.webp', Astro.site).toString(),
+  datePublished: '2026-08-26T08:00:00+08:00',
+  author: { '@type': 'Organization', name: '宇涵居家照護' },
+  publisher: { '@type': 'Organization', name: '宇涵居家照護', logo: { '@type': 'ImageObject', url: new URL('/images/logo.png', Astro.site).toString() } },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': new URL('/blog/caregiver-shift-handover-checklist-20260826', Astro.site).toString() },
+};
+---
+
+<MainLayout
+  title="看護換班只說今天都正常夠嗎？十分鐘交接表｜宇涵"
+  description="看護換班時只說一切正常容易漏掉變化。本文整理十分鐘交接：和平常差異、既定照顧安排、飲食排泄與活動、用品設備、未完成事項和家屬窗口。"
+  keywords="高雄居家看護,高雄看護,看護換班交接,照護交接表,居家照顧紀錄,看護未完成事項"
+  schema={schema}
+>
+  <article>
+    <section class="relative bg-[#2b221c] py-16 lg:py-24">
+      <div class="absolute inset-0 opacity-20">
+        <Image src={caregiverShiftHandover} alt="兩位看護與家屬在換班時核對長輩日常照顧、用品與未完成事項" widths={[400, 800, 1200]} sizes="(max-width: 768px) 100vw, 800px" class="w-full h-full object-cover" loading="eager" />
+      </div>
+      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav aria-label="麵包屑" class="mb-6">
+          <ol class="flex items-center space-x-2 text-sm text-[#efe5d5]/80">
+            <li><a href="/" class="hover:text-[#8b621f]">首頁</a></li><li><span class="text-[#efe5d5]/40">/</span></li>
+            <li><a href="/blog" class="hover:text-[#8b621f]">照護知識</a></li><li><span class="text-[#efe5d5]/40">/</span></li>
+            <li class="text-[#fcfaf6]">看護換班交接</li>
+          </ol>
+        </nav>
+        <span class="inline-block bg-[#8b621f] text-white text-xs px-3 py-1 rounded-full mb-4">照護知識</span>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#fcfaf6] mb-4 leading-tight">看護換班只說「今天都正常」夠嗎？十分鐘交接表與未完成事項清單</h1>
+        <div class="flex items-center text-[#efe5d5] text-sm space-x-4"><span>2026-08-26</span><span>9 分鐘閱讀</span></div>
+      </div>
+    </section>
+
+    <div class="bg-[#fcfaf6] py-12 lg:py-16">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="prose prose-lg max-w-none">
+          <p class="text-lg text-[#6d5d50] leading-relaxed mb-8">早班看護準備離開，晚班已經到門口，最常聽見的交接是：「今天都正常，藥吃過了。」但「正常」對每個人的理解不同，剛才走路比平常慢、晚餐只吃一半、明早要回診帶哪份資料，都可能在一句話裡消失。有效交接不是把一天重新講一遍，而是先說差異，再核對既定安排、未完成事項與誰負責下一步。</p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">換班前十分鐘先停下手邊工作</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">交接不應在一位穿鞋離開、另一位同時整理物品時匆忙進行。排班時預留重疊時間，選擇長輩安全穩定、環境不吵雜的位置，由交班者、接班者和需要時的家屬窗口一起核對。若當下正有緊急或異常狀況，先依既定醫療與緊急流程處理，不為了完成表格延誤協助。</p>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">照護紀錄、醫療院所交代與家庭規則放在固定位置，避免每一班用不同筆記本、私人聊天或口頭記憶。電子工具也要依家庭同意與個資安全使用，不把病歷與私密照片隨意轉傳。</p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">第一分鐘先說「和平常不同」</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">接班者最需要先知道的，不是每餐吃了什麼，而是今天哪一件事和平常不同。用時間、看見的事實和已做的處理來說，例如「下午三點起身時比平常慢，需要多停一下；已依原照顧方式陪同休息，家屬已知」。不要用「怪怪的」「狀況不好」代替具體描述，也不要自行診斷原因。</p>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">突然的意識、呼吸、說話、肢體活動等明顯異常，或其他疑似緊急狀況，不應留到換班才說。請立即依台灣緊急醫療流程撥打 119 或尋求醫療協助；看護紀錄不能替代醫療判斷。</p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">第二部分核對既定照顧安排，不重新開處方</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">逐項核對醫師、護理或復健等專業人員已交代的時間與方式，以及家庭約定的日常作息。看護可以記錄完成、未完成和當下反應，但不能因為某班覺得效果不夠，就自行增加、減少或更換藥物、飲食、運動與醫療處置。</p>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">遇到不清楚或長輩拒絕的項目，記下時間、事實與已聯絡對象，交給家屬和相應專業人員判斷。不要為了讓紀錄看起來完整，把沒完成的事情勾成已完成。</p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">飲食、排泄、活動與睡眠只寫可比較的內容</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">「吃得還可以」可以改成吃了哪些、約多少、是否和平常相近；「有上廁所」則記時間與需要的協助程度，不在群組使用嘲笑或讓長輩失去尊嚴的描述。活動與睡眠也寫日常事件，例如走到客廳需要幾次休息、午睡時間是否和平常明顯不同。</p>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">家中若有醫療團隊要求的量測或紀錄格式，就依原指示執行；沒有指示時，不因文章自行增加測量、限制飲食或判讀數值。照護紀錄的功能是提供事實，不是替醫療專業做結論。</p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">用品與設備要交到「能接著用」的狀態</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">輪椅、助行器、床邊扶手、尿布、清潔用品、眼鏡、助聽設備與充電器，確認位置、數量與是否可正常使用。設備出現鬆動、異音、電量不足或損壞，不要只在紀錄上寫一句，應標示暫停使用或依原廠、醫療及專業維修流程處理。</p>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">下一班立即需要的用品放在固定位置，不要為了桌面看起來整齊而換到新的抽屜。會影響長輩安全的動線、床邊與通道，也應在交班前恢復並實際走一次。</p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">未完成事項一定要有負責人與期限</h2>
+          <div class="bg-white rounded-xl p-6 border border-[#efe5d5] mb-6">
+            <p class="text-[#6d5d50] mb-2"><strong>事項：</strong>明天回診、補用品、等待回電或需觀察的變化。</p>
+            <p class="text-[#6d5d50] mb-2"><strong>目前進度：</strong>已完成什麼，還缺什麼。</p>
+            <p class="text-[#6d5d50] mb-2"><strong>負責人：</strong>接班看護、主要家屬、備援家屬或醫療端。</p>
+            <p class="text-[#6d5d50] mb-0"><strong>時間：</strong>何時前要完成，沒回覆時找誰。</p>
+          </div>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">「家屬知道」不是完成狀態。要寫哪位家屬已接手、何時回覆；若主要窗口聯絡不上，依家庭事前安排找備援。備案怎麼排，可搭配<a href="/blog/family-backup-first-in-line-caregiver-20260823/" class="text-[#8b621f] hover:underline">第一順位照顧替補的準備</a>閱讀。</p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">接班者要復述三件事，才算交接完成</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">請接班者用自己的話復述：今天最大的差異、下一個時段最重要的安排、目前唯一或最急的未完成事項。復述不是考試，而是找出雙方理解不同的地方。完成後兩人一起確認紀錄時間與姓名，不用事後靠聊天訊息回想。</p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">一張十分鐘交接清單</h2>
+          <ul class="text-[#6d5d50] leading-relaxed mb-8">
+            <li>和平常不同：時間、事實、已做處理與已聯絡對象。</li>
+            <li>既定安排：完成、未完成、拒絕或需專業確認的項目。</li>
+            <li>日常紀錄：飲食、排泄、活動、睡眠與需要協助程度。</li>
+            <li>用品設備：位置、數量、電量、損壞或暫停使用狀態。</li>
+            <li>未完成事項：負責人、期限與聯絡不到時的備援。</li>
+            <li>接班復述：今日差異、下一步與最急待辦。</li>
+          </ul>
+
+          <div class="bg-[#8b621f]/10 rounded-xl p-6 mb-10 border border-[#8b621f]/20">
+            <h3 class="text-xl font-bold text-[#2b221c] mb-3">需要安排能接得上的居家或臨時照護？</h3>
+            <p class="text-[#6d5d50] mb-4">宇涵居家照護提供高雄地區居家看護、醫院看護與臨時看護服務。可先說明長輩目前狀況、需要時段、既有醫療指示與家庭主要窗口，再一起確認服務和換班交接。本文為一般照顧溝通資訊，不提供醫療或法律建議。</p>
+            <div class="flex flex-col sm:flex-row gap-3">
+              <a href="tel:0978788886" class="inline-flex items-center justify-center px-6 py-3 bg-[#8b621f] text-white font-semibold rounded-lg hover:bg-[#8b621f]/90 transition-colors">0978-788-886</a>
+              <a href="/contact" class="inline-flex items-center justify-center px-6 py-3 border border-[#8b621f] text-[#8b621f] font-semibold rounded-lg hover:bg-[#8b621f]/10 transition-colors">免費諮詢表單</a>
+            </div>
+          </div>
+
+          <h3 class="text-xl font-bold text-[#2b221c] mb-4">相關文章推薦</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+            <a href="/blog/home-caregiver-communication-handover-20260718/" class="flex items-start space-x-4 bg-white rounded-xl p-4 border border-[#efe5d5] hover:border-[#8b621f]/30 transition-colors">
+              <Image src={serviceCommunication} alt="家屬與看護核對居家照顧紀錄" widths={[80, 160, 240]} sizes="80px" class="w-20 h-20 rounded-lg object-cover flex-shrink-0" loading="lazy" />
+              <div><h4 class="font-bold text-[#2b221c] hover:text-[#8b621f]">和看護培養默契：日常溝通與交接</h4><p class="text-sm text-[#6d5d50]">把每日照顧資訊留得清楚...</p></div>
+            </a>
+            <a href="/blog/family-backup-first-in-line-caregiver-20260823/" class="flex items-start space-x-4 bg-white rounded-xl p-4 border border-[#efe5d5] hover:border-[#8b621f]/30 transition-colors">
+              <Image src={aboutTeam} alt="家屬確認主要照顧者與備援順位" widths={[80, 160, 240]} sizes="80px" class="w-20 h-20 rounded-lg object-cover flex-shrink-0" loading="lazy" />
+              <div><h4 class="font-bold text-[#2b221c] hover:text-[#8b621f]">照顧備案怎麼準備？</h4><p class="text-sm text-[#6d5d50]">先講好第一順位替補...</p></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</MainLayout>
