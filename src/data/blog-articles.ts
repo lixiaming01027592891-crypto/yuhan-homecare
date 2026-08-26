@@ -10,6 +10,15 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    title: '高雄臨時看護怎麼安排？從時段、交接、用品到家屬窗口的準備',
+    excerpt: '需要高雄臨時看護時，先整理照顧地點、起訖時段、長輩日常狀況、既有醫療指示、移動與夜間需求，再確認服務範圍、換班交接、用品、家屬單一窗口與緊急處理。本文提供一份可直接詢問的安排清單。',
+    image: '/images/blog/kaohsiung-temporary-caregiver-arrangement-20260827.webp',
+    slug: '/blog/kaohsiung-temporary-caregiver-arrangement-20260827',
+    category: '照護知識',
+    date: '2026-08-27',
+    readTime: '9 分鐘',
+  },
+  {
     title: '看護換班只說「今天都正常」夠嗎？十分鐘交接表與未完成事項清單',
     excerpt: '居家或醫院看護換班時，口頭說一切正常容易漏掉剛發生的變化。本文整理十分鐘交接順序：先說和平常不同、再核對既定照顧安排、飲食排泄與活動紀錄、用品設備、未完成事項及家屬窗口，並說明醫療指示不可由看護自行改動。',
     image: '/images/blog/caregiver-shift-handover-checklist-20260826.webp',

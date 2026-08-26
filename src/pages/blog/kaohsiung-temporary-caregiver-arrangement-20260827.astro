@@ -1,0 +1,95 @@
+---
+import { Image } from 'astro:assets';
+import MainLayout from '../../layouts/MainLayout.astro';
+import temporaryCaregiver from '../../assets/images/kaohsiung-temporary-caregiver-arrangement-20260827.webp';
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: '高雄臨時看護怎麼安排？從時段、交接、用品到家屬窗口的準備',
+  description: '需要高雄臨時看護時，先整理照顧地點、起訖時段、長輩日常狀況、既有醫療指示、移動與夜間需求，再確認服務範圍、換班交接、用品、家屬單一窗口與緊急處理。',
+  image: new URL('/images/blog/kaohsiung-temporary-caregiver-arrangement-20260827.webp', Astro.site).toString(),
+  datePublished: '2026-08-27T08:00:00+08:00',
+  author: { '@type': 'Organization', name: '宇涵居家照護' },
+  publisher: { '@type': 'Organization', name: '宇涵居家照護', logo: { '@type': 'ImageObject', url: new URL('/images/logo.png', Astro.site).toString() } },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': new URL('/blog/kaohsiung-temporary-caregiver-arrangement-20260827', Astro.site).toString() },
+};
+---
+
+<MainLayout
+  title="高雄臨時看護怎麼安排？時段、交接與用品準備｜宇涵"
+  description="高雄臨時看護安排清單：照顧地點與時段、日常狀況、既有醫療指示、移動夜間需求、服務範圍、換班交接、用品與家屬窗口。"
+  keywords="高雄臨時看護,高雄看護,高雄居家看護,醫院看護,臨時照護安排,看護交接"
+  schema={schema}
+>
+  <article>
+    <section class="relative bg-[#2b221c] py-16 lg:py-24">
+      <div class="absolute inset-0 opacity-20">
+        <Image src={temporaryCaregiver} alt="高雄臨時看護到場前，家屬與照顧人員核對時段、用品、日常紀錄和聯絡窗口" widths={[400, 800, 1200]} sizes="(max-width: 768px) 100vw, 800px" class="w-full h-full object-cover" loading="eager" />
+      </div>
+      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav aria-label="麵包屑" class="mb-6">
+          <ol class="flex items-center space-x-2 text-sm text-[#efe5d5]/80">
+            <li><a href="/" class="hover:text-[#8b621f]">首頁</a></li><li><span class="text-[#efe5d5]/40">/</span></li>
+            <li><a href="/blog" class="hover:text-[#8b621f]">照護知識</a></li><li><span class="text-[#efe5d5]/40">/</span></li>
+            <li class="text-[#fcfaf6]">高雄臨時看護安排</li>
+          </ol>
+        </nav>
+        <span class="inline-block bg-[#8b621f] text-white text-xs px-3 py-1 rounded-full mb-4">照護知識</span>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#fcfaf6] mb-4 leading-tight">高雄臨時看護怎麼安排？從時段、交接、用品到家屬窗口的準備</h1>
+        <div class="flex items-center text-[#efe5d5] text-sm space-x-4"><span>2026-08-27</span><span>9 分鐘閱讀</span></div>
+      </div>
+    </section>
+
+    <div class="bg-[#fcfaf6] py-12 lg:py-16">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="prose prose-lg max-w-none">
+          <p class="text-lg text-[#6d5d50] leading-relaxed mb-8">家人臨時出差、主要照顧者需要休息，或住院期間突然找不到陪伴人力時，很多家庭會先問「今天還有沒有看護」。但要安排合適的<strong>高雄臨時看護</strong>，除了日期，還要說清楚地點、時段、長輩平常怎麼生活、哪些事情已有醫療指示、需要多少移動協助，以及誰能在遇到變化時做決定。資料越具體，越能在接案前判斷人力和服務是否合適。</p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">先定義「臨時」是哪一段時間</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">提供確切日期、開始與結束時間、居家或醫院、地址樓層與停車門禁。半天、夜間、連續二十四小時或數日輪班，所需人力與交接完全不同。若結束時間可能延後，先詢問能否加時、如何計算，以及下一班無法續留時的備案。</p>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">醫院照護要說院區、病房類型、床號可在確認後提供，並遵守院方陪病、感染管制與探視規定；居家則說明同住者、寵物、電梯和夜間出入口。不要用「到現場就知道」取代必要資訊。</p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">用一頁資料描述日常，不自行下診斷</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">列出長輩清醒溝通、進食飲水、如廁、翻身、步行或輪椅、睡眠與夜間起身的平常方式，以及最近和平常不同的地方。使用助行器、輪椅、照護床、氧氣或其他設備時，提供型號、原本操作人與專業交代。</p>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">既有疾病、用藥、過敏、傷口、管路、手術與醫師限制依實際情況告知，但看護不負責自行診斷、開藥或改變醫療計畫。突然意識改變、胸痛、呼吸困難、單側無力或其他疑似緊急狀況，請立即依台灣緊急醫療流程撥打 119 或尋求醫療協助，不先等待看護到場。</p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">把服務範圍逐項確認</h2>
+          <ul class="text-[#6d5d50] leading-relaxed mb-6">
+            <li>生活協助：進食、清潔、更衣、如廁與環境整理到哪個範圍。</li>
+            <li>移動協助：是否需翻身、移位、輪椅、助行或上下樓，現場是否有適合設備。</li>
+            <li>醫院陪伴：檢查陪同、護理站聯絡與院方規定如何配合。</li>
+            <li>夜間需求：起身頻率、照明、警示與家屬能否在緊急時到場。</li>
+            <li>不屬服務：醫療處置、藥物調整、危險搬抱、家務或其他未約定工作。</li>
+          </ul>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">若需要專業護理技術，應由具備相應資格的人員依醫療指示執行。不要因為臨時缺人，就要求一般看護承擔超出資格、訓練或安全範圍的工作。</p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">用品在到場前放到固定位置</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">依平常照顧準備尿布、清潔用品、換洗衣物、飲食用品、手套與垃圾分類；藥品依原包裝和醫療指示保管，不把多種藥混在沒有標示的盒子。輪椅、助行器、床邊燈、呼叫方式與充電設備先確認可用，損壞或不熟悉的器材不要臨時要求操作。</p>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">家中現金、印章、存摺和貴重物品由家屬收妥。看護代購或代墊是否包含、額度、收據與找零方式，要在服務前寫清楚，不交付提款卡、網銀或不必要的金融權限。</p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">指定一位家屬窗口和一位備援</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">主要窗口負責確認服務、接收日常變化並做家庭可決定的事項；備援在主要窗口聯絡不上時接手。群組可以用來留紀錄，但不能五個人同時下不同指示。哪些狀況需立即電話、哪些可在交班統一回報，由家庭和醫療團隊事前定義。</p>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">可搭配<a href="/blog/family-backup-first-in-line-caregiver-20260823/" class="text-[#8b621f] hover:underline">照顧備援順位</a>整理電話、關係與可決策範圍。涉及醫療判斷時仍交由醫療專業，不把責任全部推給家屬窗口。</p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">交接至少留出十分鐘</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">交接順序先說和平常不同，再核對既定照顧安排、飲食排泄與活動、用品設備、未完成事項和下一個重要時點。接班者用自己的話復述最重要三件事，確認雙方理解一致。完整格式可參考<a href="/blog/caregiver-shift-handover-checklist-20260826/" class="text-[#8b621f] hover:underline">十分鐘看護交接表</a>。</p>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">若是第一次到場，家屬最好在開始時陪同完成環境與日常介紹，不要只把鑰匙放在管理室。服務結束也要核對紀錄、用品、鑰匙和未完成事項，不能一句都正常就交班。</p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">費用比較要先對齊內容</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">確認時數或班別、交通、樓層、夜間或假日、延時、取消改期、餐食休息、特殊照顧與輪班交接是否包含。不同報價若時段和責任範圍不同，不能只比較最後一個數字。請以正式確認內容為準，保留預約與付款紀錄。</p>
+
+          <div class="bg-[#8b621f]/10 rounded-xl p-6 mb-10 border border-[#8b621f]/20">
+            <h3 class="text-xl font-bold text-[#2b221c] mb-3">一段可以直接傳的詢問訊息</h3>
+            <p class="text-[#6d5d50] mb-4">「需要 8 月某日早上八點到晚上八點的高雄臨時看護，地點為住家三樓有電梯。長輩平常可用助行器短距離移動，需協助如廁與備餐，晚上沒有本次需求；現有用藥依家屬準備與醫囑，不需醫療處置。主要窗口與備援各一位，想確認可提供的服務、費用、交接與取消規則。」</p>
+            <p class="text-[#6d5d50] mb-4">宇涵居家照護提供高雄地區居家看護、醫院看護與臨時看護資訊。實際人力、服務範圍、時段與費用依個案資料和正式確認為準；本文為一般照護安排資訊，不構成醫療或法律建議。</p>
+            <div class="flex flex-col sm:flex-row gap-3">
+              <a href="tel:0978788886" class="inline-flex items-center justify-center px-6 py-3 bg-[#8b621f] text-white font-semibold rounded-lg hover:bg-[#8b621f]/90 transition-colors">0978-788-886</a>
+              <a href="/contact" class="inline-flex items-center justify-center px-6 py-3 border border-[#8b621f] text-[#8b621f] font-semibold rounded-lg hover:bg-[#8b621f]/10 transition-colors">免費諮詢表單</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</MainLayout>
