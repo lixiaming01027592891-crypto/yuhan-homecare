@@ -10,6 +10,15 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    title: '長輩不想一直被問有沒有吃藥？用看板、簽記與單一窗口減少重複提醒',
+    excerpt: '家屬、看護輪流問有沒有吃藥，容易讓長輩覺得被監督，也可能因口頭回答造成重複或漏記。本文整理依原醫囑建立時段看板、完成後簽記、藥品保留原包裝、單一窗口核對，以及拒藥或異常時聯絡醫療端的界線。',
+    image: '/images/blog/elder-medication-reminder-board-single-contact-20260828.webp',
+    slug: '/blog/elder-medication-reminder-board-single-contact-20260828',
+    category: '照護知識',
+    date: '2026-08-28',
+    readTime: '9 分鐘',
+  },
+  {
     title: '高雄臨時看護怎麼安排？從時段、交接、用品到家屬窗口的準備',
     excerpt: '需要高雄臨時看護時，先整理照顧地點、起訖時段、長輩日常狀況、既有醫療指示、移動與夜間需求，再確認服務範圍、換班交接、用品、家屬單一窗口與緊急處理。本文提供一份可直接詢問的安排清單。',
     image: '/images/blog/kaohsiung-temporary-caregiver-arrangement-20260827.webp',

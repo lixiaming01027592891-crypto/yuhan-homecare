@@ -1,0 +1,94 @@
+---
+import { Image } from 'astro:assets';
+import MainLayout from '../../layouts/MainLayout.astro';
+import medicationBoard from '../../assets/images/elder-medication-reminder-board-single-contact-20260828.webp';
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: '長輩不想一直被問有沒有吃藥？用看板、簽記與單一窗口減少重複提醒',
+  description: '家屬、看護輪流問有沒有吃藥，容易讓長輩覺得被監督，也可能因口頭回答造成重複或漏記。本文整理依原醫囑建立時段看板、完成後簽記、藥品保留原包裝、單一窗口核對及異常聯絡界線。',
+  image: new URL('/images/blog/elder-medication-reminder-board-single-contact-20260828.webp', Astro.site).toString(),
+  datePublished: '2026-08-28T08:00:00+08:00',
+  author: { '@type': 'Organization', name: '宇涵居家照護' },
+  publisher: { '@type': 'Organization', name: '宇涵居家照護', logo: { '@type': 'ImageObject', url: new URL('/images/logo.png', Astro.site).toString() } },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': new URL('/blog/elder-medication-reminder-board-single-contact-20260828', Astro.site).toString() },
+};
+---
+
+<MainLayout
+  title="長輩吃藥提醒怎麼做？看板、簽記與單一窗口｜宇涵"
+  description="減少家人重複問吃藥：依原醫囑建立時段看板、完成後簽記、保留藥品原包裝、由單一窗口核對；拒藥、漏服或異常反應聯絡醫療端，不自行補吃或改藥。"
+  keywords="長輩吃藥提醒,高雄居家照護,用藥看板,照護簽記,家屬單一窗口,用藥安全"
+  schema={schema}
+>
+  <article>
+    <section class="relative bg-[#2b221c] py-16 lg:py-24">
+      <div class="absolute inset-0 opacity-20">
+        <Image src={medicationBoard} alt="長輩與家屬在明亮餐桌前，以時段看板和藥袋核對照護紀錄" widths={[400, 800, 1200]} sizes="(max-width: 768px) 100vw, 800px" class="w-full h-full object-cover" loading="eager" />
+      </div>
+      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav aria-label="麵包屑" class="mb-6">
+          <ol class="flex items-center space-x-2 text-sm text-[#efe5d5]/80">
+            <li><a href="/" class="hover:text-[#8b621f]">首頁</a></li><li><span class="text-[#efe5d5]/40">/</span></li>
+            <li><a href="/blog" class="hover:text-[#8b621f]">照護知識</a></li><li><span class="text-[#efe5d5]/40">/</span></li>
+            <li class="text-[#fcfaf6]">用藥提醒與簽記</li>
+          </ol>
+        </nav>
+        <span class="inline-block bg-[#8b621f] text-white text-xs px-3 py-1 rounded-full mb-4">照護知識</span>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#fcfaf6] mb-4 leading-tight">長輩不想一直被問有沒有吃藥？用看板、簽記與單一窗口減少重複提醒</h1>
+        <div class="flex items-center text-[#efe5d5] text-sm space-x-4"><span>2026-08-28</span><span>9 分鐘閱讀</span></div>
+      </div>
+    </section>
+
+    <div class="bg-[#fcfaf6] py-12 lg:py-16">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="prose prose-lg max-w-none">
+          <p class="text-lg text-[#6d5d50] leading-relaxed mb-8">早上女兒問一次，中午看護再問，晚上孫子回家又確認，長輩一天被問三遍「藥吃了沒」，久了容易覺得自己被監督。更麻煩的是，口頭回答可能記錯日期，家人以為沒吃而再次提醒，或每個人都以為別人已經確認。把提醒改成一張依原醫囑建立的時段看板、一次完成簽記，再由單一窗口核對，能讓資訊回到紀錄，而不是反覆盤問。</p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">先說清楚：看板只記錄，不決定怎麼吃</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">藥名、劑量、時間、是否隨餐與其他指示，完全依醫師、藥師和處方標示。家屬或看護不能因長輩今天比較累、血壓看起來不同，便自行停藥、減量、拆半、混入食物或增加次數。看板的功能是把既有醫囑轉成可核對的照護流程，不是重新開一套處方。</p>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">若看不懂藥袋、不同院所處方看似重複、長輩吞嚥困難，或想調整服藥方式，請聯絡開立院所或藥師確認。不要靠家族群組投票決定。</p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">一張看板只放今天必要的四欄</h2>
+          <ul class="text-[#6d5d50] leading-relaxed mb-6">
+            <li>時段：依藥袋或醫療端說明寫早餐前、早餐後或實際時間，不自行改成方便的時段。</li>
+            <li>執行：由誰提醒或協助，避免同一時段多人同時負責。</li>
+            <li>完成：實際完成後才簽姓名或代號與時間，不先打勾。</li>
+            <li>例外：拒絕、嘔吐、漏服或其他異常只記客觀情況，後續依醫療端指示。</li>
+          </ul>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">看板不要抄滿完整病史和身分資料，放在長輩與照顧者看得到、外人不會隨意拍到的位置。字體清楚、每個時段一行，比塞入很多顏色和縮寫更容易使用。</p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">藥品保留原包裝，簽記和藥袋互相核對</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">藥袋與標籤保留完整，避免把多種藥倒進沒有標示的盒子。若使用分裝盒，誰能分裝、如何核對、保存與清潔，依醫療或藥事專業說明；分裝盒不能取代原處方資料。新舊藥袋不要混放，停用、過期與回收方式詢問藥師。</p>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">每次先核對正確對象、日期、時段與原標示，完成後再簽記。簽記不是代表看護替醫療結果負責，而是留下「何時依既定安排完成了什麼」的可追溯資訊。</p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">只由一位家屬窗口確認，其他人看紀錄</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">家庭指定一位主要窗口、一位聯絡不到時的備援。主要窗口負責和醫療端確認變更、更新看板版本並接收例外回報；其他家人需要知道時看同一份紀錄，不再各自打電話問長輩。</p>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">可搭配<a href="/blog/family-care-chat-single-contact-rules-20260824" class="text-[#8b621f] hover:underline">照顧群組單一窗口與已讀規則</a>，把「日常完成」和「需要決定」分開。群組裡只貼必要資訊，不公開完整藥單、病歷和身分資料。</p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">提醒用選擇和尊重，不用質問</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">把「你到底吃了沒？」改成「現在是原本安排的早餐後時段，我們一起看一下今天這格」，讓長輩參與核對。能自行管理的人，保留他的主導權；需要協助時，也先說明要做什麼再動手，不因照護方便而拿走所有決定。</p>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">長輩拒絕時不要強迫餵藥、藏入食物或用恐嚇方式要求服用。記錄原話、時間和可觀察狀況，依事前醫療指示聯絡家屬窗口或醫療端。</p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">漏服或不確定時，不自行補吃</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">發現某格沒有簽、長輩也不確定時，先查當天紀錄、藥袋與負責人，不用猜。是否補服、跳過或調整下一次，依藥品和醫療端指示；不同藥物的處理可能不同，不能套用朋友經驗。</p>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">若疑似重複服用、出現過敏、意識改變、呼吸困難、胸痛、昏厥或其他急性異常，立即依醫療專業或台灣緊急醫療流程處理，不等待下一班看護。需要聯絡毒物或藥事諮詢時，保留藥袋、估計時間和已知數量供專業判斷。</p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">換班時只交接變化與未完成事項</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">接班者先看當日看板，再核對下一個時段、是否有新醫囑版本，以及拒絕、漏服、就醫或異常反應等例外。完整方式可參考<a href="/blog/caregiver-shift-handover-checklist-20260826" class="text-[#8b621f] hover:underline">十分鐘看護交接表</a>。已完成的格子不必再逐一打電話追問，未完成事項則寫清負責人和下一步。</p>
+
+          <div class="bg-[#8b621f]/10 rounded-xl p-6 mb-10 border border-[#8b621f]/20">
+            <h3 class="text-xl font-bold text-[#2b221c] mb-3">一段可用的家庭約定</h3>
+            <p class="text-[#6d5d50] mb-4">「所有藥品依原藥袋和醫療指示，不由家屬或看護自行調整。每個時段由表上指定的人提醒，實際完成後簽時間；拒絕、漏服或不確定就先記錄，聯絡主要窗口，再依醫療端指示處理。其他家人看同一張紀錄，不重複詢問長輩。」</p>
+            <p class="text-[#6d5d50] mb-4">宇涵居家照護提供高雄地區居家看護、醫院看護與臨時照護資訊。實際用藥與醫療判斷由醫師、藥師等合格專業負責；本文為一般照護流程資訊，不構成醫療建議。</p>
+            <div class="flex flex-col sm:flex-row gap-3">
+              <a href="tel:0978788886" class="inline-flex items-center justify-center px-6 py-3 bg-[#8b621f] text-white font-semibold rounded-lg hover:bg-[#8b621f]/90 transition-colors">0978-788-886</a>
+              <a href="/contact" class="inline-flex items-center justify-center px-6 py-3 border border-[#8b621f] text-[#8b621f] font-semibold rounded-lg hover:bg-[#8b621f]/10 transition-colors">免費諮詢表單</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</MainLayout>
