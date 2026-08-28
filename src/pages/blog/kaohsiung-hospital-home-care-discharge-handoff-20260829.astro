@@ -1,0 +1,96 @@
+---
+import { Image } from 'astro:assets';
+import MainLayout from '../../layouts/MainLayout.astro';
+import dischargeHandoff from '../../assets/images/kaohsiung-hospital-home-care-discharge-handoff-20260829.webp';
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: '高雄醫院居家看護怎麼銜接？出院時間、用品與交接清單',
+  description: '高雄醫院看護轉回居家照護時，先依醫療端出院指示確認時間、交通、住家動線、用品設備、藥品與回診，再由醫院與居家照護人員依同一份清單交接。',
+  image: new URL('/images/blog/kaohsiung-hospital-home-care-discharge-handoff-20260829.webp', Astro.site).toString(),
+  datePublished: '2026-08-29T08:00:00+08:00',
+  author: { '@type': 'Organization', name: '宇涵居家照護' },
+  publisher: { '@type': 'Organization', name: '宇涵居家照護', logo: { '@type': 'ImageObject', url: new URL('/images/logo.png', Astro.site).toString() } },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': new URL('/blog/kaohsiung-hospital-home-care-discharge-handoff-20260829', Astro.site).toString() },
+};
+---
+
+<MainLayout
+  title="高雄醫院居家看護銜接｜出院交接與用品清單｜宇涵"
+  description="高雄醫院看護轉回居家照護，先依出院指示確認時間、交通、住家動線、用品設備、藥品與回診，再由醫院與居家照護人員依同一清單交接。"
+  keywords="高雄醫院居家看護,高雄醫院看護,高雄居家看護,出院照護交接,居家照護,看護交接"
+  schema={schema}
+>
+  <article>
+    <section class="relative bg-[#2b221c] py-16 lg:py-24">
+      <div class="absolute inset-0 opacity-20">
+        <Image src={dischargeHandoff} alt="高雄醫院出院前，家屬與照護人員依清單核對輪椅、用品、藥袋和居家動線" widths={[400, 800, 1200]} sizes="(max-width: 768px) 100vw, 800px" class="w-full h-full object-cover" loading="eager" />
+      </div>
+      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav aria-label="麵包屑" class="mb-6">
+          <ol class="flex items-center space-x-2 text-sm text-[#efe5d5]/80">
+            <li><a href="/" class="hover:text-[#8b621f]">首頁</a></li><li><span class="text-[#efe5d5]/40">/</span></li>
+            <li><a href="/blog" class="hover:text-[#8b621f]">照護知識</a></li><li><span class="text-[#efe5d5]/40">/</span></li>
+            <li class="text-[#fcfaf6]">出院與居家照護銜接</li>
+          </ol>
+        </nav>
+        <span class="inline-block bg-[#8b621f] text-white text-xs px-3 py-1 rounded-full mb-4">照護知識</span>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#fcfaf6] mb-4 leading-tight">高雄醫院居家看護怎麼銜接？出院時間、用品與交接清單</h1>
+        <div class="flex items-center text-[#efe5d5] text-sm space-x-4"><span>2026-08-29</span><span>9 分鐘閱讀</span></div>
+      </div>
+    </section>
+
+    <div class="bg-[#fcfaf6] py-12 lg:py-16">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="prose prose-lg max-w-none">
+          <p class="text-lg text-[#6d5d50] leading-relaxed mb-8">出院通知下來後，家屬常同時忙著找車、借輪椅、買用品和問看護幾點能到，卻沒有人把醫院端與住家端的資訊合在一起。安排<strong>高雄醫院居家看護</strong>銜接時，先以醫師、護理師、藥師和出院準備團隊的指示為準，再由一位家屬窗口把出院時間、交通、住家動線、用品設備、藥品與下一次回診寫成同一份清單。看護負責依既定安排協助生活照顧，不自行診斷、改藥或變更醫療處置。</p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">先確認「可以出院」的條件，不只問幾點離院</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">向醫療團隊確認預計出院日期與可離院時間、必要檢查是否完成、需要領取的藥品文件、回診安排，以及返家後應觀察和聯絡的警訊。若時間仍可能變動，先把它標成預估，不要向接送與居家照護人員承諾一個無法調整的分鐘。</p>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">出院摘要、藥袋、照護指示、管路或傷口說明等資料由家屬依院方流程接收。看不懂就當場詢問醫療端，不把回家後的第一位看護當成替你重新解釋或修改醫囑的人。</p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">交通要從病房門口一路排到家中床邊</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">確認院內從病房到上車點由誰陪同，車輛是否適合輪椅、使用者能否轉位、同行者和行李數，以及住家下車後的門檻、電梯、樓梯與轉角。需要無障礙車輛、爬梯機或多人移位時，應分別由合適服務單位事前評估，不在道路或樓梯口臨時決定。</p>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">醫療管路、氧氣、固定支具或其他設備的運送和照護方式，依醫療端與設備專業指示。一般看護和家屬不得自行拆接、調整流量或改變使用方法。</p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">住家先完成安全動線，再把用品買齊</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">從門口到床、浴廁與常用座位實際走一遍，移開地墊、電線、紙箱與會縮窄通道的家具，確認照明、扶手、床高和輪椅停放。需要病床、便盆椅、移位輔具或其他設備時，由醫療、復健或設備專業依個人狀況建議，不只照網路清單購買。</p>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">用品可分成今天一定使用、三天內補齊與依評估再買三類。先準備醫療端交代的必需品、日常清潔、衣物、尿布或飲食用品；不要因焦慮一次囤積大量尺寸、規格或適用性未確認的耗材。</p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">藥品交接只核對原醫囑，不重新排一套</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">新領與原有藥品分開放，保留完整藥袋和標示，由家屬依醫師、藥師說明核對。若不同院所藥品看似重複、長輩吞嚥困難或不確定漏服怎麼辦，聯絡醫療或藥事專業，不由看護自行停藥、磨粉、補吃或混入食物。</p>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">可使用<a href="/blog/elder-medication-reminder-board-single-contact-20260828" class="text-[#8b621f] hover:underline">用藥看板、簽記與單一窗口</a>的方式記錄執行，但看板只能呈現既有醫囑，不能替代處方。</p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">醫院與居家照護交接，用六欄就夠</h2>
+          <ul class="text-[#6d5d50] leading-relaxed mb-6">
+            <li>和平常不同：意識、活動、飲食、排泄、睡眠或皮膚的近期變化。</li>
+            <li>既定安排：醫療端交代的照護、用藥、飲食、活動與限制。</li>
+            <li>用品設備：名稱、操作來源、耗材位置與故障聯絡方式。</li>
+            <li>生活協助：移位、如廁、清潔、溝通與夜間需求。</li>
+            <li>待辦事項：回診、領藥、檢查、補用品及負責人與期限。</li>
+            <li>聯絡分級：日常問誰、異常聯絡哪個醫療窗口、急症如何求助。</li>
+          </ul>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">完整換班方式可搭配<a href="/blog/caregiver-shift-handover-checklist-20260826" class="text-[#8b621f] hover:underline">十分鐘看護交接表</a>。接班者復述最重要的三件事，確認理解，不只在群組回一個收到。</p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">第一晚先穩定基本照顧，不急著重整所有習慣</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">到家後先確認安全位置、必要用品、原醫囑和下一個照護時段，記錄飲食、排泄、活動與任何和平常不同的情況。不要因為回到熟悉環境，就自行增加走動、洗澡、復健或更換飲食；活動與照護方式依出院指示和個人狀況安排。</p>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">家屬指定主要窗口和備援，不讓多人輪流改指令。需要臨時補人時，可先閱讀<a href="/blog/kaohsiung-temporary-caregiver-arrangement-20260827" class="text-[#8b621f] hover:underline">高雄臨時看護安排清單</a>，把時段、服務範圍與交接資料先準備好。</p>
+
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2b221c] mb-4 mt-12">異常依出院指示處理，急症立即求助</h2>
+          <p class="text-[#6d5d50] leading-relaxed mb-6">出現醫療端列出的警訊、症狀持續或加劇、意識改變、呼吸困難、胸痛、單側無力、嚴重出血、昏厥或其他急性異常時，依院方交代和台灣緊急醫療流程處理，不等待下一班看護，也不在群組投票。保留出院資料、藥袋和已知發生時間供專業判斷。</p>
+
+          <div class="bg-[#8b621f]/10 rounded-xl p-6 mb-10 border border-[#8b621f]/20">
+            <h3 class="text-xl font-bold text-[#2b221c] mb-3">一段可直接使用的銜接訊息</h3>
+            <p class="text-[#6d5d50] mb-4">「預計 8/29 出院，實際離院等院方通知；使用輪椅，住家有電梯，入口有一處門檻。出院資料、藥品與照護限制由家屬接收，居家看護預計到家前完成交接。主要窗口是○○，異常依出院指示聯絡醫療端，看護不自行改藥或醫療處置。」</p>
+            <p class="text-[#6d5d50] mb-4">宇涵居家照護提供高雄地區居家看護、醫院看護與臨時照護資訊。實際服務內容、人力與時段依個案和當次確認；醫療判斷、處方、設備與急症處理由醫師、護理師、藥師及其他合格專業負責。本文為一般照護流程資訊，不構成醫療建議。</p>
+            <div class="flex flex-col sm:flex-row gap-3">
+              <a href="/contact" class="inline-flex items-center justify-center px-5 py-3 rounded-lg bg-[#8b621f] text-white font-medium hover:bg-[#6d4c18]">聯絡照護諮詢</a>
+              <a href="/services" class="inline-flex items-center justify-center px-5 py-3 rounded-lg border border-[#8b621f] text-[#8b621f] font-medium hover:bg-[#8b621f]/5">查看服務內容</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</MainLayout>

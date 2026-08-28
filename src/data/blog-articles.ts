@@ -10,6 +10,15 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    title: '高雄醫院居家看護怎麼銜接？出院時間、用品與交接清單',
+    excerpt: '高雄醫院看護轉回居家照護時，先以醫療端出院指示為準，確認出院時間、交通、住家動線、用品設備、藥品與下一次回診，再由醫院與居家照護人員依同一份清單交接；看護不自行改藥或更動醫療處置。',
+    image: '/images/blog/kaohsiung-hospital-home-care-discharge-handoff-20260829.webp',
+    slug: '/blog/kaohsiung-hospital-home-care-discharge-handoff-20260829',
+    category: '照護知識',
+    date: '2026-08-29',
+    readTime: '9 分鐘',
+  },
+  {
     title: '長輩不想一直被問有沒有吃藥？用看板、簽記與單一窗口減少重複提醒',
     excerpt: '家屬、看護輪流問有沒有吃藥，容易讓長輩覺得被監督，也可能因口頭回答造成重複或漏記。本文整理依原醫囑建立時段看板、完成後簽記、藥品保留原包裝、單一窗口核對，以及拒藥或異常時聯絡醫療端的界線。',
     image: '/images/blog/elder-medication-reminder-board-single-contact-20260828.webp',
