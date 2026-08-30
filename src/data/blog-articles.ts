@@ -10,6 +10,15 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    "title": "長輩不想被叫「阿公阿嬤」，照護稱呼為什麼值得先問？",
+    "excerpt": "照護稱呼不是越親熱越好。從第一次自我介紹、偏好名稱、家屬與照護者的不同稱呼，到交接與隱私，整理尊重長輩本人選擇的日常溝通方式。",
+    "image": "/images/blog/family-care-chat-rules-20260824.webp",
+    "slug": "/blog/elder-care-preferred-name-respect-20260830/",
+    "category": "照護知識",
+    "date": "2026-08-30",
+    "readTime": "7 分鐘"
+  },
+  {
     title: '高雄醫院居家看護怎麼銜接？出院時間、用品與交接清單',
     excerpt: '高雄醫院看護轉回居家照護時，先以醫療端出院指示為準，確認出院時間、交通、住家動線、用品設備、藥品與下一次回診，再由醫院與居家照護人員依同一份清單交接；看護不自行改藥或更動醫療處置。',
     image: '/images/blog/kaohsiung-hospital-home-care-discharge-handoff-20260829.webp',
