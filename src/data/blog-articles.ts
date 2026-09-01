@@ -10,6 +10,15 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    "title": "高雄看護中心推薦怎麼比較？從照護需求、交班與家屬窗口開始問",
+    "excerpt": "尋找看護服務時，先整理長輩日常能力、醫囑、作息與風險，再比較人員資格、排班、交班、替補與費用，不用排名代替適配。",
+    "image": "/images/blog/family-care-chat-rules-20260824.webp",
+    "slug": "/blog/kaohsiung-care-center-comparison-handoff-interview-20260901/",
+    "category": "照護知識",
+    "date": "2026-09-01",
+    "readTime": "7 分鐘"
+  },
+  {
     "title": "高雄居家看護遇到親友探訪，時段、照護交接與長輩休息怎麼協調？",
     "excerpt": "家人來探望是關心，也可能打亂原有照護節奏。整理探訪前告知、長輩意願、生活協助分工與訪客離開後的交接，讓看護不必在多位家屬指示間反覆猜測。",
     "image": "/images/blog/family-care-chat-rules-20260824.webp",
