@@ -10,6 +10,15 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    "title": "高雄看護中心推薦名單縮小後，夜間照護與緊急聯絡怎麼問？",
+    "excerpt": "比較照護服務時，夜間人力、巡視頻率、緊急通知與送醫流程要分開詢問。用長輩實際需求提問，避免只看單一人數或宣傳詞。",
+    "image": "/images/blog/family-care-chat-rules-20260824.webp",
+    "slug": "/blog/kaohsiung-care-center-night-care-emergency-contact-20260902/",
+    "category": "照護知識",
+    "date": "2026-09-02",
+    "readTime": "7 分鐘"
+  },
+  {
     "title": "高雄看護中心推薦怎麼比較？從照護需求、交班與家屬窗口開始問",
     "excerpt": "尋找看護服務時，先整理長輩日常能力、醫囑、作息與風險，再比較人員資格、排班、交班、替補與費用，不用排名代替適配。",
     "image": "/images/blog/family-care-chat-rules-20260824.webp",
