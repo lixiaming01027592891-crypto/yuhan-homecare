@@ -10,6 +10,15 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    "title": "高雄臨時看護如何交班？用藥、移位、飲食與緊急聯絡要有同一版本",
+    "excerpt": "安排高雄臨時看護時，家屬應整理照護需求、醫囑、用藥、移位、飲食與緊急聯絡，並由單一窗口完成交班。",
+    "image": "/images/blog/family-care-chat-rules-20260824.webp",
+    "slug": "/blog/kaohsiung-temporary-caregiver-medication-transfer-diet-handoff-20260903/",
+    "category": "照護知識",
+    "date": "2026-09-03",
+    "readTime": "7 分鐘"
+  },
+  {
     "title": "高雄看護中心推薦名單縮小後，夜間照護與緊急聯絡怎麼問？",
     "excerpt": "比較照護服務時，夜間人力、巡視頻率、緊急通知與送醫流程要分開詢問。用長輩實際需求提問，避免只看單一人數或宣傳詞。",
     "image": "/images/blog/family-care-chat-rules-20260824.webp",
