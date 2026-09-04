@@ -10,6 +10,15 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    "title": "高雄臨時看護換班時家屬不在？紙本、電話與緊急聯絡怎麼交接",
+    "excerpt": "高雄臨時看護換班而家屬無法到場時，應以核准的紙本或系統紀錄、電話覆核與緊急聯絡完成交接。",
+    "image": "/images/blog/family-care-chat-rules-20260824.webp",
+    "slug": "/blog/kaohsiung-temporary-caregiver-handoff-family-away-paper-phone-emergency-20260904/",
+    "category": "照護知識",
+    "date": "2026-09-04",
+    "readTime": "7 分鐘"
+  },
+  {
     "title": "高雄臨時看護如何交班？用藥、移位、飲食與緊急聯絡要有同一版本",
     "excerpt": "安排高雄臨時看護時，家屬應整理照護需求、醫囑、用藥、移位、飲食與緊急聯絡，並由單一窗口完成交班。",
     "image": "/images/blog/family-care-chat-rules-20260824.webp",
