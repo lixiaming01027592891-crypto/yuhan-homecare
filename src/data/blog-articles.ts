@@ -10,6 +10,15 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    "title": "高雄看護第一次到家前，床邊、浴室與用品位置怎麼準備？",
+    "excerpt": "安排高雄看護首次到宅前，依長輩日常動線檢查床邊、浴室、照明、用品與隱私，將需專業評估的移位及設備問題另列。",
+    "image": "/images/blog/family-care-chat-rules-20260824.webp",
+    "slug": "/blog/kaohsiung-caregiver-first-home-visit-bedside-bathroom-supplies-20260905/",
+    "category": "照護知識",
+    "date": "2026-09-05",
+    "readTime": "7 分鐘"
+  },
+  {
     "title": "高雄臨時看護換班時家屬不在？紙本、電話與緊急聯絡怎麼交接",
     "excerpt": "高雄臨時看護換班而家屬無法到場時，應以核准的紙本或系統紀錄、電話覆核與緊急聯絡完成交接。",
     "image": "/images/blog/family-care-chat-rules-20260824.webp",
