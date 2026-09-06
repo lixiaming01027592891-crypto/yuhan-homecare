@@ -10,6 +10,15 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    "title": "高雄看護推薦名單聯絡後，如何用一天作息確認溝通與交班？",
+    "excerpt": "取得高雄看護推薦名單後，可用照護對象的一天作息整理協助內容、溝通偏好、家屬窗口與交班紀錄，再確認服務適配。",
+    "image": "/images/blog/family-care-chat-rules-20260824.webp",
+    "slug": "/blog/kaohsiung-caregiver-recommendation-daily-routine-communication-handover-20260906/",
+    "category": "照護知識",
+    "date": "2026-09-06",
+    "readTime": "7 分鐘"
+  },
+  {
     "title": "高雄看護第一次到家前，床邊、浴室與用品位置怎麼準備？",
     "excerpt": "安排高雄看護首次到宅前，依長輩日常動線檢查床邊、浴室、照明、用品與隱私，將需專業評估的移位及設備問題另列。",
     "image": "/images/blog/family-care-chat-rules-20260824.webp",
