@@ -10,6 +10,15 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    "title": "高雄醫院居家看護轉換怎麼交班？出院資料、居家動線與家屬窗口",
+    "excerpt": "高雄醫院居家看護轉回家中時，家屬可依正式出院資料核對照護任務、居家動線、用品、回診與緊急聯絡窗口。",
+    "image": "/images/blog/family-care-chat-rules-20260824.webp",
+    "slug": "/blog/kaohsiung-hospital-home-care-discharge-records-home-route-handoff-20260907/",
+    "category": "照護知識",
+    "date": "2026-09-07",
+    "readTime": "7 分鐘"
+  },
+  {
     "title": "高雄看護推薦名單聯絡後，如何用一天作息確認溝通與交班？",
     "excerpt": "取得高雄看護推薦名單後，可用照護對象的一天作息整理協助內容、溝通偏好、家屬窗口與交班紀錄，再確認服務適配。",
     "image": "/images/blog/family-care-chat-rules-20260824.webp",
