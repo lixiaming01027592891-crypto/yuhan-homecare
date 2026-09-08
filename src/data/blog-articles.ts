@@ -10,6 +10,15 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    "title": "高雄居家看護遇到家屬輪班，早晚任務、紀錄與緊急窗口怎麼交接？",
+    "excerpt": "高雄居家看護與家屬輪班時，可依正式照護指示整理早晚任務、用品、觀察紀錄、聯絡窗口及緊急處理流程。",
+    "image": "/images/blog/family-care-chat-rules-20260824.webp",
+    "slug": "/blog/kaohsiung-home-care-family-shifts-tasks-record-emergency-20260908/",
+    "category": "照護知識",
+    "date": "2026-09-08",
+    "readTime": "7 分鐘"
+  },
+  {
     "title": "高雄醫院居家看護轉換怎麼交班？出院資料、居家動線與家屬窗口",
     "excerpt": "高雄醫院居家看護轉回家中時，家屬可依正式出院資料核對照護任務、居家動線、用品、回診與緊急聯絡窗口。",
     "image": "/images/blog/family-care-chat-rules-20260824.webp",
