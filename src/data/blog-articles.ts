@@ -10,6 +10,15 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    "title": "高雄居家看護如何保留長輩選擇：從衣物、用餐到活動安排",
+    "excerpt": "高雄居家看護的日常安排，可讓長輩在可行範圍內表達衣物、用餐與活動偏好，並把家屬和照護人員的協助界線說清楚。",
+    "image": "/images/blog/family-care-chat-rules-20260824.webp",
+    "slug": "/blog/kaohsiung-home-care-daily-choice-autonomy-20260909/",
+    "category": "照護知識",
+    "date": "2026-09-09",
+    "readTime": "7 分鐘"
+  },
+  {
     "title": "高雄居家看護遇到家屬輪班，早晚任務、紀錄與緊急窗口怎麼交接？",
     "excerpt": "高雄居家看護與家屬輪班時，可依正式照護指示整理早晚任務、用品、觀察紀錄、聯絡窗口及緊急處理流程。",
     "image": "/images/blog/family-care-chat-rules-20260824.webp",
