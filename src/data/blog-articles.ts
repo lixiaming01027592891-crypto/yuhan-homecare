@@ -10,6 +10,15 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    "title": "高雄臨時看護怎麼接家屬外出？短時照顧的交接與返家核對",
+    "excerpt": "高雄臨時看護安排可先確認外出時段、本人日常需求、工作範圍與聯絡方式，再把交班及返家核對留出時間，避免臨場資訊落差。",
+    "image": "/images/blog/family-care-chat-rules-20260824.webp",
+    "slug": "/blog/kaohsiung-temporary-care-family-short-absence-20260910/",
+    "category": "照護知識",
+    "date": "2026-09-10",
+    "readTime": "7 分鐘"
+  },
+  {
     "title": "高雄居家看護如何保留長輩選擇：從衣物、用餐到活動安排",
     "excerpt": "高雄居家看護的日常安排，可讓長輩在可行範圍內表達衣物、用餐與活動偏好，並把家屬和照護人員的協助界線說清楚。",
     "image": "/images/blog/family-care-chat-rules-20260824.webp",
