@@ -10,6 +10,15 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    "title": "高雄臨時看護接手夜間時段：手足輪班與睡前習慣怎麼交接",
+    "excerpt": "高雄臨時看護接手夜間前，家屬可整理本人意願、睡前習慣、必要照護、住家動線與緊急聯絡，形成一致交接。",
+    "image": "/images/blog/family-care-chat-rules-20260824.webp",
+    "slug": "/blog/kaohsiung-temporary-care-sibling-night-handoff-20260912/",
+    "category": "照護知識",
+    "date": "2026-09-12",
+    "readTime": "7 分鐘"
+  },
+  {
     "title": "高雄臨時看護怎麼接家屬外出？短時照顧的交接與返家核對",
     "excerpt": "高雄臨時看護安排可先確認外出時段、本人日常需求、工作範圍與聯絡方式，再把交班及返家核對留出時間，避免臨場資訊落差。",
     "image": "/images/blog/family-care-chat-rules-20260824.webp",
