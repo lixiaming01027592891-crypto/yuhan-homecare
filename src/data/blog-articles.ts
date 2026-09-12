@@ -10,6 +10,15 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    "title": "高雄醫院看護遇到家屬輪班：床邊事項、聯絡窗口與休息怎麼交接",
+    "excerpt": "安排高雄醫院看護並由家屬輪班時，可整理院方規則、日常協助、物品位置、決策窗口與異常通報方式。",
+    "image": "/images/blog/family-care-chat-rules-20260824.webp",
+    "slug": "/blog/kaohsiung-hospital-caregiver-family-shift-handover-20260913/",
+    "category": "照護知識",
+    "date": "2026-09-13",
+    "readTime": "7 分鐘"
+  },
+  {
     "title": "高雄臨時看護接手夜間時段：手足輪班與睡前習慣怎麼交接",
     "excerpt": "高雄臨時看護接手夜間前，家屬可整理本人意願、睡前習慣、必要照護、住家動線與緊急聯絡，形成一致交接。",
     "image": "/images/blog/family-care-chat-rules-20260824.webp",
