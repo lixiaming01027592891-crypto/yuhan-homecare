@@ -10,6 +10,15 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    "title": "高雄臨時看護接住院檢查日：禁食、推床與家屬通知怎麼交班",
+    "excerpt": "安排高雄臨時看護遇到住院檢查日，可把院方指示、時間狀態、陪同範圍、物品和家屬通知方式整理成交班資料。",
+    "image": "/images/blog/family-care-chat-rules-20260824.webp",
+    "slug": "/blog/kaohsiung-temporary-caregiver-hospital-exam-day-handoff-20260914/",
+    "category": "照護知識",
+    "date": "2026-09-14",
+    "readTime": "7 分鐘"
+  },
+  {
     "title": "高雄醫院看護遇到家屬輪班：床邊事項、聯絡窗口與休息怎麼交接",
     "excerpt": "安排高雄醫院看護並由家屬輪班時，可整理院方規則、日常協助、物品位置、決策窗口與異常通報方式。",
     "image": "/images/blog/family-care-chat-rules-20260824.webp",
