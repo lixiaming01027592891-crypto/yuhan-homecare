@@ -10,6 +10,15 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    "title": "高雄醫院居家看護遇到轉病房：物品、醫囑與聯絡窗口怎麼重新交班",
+    "excerpt": "高雄醫院居家看護碰到轉病房時，可依院方流程重新核對床位、隨身物品、醫療指示、照護事項、陪病規則與家屬聯絡窗口。",
+    "image": "/images/blog/family-care-chat-rules-20260824.webp",
+    "slug": "/blog/kaohsiung-hospital-caregiver-ward-transfer-belongings-orders-contact-handoff-20260915/",
+    "category": "照護知識",
+    "date": "2026-09-15",
+    "readTime": "7 分鐘"
+  },
+  {
     "title": "高雄臨時看護接住院檢查日：禁食、推床與家屬通知怎麼交班",
     "excerpt": "安排高雄臨時看護遇到住院檢查日，可把院方指示、時間狀態、陪同範圍、物品和家屬通知方式整理成交班資料。",
     "image": "/images/blog/family-care-chat-rules-20260824.webp",
