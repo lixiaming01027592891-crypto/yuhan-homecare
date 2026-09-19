@@ -10,6 +10,15 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    "title": "高雄臨時看護接手用餐時段：醫院餐、家屬送餐與飲食指示怎麼核對",
+    "excerpt": "高雄臨時看護若在用餐時段接班，家屬應交付當日醫療飲食指示、餐點來源、協助方式、觀察與回報窗口。",
+    "image": "/images/articles/20260920/yuhan-homecare.webp",
+    "slug": "/blog/kaohsiung-temporary-care-mealtime-hospital-family-food-handoff-20260920/",
+    "category": "照護知識",
+    "date": "2026-09-20",
+    "readTime": "7 分鐘"
+  },
+  {
     "title": "高雄醫院居家看護遇到轉病房：物品、醫囑與聯絡窗口怎麼重新交班",
     "excerpt": "高雄醫院居家看護碰到轉病房時，可依院方流程重新核對床位、隨身物品、醫療指示、照護事項、陪病規則與家屬聯絡窗口。",
     "image": "/images/blog/family-care-chat-rules-20260824.webp",
