@@ -10,6 +10,15 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    "title": "高雄居家看護陪同門診一日班：文件、候診、用藥資訊與返家交班怎麼排",
+    "excerpt": "安排高雄居家看護陪同門診時，可先確認陪同權限、交通與候診安排，準備藥袋和問題清單，回家後再向主要家屬交班。",
+    "image": "/images/articles/20260921/yuhan-homecare.webp",
+    "slug": "/blog/kaohsiung-home-care-outpatient-day-documents-medication-handoff-20260921/",
+    "category": "照護知識",
+    "date": "2026-09-21",
+    "readTime": "7 分鐘"
+  },
+  {
     "title": "高雄臨時看護接手用餐時段：醫院餐、家屬送餐與飲食指示怎麼核對",
     "excerpt": "高雄臨時看護若在用餐時段接班，家屬應交付當日醫療飲食指示、餐點來源、協助方式、觀察與回報窗口。",
     "image": "/images/articles/20260920/yuhan-homecare.webp",
