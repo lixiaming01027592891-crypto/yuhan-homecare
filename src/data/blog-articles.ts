@@ -10,6 +10,15 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    "title": "高雄居家看護接手術後返家：出院指示、管路與第一天觀察怎麼交班",
+    "excerpt": "術後返家安排高雄居家看護時，應由醫療端交付診斷與照護指示，家屬再整理藥物、管路、移動、飲食、回診與警訊聯絡。",
+    "image": "/images/articles/20260923/yuhan-homecare.webp",
+    "slug": "/blog/kaohsiung-home-care-postoperative-discharge-handoff-first-day-20260923/",
+    "category": "照護知識",
+    "date": "2026-09-23",
+    "readTime": "7 分鐘"
+  },
+  {
     "title": "高雄居家看護陪同門診一日班：文件、候診、用藥資訊與返家交班怎麼排",
     "excerpt": "安排高雄居家看護陪同門診時，可先確認陪同權限、交通與候診安排，準備藥袋和問題清單，回家後再向主要家屬交班。",
     "image": "/images/articles/20260921/yuhan-homecare.webp",
