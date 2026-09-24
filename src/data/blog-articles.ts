@@ -10,6 +10,15 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    "title": "高雄居家看護陪同輪椅長者外出：回家交接不漏掉什麼",
+    "excerpt": "輪椅長者外出返家時，照護交接要核對行程、輔具、用餐飲水、身體感受與後續醫囑，避免只說「已平安回家」。",
+    "image": "/images/articles/20260925/yuhan-homecare.webp",
+    "slug": "/blog/kaohsiung-homecare-wheelchair-outing-return-handover-20260925/",
+    "category": "照護知識",
+    "date": "2026-09-25",
+    "readTime": "7 分鐘"
+  },
+  {
     "title": "高雄臨時看護接夜間班：用藥、起夜與家屬交班怎麼說清楚",
     "excerpt": "短期夜間照護安排前，家屬應交代醫囑、起夜需求、移位方式、聯絡順序與突發狀況界線，並保留每日交班紀錄。",
     "image": "/images/articles/20260924/yuhan-homecare.webp",
