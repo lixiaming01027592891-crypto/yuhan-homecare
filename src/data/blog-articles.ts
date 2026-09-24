@@ -10,6 +10,15 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    "title": "高雄臨時看護接夜間班：用藥、起夜與家屬交班怎麼說清楚",
+    "excerpt": "短期夜間照護安排前，家屬應交代醫囑、起夜需求、移位方式、聯絡順序與突發狀況界線，並保留每日交班紀錄。",
+    "image": "/images/articles/20260924/yuhan-homecare.webp",
+    "slug": "/blog/kaohsiung-temporary-care-night-shift-handover-basics-20260924/",
+    "category": "照護知識",
+    "date": "2026-09-24",
+    "readTime": "7 分鐘"
+  },
+  {
     "title": "高雄居家看護接手術後返家：出院指示、管路與第一天觀察怎麼交班",
     "excerpt": "術後返家安排高雄居家看護時，應由醫療端交付診斷與照護指示，家屬再整理藥物、管路、移動、飲食、回診與警訊聯絡。",
     "image": "/images/articles/20260923/yuhan-homecare.webp",
