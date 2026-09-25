@@ -10,6 +10,15 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    "title": "高雄居家看護協助浴室活動：地面、扶手與家屬交接要點",
+    "excerpt": "居家洗澡和如廁協助前，家屬應先說明個案的移動能力、浴室環境、既有醫囑及停止條件。",
+    "image": "/images/articles/20260926/yuhan-homecare.png",
+    "slug": "/blog/kaohsiung-homecare-bathroom-transfer-family-handover-20260926/",
+    "category": "照護知識",
+    "date": "2026-09-26",
+    "readTime": "7 分鐘"
+  },
+  {
     "title": "高雄居家看護陪同輪椅長者外出：回家交接不漏掉什麼",
     "excerpt": "輪椅長者外出返家時，照護交接要核對行程、輔具、用餐飲水、身體感受與後續醫囑，避免只說「已平安回家」。",
     "image": "/images/articles/20260925/yuhan-homecare.webp",
