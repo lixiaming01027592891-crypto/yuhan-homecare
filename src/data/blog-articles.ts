@@ -10,6 +10,15 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    "title": "居家看護和居家護理不是同一項服務，換藥需求要找對窗口",
+    "excerpt": "生活看護與居家護理各有任務；需要換藥或管路服務時，先讓醫療團隊與生活照護窗口分別確認接手內容。",
+    "image": "/images/articles/20260927/yuhan-homecare.webp",
+    "slug": "/blog/home-caregiver-versus-home-nursing-wound-care-20260927/",
+    "category": "照護知識",
+    "date": "2026-09-27",
+    "readTime": "7 分鐘"
+  },
+  {
     "title": "高雄居家看護協助浴室活動：地面、扶手與家屬交接要點",
     "excerpt": "居家洗澡和如廁協助前，家屬應先說明個案的移動能力、浴室環境、既有醫囑及停止條件。",
     "image": "/images/articles/20260926/yuhan-homecare.webp",
