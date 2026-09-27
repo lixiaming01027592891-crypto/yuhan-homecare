@@ -10,6 +10,15 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    "title": "長者今天不想洗澡，生活照顧先理解拒絕的原因",
+    "excerpt": "長者拒絕洗澡先理解冷、累、害怕或隱私顧慮，討論合適時間與方式；不適與持續照護困難另找醫療或照護專業。",
+    "image": "/images/articles/20260928/yuhan-homecare.webp",
+    "slug": "/blog/home-care-bathing-refusal-comfort-choice-20260928/",
+    "category": "照護知識",
+    "date": "2026-09-28",
+    "readTime": "7 分鐘"
+  },
+  {
     "title": "居家看護和居家護理不是同一項服務，換藥需求要找對窗口",
     "excerpt": "生活看護與居家護理各有任務；需要換藥或管路服務時，先讓醫療團隊與生活照護窗口分別確認接手內容。",
     "image": "/images/articles/20260927/yuhan-homecare.webp",
