@@ -10,6 +10,15 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    "title": "長輩想自己吃飯，餐具握不住先看工具與坐姿",
+    "excerpt": "長輩想自主進食時，從動作、餐具與坐姿尋找合適支援；吞嚥疑慮交由專業評估，照顧者保留本人能完成的部分。",
+    "image": "/images/articles/20260929/yuhan-homecare.webp",
+    "slug": "/blog/older-adult-independent-eating-cutlery-support-20260929/",
+    "category": "照護知識",
+    "date": "2026-09-29",
+    "readTime": "7 分鐘"
+  },
+  {
     "title": "長者今天不想洗澡，生活照顧先理解拒絕的原因",
     "excerpt": "長者拒絕洗澡先理解冷、累、害怕或隱私顧慮，討論合適時間與方式；不適與持續照護困難另找醫療或照護專業。",
     "image": "/images/articles/20260928/yuhan-homecare.webp",
