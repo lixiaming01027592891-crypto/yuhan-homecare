@@ -10,6 +10,15 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    "title": "長輩的助聽器放哪裡？交班時把收放位置一起確認",
+    "excerpt": "助聽器交班不只記有沒有配戴，還要確認左右辨識、收放位置及原廠清潔充電方式。讓長輩保有參與，避免小配件混入垃圾或洗衣。",
+    "image": "/images/articles/20261003/yuhan-homecare.webp",
+    "slug": "/blog/home-care-hearing-aid-storage-handover-20261003/",
+    "category": "照護知識",
+    "date": "2026-10-03",
+    "readTime": "7 分鐘"
+  },
+  {
     "title": "長輩想自己吃飯，餐具握不住先看工具與坐姿",
     "excerpt": "長輩想自主進食時，從動作、餐具與坐姿尋找合適支援；吞嚥疑慮交由專業評估，照顧者保留本人能完成的部分。",
     "image": "/images/articles/20260929/yuhan-homecare.webp",
