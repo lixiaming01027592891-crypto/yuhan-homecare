@@ -10,6 +10,15 @@ export interface BlogArticle {
 
 export const blogArticles: BlogArticle[] = [
   {
+    "title": "幫長輩洗澡，水溫不能只靠照顧者覺得舒服",
+    "excerpt": "協助長輩洗澡，照顧者自己的手感不能代替水溫確認。先處理量測、供水變化與接觸順序，再依個別照護需求安排。",
+    "image": "/images/articles/20261004/yuhan-homecare.webp",
+    "slug": "/blog/older-adult-bathing-water-temperature-care-20261004/",
+    "category": "照護知識",
+    "date": "2026-10-04",
+    "readTime": "7 分鐘"
+  },
+  {
     "title": "長輩的助聽器放哪裡？交班時把收放位置一起確認",
     "excerpt": "助聽器交班不只記有沒有配戴，還要確認左右辨識、收放位置及原廠清潔充電方式。讓長輩保有參與，避免小配件混入垃圾或洗衣。",
     "image": "/images/articles/20261003/yuhan-homecare.webp",
